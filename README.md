@@ -17,15 +17,16 @@ web de check-in / check-out para hoteles,
 
 - Java 17, Spring Boot 3.1.4
 - Spring Data JPA (Hibernate), Spring Security 6, Thymeleaf
-- MySQL
+- SQL Server
 
 ## Cómo levantarlo
 
 **1. Base de datos**
 
-Creá una base de datos MySQL llamada `alquiler` (o cambiá el nombre en
-`application.properties`). Por defecto se conecta a `root` sin contraseña en
-`localhost:3306`.
+Creá una base de datos SQL Server llamada `alquiler` (o cambiá el nombre en
+`application.properties`). Por defecto se conecta a `sa` en `localhost:1433`.
+La contraseña se pasa por la variable de entorno `DB_PASSWORD`, nunca en el código.
+Hibernate crea las tablas al arrancar (`ddl-auto=update`).
 
 **2. Usuario de prueba**
 
@@ -53,7 +54,7 @@ docker build -t sistema-hotel .
 docker run -p 8090:8090 sistema-hotel
 ```
 
-Requiere una base MySQL accesible desde el contenedor (ajustá
+Requiere una base SQL Server accesible desde el contenedor (ajustá
 `spring.datasource.url` según corresponda).
 
 ## Tests

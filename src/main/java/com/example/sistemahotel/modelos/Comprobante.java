@@ -34,7 +34,7 @@ public class Comprobante {
     private Double total;
 
     @Lob
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "NVARCHAR(MAX)")
     private String datosJson;
 
     @OneToOne
