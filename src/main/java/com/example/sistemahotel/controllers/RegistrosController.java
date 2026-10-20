@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import jakarta.servlet.http.HttpServletResponse;
@@ -224,7 +225,11 @@ public class RegistrosController {
         @PathVariable(name="registroID", required=true) int id,
         Model model
     ) {
-        model.addAttribute("registro", service.consultarId(id));
+        Optional<Registro> registro = service.consultarId(id);
+        if (registro.isEmpty()) {
+            return "redirect:/";
+        }
+        model.addAttribute("registro", registro.get());
         model.addAttribute("listaClientes", clienteService.listar());
         model.addAttribute("listaHabitaciones", habitacionService.listar());
 
