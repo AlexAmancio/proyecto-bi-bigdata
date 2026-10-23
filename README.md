@@ -3,7 +3,7 @@
 ![Pipeline de pruebas](https://github.com/AlexAmancio/sistema-hotel/actions/workflows/tests.yml/badge.svg)
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.4-brightgreen)
-![MySQL](https://img.shields.io/badge/MySQL-8-blue)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-2022%2B-red)
 
 Sistema web de check-in / check-out para hoteles, desarrollado con Spring Boot.
 Cubre el ciclo completo de una estadía: reservar, registrar la entrada, cargar
@@ -44,12 +44,12 @@ un panel de reportes y un calendario de ocupación para el día a día del hotel
 | Persistencia | Spring Data JPA (Hibernate) |
 | Seguridad | Spring Security 6 |
 | Vistas | Thymeleaf |
-| Base de datos | MySQL |
+| Base de datos | SQL Server |
 
 ## Arquitectura
 
 Capas clásicas de Spring MVC: **Controller → Service (interfaz + implementación) →
-Repository (Spring Data JPA) → MySQL**, con Thymeleaf renderizando las vistas
+Repository (Spring Data JPA) → SQL Server**, con Thymeleaf renderizando las vistas
 del lado del servidor. 13 controladores, 10 servicios y sus respectivos
 repositorios, todos siguiendo el mismo patrón para que agregar un módulo
 nuevo sea mecánico. Los servicios usan inyección por campo (`@Autowired` en
@@ -159,17 +159,24 @@ nunca se expone en el HTML ni en JavaScript del cliente.
 
 El repo incluye un script con toda la base de datos actual (clientes,
 habitaciones, registros, consumos, usuarios, catálogo de productos, etc.) en
-[`bd/respaldo_bd_actual.sql`](bd/respaldo_bd_actual.sql). Con MySQL corriendo
-(se conecta a `root` sin contraseña en `localhost:3306` por defecto —
-cambiá eso en `application.properties` si tu entorno es distinto):
+[`bd/respaldo_bd_actual.sql`](bd/respaldo_bd_actual.sql), escrito para
+SQL Server. Se puede abrir en SSMS y ejecutar completo (F5), o desde la
+línea de comandos:
 
 ```bash
-mysql -uroot < bd/respaldo_bd_actual.sql
+sqlcmd -S localhost -U sa -C -i bd/respaldo_bd_actual.sql
 ```
 
-El script crea la base `alquiler` si no existe y carga todos los datos de una
-sola vez — no hace falta crear la base a mano ni insertar un usuario para
-poder loguearte, ya vienen incluidos.
+El script crea la base `alquiler` si no existe, **borra y vuelve a crear sus
+tablas** y carga todos los datos de una sola vez, conservando los IDs
+originales. Al final muestra una tabla de verificación con las filas
+esperadas y cargadas por tabla. No hace falta crear la base a mano ni
+insertar un usuario para poder loguearte, ya vienen incluidos.
+
+La app se conecta a `localhost:1433` con el usuario `sa` (o el de `DB_USER`)
+y la contraseña de la variable de entorno `DB_PASSWORD`, que nunca se guarda
+en el código. SQL Server tiene que aceptar autenticación de SQL Server (modo
+mixto) y conexiones TCP en el puerto 1433.
 
 **2. Usuario de prueba**
 
@@ -196,16 +203,23 @@ usuario:
 
 ```sql
 insert into usuario (activo, apellidos, contrasena, correo, es_admin, nombres, username)
-values (true, 'Musk', '$2a$12$gx4jBU180qN4ohLJiyokkuRMZpnhtVmlsVJoCQFrKIeHaXTjI5m5G', 'musk@gmail.com', true, 'Elon', 'elon');
+values (1, 'Musk', '$2a$12$gx4jBU180qN4ohLJiyokkuRMZpnhtVmlsVJoCQFrKIeHaXTjI5m5G', 'musk@gmail.com', 1, 'Elon', 'elon');
 ```
 
 **3. Arrancar la app**
 
 ```bash
-./mvnw spring-boot:run
+DB_PASSWORD='<contraseña de sa>' ./mvnw spring-boot:run
 ```
 
-La app queda en `http://localhost:8090`.
+En Windows (PowerShell):
+
+```powershell
+$env:DB_PASSWORD = '<contraseña de sa>'
+.\mvnw.cmd spring-boot:run
+```
+
+La app queda en `http://localhost:8992`.
 
 ## Con Docker
 
@@ -214,7 +228,7 @@ docker build -t sistema-hotel .
 docker run -p 8090:8090 sistema-hotel
 ```
 
-Requiere una base MySQL accesible desde el contenedor (ajustá
+Requiere una base SQL Server accesible desde el contenedor (ajustá
 `spring.datasource.url` según corresponda).
 
 ## Pruebas
@@ -232,7 +246,7 @@ Requiere una base MySQL accesible desde el contenedor (ajustá
   `ConsumoService`, `HabitacionService`, `ReservaService`, `UsuarioService`):
   repositorios mockeados, sin levantar contexto de Spring.
 - **De integración** (`ConsumoControllerTest`, `SistemahotelApplicationTests`):
-  contexto de Spring completo con MockMvc, contra MySQL real.
+  contexto de Spring completo con MockMvc, contra SQL Server real.
 
 ## Integración continua
 

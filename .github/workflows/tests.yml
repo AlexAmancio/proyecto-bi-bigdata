@@ -114,21 +114,31 @@ jobs:
     name: Pruebas de integración (controlador + contexto Spring)
     runs-on: ubuntu-latest
 
+    # Contraseña solo para el contenedor efímero de CI; no es la de ningún entorno real.
+    env:
+      DB_PASSWORD: "Ci_Pruebas_2026!"
+
     services:
-      mysql:
-        image: mysql:8.0
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_DATABASE: alquiler
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Ci_Pruebas_2026!"
         ports:
-          - 3306:3306
+          - 1433:1433
         options: >-
-          --health-cmd="mysqladmin ping"
+          --health-cmd="/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'Ci_Pruebas_2026!' -Q 'SELECT 1'"
           --health-interval=10s
           --health-timeout=5s
-          --health-retries=10
+          --health-retries=15
 
     steps:
+      - name: Crear la base alquiler
+        run: >-
+          docker exec ${{ job.services.sqlserver.id }}
+          /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P "$DB_PASSWORD"
+          -Q "IF DB_ID('alquiler') IS NULL CREATE DATABASE alquiler;"
+
       - name: Descargar el código
         uses: actions/checkout@v4
 
