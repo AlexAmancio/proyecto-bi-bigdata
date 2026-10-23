@@ -164,7 +164,7 @@ SQL Server. Se puede abrir en SSMS y ejecutar completo (F5), o desde la
 línea de comandos:
 
 ```bash
-sqlcmd -S localhost -U sa -C -f 65001 -i bd/respaldo_bd_actual.sql
+sqlcmd -S localhost -U sa -C -f 1252 -i bd/respaldo_bd_actual.sql
 ```
 
 El script **borra la base `alquiler` si existe, la vuelve a crear** y carga
