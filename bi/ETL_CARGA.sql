@@ -1,169 +1,41 @@
 -- =====================================================================
--- SCRIPT COMPLETO: DATAMART hotel_dw - Tunki Lodge (SQL Server)
--- Crea el modelo estrella y ejecuta todo el proceso ETL de una sola vez (F5).
+-- PROCESO ETL: carga del datamart hotel_dw - Tunki Lodge (SQL Server)
+-- Ejecutar con F5 después de crear_datamart.sql. Se puede volver a
+-- ejecutar: el paso 1 limpia las tablas antes de cargar.
 --
--- Requisito: la base alquiler ya creada con bd/respaldo_bd_actual.sql.
---
--- PARTE 1: Creación del entorno
---          5 dimensiones: tiempo, cliente, habitación, categoría, usuario
---          1 tabla de hechos: fact_estadia (4 medidas)
---          3 tablas de staging para los archivos planos
--- PARTE 2: Proceso ETL
---          Fuentes: base OLTP alquiler + estadias.txt, consumos.txt,
---          habitaciones.txt (ubicados en C:\txt\tunki\)
--- PARTE 3: Verificación e indicadores por mes
+-- Fuentes: base OLTP alquiler (creada con bd/respaldo_bd_actual.sql)
+--          + estadias.txt, consumos.txt, habitaciones.txt (C:\txt\tunki\)
 -- =====================================================================
 SET NOCOUNT ON
 GO
-USE master
-GO
-
--- =====================================================================
--- PARTE 1: CREACIÓN DEL ENTORNO
--- =====================================================================
-if exists (select * from sysdatabases where name='hotel_dw')
-BEGIN
-    ALTER DATABASE hotel_dw SET SINGLE_USER WITH ROLLBACK IMMEDIATE
-    DROP DATABASE hotel_dw
-END
-go
-
-create database hotel_dw
-go
 USE hotel_dw
 go
-set dateformat ymd
-go
-
--- Dimensión 1: tiempo (una fila por día, clave inteligente AAAAMMDD)
-CREATE TABLE dim_tiempo (
-    id_tiempo     INT NOT NULL,
-    fecha         DATE NOT NULL,
-    anio          INT,
-    mes           INT,
-    nombre_mes    VARCHAR(20),
-    dia           INT,
-    dia_semana    VARCHAR(15),
-    es_fin_semana BIT,
-    trimestre     INT,
-    CONSTRAINT PK_dim_tiempo PRIMARY KEY (id_tiempo)
-)
-go
-
--- Dimensión 2: cliente (zona = origen respecto a Oxapampa)
-CREATE TABLE dim_cliente (
-    id_cliente INT NOT NULL,
-    nombres    VARCHAR(255),
-    apellidos  VARCHAR(255),
-    pais       VARCHAR(255),
-    ciudad     VARCHAR(255),
-    zona       VARCHAR(20),     -- Cercana / Lima / Lejana / Extranjero
-    ocupacion  VARCHAR(255),
-    CONSTRAINT PK_dim_cliente PRIMARY KEY (id_cliente)
-)
-go
-
--- Dimensión 3: categoría de habitación
-CREATE TABLE dim_categoria (
-    id_categoria INT NOT NULL,
-    nombre       VARCHAR(100),
-    precio_base  DECIMAL(10,2),
-    CONSTRAINT PK_dim_categoria PRIMARY KEY (id_categoria)
-)
-go
-
--- Dimensión 4: habitación
-CREATE TABLE dim_habitacion (
-    id_habitacion INT NOT NULL,
-    numero        VARCHAR(10),
-    piso          INT,
-    aforo         INT,
-    CONSTRAINT PK_dim_habitacion PRIMARY KEY (id_habitacion)
-)
-go
-
--- Dimensión 5: usuario (quién registró la estadía)
-CREATE TABLE dim_usuario (
-    id_usuario INT NOT NULL,
-    nombres    VARCHAR(255),
-    apellidos  VARCHAR(255),
-    es_admin   BIT,
-    CONSTRAINT PK_dim_usuario PRIMARY KEY (id_usuario)
-)
-go
-
--- Tablas de STAGING: reciben tal cual los archivos planos (BULK INSERT)
-CREATE TABLE stg_estadia (            -- estadias.txt
-    id             INT NOT NULL PRIMARY KEY,
-    check_in       DATETIME2(0),
-    estado         VARCHAR(20),
-    cliente_id     INT,
-    habitacion_id  INT,
-    usuario_id     INT,
-    noches         INT,
-    num_huespedes  INT,
-    tarifa         DECIMAL(10,2),
-    monto_pagado   DECIMAL(10,2),
-    metodo_pago    VARCHAR(20)
-)
-go
-CREATE TABLE stg_consumo (            -- consumos.txt
-    id             INT NOT NULL PRIMARY KEY,
-    registro_id    INT,
-    descripcion    VARCHAR(255),
-    monto          DECIMAL(10,2),
-    fecha          DATETIME2(0)
-)
-go
-CREATE TABLE stg_habitacion (         -- habitaciones.txt
-    id             INT,
-    numero         VARCHAR(10),
-    piso           INT,
-    aforo          INT,
-    categoria_id   INT
-)
-go
-
--- Tabla de hechos: grano = una estadía (un registro de check-in).
--- Las 5 dimensiones se conectan directamente aquí (estrella).
-CREATE TABLE fact_estadia (
-    id_registro           INT NOT NULL,
-    id_tiempo_checkin     INT,
-    id_cliente            INT,
-    id_habitacion         INT,
-    id_categoria          INT,
-    id_usuario            INT,
-    -- 4 medidas
-    noches                INT,            -- medida 1: noches vendidas
-    cantidad_estadias     INT,            -- medida 2: cantidad (1 por fila)
-    monto_pagado          DECIMAL(10,2),  -- medida 3: dinero cobrado
-    total_consumos        DECIMAL(10,2),  -- medida 4: consumos adicionales
-    -- atributos de la estadía (para filtrar y calcular los indicadores)
-    num_huespedes         INT,
-    tarifa                DECIMAL(10,2),
-    saldo_pendiente       DECIMAL(10,2),
-    estado                VARCHAR(20),
-    metodo_pago           VARCHAR(20),
-    es_cliente_recurrente BIT,
-    es_cancelada          BIT,
-    es_no_show            BIT,
-    es_finalizada         BIT,
-    CONSTRAINT PK_fact_estadia PRIMARY KEY (id_registro),
-    CONSTRAINT FK_fact_tiempo     FOREIGN KEY (id_tiempo_checkin) REFERENCES dim_tiempo (id_tiempo),
-    CONSTRAINT FK_fact_cliente    FOREIGN KEY (id_cliente)        REFERENCES dim_cliente (id_cliente),
-    CONSTRAINT FK_fact_habitacion FOREIGN KEY (id_habitacion)     REFERENCES dim_habitacion (id_habitacion),
-    CONSTRAINT FK_fact_categoria  FOREIGN KEY (id_categoria)      REFERENCES dim_categoria (id_categoria),
-    CONSTRAINT FK_fact_usuario    FOREIGN KEY (id_usuario)        REFERENCES dim_usuario (id_usuario)
-)
-go
-
-
--- =====================================================================
--- PARTE 2: PROCESO ETL (CARGA DE TODA LA INFORMACIÓN)
--- =====================================================================
 
 -- ---------------------------------------------------------------------
--- PASO 1: Cargamos las dimensiones desde la base operativa alquiler
+-- PASO 1: Limpiamos tablas (hechos, dimensiones y staging)
+-- ---------------------------------------------------------------------
+delete from fact_estadia
+go
+delete from dim_tiempo
+go
+delete from dim_habitacion
+go
+delete from dim_categoria
+go
+delete from dim_cliente
+go
+delete from dim_usuario
+go
+truncate table stg_estadia
+go
+truncate table stg_consumo
+go
+truncate table stg_habitacion
+go
+
+
+-- ---------------------------------------------------------------------
+-- PASO 2: Cargamos las dimensiones desde la base operativa alquiler
 -- ---------------------------------------------------------------------
 USE alquiler
 go
@@ -198,7 +70,7 @@ go
 
 
 -- ---------------------------------------------------------------------
--- PASO 2: Cargamos staging de estadías (estadias.txt)
+-- PASO 3: Cargamos staging de estadías (estadias.txt)
 -- ---------------------------------------------------------------------
 USE hotel_dw
 go
@@ -213,7 +85,7 @@ go
 
 
 -- ---------------------------------------------------------------------
--- PASO 3: Cargamos staging de consumos (consumos.txt)
+-- PASO 4: Cargamos staging de consumos (consumos.txt)
 -- ---------------------------------------------------------------------
 BULK INSERT hotel_dw.dbo.stg_consumo
       FROM 'C:\txt\tunki\consumos.txt'
@@ -225,7 +97,7 @@ go
 
 
 -- ---------------------------------------------------------------------
--- PASO 4: Cargamos DIM_HABITACION desde habitaciones.txt
+-- PASO 5: Cargamos DIM_HABITACION desde habitaciones.txt
 -- ---------------------------------------------------------------------
 BULK INSERT hotel_dw.dbo.stg_habitacion
       FROM 'C:\txt\tunki\habitaciones.txt'
@@ -241,7 +113,7 @@ go
 
 
 -- ---------------------------------------------------------------------
--- PASO 5: Cargamos la dimensión tiempo (calendario completo de los
+-- PASO 6: Cargamos la dimensión tiempo (calendario completo de los
 --         años que cubren las estadías, día por día)
 -- ---------------------------------------------------------------------
 SET DATEFIRST 7   -- 1 = domingo
@@ -285,7 +157,7 @@ go
 
 
 -- ---------------------------------------------------------------------
--- PASO 6: Cargamos la FACT_ESTADIA (tabla de hechos)
+-- PASO 7: Cargamos la FACT_ESTADIA (tabla de hechos)
 --         estadías (stg_estadia) + suma de consumos (stg_consumo)
 --         + categoría de la habitación + cliente recurrente
 -- ---------------------------------------------------------------------
@@ -329,7 +201,7 @@ go
 
 
 -- =====================================================================
--- PARTE 3: VERIFICACIÓN
+-- VERIFICACIÓN
 -- =====================================================================
 
 -- Lo cargado debe coincidir con el sistema de origen
