@@ -168,9 +168,16 @@ sqlcmd -S localhost -U sa -C -f 1252 -i bd/respaldo_bd_actual.sql
 ```
 
 El script **borra la base `alquiler` si existe, la vuelve a crear** y carga
-todos los datos de una sola vez, conservando los IDs originales. Al final
-muestra cuántas filas quedaron en cada tabla. No hace falta crear la base a
-mano ni insertar un usuario para poder loguearte, ya vienen incluidos.
+todos los datos de una sola vez. Al final muestra cuántas filas quedaron en
+cada tabla. No hace falta crear la base a mano ni insertar un usuario para
+poder loguearte, ya vienen incluidos.
+
+Las estadías son **datos simulados con fines de análisis** (enero a octubre
+de 2026): 2 274 registros, 1 838 clientes y 1 600 consumos. Las reservas bajan
+mes a mes (334 en enero, 108 en octubre), la tasa de cancelación sube del 5 %
+al 22 % y la de no-show del 3 % al 9 %. Esta es la situación que analiza la
+solución de BI. Categorías, habitaciones, productos y usuarios son los del
+sistema.
 
 La app se conecta a `localhost:1433` con el usuario `sa` (o el de `DB_USER`)
 y la contraseña de la variable de entorno `DB_PASSWORD`, que nunca se guarda
