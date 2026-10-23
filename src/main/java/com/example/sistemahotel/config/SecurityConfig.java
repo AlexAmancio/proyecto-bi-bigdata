@@ -43,12 +43,20 @@ public class SecurityConfig {
         return httpSecurity
             .authorizeHttpRequests(auth -> {
                 auth.requestMatchers("/fondologin.png", "/LogoSistema.png", "/favicon.png").permitAll();
+                auth.requestMatchers("/carrusel-login/**").permitAll();
                 auth.requestMatchers("/login**").permitAll();
+                auth.requestMatchers("/login/**").permitAll();
                 // Cualquier cuenta autenticada puede ver la lista de usuarios,
                 // pero solo un administrador puede crear, editar o eliminar
                 // (evita que el staff se autopromueva a admin).
                 auth.requestMatchers(HttpMethod.GET, "/usuarios/").authenticated();
                 auth.requestMatchers("/usuarios/**").hasRole("ADMIN");
+                // Mismo criterio que usuarios: cualquiera puede ver el catálogo
+                // de productos de consumo (lo necesita para cargar consumos),
+                // pero solo un admin puede crear, editar, desactivar o eliminar
+                // productos y tocar sus precios sugeridos.
+                auth.requestMatchers(HttpMethod.GET, "/productos-consumo/").authenticated();
+                auth.requestMatchers("/productos-consumo/**").hasRole("ADMIN");
                 auth.anyRequest().authenticated();
             })
             .formLogin(formLogin -> {

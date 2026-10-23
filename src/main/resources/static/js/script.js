@@ -16,8 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
         case "habitaciones":
             elemento = document.getElementById("item-habitaciones");
             break;
+        case "ocupacion":
+            elemento = document.getElementById("item-ocupacion");
+            break;
+        case "reportes":
+            elemento = document.getElementById("item-reportes");
+            break;
         case "categorias":
             elemento = document.getElementById("item-categorias");
+            break;
+        case "productos-consumo":
+            elemento = document.getElementById("item-productos-consumo");
             break;
         case "clientes":
             elemento = document.getElementById("item-clientes");
@@ -29,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             elemento = document.getElementById("item-hoy");
             break;
         case "dashboard":
-            elemento = document.getElementById("item-dashboard");
+            elemento = document.getElementById("item-reportes");
             break;
     }
 
@@ -37,5 +46,18 @@ document.addEventListener("DOMContentLoaded", function() {
     if (elemento) {
         elemento.classList.add("active");
     }
+
+    // Evita doble submit (doble clic, doble Enter) en cualquier formulario normal:
+    // deshabilita el botón apenas se envía. No interfiere con los formularios de
+    // confirmación de borrado, que interceptan el submit con preventDefault() y
+    // lo disparan después vía form.submit(), el cual no vuelve a emitir este evento.
+    document.querySelectorAll("form:not(.form-eliminar)").forEach(function (form) {
+        form.addEventListener("submit", function () {
+            var boton = form.querySelector("button[type='submit']");
+            if (boton && !boton.disabled) {
+                boton.disabled = true;
+            }
+        });
+    });
 
 });
