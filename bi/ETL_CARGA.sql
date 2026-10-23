@@ -123,10 +123,10 @@ FROM stg_estadia
 WHILE (@inicio <= @fin)
 BEGIN
     INSERT INTO dim_tiempo
-        (id_tiempo, fecha, anio, mes, nombre_mes, dia, dia_semana, es_fin_semana, trimestre)
+        (id_tiempo, fecha, año, mes, nombre_mes, dia, dia_semana, es_fin_semana, trimestre)
     SELECT DATEPART(yyyy, @inicio) * 10000 + DATEPART(m, @inicio) * 100 + DATEPART(d, @inicio) id_tiempo,
            @inicio fecha,
-           DATEPART(yyyy, @inicio) anio,
+           DATEPART(yyyy, @inicio) año,
            DATEPART(m, @inicio) mes,
            CASE DATEPART(m, @inicio)
                 WHEN 1 THEN 'Enero'     WHEN 2 THEN 'Febrero'  WHEN 3 THEN 'Marzo'
@@ -224,7 +224,7 @@ UNION ALL SELECT 'fact_estadia', COUNT(*) FROM fact_estadia
 go
 
 -- Indicadores por mes: caída de reservas y aumento de cancelaciones
-SELECT T.anio, T.mes, T.nombre_mes,
+SELECT T.año, T.mes, T.nombre_mes,
        SUM(F.cantidad_estadias)                                              AS reservas,
        SUM(F.noches)                                                         AS noches,
        SUM(F.monto_pagado)                                                   AS monto_pagado,
@@ -233,6 +233,6 @@ SELECT T.anio, T.mes, T.nombre_mes,
        CAST(100.0 * SUM(CAST(F.es_no_show AS INT))   / SUM(F.cantidad_estadias) AS DECIMAL(5,1)) AS pct_no_show
 FROM fact_estadia F
 JOIN dim_tiempo T ON T.id_tiempo = F.id_tiempo_checkin
-GROUP BY T.anio, T.mes, T.nombre_mes
-ORDER BY T.anio, T.mes
+GROUP BY T.año, T.mes, T.nombre_mes
+ORDER BY T.año, T.mes
 go

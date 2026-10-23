@@ -31,7 +31,7 @@ go
 CREATE TABLE dim_tiempo (
     id_tiempo     INT NOT NULL,
     fecha         DATE NOT NULL,
-    anio          INT,
+    año          INT,
     mes           INT,
     nombre_mes    VARCHAR(20),
     dia           INT,
