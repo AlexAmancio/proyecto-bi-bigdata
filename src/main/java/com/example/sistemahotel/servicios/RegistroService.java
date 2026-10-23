@@ -1,14 +1,14 @@
 package com.example.sistemahotel.servicios;
 
 import java.util.Calendar;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.example.sistemahotel.interfaces.IRegistroService;
 import com.example.sistemahotel.modelos.EstadoHabitacion;
@@ -32,9 +32,36 @@ public class RegistroService implements IRegistroService {
     }
 
     @Override
-    public Page<Registro> listarPaginado(EstadoRegistro estado, Pageable pageable) {
-        return estado == null ? repositorio.findAll(pageable) : repositorio.findByEstado(estado, pageable);
+    public List<Registro> listarOrdenadoPorPrioridad(EstadoRegistro estado) {
+        List<Registro> registros = listar().stream()
+            .filter(registro -> estado == null || registro.getEstado() == estado)
+            .collect(Collectors.toList());
+        registros.sort(COMPARADOR_PRIORIDAD_OPERATIVA);
+        return registros;
     }
+
+    // 0 = vencida (activa, ya pasó el checkout estimado), 1 = activa al día,
+    // 2 = historial (finalizada/cancelada/no-show).
+    private static int prioridadOperativa(Registro registro) {
+        if (registro.getEstado() != EstadoRegistro.ACTIVA) {
+            return 2;
+        }
+        return "Vencido".equals(registro.calcularCheckoutEstimadoAmigable()) ? 0 : 1;
+    }
+
+    private static final Comparator<Registro> COMPARADOR_PRIORIDAD_OPERATIVA = (a, b) -> {
+        int prioridadA = prioridadOperativa(a);
+        int prioridadB = prioridadOperativa(b);
+        if (prioridadA != prioridadB) {
+            return Integer.compare(prioridadA, prioridadB);
+        }
+        if (prioridadA != 2) {
+            // Activas (vencidas o al día): la que se va primero, primero.
+            return a.calcularCheckoutEstimado().compareTo(b.calcularCheckoutEstimado());
+        }
+        // Historial: lo más reciente arriba.
+        return b.getCheckIn().compareTo(a.getCheckIn());
+    };
 
     @Override
     public Optional<Registro> consultarId(int id) {
@@ -48,24 +75,51 @@ public class RegistroService implements IRegistroService {
 
     @Override
     public void eliminar(int id) {
+        repositorio.findById(id).ifPresent(registro -> {
+            // Si este registro era el que tenía la habitación Ocupada, hay que
+            // liberarla antes de borrarlo: si no, queda marcada Ocupada para
+            // siempre sin ningún registro detrás que la explique, y nadie
+            // puede volver a usarla ni hacerle check-out.
+            Habitacion habitacion = registro.getHabitacion();
+            if (registro.getEstado() == EstadoRegistro.ACTIVA
+                    && habitacion != null && habitacion.getEstado() == EstadoHabitacion.OCUPADA) {
+                habitacion.setEstado(EstadoHabitacion.DISPONIBLE);
+                habitacionrepositorio.save(habitacion);
+            }
+        });
         repositorio.deleteById(id);
     }
 
-    public List<Habitacion> obtenerHabitacionesDisponibles(Date checkIn, int noches) {
+    public List<Habitacion> obtenerHabitacionesDisponibles(Date checkIn, int noches, Integer excluirRegistroId) {
         List<Habitacion> todasHabitaciones = (List<Habitacion>) habitacionrepositorio.findAll();
         List<Registro> registrosActivos = registrosActivos();
 
         Date checkOutEstimado = sumarDias(checkIn, noches);
 
         List<Habitacion> habitacionesOcupadas = registrosActivos.stream()
+            .filter(registro -> excluirRegistroId == null || registro.getId() != excluirRegistroId)
             .filter(registro -> seSuperponen(checkIn, checkOutEstimado, registro))
             .map(Registro::getHabitacion)
             .collect(Collectors.toList());
 
+        // La habitación que YA tiene asignada el registro que se está
+        // editando siempre tiene que poder elegirse de nuevo, aunque su
+        // estado físico actual (LIMPIEZA/MANTENIMIENTO) la excluiría para una
+        // reserva nueva. Si no, apenas se hace check-out (la habitación pasa
+        // a LIMPIEZA) el selector "pierde" esa habitación al editar ese mismo
+        // registro — el resumen muestra "Sin habitación elegida" y, si algo
+        // dispara una nueva búsqueda (ej. tocar las fechas), el campo oculto
+        // queda expuesto a guardarse vacío.
+        Integer habitacionActualId = excluirRegistroId == null ? null
+            : repositorio.findById(excluirRegistroId)
+                .map(r -> r.getHabitacion() != null ? r.getHabitacion().getId() : null)
+                .orElse(null);
+
         return todasHabitaciones.stream()
-            .filter(habitacion -> habitacion.getEstado() != EstadoHabitacion.MANTENIMIENTO
-                                && habitacion.getEstado() != EstadoHabitacion.LIMPIEZA)
-            .filter(habitacion -> !habitacionesOcupadas.contains(habitacion))
+            .filter(habitacion -> (habitacionActualId != null && habitacion.getId() == habitacionActualId)
+                || (habitacion.getEstado() != EstadoHabitacion.MANTENIMIENTO
+                    && habitacion.getEstado() != EstadoHabitacion.LIMPIEZA
+                    && !habitacionesOcupadas.contains(habitacion)))
             .collect(Collectors.toList());
     }
 
@@ -123,6 +177,11 @@ public class RegistroService implements IRegistroService {
             return false;
         }
         registro.setNoches(nuevasNoches);
+        // Recalcular la tarifa con las noches nuevas: si no se hace, la extensión
+        // queda cobrada al precio de las noches originales (ver precioParaFecha,
+        // misma lógica que usa el check-in para respetar temporada alta).
+        double precioPorNoche = registro.getHabitacion().getCategoria().precioParaFecha(registro.getCheckIn());
+        registro.setTarifa(precioPorNoche * nuevasNoches);
         repositorio.save(registro);
         return true;
     }
@@ -159,6 +218,20 @@ public class RegistroService implements IRegistroService {
         calendar.setTime(fecha);
         calendar.add(Calendar.DAY_OF_MONTH, dias);
         return calendar.getTime();
+    }
+
+    @Override
+    public List<Registro> buscarPorNumeroHabitacion(String query) {
+        return repositorio.findByHabitacion_NumeroContainingIgnoreCase(query);
+    }
+
+    @Override
+    public Set<Integer> idsHabitacionesOcupadasAhora(Date ahora) {
+        return registrosActivos().stream()
+            .filter(r -> r.getHabitacion() != null && r.getCheckIn() != null)
+            .filter(r -> !r.getCheckIn().after(ahora))
+            .map(r -> r.getHabitacion().getId())
+            .collect(Collectors.toSet());
     }
 
 }

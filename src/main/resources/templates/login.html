@@ -25,124 +25,216 @@
         box-sizing: border-box;
         font-family: "Outfit";
       }
-      .fondo {
-        background-image:
-          linear-gradient(115deg, rgba(20, 8, 8, 0.35) 0%, rgba(20, 8, 8, 0.05) 45%, rgba(20, 8, 8, 0.35) 100%),
-          url('./fondologin.png');
-        background-size: cover;
-        background-position: center;
+      html, body {
+        height: 100%;
+      }
+      .pagina-login {
+        display: flex;
         width: 100%;
         height: 100vh;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
-      .container {
-        width: 500px;
-        flex-shrink: 0;
-        border-radius: 22px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.92);
-        box-shadow: 0 24px 60px rgba(15, 20, 15, 0.35), 0 2px 8px rgba(15, 20, 15, 0.12);
-        backdrop-filter: blur(16px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 44px 48px 40px;
+      .foto-lateral {
+        flex: 1 1 50%;
         position: relative;
         overflow: hidden;
       }
-      .container::before {
+      .foto-lateral::after {
         content: "";
         position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 6px;
-        background: linear-gradient(90deg, #7A1618, var(--primary, #0EA968) 55%, #C89A2E);
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.5) 100%);
+        pointer-events: none;
+      }
+      .carrusel-slide {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1.4s ease;
+      }
+      .carrusel-slide.activa {
+        opacity: 1;
+      }
+      .clima-widget {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        max-width: 230px;
+      }
+      .clima-chip {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 14px;
+        border-radius: 16px;
+        border: none;
+        background: rgba(20, 15, 12, 0.55);
+        backdrop-filter: blur(8px);
+        color: #FFF;
+        cursor: pointer;
+        text-align: left;
+      }
+      .clima-chip:hover {
+        background: rgba(20, 15, 12, 0.7);
+      }
+      .clima-icono {
+        display: flex;
+        flex-shrink: 0;
+      }
+      .clima-chip-texto {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+      .clima-temp {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .clima-ciudad {
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .clima-chevron {
+        margin-left: auto;
+        flex-shrink: 0;
+        transition: transform .2s ease;
+      }
+      .clima-widget.abierto .clima-chevron {
+        transform: rotate(180deg);
+      }
+      .clima-detalle {
+        max-height: 0;
+        min-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        width: 230px;
+        border-radius: 14px;
+        background: rgba(20, 15, 12, 0.68);
+        backdrop-filter: blur(8px);
+        transition: max-height .3s ease, opacity .2s ease;
+      }
+      .clima-widget.abierto .clima-detalle {
+        max-height: 180px;
+        opacity: 1;
+      }
+      .clima-escena {
+        position: relative;
+        height: 86px;
+        border-radius: 14px 14px 0 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #7C8A99 0%, #AEB8C2 100%);
+      }
+      .clima-escena-icono {
+        position: relative;
+        z-index: 1;
+        filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+      }
+      .clima-montanas {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 60%;
+      }
+      .clima-texto {
+        padding: 10px 16px 12px;
+      }
+      .clima-descripcion {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .clima-actualizado {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        margin-top: 4px;
+      }
+      .panel-formulario {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FDF6EF;
       }
       form {
         width: 100%;
       }
+      .container {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .login-logo {
         display: block;
         width: auto;
-        max-width: 220px;
-        height: 68px;
+        max-width: 120px;
+        height: 40px;
         object-fit: contain;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(122, 22, 24, 0.3);
-        margin: 0 auto 18px;
+        margin: 0 auto 14px;
       }
       .title {
         color: #14181F;
-        font-family: 'Outfit';
-        font-size: 32px;
-        font-style: normal;
+        font-size: 26px;
         font-weight: 700;
-        line-height: normal;
         text-align: center;
       }
-      /* for */
-      /* Estilos de boton de login */
+      .subtitulo {
+        color: #7A7268;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 6px;
+      }
       button[type="submit"] {
         width: 100%;
-        padding: 15px 50px;
+        padding: 14px 50px;
         border-radius: 10px;
-        background: #0EA968;
+        background: #7A1618;
         border: none;
         color: #FFF;
-        font-family: 'Outfit';
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
-        line-height: normal;
         cursor: pointer;
-        box-shadow: 0 8px 20px rgba(14, 169, 104, 0.35);
-        transition: background-color .15s ease, transform .1s ease, box-shadow .15s ease;
+        transition: background-color .15s ease;
       }
       button[type="submit"]:hover:not(:disabled) {
-        background: #0C8F58;
-        transform: translateY(-1px);
-        box-shadow: 0 10px 24px rgba(14, 169, 104, 0.42);
+        background: #611113;
       }
       .container input {
-        font-size: 16px;
+        font-size: 15px;
         border-radius: 10px;
         padding: 12px 14px;
-        background: #F0F1F3;
-        border-style: none;
+        background: #FFFFFF;
         width: 100%;
-        margin-top: 8px;
-        border: 1.5px solid transparent;
+        margin-top: 6px;
+        border: 1.5px solid #E6DCD0;
         outline: none;
-        transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+        transition: border-color .15s ease, box-shadow .15s ease;
       }
       .container input:focus {
-        background: #ffffff;
-        border-color: #0EA968;
-        box-shadow: 0 0 0 3px rgba(14, 169, 104, 0.15);
+        border-color: #7A1618;
+        box-shadow: 0 0 0 3px rgba(122, 22, 24, 0.12);
       }
-
       .container label {
-        font-size: 14px;
-        font-weight: 600;
-        color: #3A4048;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
+        font-size: 13.5px;
+        font-weight: 500;
+        color: #5A5248;
       }
       .campos {
         display: flex;
         flex-direction: column;
-        gap: 18px;
-      }
-      .brand {
-        text-align: center;
-        color: #7A1618;
-        font-family: 'Outfit';
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        margin-bottom: 4px;
+        gap: 14px;
       }
       .campo-password {
         position: relative;
@@ -153,7 +245,7 @@
       .toggle-password {
         position: absolute;
         right: 12px;
-        top: 42px;
+        top: 38px;
         background: none;
         border: none;
         cursor: pointer;
@@ -164,10 +256,10 @@
       .campo-recuerdame {
         display: flex;
         align-items: center;
-        gap: 8px;
+        justify-content: space-between;
       }
       .campo-recuerdame label {
-        font-size: 15px;
+        font-size: 14px;
         cursor: pointer;
       }
       .campo-recuerdame input {
@@ -175,117 +267,249 @@
         margin-top: 0;
         cursor: pointer;
       }
+      .campo-recuerdame > div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .olvide-link {
+        font-size: 13.5px;
+        color: #7A1618;
+        font-weight: 600;
+        text-decoration: none;
+      }
       button[type="submit"]:disabled {
         opacity: 0.7;
         cursor: not-allowed;
       }
-      [data-theme="dark"] .container {
-        background: rgba(23, 27, 34, 0.92);
-        border-color: rgba(255, 255, 255, 0.08);
+      @media (max-width: 860px) {
+        .foto-lateral { display: none; }
+        .panel-formulario { flex: 1 1 100%; }
+      }
+      [data-theme="dark"] .panel-formulario {
+        background: #181512;
       }
       [data-theme="dark"] .title {
         color: #EDEFF2;
       }
-      [data-theme="dark"] .container label,
-      [data-theme="dark"] .campo-recuerdame label {
-        color: #9BA3AF;
+      [data-theme="dark"] .subtitulo {
+        color: #9B9388;
+      }
+      [data-theme="dark"] .container label {
+        color: #B7AFA3;
       }
       [data-theme="dark"] .container input {
-        background: #232832;
+        background: #241F1A;
         color: #EDEFF2;
-        border-color: transparent;
+        border-color: #3A332B;
       }
       [data-theme="dark"] .container input:focus {
-        background: #1c2028;
-        border-color: #22C77D;
-        box-shadow: 0 0 0 3px rgba(34, 199, 125, 0.18);
+        border-color: #C0392B;
+        box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.18);
       }
       [data-theme="dark"] .toggle-password svg {
-        stroke: #9BA3AF;
+        stroke: #9B9388;
       }
       [data-theme="dark"] button[type="submit"] {
-        background: #22C77D;
-        color: #06170F;
+        background: #C0392B;
       }
       [data-theme="dark"] button[type="submit"]:hover:not(:disabled) {
-        background: #34D68F;
+        background: #A5301F;
       }
     </style>
 
   </head>
   <body>
 
-    
-
-    <section class="fondo" >
-      <div class="container">
-        <form th:action="@{/login}" method="post" id="loginForm">
-          <img class="login-logo" th:src="@{/LogoSistema.png}" alt="Hoteles Tunki" />
-          <p class="brand">Estadía</p>
-          <h5
-            class="title"
-            style="letter-spacing: -0.01em; margin-bottom: 4px;"
-          >
-            Inicia Sesión
-          </h5>
-                  <!-- Mostrar mensaje de error si está presente en la URL -->
-        <div th:if="${param.error}" style="color: red; font-size: 14px; text-align: center" >
-          <p th:text="${param.error}"></p>
-          <span id="error-details"></span>
-        </div>
-          <div class="campos" style="margin-top: 50px;">
-            <div class="campo">
-              <label for="username">Nombre de Usuario</label>
-              <input
-                name="username"
-                type="text"
-                id="username"
-                placeholder="Ingresa tu nombre de usuario"
-                autocomplete="username"
-                autofocus
-              />
+    <section class="pagina-login">
+      <div class="foto-lateral">
+        <div class="carrusel-slide activa" th:style="'background-image:url(' + @{/carrusel-login/foto-1.jpg} + ')'"></div>
+        <div class="carrusel-slide" th:style="'background-image:url(' + @{/carrusel-login/foto-4.jpg} + ')'"></div>
+        <div class="carrusel-slide" th:style="'background-image:url(' + @{/carrusel-login/foto-2.jpg} + ')'"></div>
+        <div class="carrusel-slide" th:style="'background-image:url(' + @{/carrusel-login/foto-3.jpg} + ')'"></div>
+        <div class="clima-widget" id="climaWidget">
+          <button type="button" class="clima-chip" id="climaChip">
+            <span class="clima-icono" id="climaIcono"></span>
+            <span class="clima-chip-texto">
+              <span class="clima-temp" id="climaTemp">Oxapampa</span>
+              <span class="clima-ciudad">Clima ahora</span>
+            </span>
+            <svg class="clima-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="clima-detalle" id="climaDetalle">
+            <div class="clima-escena" id="climaEscena">
+              <div class="clima-escena-icono" id="climaEscenaIcono"></div>
+              <svg class="clima-montanas" viewBox="0 0 300 50" preserveAspectRatio="none">
+                <path d="M0 50 L35 18 L65 40 L100 8 L140 36 L175 14 L210 38 L245 20 L280 44 L300 32 L300 50 Z" fill="rgba(10,10,10,0.4)"></path>
+              </svg>
             </div>
-            
-
-            <div class="campo campo-password">
-              <label for="password">Contraseña</label>
-              <input
-                name="password"
-                type="password"
-                id="password"
-                placeholder="Ingresa tu contraseña"
-                autocomplete="current-password"
-              />
-              <button type="button" class="toggle-password" id="togglePassword" aria-label="Mostrar contraseña" tabindex="-1">
-                <svg id="eyeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-              </button>
-            </div>
-
-            <div class="campo campo-recuerdame">
-              <input type="checkbox" name="remember-me" id="remember-me" />
-              <label for="remember-me">Recuérdame</label>
-            </div>
-
-            <div class="campo">
-
-              <button
-                class="btn btn-dark btn-lg btn-block"
-                type="submit"
-                id="btnSubmitLogin"
-              >
-                Iniciar Sesión
-              </button>
+            <div class="clima-texto">
+              <p class="clima-descripcion" id="climaDescripcion">Consultando...</p>
+              <p class="clima-actualizado" id="climaActualizado"></p>
             </div>
           </div>
-        </form>
+        </div>
+      </div>
+      <div class="panel-formulario">
+        <div class="container">
+          <form th:action="@{/login}" method="post" id="loginForm">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+            <img class="login-logo" th:src="@{/LogoSistema.png}" alt="Hoteles Tunki" />
+            <h5 class="title">Bienvenido a Tunki</h5>
+            <p class="subtitulo">Ingresa al sistema de gestión hotelera</p>
+
+            <!-- Mostrar mensaje de error si está presente en la URL -->
+            <div th:if="${param.error}" style="color: #C0392B; font-size: 14px; text-align: center; margin-top: 14px;">
+              <p th:text="${param.error}"></p>
+              <span id="error-details"></span>
+            </div>
+
+            <div class="campos" style="margin-top: 26px;">
+              <div class="campo">
+                <label for="username">Usuario</label>
+                <input
+                  name="username"
+                  type="text"
+                  id="username"
+                  placeholder="Ingresa tu nombre de usuario"
+                  autocomplete="username"
+                  autofocus
+                />
+              </div>
+
+              <div class="campo campo-password">
+                <label for="password">Contraseña</label>
+                <input
+                  name="password"
+                  type="password"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  autocomplete="current-password"
+                />
+                <button type="button" class="toggle-password" id="togglePassword" aria-label="Mostrar contraseña" tabindex="-1">
+                  <svg id="eyeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A5248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="campo campo-recuerdame">
+                <div>
+                  <input type="checkbox" name="remember-me" id="remember-me" />
+                  <label for="remember-me">Recuérdame</label>
+                </div>
+                <a th:href="@{/login/olvide-contrasena}" class="olvide-link">¿Olvidaste tu contraseña?</a>
+              </div>
+
+              <div class="campo">
+                <button
+                  class="btn btn-dark btn-lg btn-block"
+                  type="submit"
+                  id="btnSubmitLogin"
+                >
+                  Iniciar Sesión
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
 
     <script>
+      // Carrusel de fotos reales de Oxapampa / Tunki Lodge, con transición automática.
+      const carruselSlides = document.querySelectorAll(".carrusel-slide");
+      let carruselActual = 0;
+      setInterval(() => {
+        carruselSlides[carruselActual].classList.remove("activa");
+        carruselActual = (carruselActual + 1) % carruselSlides.length;
+        carruselSlides[carruselActual].classList.add("activa");
+      }, 5000);
+
+      // Clima de Oxapampa (donde está ubicado el hotel), vía Open-Meteo (gratis, sin API key).
+      const CLIMA_COLORES = {
+        sol: "#FFC857",
+        nublado: "#D8DEE6",
+        niebla: "#D8DEE6",
+        lluvia: "#6CB4EE",
+        nieve: "#D8DEE6",
+        tormenta: "#F4A259",
+      };
+
+      const CLIMA_FONDOS = {
+        sol: "linear-gradient(180deg, #6EC6FF 0%, #FFD56B 65%, #D98A3D 100%)",
+        nublado: "linear-gradient(180deg, #7C8A99 0%, #AEB8C2 100%)",
+        niebla: "linear-gradient(180deg, #9AA5AD 0%, #C9D1D6 100%)",
+        lluvia: "linear-gradient(180deg, #3B4A5A 0%, #5C7083 100%)",
+        nieve: "linear-gradient(180deg, #CBD8E3 0%, #EAF2F8 100%)",
+        tormenta: "linear-gradient(180deg, #232B36 0%, #4A4F5C 100%)",
+      };
+
+      function iconoSvg(tipo, tamano) {
+        const color = CLIMA_COLORES[tipo] || "#FFF";
+        const atributos = 'width="' + tamano + '" height="' + tamano + '" viewBox="0 0 24 24" fill="none" stroke="' + color + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+        const formas = {
+          sol: '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>',
+          nublado: '<path d="M17.5 19H8a5 5 0 1 1 1.9-9.63A6 6 0 0 1 21 10.5a4.5 4.5 0 0 1-3.5 8.5z"></path>',
+          niebla: '<path d="M5 5h14M3 9h18M5 13h14M3 17h18M5 21h14"></path>',
+          lluvia: '<path d="M16 13H8a5 5 0 1 1 1.9-9.63A6 6 0 0 1 20 10.5a4.5 4.5 0 0 1-4 2.5z"></path><path d="M8 19l-1 2M12 19l-1 2M16 19l-1 2"></path>',
+          nieve: '<path d="M16 13H8a5 5 0 1 1 1.9-9.63A6 6 0 0 1 20 10.5a4.5 4.5 0 0 1-4 2.5z"></path><path d="M8 19h.01M12 19h.01M16 19h.01M8 22h.01M12 22h.01M16 22h.01"></path>',
+          tormenta: '<path d="M16 13H8a5 5 0 1 1 1.9-9.63A6 6 0 0 1 20 10.5a4.5 4.5 0 0 1-4 2.5z"></path><polyline points="13 15 10 20 14 20 11 24"></polyline>',
+        };
+        return '<svg ' + atributos + '>' + (formas[tipo] || formas.nublado) + '</svg>';
+      }
+
+      function interpretarClima(codigo) {
+        if (codigo === 0) return { icono: "sol", descripcion: "Despejado" };
+        if (codigo <= 2) return { icono: "sol", descripcion: "Parcialmente nublado" };
+        if (codigo === 3) return { icono: "nublado", descripcion: "Nublado" };
+        if (codigo === 45 || codigo === 48) return { icono: "niebla", descripcion: "Neblina" };
+        if (codigo >= 51 && codigo <= 67) return { icono: "lluvia", descripcion: "Lluvia ligera" };
+        if (codigo >= 71 && codigo <= 77) return { icono: "nieve", descripcion: "Nieve" };
+        if (codigo >= 80 && codigo <= 82) return { icono: "lluvia", descripcion: "Chubascos" };
+        if (codigo >= 95) return { icono: "tormenta", descripcion: "Tormenta eléctrica" };
+        return { icono: "nublado", descripcion: "Variable" };
+      }
+
+      const climaWidget = document.querySelector("#climaWidget");
+      const climaChip = document.querySelector("#climaChip");
+      const climaIcono = document.querySelector("#climaIcono");
+      const climaTemp = document.querySelector("#climaTemp");
+      const climaEscena = document.querySelector("#climaEscena");
+      const climaEscenaIcono = document.querySelector("#climaEscenaIcono");
+      const climaDescripcion = document.querySelector("#climaDescripcion");
+      const climaActualizado = document.querySelector("#climaActualizado");
+
+      climaChip.addEventListener("click", () => {
+        climaWidget.classList.toggle("abierto");
+      });
+
+      (async () => {
+        try {
+          const respuesta = await fetch(
+            "https://api.open-meteo.com/v1/forecast?latitude=-10.5767&longitude=-75.4012&current_weather=true"
+          );
+          const datos = await respuesta.json();
+          const temperatura = Math.round(datos.current_weather.temperature);
+          const { icono, descripcion } = interpretarClima(datos.current_weather.weathercode);
+          const hora = new Date(datos.current_weather.time).toLocaleTimeString("es-PE", { hour: "2-digit", minute: "2-digit" });
+
+          climaIcono.innerHTML = iconoSvg(icono, 22);
+          climaEscenaIcono.innerHTML = iconoSvg(icono, 38);
+          climaEscena.style.background = CLIMA_FONDOS[icono];
+          climaTemp.textContent = "Oxapampa, " + temperatura + "°C";
+          climaDescripcion.textContent = descripcion;
+          climaActualizado.textContent = "Actualizado a las " + hora;
+        } catch (error) {
+          climaTemp.textContent = "Oxapampa";
+          climaDescripcion.textContent = "No se pudo consultar el clima";
+        }
+      })();
+
       const submitButton = document.querySelector("#btnSubmitLogin");
 
       // Mostrar/ocultar contraseña
@@ -354,7 +578,7 @@
           const now = new Date();
           const unblockTime = new Date(blockedUntil);
           if (now < unblockTime) {
-              console.log("Login bloqueado. Intente después de:", unblockTime); 
+              console.log("Login bloqueado. Intente después de:", unblockTime);
               document.querySelector("#error-details").textContent = "Bloqueado hasta: " + unblockTime;
               submitButton.disabled = true;
               submitButton.style.backgroundColor = "gray";
@@ -363,7 +587,7 @@
               submitButton.disable = false;
               submitButton.style.backgroundColor = "";
               localStorage.removeItem('loginBlockedUntil');
-              
+
               // Obtiene la URL actual
               let currentUrl = window.location.href;
 

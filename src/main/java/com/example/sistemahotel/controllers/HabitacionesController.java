@@ -22,7 +22,7 @@ import com.example.sistemahotel.interfaces.ICategoriaService;
 import com.example.sistemahotel.interfaces.IHabitacionService;
 import com.example.sistemahotel.modelos.EstadoHabitacion;
 import com.example.sistemahotel.modelos.Habitacion;
-import com.example.sistemahotel.servicios.RegistroService;
+import com.example.sistemahotel.interfaces.IRegistroService;
 
 
 @RequestMapping("/habitaciones/")
@@ -36,11 +36,38 @@ public class HabitacionesController {
     @Autowired
     private ICategoriaService categoriaService;
     @Autowired
-    private RegistroService registroService;
+    private IRegistroService registroService;
     
     @GetMapping("/")
     public String listar(Model model) {
-        model.addAttribute("listaHabitaciones", service.listar());
+        java.util.List<Habitacion> todas = service.listar();
+
+        java.util.Map<Integer, java.util.List<Habitacion>> habitacionesPorPiso = new java.util.TreeMap<>();
+        todas.stream()
+            .sorted(java.util.Comparator.comparing(Habitacion::getNumero))
+            .forEach(h -> habitacionesPorPiso
+                .computeIfAbsent(h.getPiso(), k -> new java.util.ArrayList<>())
+                .add(h));
+        model.addAttribute("habitacionesPorPiso", habitacionesPorPiso);
+        model.addAttribute("listaCategorias", categoriaService.listar());
+
+        // Resumen rápido de disponibilidad para que recepción vea el estado
+        // general del hotel sin tener que contar manualmente. "Ocupadas" sale
+        // de los registros ACTIVA cuyo check-in ya pasó, no de
+        // habitacion.estado — ese campo es un espejo que puede quedar
+        // desincronizado (ver DashboardController.dashboard()).
+        java.util.Set<Integer> idsOcupadasAhora = registroService.idsHabitacionesOcupadasAhora(new java.util.Date());
+
+        long totalLimpieza = todas.stream()
+            .filter(h -> !idsOcupadasAhora.contains(h.getId()) && h.getEstado() == EstadoHabitacion.LIMPIEZA)
+            .count();
+        long totalMantenimiento = todas.stream()
+            .filter(h -> !idsOcupadasAhora.contains(h.getId()) && h.getEstado() == EstadoHabitacion.MANTENIMIENTO)
+            .count();
+        model.addAttribute("totalOcupadas", (long) idsOcupadasAhora.size());
+        model.addAttribute("totalLimpieza", totalLimpieza);
+        model.addAttribute("totalMantenimiento", totalMantenimiento);
+        model.addAttribute("totalDisponibles", todas.size() - idsOcupadasAhora.size() - totalLimpieza - totalMantenimiento);
 
         return carpeta + "habitacion-lista";
     }
@@ -128,12 +155,13 @@ public class HabitacionesController {
     @GetMapping("/disponibles")
     public ResponseEntity<List<Habitacion>> getHabitacionesDisponibles(
             @RequestParam String checkIn,
-            @RequestParam int noches) {
+            @RequestParam int noches,
+            @RequestParam(required = false) Integer excluirRegistroId) {
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
             Date checkInDate = sdf.parse(checkIn);
 
-            List<Habitacion> habitacionesDisponibles = registroService.obtenerHabitacionesDisponibles(checkInDate, noches);
+            List<Habitacion> habitacionesDisponibles = registroService.obtenerHabitacionesDisponibles(checkInDate, noches, excluirRegistroId);
             return ResponseEntity.ok(habitacionesDisponibles);
         } catch (ParseException e) {
             return ResponseEntity.badRequest().build();
