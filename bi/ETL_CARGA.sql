@@ -42,17 +42,17 @@ go
 
 -- Dimensión categoría
 INSERT INTO hotel_dw.dbo.dim_categoria (id_categoria, nombre, precio_base)
-SELECT id, LTRIM(RTRIM(nombre)), precio
+SELECT id, nombre, precio
 FROM dbo.categoria
 go
 
--- Dimensión cliente (limpieza de espacios y zona según la ciudad de origen)
+-- Dimensión cliente (zona según la ciudad de origen)
 INSERT INTO hotel_dw.dbo.dim_cliente (id_cliente, nombres, apellidos, pais, ciudad, zona, ocupacion)
 SELECT id,
-       LTRIM(RTRIM(nombres)),
-       LTRIM(RTRIM(apellidos)),
-       LTRIM(RTRIM(pais)),
-       LTRIM(RTRIM(ciudad)),
+       nombres,
+       apellidos,
+       pais,
+       ciudad,
        CASE WHEN pais <> 'Perú' THEN 'Extranjero'
             WHEN ciudad = 'Lima' THEN 'Lima'
             WHEN ciudad IN ('Huancayo', 'La Merced', 'Huánuco', 'Cerro de Pasco', 'Tarma', 'Oxapampa') THEN 'Cercana'
@@ -64,7 +64,7 @@ go
 
 -- Dimensión usuario
 INSERT INTO hotel_dw.dbo.dim_usuario (id_usuario, nombres, apellidos, es_admin)
-SELECT id, LTRIM(RTRIM(nombres)), LTRIM(RTRIM(ISNULL(apellidos, ''))), es_admin
+SELECT id, nombres, apellidos, es_admin
 FROM dbo.usuario
 go
 
@@ -107,28 +107,24 @@ BULK INSERT hotel_dw.dbo.stg_habitacion
 go
 
 INSERT INTO dim_habitacion (id_habitacion, numero, piso, aforo)
-SELECT id, LTRIM(RTRIM(numero)), piso, aforo
+SELECT id, numero, piso, aforo
 FROM stg_habitacion
 go
 
 
 -- ---------------------------------------------------------------------
--- PASO 6: Cargamos la dimensión tiempo (calendario completo de los
---         años que cubren las estadías, día por día)
+-- PASO 6: Cargamos la dimensión tiempo (día por día, desde el primer
+--         hasta el último check-in)
 -- ---------------------------------------------------------------------
-SET DATEFIRST 7   -- 1 = domingo
-go
-
 DECLARE @inicio DATE, @fin DATE
-SELECT @inicio = DATEFROMPARTS(YEAR(MIN(check_in)), 1, 1),
-       @fin    = DATEFROMPARTS(YEAR(MAX(check_in)), 12, 31)
+SELECT @inicio = MIN(CAST(check_in AS DATE)), @fin = MAX(CAST(check_in AS DATE))
 FROM stg_estadia
 
 WHILE (@inicio <= @fin)
 BEGIN
     INSERT INTO dim_tiempo
         (id_tiempo, fecha, anio, mes, nombre_mes, dia, dia_semana, es_fin_semana, trimestre)
-    SELECT CONVERT(INT, CONVERT(VARCHAR(8), @inicio, 112)) id_tiempo,
+    SELECT DATEPART(yyyy, @inicio) * 10000 + DATEPART(m, @inicio) * 100 + DATEPART(d, @inicio) id_tiempo,
            @inicio fecha,
            DATEPART(yyyy, @inicio) anio,
            DATEPART(m, @inicio) mes,
@@ -175,19 +171,25 @@ SELECT E.id,
        D_US.id_usuario,
        E.noches,
        1                                                                  AS cantidad_estadias,
-       ISNULL(E.monto_pagado, 0)                                          AS monto_pagado,
-       ISNULL(C.total_consumos, 0)                                        AS total_consumos,
+       E.monto_pagado,
+       -- estadía sin consumos: 0
+       CASE WHEN C.total_consumos IS NULL THEN 0 ELSE C.total_consumos END   AS total_consumos,
        E.num_huespedes,
        E.tarifa,
-       E.tarifa + ISNULL(C.total_consumos, 0) - ISNULL(E.monto_pagado, 0) AS saldo_pendiente,
-       LTRIM(RTRIM(E.estado)),
-       LTRIM(RTRIM(E.metodo_pago)),
+       E.tarifa
+         + CASE WHEN C.total_consumos IS NULL THEN 0 ELSE C.total_consumos END
+         - E.monto_pagado                                                    AS saldo_pendiente,
+       E.estado,
+       E.metodo_pago,
        -- recurrente: el cliente ya tenía una reserva anterior a esta
-       CASE WHEN ROW_NUMBER() OVER (PARTITION BY E.cliente_id ORDER BY E.check_in, E.id) > 1
-            THEN 1 ELSE 0 END                                             AS es_cliente_recurrente,
-       CASE WHEN LTRIM(RTRIM(E.estado)) = 'CANCELADA'  THEN 1 ELSE 0 END,
-       CASE WHEN LTRIM(RTRIM(E.estado)) = 'NO_SHOW'    THEN 1 ELSE 0 END,
-       CASE WHEN LTRIM(RTRIM(E.estado)) = 'FINALIZADA' THEN 1 ELSE 0 END
+       CASE WHEN EXISTS (SELECT * FROM stg_estadia A
+                         WHERE A.cliente_id = E.cliente_id
+                           AND (A.check_in < E.check_in
+                                OR (A.check_in = E.check_in AND A.id < E.id)))
+            THEN 1 ELSE 0 END                                                AS es_cliente_recurrente,
+       CASE WHEN E.estado = 'CANCELADA'  THEN 1 ELSE 0 END,
+       CASE WHEN E.estado = 'NO_SHOW'    THEN 1 ELSE 0 END,
+       CASE WHEN E.estado = 'FINALIZADA' THEN 1 ELSE 0 END
 FROM stg_estadia E
 LEFT JOIN (SELECT registro_id, SUM(monto) AS total_consumos
            FROM stg_consumo
