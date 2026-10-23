@@ -1,0 +1,1601 @@
+id|registro_id|descripcion|monto|fecha
+1|1|Room service - Desayuno a la habitación|28.00|2026-01-02 18:00:00
+2|1|Lavandería|28.00|2026-01-02 20:15:00
+3|1|Toalla dañada - reposición|45.00|2026-01-02 08:30:00
+4|6|Lavandería|28.00|2026-01-02 16:00:00
+5|8|Minibar|20.00|2026-01-01 13:00:00
+6|12|Minibar|20.00|2026-01-02 09:45:00
+7|16|Room service - Almuerzo o cena|40.00|2026-01-04 12:45:00
+8|16|Lavandería|28.00|2026-01-03 22:45:00
+9|18|Toalla dañada - reposición|45.00|2026-01-05 16:30:00
+10|19|Room service - Almuerzo o cena|40.00|2026-01-03 11:00:00
+11|25|Room service - Almuerzo o cena|40.00|2026-01-03 19:45:00
+12|37|Room service - Desayuno a la habitación|28.00|2026-01-03 13:30:00
+13|38|Room service - Almuerzo o cena|40.00|2026-01-03 17:30:00
+14|44|Minibar|20.00|2026-01-04 17:30:00
+15|45|Room service - Almuerzo o cena|40.00|2026-01-04 11:45:00
+16|45|Room service - Desayuno a la habitación|28.00|2026-01-04 17:00:00
+17|45|Minibar|20.00|2026-01-04 09:15:00
+18|47|Minibar|20.00|2026-01-04 17:30:00
+19|47|Lavandería|28.00|2026-01-04 11:30:00
+20|47|Minibar|20.00|2026-01-05 14:00:00
+21|53|Minibar|20.00|2026-01-06 14:15:00
+22|54|Room service - Desayuno a la habitación|28.00|2026-01-05 12:45:00
+23|54|Minibar|20.00|2026-01-06 21:45:00
+24|54|Room service - Almuerzo o cena|40.00|2026-01-05 12:00:00
+25|55|Room service - Almuerzo o cena|40.00|2026-01-07 12:30:00
+26|55|Minibar|20.00|2026-01-07 16:00:00
+27|56|Room service - Almuerzo o cena|40.00|2026-01-05 22:45:00
+28|56|Room service - Desayuno a la habitación|28.00|2026-01-05 12:00:00
+29|56|Room service - Desayuno a la habitación|28.00|2026-01-05 15:45:00
+30|58|Room service - Almuerzo o cena|40.00|2026-01-07 09:15:00
+31|59|Room service - Desayuno a la habitación|28.00|2026-01-06 17:45:00
+32|59|Minibar|20.00|2026-01-06 11:15:00
+33|59|Room service - Almuerzo o cena|40.00|2026-01-06 19:45:00
+34|60|Room service - Desayuno a la habitación|28.00|2026-01-08 14:15:00
+35|60|Room service - Almuerzo o cena|40.00|2026-01-07 15:00:00
+36|60|Minibar|20.00|2026-01-06 18:00:00
+37|62|Minibar|20.00|2026-01-06 20:30:00
+38|63|Minibar|20.00|2026-01-07 13:15:00
+39|63|Toalla dañada - reposición|45.00|2026-01-08 12:45:00
+40|67|Room service - Desayuno a la habitación|28.00|2026-01-07 15:45:00
+41|67|Lavandería|28.00|2026-01-08 19:00:00
+42|67|Minibar|20.00|2026-01-07 17:45:00
+43|67|Room service - Desayuno a la habitación|28.00|2026-01-07 22:30:00
+44|70|Room service - Almuerzo o cena|40.00|2026-01-08 13:45:00
+45|72|Room service - Desayuno a la habitación|28.00|2026-01-09 19:15:00
+46|74|Minibar|20.00|2026-01-08 16:00:00
+47|74|Minibar|20.00|2026-01-08 17:30:00
+48|75|Room service - Desayuno a la habitación|28.00|2026-01-08 09:15:00
+49|75|Minibar|20.00|2026-01-08 21:15:00
+50|77|Minibar|20.00|2026-01-10 10:30:00
+51|77|Minibar|20.00|2026-01-08 08:15:00
+52|77|Minibar|20.00|2026-01-09 11:30:00
+53|81|Room service - Desayuno a la habitación|28.00|2026-01-12 08:15:00
+54|81|Room service - Almuerzo o cena|40.00|2026-01-11 11:30:00
+55|81|Room service - Almuerzo o cena|40.00|2026-01-11 08:45:00
+56|83|Room service - Desayuno a la habitación|28.00|2026-01-09 16:00:00
+57|84|Room service - Desayuno a la habitación|28.00|2026-01-10 09:15:00
+58|84|Minibar|20.00|2026-01-10 13:45:00
+59|90|Room service - Almuerzo o cena|40.00|2026-01-09 21:30:00
+60|90|Room service - Desayuno a la habitación|28.00|2026-01-09 08:00:00
+61|90|Minibar|20.00|2026-01-11 11:30:00
+62|94|Room service - Desayuno a la habitación|28.00|2026-01-10 18:15:00
+63|98|Room service - Desayuno a la habitación|28.00|2026-01-10 17:30:00
+64|103|Minibar|20.00|2026-01-10 22:30:00
+65|105|Room service - Desayuno a la habitación|28.00|2026-01-10 14:00:00
+66|105|Room service - Almuerzo o cena|40.00|2026-01-11 11:00:00
+67|105|Room service - Almuerzo o cena|40.00|2026-01-10 08:45:00
+68|106|Minibar|20.00|2026-01-10 10:00:00
+69|108|Room service - Almuerzo o cena|40.00|2026-01-10 22:45:00
+70|108|Lavandería|28.00|2026-01-10 19:15:00
+71|108|Room service - Almuerzo o cena|40.00|2026-01-10 19:45:00
+72|108|Minibar|20.00|2026-01-10 20:00:00
+73|113|Lavandería|28.00|2026-01-11 09:00:00
+74|113|Room service - Desayuno a la habitación|28.00|2026-01-11 22:00:00
+75|113|Room service - Almuerzo o cena|40.00|2026-01-11 19:45:00
+76|113|Room service - Almuerzo o cena|40.00|2026-01-11 10:00:00
+77|114|Room service - Desayuno a la habitación|28.00|2026-01-13 20:30:00
+78|120|Room service - Desayuno a la habitación|28.00|2026-01-12 08:45:00
+79|120|Lavandería|28.00|2026-01-12 10:45:00
+80|120|Minibar|20.00|2026-01-13 15:45:00
+81|120|Room service - Almuerzo o cena|40.00|2026-01-13 13:45:00
+82|121|Room service - Desayuno a la habitación|28.00|2026-01-15 21:00:00
+83|121|Minibar|20.00|2026-01-14 16:30:00
+84|127|Lavandería|28.00|2026-01-14 16:30:00
+85|127|Room service - Desayuno a la habitación|28.00|2026-01-14 12:00:00
+86|131|Room service - Almuerzo o cena|40.00|2026-01-12 13:45:00
+87|131|Minibar|20.00|2026-01-12 15:00:00
+88|132|Minibar|20.00|2026-01-14 09:15:00
+89|132|Minibar|20.00|2026-01-14 12:00:00
+90|132|Room service - Desayuno a la habitación|28.00|2026-01-16 14:15:00
+91|133|Room service - Desayuno a la habitación|28.00|2026-01-16 08:45:00
+92|137|Minibar|20.00|2026-01-14 13:00:00
+93|138|Lavandería|28.00|2026-01-15 08:00:00
+94|139|Minibar|20.00|2026-01-14 09:30:00
+95|139|Minibar|20.00|2026-01-14 18:45:00
+96|140|Room service - Desayuno a la habitación|28.00|2026-01-13 14:15:00
+97|143|Minibar|20.00|2026-01-14 14:00:00
+98|143|Room service - Desayuno a la habitación|28.00|2026-01-13 14:45:00
+99|144|Lavandería|28.00|2026-01-14 09:00:00
+100|144|Room service - Almuerzo o cena|40.00|2026-01-15 11:00:00
+101|144|Room service - Desayuno a la habitación|28.00|2026-01-14 09:15:00
+102|144|Room service - Desayuno a la habitación|28.00|2026-01-15 16:00:00
+103|148|Room service - Almuerzo o cena|40.00|2026-01-14 15:00:00
+104|150|Lavandería|28.00|2026-01-14 11:45:00
+105|152|Room service - Almuerzo o cena|40.00|2026-01-16 16:00:00
+106|152|Minibar|20.00|2026-01-15 08:00:00
+107|152|Room service - Desayuno a la habitación|28.00|2026-01-15 15:15:00
+108|153|Lavandería|28.00|2026-01-16 14:45:00
+109|153|Room service - Desayuno a la habitación|28.00|2026-01-16 18:15:00
+110|160|Lavandería|28.00|2026-01-15 18:45:00
+111|164|Minibar|20.00|2026-01-18 12:45:00
+112|166|Minibar|20.00|2026-01-17 08:15:00
+113|166|Room service - Almuerzo o cena|40.00|2026-01-18 11:15:00
+114|168|Minibar|20.00|2026-01-16 20:45:00
+115|171|Minibar|20.00|2026-01-16 17:00:00
+116|171|Minibar|20.00|2026-01-16 11:45:00
+117|172|Room service - Almuerzo o cena|40.00|2026-01-17 18:30:00
+118|175|Minibar|20.00|2026-01-17 21:30:00
+119|179|Minibar|20.00|2026-01-17 14:45:00
+120|184|Room service - Desayuno a la habitación|28.00|2026-01-17 16:00:00
+121|185|Room service - Desayuno a la habitación|28.00|2026-01-18 22:15:00
+122|190|Minibar|20.00|2026-01-18 14:45:00
+123|197|Room service - Almuerzo o cena|40.00|2026-01-19 10:45:00
+124|198|Room service - Almuerzo o cena|40.00|2026-01-18 18:15:00
+125|199|Room service - Almuerzo o cena|40.00|2026-01-18 17:00:00
+126|199|Room service - Almuerzo o cena|40.00|2026-01-18 15:15:00
+127|199|Minibar|20.00|2026-01-18 13:00:00
+128|200|Room service - Desayuno a la habitación|28.00|2026-01-20 20:00:00
+129|201|Room service - Desayuno a la habitación|28.00|2026-01-19 11:15:00
+130|202|Minibar|20.00|2026-01-19 13:45:00
+131|202|Room service - Desayuno a la habitación|28.00|2026-01-19 15:15:00
+132|203|Room service - Almuerzo o cena|40.00|2026-01-20 14:30:00
+133|203|Room service - Almuerzo o cena|40.00|2026-01-21 08:15:00
+134|203|Room service - Almuerzo o cena|40.00|2026-01-19 18:15:00
+135|206|Room service - Almuerzo o cena|40.00|2026-01-21 19:15:00
+136|206|Room service - Almuerzo o cena|40.00|2026-01-22 14:45:00
+137|207|Minibar|20.00|2026-01-21 19:30:00
+138|207|Lavandería|28.00|2026-01-21 08:45:00
+139|208|Minibar|20.00|2026-01-23 19:15:00
+140|209|Room service - Desayuno a la habitación|28.00|2026-01-22 13:30:00
+141|211|Minibar|20.00|2026-01-20 18:00:00
+142|211|Minibar|20.00|2026-01-20 10:30:00
+143|212|Minibar|20.00|2026-01-21 12:45:00
+144|213|Room service - Almuerzo o cena|40.00|2026-01-21 11:00:00
+145|213|Minibar|20.00|2026-01-20 17:00:00
+146|215|Minibar|20.00|2026-01-21 09:00:00
+147|215|Room service - Desayuno a la habitación|28.00|2026-01-20 13:15:00
+148|215|Room service - Desayuno a la habitación|28.00|2026-01-20 21:15:00
+149|221|Room service - Almuerzo o cena|40.00|2026-01-23 11:00:00
+150|227|Room service - Desayuno a la habitación|28.00|2026-01-21 20:15:00
+151|231|Minibar|20.00|2026-01-22 17:30:00
+152|236|Minibar|20.00|2026-01-23 12:00:00
+153|237|Minibar|20.00|2026-01-24 12:15:00
+154|237|Room service - Desayuno a la habitación|28.00|2026-01-23 20:30:00
+155|237|Minibar|20.00|2026-01-24 13:30:00
+156|237|Room service - Almuerzo o cena|40.00|2026-01-25 15:15:00
+157|239|Room service - Almuerzo o cena|40.00|2026-01-24 17:00:00
+158|240|Room service - Desayuno a la habitación|28.00|2026-01-23 17:00:00
+159|241|Room service - Desayuno a la habitación|28.00|2026-01-25 19:45:00
+160|241|Room service - Desayuno a la habitación|28.00|2026-01-24 08:45:00
+161|241|Minibar|20.00|2026-01-23 14:45:00
+162|241|Minibar|20.00|2026-01-23 08:15:00
+163|244|Room service - Desayuno a la habitación|28.00|2026-01-25 15:00:00
+164|245|Minibar|20.00|2026-01-23 21:30:00
+165|246|Room service - Desayuno a la habitación|28.00|2026-01-23 08:15:00
+166|247|Minibar|20.00|2026-01-24 15:00:00
+167|248|Room service - Desayuno a la habitación|28.00|2026-01-25 09:15:00
+168|251|Room service - Almuerzo o cena|40.00|2026-01-24 14:00:00
+169|251|Room service - Desayuno a la habitación|28.00|2026-01-24 22:30:00
+170|251|Room service - Almuerzo o cena|40.00|2026-01-24 22:15:00
+171|253|Room service - Almuerzo o cena|40.00|2026-01-23 14:00:00
+172|253|Minibar|20.00|2026-01-23 18:00:00
+173|255|Minibar|20.00|2026-01-24 21:30:00
+174|256|Minibar|20.00|2026-01-25 20:15:00
+175|257|Room service - Almuerzo o cena|40.00|2026-01-26 18:30:00
+176|257|Room service - Almuerzo o cena|40.00|2026-01-24 21:15:00
+177|259|Lavandería|28.00|2026-01-24 09:30:00
+178|260|Toalla dañada - reposición|45.00|2026-01-24 08:00:00
+179|265|Room service - Almuerzo o cena|40.00|2026-01-24 11:45:00
+180|272|Lavandería|28.00|2026-01-26 11:00:00
+181|277|Room service - Desayuno a la habitación|28.00|2026-01-25 20:30:00
+182|277|Room service - Desayuno a la habitación|28.00|2026-01-25 09:15:00
+183|280|Minibar|20.00|2026-01-31 21:30:00
+184|281|Room service - Desayuno a la habitación|28.00|2026-01-26 22:30:00
+185|281|Room service - Desayuno a la habitación|28.00|2026-01-26 08:15:00
+186|281|Lavandería|28.00|2026-01-26 13:45:00
+187|281|Minibar|20.00|2026-01-27 19:30:00
+188|285|Room service - Almuerzo o cena|40.00|2026-01-27 08:30:00
+189|285|Minibar|20.00|2026-01-26 21:15:00
+190|285|Room service - Desayuno a la habitación|28.00|2026-01-27 16:30:00
+191|286|Minibar|20.00|2026-01-26 11:30:00
+192|288|Room service - Almuerzo o cena|40.00|2026-01-27 15:00:00
+193|288|Room service - Almuerzo o cena|40.00|2026-01-27 13:15:00
+194|291|Room service - Desayuno a la habitación|28.00|2026-01-30 11:15:00
+195|291|Minibar|20.00|2026-01-30 16:15:00
+196|291|Room service - Almuerzo o cena|40.00|2026-01-28 11:30:00
+197|292|Room service - Almuerzo o cena|40.00|2026-01-27 13:45:00
+198|292|Lavandería|28.00|2026-01-28 14:15:00
+199|292|Room service - Almuerzo o cena|40.00|2026-01-28 18:15:00
+200|292|Minibar|20.00|2026-01-27 19:30:00
+201|296|Room service - Desayuno a la habitación|28.00|2026-01-28 11:30:00
+202|298|Minibar|20.00|2026-01-28 20:15:00
+203|298|Minibar|20.00|2026-01-28 19:30:00
+204|298|Room service - Almuerzo o cena|40.00|2026-01-29 16:00:00
+205|299|Minibar|20.00|2026-01-30 13:15:00
+206|299|Minibar|20.00|2026-01-29 14:15:00
+207|301|Room service - Almuerzo o cena|40.00|2026-01-29 11:45:00
+208|301|Lavandería|28.00|2026-01-31 15:30:00
+209|301|Room service - Desayuno a la habitación|28.00|2026-01-30 08:30:00
+210|301|Minibar|20.00|2026-01-30 19:15:00
+211|303|Minibar|20.00|2026-01-29 12:30:00
+212|308|Room service - Desayuno a la habitación|28.00|2026-01-30 13:15:00
+213|308|Minibar|20.00|2026-01-30 20:30:00
+214|308|Room service - Desayuno a la habitación|28.00|2026-01-29 21:30:00
+215|309|Room service - Almuerzo o cena|40.00|2026-01-30 14:30:00
+216|309|Room service - Almuerzo o cena|40.00|2026-02-01 08:30:00
+217|309|Lavandería|28.00|2026-01-31 19:15:00
+218|310|Room service - Almuerzo o cena|40.00|2026-01-31 21:00:00
+219|310|Minibar|20.00|2026-01-30 09:00:00
+220|313|Lavandería|28.00|2026-02-01 15:30:00
+221|313|Lavandería|28.00|2026-02-02 11:00:00
+222|313|Minibar|20.00|2026-02-01 21:00:00
+223|313|Room service - Almuerzo o cena|40.00|2026-01-31 22:30:00
+224|314|Room service - Desayuno a la habitación|28.00|2026-01-30 14:45:00
+225|314|Room service - Desayuno a la habitación|28.00|2026-02-03 20:45:00
+226|314|Minibar|20.00|2026-02-02 08:15:00
+227|315|Room service - Almuerzo o cena|40.00|2026-01-30 13:30:00
+228|315|Minibar|20.00|2026-01-30 17:00:00
+229|315|Room service - Desayuno a la habitación|28.00|2026-01-30 10:45:00
+230|316|Minibar|20.00|2026-01-31 12:30:00
+231|318|Room service - Almuerzo o cena|40.00|2026-02-01 18:15:00
+232|322|Lavandería|28.00|2026-01-31 16:45:00
+233|323|Room service - Desayuno a la habitación|28.00|2026-01-31 10:45:00
+234|323|Minibar|20.00|2026-01-31 22:30:00
+235|323|Minibar|20.00|2026-01-31 22:15:00
+236|325|Lavandería|28.00|2026-02-02 15:00:00
+237|325|Room service - Desayuno a la habitación|28.00|2026-02-02 08:15:00
+238|326|Lavandería|28.00|2026-02-01 18:00:00
+239|337|Minibar|20.00|2026-02-02 08:00:00
+240|339|Minibar|20.00|2026-02-01 21:00:00
+241|339|Minibar|20.00|2026-02-01 19:15:00
+242|339|Lavandería|28.00|2026-02-01 15:15:00
+243|341|Room service - Desayuno a la habitación|28.00|2026-02-03 15:00:00
+244|341|Lavandería|28.00|2026-02-03 13:15:00
+245|341|Room service - Almuerzo o cena|40.00|2026-02-03 20:45:00
+246|344|Lavandería|28.00|2026-02-02 22:30:00
+247|344|Room service - Desayuno a la habitación|28.00|2026-02-01 20:45:00
+248|345|Room service - Almuerzo o cena|40.00|2026-02-01 08:30:00
+249|346|Room service - Desayuno a la habitación|28.00|2026-02-04 19:30:00
+250|348|Lavandería|28.00|2026-02-04 08:30:00
+251|348|Room service - Almuerzo o cena|40.00|2026-02-02 15:15:00
+252|348|Minibar|20.00|2026-02-04 12:15:00
+253|348|Minibar|20.00|2026-02-02 16:30:00
+254|349|Lavandería|28.00|2026-02-04 10:15:00
+255|349|Minibar|20.00|2026-02-04 20:15:00
+256|349|Room service - Desayuno a la habitación|28.00|2026-02-04 12:15:00
+257|350|Minibar|20.00|2026-02-03 21:15:00
+258|351|Room service - Almuerzo o cena|40.00|2026-02-03 14:15:00
+259|351|Lavandería|28.00|2026-02-03 18:30:00
+260|352|Minibar|20.00|2026-02-04 13:15:00
+261|353|Room service - Desayuno a la habitación|28.00|2026-02-03 13:15:00
+262|353|Room service - Almuerzo o cena|40.00|2026-02-03 13:00:00
+263|353|Room service - Almuerzo o cena|40.00|2026-02-03 15:45:00
+264|353|Minibar|20.00|2026-02-03 17:30:00
+265|355|Room service - Desayuno a la habitación|28.00|2026-02-04 16:15:00
+266|357|Room service - Desayuno a la habitación|28.00|2026-02-03 19:45:00
+267|357|Toalla dañada - reposición|45.00|2026-02-03 11:00:00
+268|359|Minibar|20.00|2026-02-06 10:15:00
+269|359|Minibar|20.00|2026-02-05 10:00:00
+270|359|Room service - Desayuno a la habitación|28.00|2026-02-07 16:15:00
+271|359|Minibar|20.00|2026-02-05 11:15:00
+272|361|Minibar|20.00|2026-02-04 11:45:00
+273|363|Lavandería|28.00|2026-02-05 17:15:00
+274|364|Room service - Almuerzo o cena|40.00|2026-02-05 17:00:00
+275|364|Room service - Desayuno a la habitación|28.00|2026-02-04 14:15:00
+276|366|Minibar|20.00|2026-02-05 13:00:00
+277|366|Minibar|20.00|2026-02-07 10:00:00
+278|367|Room service - Almuerzo o cena|40.00|2026-02-08 16:00:00
+279|368|Room service - Desayuno a la habitación|28.00|2026-02-05 08:45:00
+280|370|Minibar|20.00|2026-02-08 08:45:00
+281|372|Lavandería|28.00|2026-02-06 13:15:00
+282|372|Room service - Almuerzo o cena|40.00|2026-02-06 15:00:00
+283|372|Room service - Almuerzo o cena|40.00|2026-02-05 21:30:00
+284|373|Lavandería|28.00|2026-02-07 21:15:00
+285|373|Room service - Almuerzo o cena|40.00|2026-02-06 16:45:00
+286|376|Lavandería|28.00|2026-02-10 17:45:00
+287|378|Room service - Desayuno a la habitación|28.00|2026-02-07 16:45:00
+288|378|Room service - Desayuno a la habitación|28.00|2026-02-07 21:15:00
+289|382|Room service - Almuerzo o cena|40.00|2026-02-07 17:15:00
+290|383|Room service - Almuerzo o cena|40.00|2026-02-06 13:15:00
+291|386|Minibar|20.00|2026-02-06 22:15:00
+292|387|Minibar|20.00|2026-02-06 10:45:00
+293|387|Minibar|20.00|2026-02-06 09:30:00
+294|387|Room service - Almuerzo o cena|40.00|2026-02-06 15:30:00
+295|388|Minibar|20.00|2026-02-06 19:15:00
+296|388|Minibar|20.00|2026-02-08 09:30:00
+297|388|Room service - Desayuno a la habitación|28.00|2026-02-07 13:15:00
+298|389|Lavandería|28.00|2026-02-06 11:15:00
+299|389|Minibar|20.00|2026-02-07 19:15:00
+300|391|Minibar|20.00|2026-02-06 20:00:00
+301|395|Minibar|20.00|2026-02-06 09:45:00
+302|395|Room service - Almuerzo o cena|40.00|2026-02-07 10:30:00
+303|395|Room service - Desayuno a la habitación|28.00|2026-02-07 21:45:00
+304|397|Room service - Desayuno a la habitación|28.00|2026-02-09 21:45:00
+305|398|Minibar|20.00|2026-02-07 20:00:00
+306|398|Room service - Almuerzo o cena|40.00|2026-02-09 18:30:00
+307|398|Minibar|20.00|2026-02-09 15:15:00
+308|398|Lavandería|28.00|2026-02-09 15:15:00
+309|403|Room service - Desayuno a la habitación|28.00|2026-02-08 18:00:00
+310|403|Toalla dañada - reposición|45.00|2026-02-07 19:45:00
+311|403|Minibar|20.00|2026-02-08 11:15:00
+312|403|Room service - Almuerzo o cena|40.00|2026-02-08 20:45:00
+313|405|Room service - Almuerzo o cena|40.00|2026-02-08 22:45:00
+314|410|Room service - Desayuno a la habitación|28.00|2026-02-09 14:45:00
+315|411|Minibar|20.00|2026-02-07 19:15:00
+316|411|Lavandería|28.00|2026-02-07 11:15:00
+317|411|Minibar|20.00|2026-02-07 10:15:00
+318|413|Room service - Almuerzo o cena|40.00|2026-02-07 22:15:00
+319|413|Room service - Desayuno a la habitación|28.00|2026-02-07 16:00:00
+320|413|Minibar|20.00|2026-02-07 10:30:00
+321|413|Lavandería|28.00|2026-02-07 16:15:00
+322|417|Lavandería|28.00|2026-02-09 22:45:00
+323|423|Lavandería|28.00|2026-02-09 17:00:00
+324|423|Minibar|20.00|2026-02-09 08:45:00
+325|425|Room service - Almuerzo o cena|40.00|2026-02-09 19:15:00
+326|425|Minibar|20.00|2026-02-09 16:30:00
+327|426|Lavandería|28.00|2026-02-12 11:00:00
+328|429|Room service - Desayuno a la habitación|28.00|2026-02-12 08:45:00
+329|430|Minibar|20.00|2026-02-12 15:30:00
+330|431|Room service - Desayuno a la habitación|28.00|2026-02-11 08:15:00
+331|431|Room service - Desayuno a la habitación|28.00|2026-02-11 11:30:00
+332|431|Room service - Desayuno a la habitación|28.00|2026-02-10 20:00:00
+333|432|Minibar|20.00|2026-02-10 20:00:00
+334|434|Minibar|20.00|2026-02-11 10:00:00
+335|434|Minibar|20.00|2026-02-10 11:00:00
+336|435|Room service - Desayuno a la habitación|28.00|2026-02-10 10:15:00
+337|435|Minibar|20.00|2026-02-11 10:15:00
+338|435|Room service - Almuerzo o cena|40.00|2026-02-10 09:45:00
+339|435|Minibar|20.00|2026-02-12 14:15:00
+340|440|Minibar|20.00|2026-02-11 19:15:00
+341|440|Lavandería|28.00|2026-02-12 21:15:00
+342|444|Room service - Desayuno a la habitación|28.00|2026-02-11 10:30:00
+343|444|Minibar|20.00|2026-02-11 12:00:00
+344|447|Minibar|20.00|2026-02-12 11:45:00
+345|447|Room service - Desayuno a la habitación|28.00|2026-02-12 21:30:00
+346|447|Room service - Desayuno a la habitación|28.00|2026-02-14 16:15:00
+347|451|Room service - Desayuno a la habitación|28.00|2026-02-11 20:15:00
+348|452|Room service - Almuerzo o cena|40.00|2026-02-13 15:15:00
+349|452|Toalla dañada - reposición|45.00|2026-02-13 13:00:00
+350|452|Minibar|20.00|2026-02-12 22:00:00
+351|454|Room service - Desayuno a la habitación|28.00|2026-02-12 08:30:00
+352|456|Room service - Almuerzo o cena|40.00|2026-02-12 08:15:00
+353|464|Lavandería|28.00|2026-02-14 21:30:00
+354|468|Minibar|20.00|2026-02-13 21:00:00
+355|469|Room service - Desayuno a la habitación|28.00|2026-02-15 22:00:00
+356|469|Room service - Desayuno a la habitación|28.00|2026-02-16 21:15:00
+357|470|Room service - Desayuno a la habitación|28.00|2026-02-14 08:00:00
+358|474|Minibar|20.00|2026-02-14 20:30:00
+359|478|Room service - Desayuno a la habitación|28.00|2026-02-19 08:00:00
+360|479|Room service - Desayuno a la habitación|28.00|2026-02-14 20:15:00
+361|481|Minibar|20.00|2026-02-15 08:30:00
+362|481|Minibar|20.00|2026-02-14 19:00:00
+363|486|Room service - Desayuno a la habitación|28.00|2026-02-18 16:15:00
+364|486|Room service - Almuerzo o cena|40.00|2026-02-14 22:00:00
+365|488|Minibar|20.00|2026-02-15 15:45:00
+366|493|Room service - Almuerzo o cena|40.00|2026-02-15 15:15:00
+367|498|Room service - Almuerzo o cena|40.00|2026-02-16 09:15:00
+368|498|Room service - Almuerzo o cena|40.00|2026-02-17 08:45:00
+369|500|Room service - Desayuno a la habitación|28.00|2026-02-15 14:15:00
+370|500|Room service - Almuerzo o cena|40.00|2026-02-17 17:00:00
+371|500|Lavandería|28.00|2026-02-18 19:45:00
+372|502|Minibar|20.00|2026-02-15 16:30:00
+373|502|Room service - Desayuno a la habitación|28.00|2026-02-15 19:15:00
+374|504|Minibar|20.00|2026-02-16 10:00:00
+375|507|Room service - Desayuno a la habitación|28.00|2026-02-16 12:15:00
+376|507|Room service - Almuerzo o cena|40.00|2026-02-16 16:15:00
+377|507|Minibar|20.00|2026-02-16 21:30:00
+378|507|Minibar|20.00|2026-02-16 20:30:00
+379|508|Room service - Desayuno a la habitación|28.00|2026-02-16 18:45:00
+380|508|Lavandería|28.00|2026-02-18 17:45:00
+381|510|Minibar|20.00|2026-02-18 11:00:00
+382|510|Room service - Desayuno a la habitación|28.00|2026-02-17 10:30:00
+383|514|Room service - Desayuno a la habitación|28.00|2026-02-17 14:00:00
+384|515|Room service - Desayuno a la habitación|28.00|2026-02-19 19:30:00
+385|515|Room service - Desayuno a la habitación|28.00|2026-02-19 18:45:00
+386|515|Room service - Desayuno a la habitación|28.00|2026-02-19 20:45:00
+387|518|Minibar|20.00|2026-02-18 21:00:00
+388|519|Room service - Almuerzo o cena|40.00|2026-02-18 12:45:00
+389|521|Minibar|20.00|2026-02-19 20:45:00
+390|521|Lavandería|28.00|2026-02-20 13:00:00
+391|521|Minibar|20.00|2026-02-18 16:45:00
+392|527|Minibar|20.00|2026-02-19 15:00:00
+393|528|Minibar|20.00|2026-02-20 11:30:00
+394|530|Room service - Desayuno a la habitación|28.00|2026-02-19 19:45:00
+395|530|Minibar|20.00|2026-02-19 12:15:00
+396|531|Room service - Desayuno a la habitación|28.00|2026-02-22 09:00:00
+397|536|Lavandería|28.00|2026-02-20 17:45:00
+398|538|Room service - Desayuno a la habitación|28.00|2026-02-21 14:45:00
+399|538|Minibar|20.00|2026-02-21 11:45:00
+400|540|Minibar|20.00|2026-02-22 11:15:00
+401|542|Minibar|20.00|2026-02-20 13:45:00
+402|543|Minibar|20.00|2026-02-21 20:00:00
+403|546|Lavandería|28.00|2026-02-21 13:00:00
+404|548|Minibar|20.00|2026-02-21 15:45:00
+405|548|Lavandería|28.00|2026-02-21 13:30:00
+406|549|Minibar|20.00|2026-02-21 19:30:00
+407|550|Lavandería|28.00|2026-02-21 19:00:00
+408|552|Minibar|20.00|2026-02-23 12:15:00
+409|552|Lavandería|28.00|2026-02-22 17:45:00
+410|552|Minibar|20.00|2026-02-22 19:15:00
+411|553|Room service - Almuerzo o cena|40.00|2026-02-23 09:15:00
+412|555|Room service - Desayuno a la habitación|28.00|2026-02-22 22:15:00
+413|555|Room service - Desayuno a la habitación|28.00|2026-02-22 09:30:00
+414|556|Minibar|20.00|2026-02-22 20:00:00
+415|556|Lavandería|28.00|2026-02-22 13:45:00
+416|556|Minibar|20.00|2026-02-23 12:00:00
+417|556|Lavandería|28.00|2026-02-22 16:00:00
+418|558|Minibar|20.00|2026-02-21 17:45:00
+419|559|Minibar|20.00|2026-02-21 12:30:00
+420|559|Toalla dañada - reposición|45.00|2026-02-21 19:45:00
+421|561|Room service - Almuerzo o cena|40.00|2026-02-23 19:00:00
+422|561|Minibar|20.00|2026-02-23 17:45:00
+423|561|Room service - Almuerzo o cena|40.00|2026-02-21 08:45:00
+424|563|Minibar|20.00|2026-02-22 20:45:00
+425|563|Room service - Desayuno a la habitación|28.00|2026-02-22 08:15:00
+426|565|Lavandería|28.00|2026-02-22 14:00:00
+427|565|Room service - Almuerzo o cena|40.00|2026-02-22 12:00:00
+428|570|Room service - Almuerzo o cena|40.00|2026-02-22 20:15:00
+429|570|Room service - Almuerzo o cena|40.00|2026-02-22 19:30:00
+430|577|Room service - Almuerzo o cena|40.00|2026-02-24 20:15:00
+431|577|Room service - Almuerzo o cena|40.00|2026-02-25 16:30:00
+432|577|Room service - Almuerzo o cena|40.00|2026-02-23 21:45:00
+433|580|Room service - Desayuno a la habitación|28.00|2026-02-25 09:00:00
+434|585|Room service - Desayuno a la habitación|28.00|2026-02-25 19:15:00
+435|588|Room service - Almuerzo o cena|40.00|2026-02-26 16:15:00
+436|588|Minibar|20.00|2026-02-25 17:30:00
+437|589|Toalla dañada - reposición|45.00|2026-02-24 20:00:00
+438|590|Room service - Desayuno a la habitación|28.00|2026-02-24 20:45:00
+439|590|Lavandería|28.00|2026-02-25 21:15:00
+440|590|Room service - Desayuno a la habitación|28.00|2026-02-25 17:45:00
+441|590|Toalla dañada - reposición|45.00|2026-02-25 11:45:00
+442|591|Room service - Almuerzo o cena|40.00|2026-02-26 17:00:00
+443|592|Room service - Desayuno a la habitación|28.00|2026-02-24 14:30:00
+444|592|Room service - Desayuno a la habitación|28.00|2026-02-24 14:30:00
+445|594|Toalla dañada - reposición|45.00|2026-02-26 14:45:00
+446|596|Room service - Desayuno a la habitación|28.00|2026-02-25 21:45:00
+447|596|Room service - Almuerzo o cena|40.00|2026-02-26 13:45:00
+448|597|Room service - Almuerzo o cena|40.00|2026-02-28 17:45:00
+449|597|Minibar|20.00|2026-02-25 18:45:00
+450|597|Room service - Desayuno a la habitación|28.00|2026-02-25 21:30:00
+451|599|Minibar|20.00|2026-02-25 11:00:00
+452|599|Room service - Desayuno a la habitación|28.00|2026-02-26 21:45:00
+453|600|Lavandería|28.00|2026-02-25 14:45:00
+454|600|Minibar|20.00|2026-02-25 12:00:00
+455|600|Minibar|20.00|2026-02-25 18:00:00
+456|600|Minibar|20.00|2026-02-25 14:45:00
+457|612|Room service - Almuerzo o cena|40.00|2026-02-26 15:00:00
+458|616|Room service - Almuerzo o cena|40.00|2026-02-28 15:00:00
+459|619|Room service - Desayuno a la habitación|28.00|2026-03-01 12:45:00
+460|619|Minibar|20.00|2026-03-02 10:30:00
+461|620|Lavandería|28.00|2026-02-27 21:15:00
+462|622|Minibar|20.00|2026-02-27 16:30:00
+463|624|Room service - Desayuno a la habitación|28.00|2026-02-27 14:30:00
+464|624|Room service - Almuerzo o cena|40.00|2026-02-28 21:30:00
+465|624|Room service - Desayuno a la habitación|28.00|2026-02-27 14:30:00
+466|625|Room service - Desayuno a la habitación|28.00|2026-02-28 19:15:00
+467|625|Room service - Almuerzo o cena|40.00|2026-02-28 09:45:00
+468|625|Lavandería|28.00|2026-02-28 14:15:00
+469|625|Room service - Desayuno a la habitación|28.00|2026-02-28 13:15:00
+470|626|Lavandería|28.00|2026-03-01 10:00:00
+471|626|Minibar|20.00|2026-02-28 18:45:00
+472|626|Room service - Desayuno a la habitación|28.00|2026-03-02 11:45:00
+473|626|Room service - Desayuno a la habitación|28.00|2026-02-28 10:45:00
+474|628|Room service - Desayuno a la habitación|28.00|2026-03-01 11:15:00
+475|628|Lavandería|28.00|2026-02-27 22:15:00
+476|629|Lavandería|28.00|2026-03-01 12:45:00
+477|632|Minibar|20.00|2026-02-28 16:30:00
+478|632|Room service - Almuerzo o cena|40.00|2026-03-01 08:15:00
+479|638|Minibar|20.00|2026-03-02 09:00:00
+480|638|Room service - Desayuno a la habitación|28.00|2026-03-03 21:45:00
+481|641|Minibar|20.00|2026-03-01 12:00:00
+482|641|Room service - Almuerzo o cena|40.00|2026-02-28 14:45:00
+483|641|Minibar|20.00|2026-02-28 13:45:00
+484|641|Minibar|20.00|2026-03-01 13:00:00
+485|642|Room service - Desayuno a la habitación|28.00|2026-03-02 09:15:00
+486|644|Room service - Desayuno a la habitación|28.00|2026-03-02 16:15:00
+487|644|Room service - Desayuno a la habitación|28.00|2026-03-03 14:45:00
+488|644|Room service - Almuerzo o cena|40.00|2026-03-01 15:30:00
+489|645|Minibar|20.00|2026-02-28 13:00:00
+490|648|Lavandería|28.00|2026-03-02 12:30:00
+491|648|Room service - Almuerzo o cena|40.00|2026-03-01 17:45:00
+492|648|Room service - Almuerzo o cena|40.00|2026-03-02 16:00:00
+493|652|Minibar|20.00|2026-03-03 14:45:00
+494|663|Minibar|20.00|2026-03-03 08:45:00
+495|663|Room service - Desayuno a la habitación|28.00|2026-03-04 08:45:00
+496|663|Room service - Desayuno a la habitación|28.00|2026-03-04 09:30:00
+497|665|Room service - Desayuno a la habitación|28.00|2026-03-03 12:30:00
+498|669|Room service - Desayuno a la habitación|28.00|2026-03-05 15:45:00
+499|673|Room service - Desayuno a la habitación|28.00|2026-03-05 11:15:00
+500|673|Minibar|20.00|2026-03-04 11:00:00
+501|675|Room service - Desayuno a la habitación|28.00|2026-03-05 11:45:00
+502|680|Minibar|20.00|2026-03-06 15:45:00
+503|680|Room service - Desayuno a la habitación|28.00|2026-03-06 15:30:00
+504|680|Room service - Desayuno a la habitación|28.00|2026-03-06 18:30:00
+505|680|Minibar|20.00|2026-03-05 10:30:00
+506|681|Room service - Almuerzo o cena|40.00|2026-03-05 09:15:00
+507|682|Room service - Desayuno a la habitación|28.00|2026-03-06 21:00:00
+508|682|Minibar|20.00|2026-03-05 14:00:00
+509|684|Room service - Desayuno a la habitación|28.00|2026-03-07 10:15:00
+510|684|Room service - Desayuno a la habitación|28.00|2026-03-09 10:45:00
+511|685|Room service - Desayuno a la habitación|28.00|2026-03-08 12:15:00
+512|687|Lavandería|28.00|2026-03-07 14:30:00
+513|688|Room service - Almuerzo o cena|40.00|2026-03-06 16:00:00
+514|690|Lavandería|28.00|2026-03-06 22:45:00
+515|690|Room service - Almuerzo o cena|40.00|2026-03-06 17:45:00
+516|690|Room service - Desayuno a la habitación|28.00|2026-03-06 08:00:00
+517|690|Room service - Desayuno a la habitación|28.00|2026-03-06 15:00:00
+518|692|Minibar|20.00|2026-03-07 20:30:00
+519|696|Room service - Desayuno a la habitación|28.00|2026-03-07 19:30:00
+520|696|Room service - Almuerzo o cena|40.00|2026-03-08 22:30:00
+521|697|Minibar|20.00|2026-03-07 08:30:00
+522|697|Minibar|20.00|2026-03-08 13:30:00
+523|698|Room service - Almuerzo o cena|40.00|2026-03-07 11:45:00
+524|700|Lavandería|28.00|2026-03-07 19:45:00
+525|700|Minibar|20.00|2026-03-07 19:15:00
+526|702|Minibar|20.00|2026-03-09 10:30:00
+527|704|Minibar|20.00|2026-03-07 16:15:00
+528|704|Room service - Desayuno a la habitación|28.00|2026-03-07 20:45:00
+529|704|Room service - Almuerzo o cena|40.00|2026-03-07 09:45:00
+530|704|Minibar|20.00|2026-03-07 15:30:00
+531|705|Room service - Almuerzo o cena|40.00|2026-03-07 11:00:00
+532|705|Minibar|20.00|2026-03-07 22:45:00
+533|707|Room service - Desayuno a la habitación|28.00|2026-03-07 12:00:00
+534|707|Lavandería|28.00|2026-03-07 15:45:00
+535|707|Minibar|20.00|2026-03-07 15:00:00
+536|709|Room service - Almuerzo o cena|40.00|2026-03-11 13:00:00
+537|709|Room service - Almuerzo o cena|40.00|2026-03-11 12:00:00
+538|709|Room service - Almuerzo o cena|40.00|2026-03-08 15:00:00
+539|709|Lavandería|28.00|2026-03-09 15:45:00
+540|712|Room service - Desayuno a la habitación|28.00|2026-03-09 17:45:00
+541|712|Lavandería|28.00|2026-03-09 15:15:00
+542|715|Room service - Desayuno a la habitación|28.00|2026-03-08 18:00:00
+543|718|Minibar|20.00|2026-03-11 08:45:00
+544|718|Minibar|20.00|2026-03-09 18:30:00
+545|718|Room service - Desayuno a la habitación|28.00|2026-03-10 20:30:00
+546|719|Room service - Almuerzo o cena|40.00|2026-03-09 08:30:00
+547|722|Room service - Almuerzo o cena|40.00|2026-03-11 09:15:00
+548|727|Lavandería|28.00|2026-03-11 20:30:00
+549|727|Room service - Desayuno a la habitación|28.00|2026-03-12 20:00:00
+550|728|Minibar|20.00|2026-03-11 10:45:00
+551|728|Lavandería|28.00|2026-03-11 21:15:00
+552|728|Minibar|20.00|2026-03-12 22:30:00
+553|728|Room service - Almuerzo o cena|40.00|2026-03-11 13:45:00
+554|731|Minibar|20.00|2026-03-10 16:30:00
+555|733|Minibar|20.00|2026-03-10 20:30:00
+556|733|Room service - Desayuno a la habitación|28.00|2026-03-11 15:00:00
+557|733|Room service - Desayuno a la habitación|28.00|2026-03-10 20:15:00
+558|734|Minibar|20.00|2026-03-11 10:45:00
+559|736|Room service - Desayuno a la habitación|28.00|2026-03-13 08:30:00
+560|740|Minibar|20.00|2026-03-11 09:45:00
+561|750|Minibar|20.00|2026-03-13 08:30:00
+562|751|Room service - Desayuno a la habitación|28.00|2026-03-13 18:30:00
+563|751|Room service - Almuerzo o cena|40.00|2026-03-13 16:45:00
+564|751|Lavandería|28.00|2026-03-13 08:15:00
+565|751|Lavandería|28.00|2026-03-12 21:30:00
+566|753|Minibar|20.00|2026-03-13 21:15:00
+567|753|Lavandería|28.00|2026-03-15 08:00:00
+568|753|Minibar|20.00|2026-03-13 10:00:00
+569|753|Lavandería|28.00|2026-03-15 08:15:00
+570|755|Minibar|20.00|2026-03-13 12:00:00
+571|759|Lavandería|28.00|2026-03-13 08:00:00
+572|759|Minibar|20.00|2026-03-14 10:15:00
+573|759|Room service - Desayuno a la habitación|28.00|2026-03-13 11:15:00
+574|762|Room service - Almuerzo o cena|40.00|2026-03-15 13:15:00
+575|763|Minibar|20.00|2026-03-14 11:00:00
+576|764|Room service - Desayuno a la habitación|28.00|2026-03-16 12:15:00
+577|764|Lavandería|28.00|2026-03-16 13:30:00
+578|764|Minibar|20.00|2026-03-14 17:30:00
+579|766|Room service - Desayuno a la habitación|28.00|2026-03-14 15:15:00
+580|766|Minibar|20.00|2026-03-14 19:00:00
+581|770|Minibar|20.00|2026-03-16 08:30:00
+582|773|Room service - Desayuno a la habitación|28.00|2026-03-14 21:15:00
+583|773|Minibar|20.00|2026-03-15 15:30:00
+584|774|Toalla dañada - reposición|45.00|2026-03-14 09:30:00
+585|775|Room service - Almuerzo o cena|40.00|2026-03-17 20:45:00
+586|775|Room service - Almuerzo o cena|40.00|2026-03-18 09:00:00
+587|778|Minibar|20.00|2026-03-15 20:30:00
+588|778|Room service - Almuerzo o cena|40.00|2026-03-14 15:00:00
+589|778|Minibar|20.00|2026-03-15 10:30:00
+590|779|Minibar|20.00|2026-03-16 20:45:00
+591|779|Toalla dañada - reposición|45.00|2026-03-15 22:15:00
+592|779|Room service - Almuerzo o cena|40.00|2026-03-16 12:30:00
+593|779|Room service - Almuerzo o cena|40.00|2026-03-15 20:15:00
+594|780|Room service - Almuerzo o cena|40.00|2026-03-16 22:30:00
+595|780|Room service - Almuerzo o cena|40.00|2026-03-16 12:45:00
+596|780|Lavandería|28.00|2026-03-16 18:15:00
+597|783|Room service - Almuerzo o cena|40.00|2026-03-16 16:45:00
+598|783|Room service - Desayuno a la habitación|28.00|2026-03-15 22:00:00
+599|785|Room service - Desayuno a la habitación|28.00|2026-03-15 18:30:00
+600|785|Room service - Almuerzo o cena|40.00|2026-03-16 21:00:00
+601|785|Minibar|20.00|2026-03-18 20:45:00
+602|785|Room service - Almuerzo o cena|40.00|2026-03-18 21:15:00
+603|788|Room service - Desayuno a la habitación|28.00|2026-03-18 14:45:00
+604|788|Lavandería|28.00|2026-03-16 12:15:00
+605|788|Lavandería|28.00|2026-03-16 08:45:00
+606|792|Toalla dañada - reposición|45.00|2026-03-16 09:45:00
+607|792|Room service - Desayuno a la habitación|28.00|2026-03-17 19:45:00
+608|794|Minibar|20.00|2026-03-16 21:30:00
+609|794|Room service - Desayuno a la habitación|28.00|2026-03-17 09:45:00
+610|805|Minibar|20.00|2026-03-18 16:30:00
+611|806|Lavandería|28.00|2026-03-18 22:45:00
+612|810|Minibar|20.00|2026-03-19 17:30:00
+613|810|Room service - Almuerzo o cena|40.00|2026-03-19 13:45:00
+614|815|Room service - Almuerzo o cena|40.00|2026-03-20 19:30:00
+615|818|Minibar|20.00|2026-03-21 20:30:00
+616|819|Room service - Desayuno a la habitación|28.00|2026-03-19 20:00:00
+617|821|Minibar|20.00|2026-03-19 08:45:00
+618|821|Minibar|20.00|2026-03-19 18:45:00
+619|823|Room service - Almuerzo o cena|40.00|2026-03-19 20:15:00
+620|824|Room service - Almuerzo o cena|40.00|2026-03-20 19:00:00
+621|824|Lavandería|28.00|2026-03-21 12:45:00
+622|824|Room service - Almuerzo o cena|40.00|2026-03-21 19:15:00
+623|825|Minibar|20.00|2026-03-20 14:30:00
+624|827|Room service - Desayuno a la habitación|28.00|2026-03-21 12:30:00
+625|829|Minibar|20.00|2026-03-20 10:45:00
+626|829|Minibar|20.00|2026-03-20 15:00:00
+627|831|Lavandería|28.00|2026-03-22 09:15:00
+628|836|Toalla dañada - reposición|45.00|2026-03-22 21:00:00
+629|836|Minibar|20.00|2026-03-21 22:00:00
+630|836|Room service - Desayuno a la habitación|28.00|2026-03-22 10:30:00
+631|837|Room service - Almuerzo o cena|40.00|2026-03-21 08:30:00
+632|837|Room service - Almuerzo o cena|40.00|2026-03-23 08:45:00
+633|839|Lavandería|28.00|2026-03-21 20:30:00
+634|839|Minibar|20.00|2026-03-21 18:30:00
+635|839|Minibar|20.00|2026-03-21 08:15:00
+636|846|Room service - Almuerzo o cena|40.00|2026-03-22 15:30:00
+637|849|Room service - Desayuno a la habitación|28.00|2026-03-23 08:00:00
+638|850|Toalla dañada - reposición|45.00|2026-03-22 13:30:00
+639|851|Room service - Almuerzo o cena|40.00|2026-03-22 14:15:00
+640|852|Room service - Desayuno a la habitación|28.00|2026-03-23 20:15:00
+641|852|Room service - Almuerzo o cena|40.00|2026-03-22 16:00:00
+642|852|Minibar|20.00|2026-03-23 13:45:00
+643|853|Minibar|20.00|2026-03-22 11:30:00
+644|853|Room service - Almuerzo o cena|40.00|2026-03-22 10:15:00
+645|853|Lavandería|28.00|2026-03-22 16:30:00
+646|855|Room service - Desayuno a la habitación|28.00|2026-03-22 15:45:00
+647|855|Toalla dañada - reposición|45.00|2026-03-22 14:45:00
+648|857|Minibar|20.00|2026-03-22 15:15:00
+649|857|Minibar|20.00|2026-03-23 18:30:00
+650|857|Room service - Almuerzo o cena|40.00|2026-03-22 10:15:00
+651|857|Room service - Almuerzo o cena|40.00|2026-03-22 11:30:00
+652|863|Room service - Desayuno a la habitación|28.00|2026-03-23 14:45:00
+653|864|Room service - Desayuno a la habitación|28.00|2026-03-23 09:00:00
+654|867|Room service - Almuerzo o cena|40.00|2026-03-23 09:00:00
+655|870|Minibar|20.00|2026-03-25 11:45:00
+656|870|Room service - Almuerzo o cena|40.00|2026-03-25 17:15:00
+657|872|Room service - Desayuno a la habitación|28.00|2026-03-24 15:45:00
+658|875|Room service - Desayuno a la habitación|28.00|2026-03-27 21:45:00
+659|875|Minibar|20.00|2026-03-28 19:45:00
+660|876|Minibar|20.00|2026-03-25 19:15:00
+661|876|Room service - Almuerzo o cena|40.00|2026-03-26 11:45:00
+662|876|Minibar|20.00|2026-03-24 11:15:00
+663|878|Minibar|20.00|2026-03-27 09:30:00
+664|878|Lavandería|28.00|2026-03-26 18:45:00
+665|878|Room service - Desayuno a la habitación|28.00|2026-03-25 19:00:00
+666|878|Room service - Almuerzo o cena|40.00|2026-03-26 11:30:00
+667|879|Minibar|20.00|2026-03-25 09:00:00
+668|880|Lavandería|28.00|2026-03-25 15:30:00
+669|880|Minibar|20.00|2026-03-25 18:15:00
+670|885|Room service - Desayuno a la habitación|28.00|2026-03-25 15:45:00
+671|885|Lavandería|28.00|2026-03-25 18:30:00
+672|886|Lavandería|28.00|2026-03-26 11:30:00
+673|889|Minibar|20.00|2026-03-28 08:00:00
+674|897|Room service - Almuerzo o cena|40.00|2026-03-27 21:15:00
+675|906|Room service - Desayuno a la habitación|28.00|2026-03-27 08:00:00
+676|909|Room service - Desayuno a la habitación|28.00|2026-03-29 18:45:00
+677|909|Room service - Almuerzo o cena|40.00|2026-03-28 19:45:00
+678|909|Room service - Desayuno a la habitación|28.00|2026-03-28 14:45:00
+679|911|Lavandería|28.00|2026-03-27 13:45:00
+680|912|Room service - Desayuno a la habitación|28.00|2026-03-27 08:30:00
+681|912|Room service - Desayuno a la habitación|28.00|2026-03-27 10:45:00
+682|912|Lavandería|28.00|2026-03-27 20:00:00
+683|914|Minibar|20.00|2026-03-27 13:30:00
+684|916|Minibar|20.00|2026-03-29 18:00:00
+685|918|Minibar|20.00|2026-03-30 09:30:00
+686|921|Room service - Almuerzo o cena|40.00|2026-03-30 17:00:00
+687|921|Room service - Almuerzo o cena|40.00|2026-03-30 17:30:00
+688|921|Minibar|20.00|2026-03-30 11:00:00
+689|921|Minibar|20.00|2026-03-31 08:15:00
+690|923|Room service - Almuerzo o cena|40.00|2026-03-28 12:45:00
+691|924|Minibar|20.00|2026-03-31 17:45:00
+692|924|Room service - Desayuno a la habitación|28.00|2026-03-29 20:30:00
+693|925|Room service - Almuerzo o cena|40.00|2026-03-28 08:30:00
+694|925|Room service - Desayuno a la habitación|28.00|2026-03-29 14:00:00
+695|925|Minibar|20.00|2026-03-28 21:00:00
+696|925|Minibar|20.00|2026-03-29 18:45:00
+697|930|Room service - Desayuno a la habitación|28.00|2026-03-30 20:30:00
+698|930|Room service - Almuerzo o cena|40.00|2026-03-30 19:45:00
+699|932|Lavandería|28.00|2026-03-30 18:30:00
+700|933|Room service - Desayuno a la habitación|28.00|2026-03-31 08:00:00
+701|941|Room service - Desayuno a la habitación|28.00|2026-04-03 21:45:00
+702|944|Minibar|20.00|2026-03-31 21:15:00
+703|956|Toalla dañada - reposición|45.00|2026-04-04 14:30:00
+704|956|Room service - Desayuno a la habitación|28.00|2026-04-03 15:15:00
+705|956|Minibar|20.00|2026-04-03 17:45:00
+706|956|Room service - Desayuno a la habitación|28.00|2026-04-01 13:00:00
+707|958|Room service - Desayuno a la habitación|28.00|2026-04-02 13:00:00
+708|958|Room service - Desayuno a la habitación|28.00|2026-04-01 09:45:00
+709|958|Room service - Desayuno a la habitación|28.00|2026-04-01 22:30:00
+710|959|Minibar|20.00|2026-04-02 17:30:00
+711|961|Minibar|20.00|2026-04-02 15:30:00
+712|961|Minibar|20.00|2026-04-02 11:30:00
+713|961|Minibar|20.00|2026-04-03 22:00:00
+714|962|Lavandería|28.00|2026-04-03 17:15:00
+715|963|Room service - Desayuno a la habitación|28.00|2026-04-03 15:45:00
+716|963|Minibar|20.00|2026-04-03 10:30:00
+717|963|Room service - Desayuno a la habitación|28.00|2026-04-02 11:30:00
+718|964|Room service - Desayuno a la habitación|28.00|2026-04-02 08:00:00
+719|964|Room service - Desayuno a la habitación|28.00|2026-04-04 20:45:00
+720|968|Minibar|20.00|2026-04-04 22:00:00
+721|968|Minibar|20.00|2026-04-03 12:15:00
+722|969|Room service - Desayuno a la habitación|28.00|2026-04-04 16:30:00
+723|972|Room service - Almuerzo o cena|40.00|2026-04-03 12:30:00
+724|972|Lavandería|28.00|2026-04-03 19:45:00
+725|973|Room service - Desayuno a la habitación|28.00|2026-04-03 13:00:00
+726|977|Room service - Almuerzo o cena|40.00|2026-04-03 15:00:00
+727|977|Minibar|20.00|2026-04-05 14:00:00
+728|977|Minibar|20.00|2026-04-04 21:45:00
+729|983|Lavandería|28.00|2026-04-03 22:30:00
+730|983|Lavandería|28.00|2026-04-05 21:45:00
+731|986|Minibar|20.00|2026-04-05 09:15:00
+732|986|Room service - Almuerzo o cena|40.00|2026-04-04 11:15:00
+733|987|Lavandería|28.00|2026-04-04 08:30:00
+734|988|Minibar|20.00|2026-04-04 12:45:00
+735|989|Room service - Almuerzo o cena|40.00|2026-04-06 14:30:00
+736|996|Room service - Desayuno a la habitación|28.00|2026-04-07 11:45:00
+737|998|Room service - Desayuno a la habitación|28.00|2026-04-06 22:30:00
+738|1000|Lavandería|28.00|2026-04-06 13:30:00
+739|1002|Room service - Almuerzo o cena|40.00|2026-04-07 17:30:00
+740|1002|Room service - Almuerzo o cena|40.00|2026-04-07 19:15:00
+741|1002|Lavandería|28.00|2026-04-06 12:30:00
+742|1005|Room service - Almuerzo o cena|40.00|2026-04-07 18:30:00
+743|1006|Room service - Almuerzo o cena|40.00|2026-04-07 22:45:00
+744|1007|Lavandería|28.00|2026-04-09 12:15:00
+745|1020|Lavandería|28.00|2026-04-10 22:15:00
+746|1020|Room service - Almuerzo o cena|40.00|2026-04-10 09:15:00
+747|1022|Lavandería|28.00|2026-04-09 18:45:00
+748|1022|Room service - Desayuno a la habitación|28.00|2026-04-09 22:00:00
+749|1022|Room service - Desayuno a la habitación|28.00|2026-04-09 09:30:00
+750|1023|Minibar|20.00|2026-04-09 11:45:00
+751|1023|Room service - Desayuno a la habitación|28.00|2026-04-09 13:00:00
+752|1024|Lavandería|28.00|2026-04-10 17:15:00
+753|1025|Room service - Desayuno a la habitación|28.00|2026-04-10 20:15:00
+754|1025|Minibar|20.00|2026-04-10 10:00:00
+755|1025|Room service - Desayuno a la habitación|28.00|2026-04-12 12:00:00
+756|1033|Minibar|20.00|2026-04-12 12:15:00
+757|1033|Room service - Almuerzo o cena|40.00|2026-04-10 18:30:00
+758|1033|Lavandería|28.00|2026-04-12 17:30:00
+759|1033|Minibar|20.00|2026-04-10 15:00:00
+760|1035|Room service - Desayuno a la habitación|28.00|2026-04-11 10:30:00
+761|1035|Lavandería|28.00|2026-04-11 11:15:00
+762|1036|Minibar|20.00|2026-04-11 22:00:00
+763|1036|Lavandería|28.00|2026-04-13 15:00:00
+764|1036|Room service - Almuerzo o cena|40.00|2026-04-11 09:45:00
+765|1038|Lavandería|28.00|2026-04-11 18:45:00
+766|1038|Lavandería|28.00|2026-04-12 15:15:00
+767|1039|Room service - Desayuno a la habitación|28.00|2026-04-12 10:45:00
+768|1042|Room service - Desayuno a la habitación|28.00|2026-04-13 18:15:00
+769|1042|Minibar|20.00|2026-04-11 09:30:00
+770|1042|Room service - Almuerzo o cena|40.00|2026-04-11 21:30:00
+771|1050|Room service - Desayuno a la habitación|28.00|2026-04-13 17:15:00
+772|1050|Room service - Desayuno a la habitación|28.00|2026-04-13 18:30:00
+773|1055|Minibar|20.00|2026-04-12 21:45:00
+774|1055|Lavandería|28.00|2026-04-12 15:30:00
+775|1055|Lavandería|28.00|2026-04-12 14:45:00
+776|1057|Minibar|20.00|2026-04-12 18:00:00
+777|1059|Minibar|20.00|2026-04-12 08:30:00
+778|1059|Room service - Desayuno a la habitación|28.00|2026-04-12 17:15:00
+779|1059|Minibar|20.00|2026-04-12 15:45:00
+780|1060|Room service - Desayuno a la habitación|28.00|2026-04-13 22:45:00
+781|1061|Room service - Almuerzo o cena|40.00|2026-04-14 10:00:00
+782|1061|Room service - Desayuno a la habitación|28.00|2026-04-14 08:30:00
+783|1062|Minibar|20.00|2026-04-13 08:15:00
+784|1062|Lavandería|28.00|2026-04-13 13:00:00
+785|1064|Room service - Desayuno a la habitación|28.00|2026-04-14 12:45:00
+786|1071|Room service - Desayuno a la habitación|28.00|2026-04-16 09:15:00
+787|1076|Minibar|20.00|2026-04-14 09:00:00
+788|1076|Room service - Desayuno a la habitación|28.00|2026-04-16 16:15:00
+789|1081|Lavandería|28.00|2026-04-15 19:45:00
+790|1084|Minibar|20.00|2026-04-16 19:00:00
+791|1085|Minibar|20.00|2026-04-16 10:15:00
+792|1087|Lavandería|28.00|2026-04-16 16:45:00
+793|1088|Lavandería|28.00|2026-04-19 20:15:00
+794|1090|Minibar|20.00|2026-04-17 20:15:00
+795|1090|Minibar|20.00|2026-04-17 11:00:00
+796|1095|Lavandería|28.00|2026-04-18 13:45:00
+797|1096|Minibar|20.00|2026-04-17 17:00:00
+798|1097|Minibar|20.00|2026-04-17 22:15:00
+799|1098|Minibar|20.00|2026-04-18 14:15:00
+800|1099|Room service - Desayuno a la habitación|28.00|2026-04-18 20:45:00
+801|1101|Room service - Desayuno a la habitación|28.00|2026-04-18 09:00:00
+802|1101|Lavandería|28.00|2026-04-19 08:30:00
+803|1102|Minibar|20.00|2026-04-18 11:15:00
+804|1102|Room service - Almuerzo o cena|40.00|2026-04-18 16:15:00
+805|1102|Room service - Desayuno a la habitación|28.00|2026-04-18 10:00:00
+806|1103|Room service - Desayuno a la habitación|28.00|2026-04-18 20:30:00
+807|1105|Minibar|20.00|2026-04-18 12:30:00
+808|1108|Room service - Almuerzo o cena|40.00|2026-04-18 16:15:00
+809|1108|Room service - Desayuno a la habitación|28.00|2026-04-18 10:30:00
+810|1108|Lavandería|28.00|2026-04-19 19:15:00
+811|1111|Room service - Desayuno a la habitación|28.00|2026-04-18 15:00:00
+812|1114|Room service - Desayuno a la habitación|28.00|2026-04-21 08:30:00
+813|1119|Room service - Almuerzo o cena|40.00|2026-04-18 20:00:00
+814|1119|Room service - Desayuno a la habitación|28.00|2026-04-19 08:00:00
+815|1121|Minibar|20.00|2026-04-19 11:00:00
+816|1124|Room service - Desayuno a la habitación|28.00|2026-04-19 21:00:00
+817|1125|Room service - Almuerzo o cena|40.00|2026-04-19 17:15:00
+818|1128|Minibar|20.00|2026-04-20 08:45:00
+819|1131|Minibar|20.00|2026-04-20 15:45:00
+820|1131|Room service - Desayuno a la habitación|28.00|2026-04-22 09:15:00
+821|1131|Minibar|20.00|2026-04-21 09:30:00
+822|1133|Minibar|20.00|2026-04-23 11:00:00
+823|1133|Room service - Desayuno a la habitación|28.00|2026-04-20 15:30:00
+824|1133|Lavandería|28.00|2026-04-22 08:30:00
+825|1133|Minibar|20.00|2026-04-23 20:15:00
+826|1136|Minibar|20.00|2026-04-21 17:45:00
+827|1136|Room service - Desayuno a la habitación|28.00|2026-04-22 18:00:00
+828|1138|Room service - Desayuno a la habitación|28.00|2026-04-22 19:45:00
+829|1139|Room service - Almuerzo o cena|40.00|2026-04-22 20:30:00
+830|1139|Room service - Desayuno a la habitación|28.00|2026-04-21 19:00:00
+831|1139|Room service - Desayuno a la habitación|28.00|2026-04-21 20:45:00
+832|1140|Lavandería|28.00|2026-04-22 11:45:00
+833|1140|Lavandería|28.00|2026-04-22 10:00:00
+834|1141|Room service - Desayuno a la habitación|28.00|2026-04-22 13:45:00
+835|1150|Minibar|20.00|2026-04-23 18:00:00
+836|1152|Minibar|20.00|2026-04-23 12:30:00
+837|1153|Minibar|20.00|2026-04-23 14:15:00
+838|1153|Minibar|20.00|2026-04-23 10:45:00
+839|1157|Room service - Almuerzo o cena|40.00|2026-04-24 22:30:00
+840|1157|Room service - Desayuno a la habitación|28.00|2026-04-24 22:45:00
+841|1160|Lavandería|28.00|2026-04-24 11:30:00
+842|1162|Toalla dañada - reposición|45.00|2026-04-27 20:00:00
+843|1162|Room service - Almuerzo o cena|40.00|2026-04-27 10:15:00
+844|1162|Minibar|20.00|2026-04-26 15:15:00
+845|1163|Lavandería|28.00|2026-04-25 09:30:00
+846|1163|Lavandería|28.00|2026-04-26 13:00:00
+847|1168|Minibar|20.00|2026-04-25 19:15:00
+848|1168|Lavandería|28.00|2026-04-25 08:30:00
+849|1168|Room service - Almuerzo o cena|40.00|2026-04-25 15:45:00
+850|1168|Minibar|20.00|2026-04-25 10:30:00
+851|1172|Room service - Almuerzo o cena|40.00|2026-04-25 10:30:00
+852|1174|Room service - Almuerzo o cena|40.00|2026-04-26 11:15:00
+853|1182|Room service - Desayuno a la habitación|28.00|2026-04-25 09:45:00
+854|1184|Room service - Desayuno a la habitación|28.00|2026-04-25 19:45:00
+855|1184|Room service - Desayuno a la habitación|28.00|2026-04-25 20:45:00
+856|1186|Room service - Almuerzo o cena|40.00|2026-04-25 20:45:00
+857|1187|Room service - Desayuno a la habitación|28.00|2026-04-25 21:15:00
+858|1187|Minibar|20.00|2026-04-26 08:15:00
+859|1190|Room service - Almuerzo o cena|40.00|2026-04-27 13:00:00
+860|1190|Lavandería|28.00|2026-04-27 15:45:00
+861|1195|Room service - Desayuno a la habitación|28.00|2026-04-28 20:45:00
+862|1195|Room service - Almuerzo o cena|40.00|2026-04-28 20:30:00
+863|1195|Lavandería|28.00|2026-04-27 09:30:00
+864|1196|Room service - Almuerzo o cena|40.00|2026-04-26 20:45:00
+865|1196|Room service - Desayuno a la habitación|28.00|2026-04-27 09:00:00
+866|1196|Room service - Desayuno a la habitación|28.00|2026-04-26 11:45:00
+867|1197|Lavandería|28.00|2026-04-27 17:00:00
+868|1197|Room service - Almuerzo o cena|40.00|2026-04-27 20:00:00
+869|1201|Minibar|20.00|2026-04-28 08:00:00
+870|1201|Room service - Desayuno a la habitación|28.00|2026-04-27 11:00:00
+871|1201|Room service - Desayuno a la habitación|28.00|2026-04-29 21:00:00
+872|1202|Lavandería|28.00|2026-04-29 14:45:00
+873|1203|Minibar|20.00|2026-04-29 14:15:00
+874|1203|Lavandería|28.00|2026-04-29 17:00:00
+875|1205|Minibar|20.00|2026-04-29 19:30:00
+876|1208|Minibar|20.00|2026-04-30 19:00:00
+877|1208|Lavandería|28.00|2026-04-28 12:00:00
+878|1208|Room service - Almuerzo o cena|40.00|2026-04-28 19:00:00
+879|1213|Toalla dañada - reposición|45.00|2026-04-30 18:15:00
+880|1214|Room service - Desayuno a la habitación|28.00|2026-04-30 19:30:00
+881|1214|Room service - Desayuno a la habitación|28.00|2026-04-29 09:45:00
+882|1214|Lavandería|28.00|2026-04-30 08:30:00
+883|1218|Room service - Desayuno a la habitación|28.00|2026-05-01 18:45:00
+884|1218|Room service - Desayuno a la habitación|28.00|2026-04-30 11:15:00
+885|1218|Minibar|20.00|2026-05-01 19:00:00
+886|1220|Room service - Desayuno a la habitación|28.00|2026-04-30 18:00:00
+887|1222|Toalla dañada - reposición|45.00|2026-04-30 22:00:00
+888|1222|Lavandería|28.00|2026-04-30 20:30:00
+889|1222|Room service - Desayuno a la habitación|28.00|2026-04-30 19:30:00
+890|1222|Minibar|20.00|2026-04-30 12:15:00
+891|1227|Room service - Almuerzo o cena|40.00|2026-05-02 09:15:00
+892|1228|Room service - Desayuno a la habitación|28.00|2026-05-01 09:15:00
+893|1229|Minibar|20.00|2026-05-04 17:30:00
+894|1229|Room service - Almuerzo o cena|40.00|2026-05-01 13:00:00
+895|1231|Room service - Desayuno a la habitación|28.00|2026-05-05 18:30:00
+896|1231|Room service - Desayuno a la habitación|28.00|2026-05-04 19:00:00
+897|1233|Minibar|20.00|2026-05-02 08:15:00
+898|1233|Room service - Desayuno a la habitación|28.00|2026-05-01 08:00:00
+899|1233|Minibar|20.00|2026-05-02 21:15:00
+900|1233|Room service - Almuerzo o cena|40.00|2026-05-01 20:00:00
+901|1234|Minibar|20.00|2026-05-01 20:45:00
+902|1235|Room service - Desayuno a la habitación|28.00|2026-05-03 18:15:00
+903|1235|Room service - Almuerzo o cena|40.00|2026-05-01 11:15:00
+904|1237|Room service - Almuerzo o cena|40.00|2026-05-01 19:45:00
+905|1237|Room service - Desayuno a la habitación|28.00|2026-05-02 12:15:00
+906|1237|Room service - Desayuno a la habitación|28.00|2026-05-01 08:15:00
+907|1239|Minibar|20.00|2026-05-02 19:45:00
+908|1239|Room service - Almuerzo o cena|40.00|2026-05-03 22:15:00
+909|1239|Room service - Almuerzo o cena|40.00|2026-05-02 15:45:00
+910|1239|Room service - Desayuno a la habitación|28.00|2026-05-02 15:45:00
+911|1242|Room service - Almuerzo o cena|40.00|2026-05-03 19:15:00
+912|1242|Minibar|20.00|2026-05-02 13:45:00
+913|1242|Room service - Desayuno a la habitación|28.00|2026-05-03 12:15:00
+914|1242|Minibar|20.00|2026-05-02 16:30:00
+915|1244|Minibar|20.00|2026-05-03 09:30:00
+916|1249|Minibar|20.00|2026-05-08 10:45:00
+917|1249|Room service - Almuerzo o cena|40.00|2026-05-05 09:15:00
+918|1257|Room service - Almuerzo o cena|40.00|2026-05-05 15:00:00
+919|1257|Minibar|20.00|2026-05-05 14:00:00
+920|1257|Minibar|20.00|2026-05-07 12:30:00
+921|1257|Minibar|20.00|2026-05-06 17:45:00
+922|1258|Lavandería|28.00|2026-05-05 08:00:00
+923|1258|Minibar|20.00|2026-05-05 22:45:00
+924|1262|Room service - Desayuno a la habitación|28.00|2026-05-09 14:45:00
+925|1262|Lavandería|28.00|2026-05-07 20:15:00
+926|1264|Room service - Desayuno a la habitación|28.00|2026-05-08 21:30:00
+927|1264|Room service - Desayuno a la habitación|28.00|2026-05-08 21:30:00
+928|1266|Room service - Desayuno a la habitación|28.00|2026-05-09 15:15:00
+929|1272|Room service - Desayuno a la habitación|28.00|2026-05-08 16:00:00
+930|1273|Room service - Desayuno a la habitación|28.00|2026-05-10 18:30:00
+931|1273|Lavandería|28.00|2026-05-10 18:00:00
+932|1273|Minibar|20.00|2026-05-08 11:30:00
+933|1273|Room service - Almuerzo o cena|40.00|2026-05-10 15:30:00
+934|1274|Room service - Almuerzo o cena|40.00|2026-05-08 13:15:00
+935|1274|Room service - Desayuno a la habitación|28.00|2026-05-08 20:15:00
+936|1274|Room service - Desayuno a la habitación|28.00|2026-05-08 19:45:00
+937|1278|Minibar|20.00|2026-05-10 12:30:00
+938|1279|Room service - Desayuno a la habitación|28.00|2026-05-09 12:15:00
+939|1279|Lavandería|28.00|2026-05-11 12:45:00
+940|1283|Room service - Desayuno a la habitación|28.00|2026-05-09 08:45:00
+941|1286|Minibar|20.00|2026-05-10 16:15:00
+942|1289|Lavandería|28.00|2026-05-09 14:15:00
+943|1291|Room service - Almuerzo o cena|40.00|2026-05-09 19:15:00
+944|1291|Room service - Almuerzo o cena|40.00|2026-05-09 15:00:00
+945|1292|Room service - Desayuno a la habitación|28.00|2026-05-10 10:00:00
+946|1292|Minibar|20.00|2026-05-10 15:45:00
+947|1293|Minibar|20.00|2026-05-12 21:30:00
+948|1293|Room service - Desayuno a la habitación|28.00|2026-05-10 13:15:00
+949|1296|Room service - Desayuno a la habitación|28.00|2026-05-10 12:15:00
+950|1296|Minibar|20.00|2026-05-11 21:00:00
+951|1296|Room service - Desayuno a la habitación|28.00|2026-05-10 19:45:00
+952|1296|Room service - Almuerzo o cena|40.00|2026-05-10 17:30:00
+953|1299|Minibar|20.00|2026-05-12 15:45:00
+954|1299|Room service - Desayuno a la habitación|28.00|2026-05-13 19:15:00
+955|1299|Lavandería|28.00|2026-05-11 14:45:00
+956|1301|Lavandería|28.00|2026-05-11 19:15:00
+957|1301|Room service - Almuerzo o cena|40.00|2026-05-11 20:30:00
+958|1306|Minibar|20.00|2026-05-13 21:45:00
+959|1306|Minibar|20.00|2026-05-12 22:00:00
+960|1308|Lavandería|28.00|2026-05-13 12:30:00
+961|1308|Lavandería|28.00|2026-05-13 21:00:00
+962|1308|Room service - Almuerzo o cena|40.00|2026-05-13 18:30:00
+963|1311|Room service - Almuerzo o cena|40.00|2026-05-14 10:30:00
+964|1311|Lavandería|28.00|2026-05-14 09:00:00
+965|1311|Lavandería|28.00|2026-05-13 12:30:00
+966|1312|Toalla dañada - reposición|45.00|2026-05-14 17:45:00
+967|1312|Minibar|20.00|2026-05-15 17:15:00
+968|1313|Room service - Desayuno a la habitación|28.00|2026-05-14 09:15:00
+969|1314|Minibar|20.00|2026-05-13 17:30:00
+970|1314|Minibar|20.00|2026-05-13 09:15:00
+971|1314|Room service - Desayuno a la habitación|28.00|2026-05-13 16:45:00
+972|1319|Room service - Desayuno a la habitación|28.00|2026-05-14 16:15:00
+973|1319|Room service - Almuerzo o cena|40.00|2026-05-14 20:00:00
+974|1322|Lavandería|28.00|2026-05-16 08:00:00
+975|1329|Minibar|20.00|2026-05-16 16:45:00
+976|1329|Room service - Almuerzo o cena|40.00|2026-05-16 21:15:00
+977|1330|Minibar|20.00|2026-05-19 15:45:00
+978|1335|Room service - Almuerzo o cena|40.00|2026-05-15 15:45:00
+979|1335|Minibar|20.00|2026-05-16 21:15:00
+980|1335|Minibar|20.00|2026-05-17 12:15:00
+981|1335|Room service - Desayuno a la habitación|28.00|2026-05-17 16:45:00
+982|1337|Minibar|20.00|2026-05-16 09:45:00
+983|1337|Room service - Almuerzo o cena|40.00|2026-05-17 15:30:00
+984|1338|Minibar|20.00|2026-05-17 13:30:00
+985|1338|Room service - Desayuno a la habitación|28.00|2026-05-20 15:45:00
+986|1338|Lavandería|28.00|2026-05-20 11:15:00
+987|1338|Minibar|20.00|2026-05-18 09:45:00
+988|1340|Lavandería|28.00|2026-05-17 11:15:00
+989|1345|Minibar|20.00|2026-05-16 19:15:00
+990|1346|Minibar|20.00|2026-05-16 19:45:00
+991|1347|Toalla dañada - reposición|45.00|2026-05-16 13:00:00
+992|1351|Minibar|20.00|2026-05-18 13:45:00
+993|1351|Minibar|20.00|2026-05-17 18:45:00
+994|1351|Minibar|20.00|2026-05-18 20:30:00
+995|1352|Room service - Almuerzo o cena|40.00|2026-05-21 12:00:00
+996|1352|Minibar|20.00|2026-05-18 08:15:00
+997|1353|Minibar|20.00|2026-05-23 11:15:00
+998|1353|Toalla dañada - reposición|45.00|2026-05-22 19:00:00
+999|1354|Lavandería|28.00|2026-05-19 21:30:00
+1000|1354|Minibar|20.00|2026-05-18 13:15:00
+1001|1354|Minibar|20.00|2026-05-19 12:00:00
+1002|1357|Minibar|20.00|2026-05-17 08:15:00
+1003|1357|Room service - Almuerzo o cena|40.00|2026-05-17 13:30:00
+1004|1359|Room service - Almuerzo o cena|40.00|2026-05-20 18:30:00
+1005|1359|Room service - Desayuno a la habitación|28.00|2026-05-19 20:45:00
+1006|1359|Lavandería|28.00|2026-05-18 12:30:00
+1007|1361|Minibar|20.00|2026-05-18 10:30:00
+1008|1361|Minibar|20.00|2026-05-18 10:30:00
+1009|1361|Room service - Desayuno a la habitación|28.00|2026-05-18 22:00:00
+1010|1361|Lavandería|28.00|2026-05-18 21:30:00
+1011|1367|Room service - Almuerzo o cena|40.00|2026-05-19 17:15:00
+1012|1368|Room service - Desayuno a la habitación|28.00|2026-05-21 18:45:00
+1013|1368|Room service - Desayuno a la habitación|28.00|2026-05-20 13:30:00
+1014|1370|Room service - Desayuno a la habitación|28.00|2026-05-20 13:15:00
+1015|1371|Minibar|20.00|2026-05-22 10:30:00
+1016|1373|Room service - Almuerzo o cena|40.00|2026-05-23 20:45:00
+1017|1379|Room service - Almuerzo o cena|40.00|2026-05-23 18:15:00
+1018|1379|Minibar|20.00|2026-05-23 17:45:00
+1019|1379|Room service - Almuerzo o cena|40.00|2026-05-23 20:00:00
+1020|1381|Minibar|20.00|2026-05-22 14:30:00
+1021|1386|Room service - Desayuno a la habitación|28.00|2026-05-22 20:15:00
+1022|1387|Room service - Almuerzo o cena|40.00|2026-05-22 18:00:00
+1023|1387|Room service - Almuerzo o cena|40.00|2026-05-23 14:45:00
+1024|1388|Room service - Almuerzo o cena|40.00|2026-05-23 10:15:00
+1025|1388|Minibar|20.00|2026-05-23 08:15:00
+1026|1390|Minibar|20.00|2026-05-22 14:30:00
+1027|1390|Toalla dañada - reposición|45.00|2026-05-23 20:00:00
+1028|1393|Minibar|20.00|2026-05-24 14:15:00
+1029|1393|Minibar|20.00|2026-05-23 18:30:00
+1030|1393|Minibar|20.00|2026-05-23 22:00:00
+1031|1394|Room service - Desayuno a la habitación|28.00|2026-05-23 11:15:00
+1032|1394|Lavandería|28.00|2026-05-23 22:45:00
+1033|1394|Minibar|20.00|2026-05-23 08:30:00
+1034|1395|Minibar|20.00|2026-05-23 09:30:00
+1035|1395|Lavandería|28.00|2026-05-24 15:45:00
+1036|1395|Room service - Almuerzo o cena|40.00|2026-05-23 08:45:00
+1037|1395|Lavandería|28.00|2026-05-24 12:30:00
+1038|1396|Room service - Desayuno a la habitación|28.00|2026-05-25 22:45:00
+1039|1396|Minibar|20.00|2026-05-25 21:15:00
+1040|1396|Room service - Desayuno a la habitación|28.00|2026-05-26 19:45:00
+1041|1398|Minibar|20.00|2026-05-23 13:00:00
+1042|1398|Minibar|20.00|2026-05-23 20:00:00
+1043|1399|Lavandería|28.00|2026-05-24 12:00:00
+1044|1407|Minibar|20.00|2026-05-25 08:15:00
+1045|1407|Lavandería|28.00|2026-05-24 12:00:00
+1046|1407|Lavandería|28.00|2026-05-25 16:30:00
+1047|1408|Lavandería|28.00|2026-05-24 09:15:00
+1048|1415|Lavandería|28.00|2026-05-25 13:45:00
+1049|1416|Minibar|20.00|2026-05-25 17:00:00
+1050|1416|Minibar|20.00|2026-05-25 18:30:00
+1051|1417|Room service - Desayuno a la habitación|28.00|2026-05-25 19:00:00
+1052|1418|Room service - Almuerzo o cena|40.00|2026-05-26 13:15:00
+1053|1420|Minibar|20.00|2026-05-28 14:45:00
+1054|1424|Lavandería|28.00|2026-05-31 18:00:00
+1055|1426|Minibar|20.00|2026-05-27 12:00:00
+1056|1426|Room service - Desayuno a la habitación|28.00|2026-05-27 17:00:00
+1057|1426|Minibar|20.00|2026-05-27 16:00:00
+1058|1429|Minibar|20.00|2026-05-28 19:45:00
+1059|1429|Minibar|20.00|2026-05-28 22:45:00
+1060|1429|Room service - Almuerzo o cena|40.00|2026-05-28 17:15:00
+1061|1429|Minibar|20.00|2026-05-28 08:15:00
+1062|1433|Room service - Desayuno a la habitación|28.00|2026-05-28 14:45:00
+1063|1433|Minibar|20.00|2026-05-28 13:45:00
+1064|1433|Minibar|20.00|2026-05-29 18:00:00
+1065|1436|Minibar|20.00|2026-05-30 10:00:00
+1066|1443|Minibar|20.00|2026-05-29 11:15:00
+1067|1444|Lavandería|28.00|2026-05-31 15:15:00
+1068|1444|Lavandería|28.00|2026-05-31 22:15:00
+1069|1444|Minibar|20.00|2026-05-30 17:00:00
+1070|1445|Minibar|20.00|2026-06-03 13:15:00
+1071|1445|Lavandería|28.00|2026-06-04 14:30:00
+1072|1445|Minibar|20.00|2026-05-30 12:00:00
+1073|1445|Minibar|20.00|2026-05-30 15:00:00
+1074|1446|Minibar|20.00|2026-05-29 22:15:00
+1075|1446|Minibar|20.00|2026-05-29 22:15:00
+1076|1446|Room service - Almuerzo o cena|40.00|2026-05-29 10:15:00
+1077|1446|Room service - Desayuno a la habitación|28.00|2026-05-29 18:00:00
+1078|1447|Room service - Almuerzo o cena|40.00|2026-05-30 18:45:00
+1079|1447|Minibar|20.00|2026-05-29 08:30:00
+1080|1447|Room service - Almuerzo o cena|40.00|2026-05-31 09:00:00
+1081|1449|Lavandería|28.00|2026-05-31 13:00:00
+1082|1456|Room service - Desayuno a la habitación|28.00|2026-05-30 20:15:00
+1083|1458|Room service - Desayuno a la habitación|28.00|2026-06-02 13:15:00
+1084|1458|Room service - Almuerzo o cena|40.00|2026-06-02 11:00:00
+1085|1460|Room service - Desayuno a la habitación|28.00|2026-06-01 21:45:00
+1086|1463|Room service - Almuerzo o cena|40.00|2026-06-01 09:00:00
+1087|1463|Room service - Desayuno a la habitación|28.00|2026-06-01 12:45:00
+1088|1463|Room service - Desayuno a la habitación|28.00|2026-05-31 14:30:00
+1089|1465|Room service - Desayuno a la habitación|28.00|2026-06-01 19:45:00
+1090|1465|Minibar|20.00|2026-06-01 19:45:00
+1091|1465|Minibar|20.00|2026-06-02 14:15:00
+1092|1466|Minibar|20.00|2026-05-31 15:15:00
+1093|1468|Minibar|20.00|2026-05-31 19:30:00
+1094|1468|Room service - Almuerzo o cena|40.00|2026-05-31 20:30:00
+1095|1469|Minibar|20.00|2026-05-31 21:00:00
+1096|1471|Room service - Almuerzo o cena|40.00|2026-06-03 10:30:00
+1097|1473|Room service - Desayuno a la habitación|28.00|2026-06-01 12:45:00
+1098|1473|Room service - Almuerzo o cena|40.00|2026-06-01 20:45:00
+1099|1474|Room service - Desayuno a la habitación|28.00|2026-06-02 16:00:00
+1100|1475|Lavandería|28.00|2026-06-03 22:30:00
+1101|1480|Room service - Desayuno a la habitación|28.00|2026-06-04 13:15:00
+1102|1480|Room service - Almuerzo o cena|40.00|2026-06-04 10:30:00
+1103|1481|Minibar|20.00|2026-06-03 16:00:00
+1104|1481|Lavandería|28.00|2026-06-03 10:00:00
+1105|1481|Lavandería|28.00|2026-06-03 18:45:00
+1106|1489|Room service - Almuerzo o cena|40.00|2026-06-05 11:15:00
+1107|1490|Minibar|20.00|2026-06-04 17:15:00
+1108|1491|Minibar|20.00|2026-06-04 22:45:00
+1109|1491|Lavandería|28.00|2026-06-04 18:00:00
+1110|1491|Room service - Desayuno a la habitación|28.00|2026-06-04 10:45:00
+1111|1491|Minibar|20.00|2026-06-04 09:30:00
+1112|1494|Room service - Almuerzo o cena|40.00|2026-06-06 11:00:00
+1113|1497|Room service - Almuerzo o cena|40.00|2026-06-06 10:45:00
+1114|1497|Minibar|20.00|2026-06-07 09:45:00
+1115|1497|Room service - Almuerzo o cena|40.00|2026-06-05 21:15:00
+1116|1497|Lavandería|28.00|2026-06-05 17:00:00
+1117|1499|Lavandería|28.00|2026-06-05 20:30:00
+1118|1501|Room service - Desayuno a la habitación|28.00|2026-06-06 19:30:00
+1119|1503|Minibar|20.00|2026-06-05 16:30:00
+1120|1503|Room service - Almuerzo o cena|40.00|2026-06-06 13:30:00
+1121|1504|Minibar|20.00|2026-06-06 13:30:00
+1122|1504|Room service - Desayuno a la habitación|28.00|2026-06-08 09:00:00
+1123|1505|Room service - Almuerzo o cena|40.00|2026-06-06 14:45:00
+1124|1505|Minibar|20.00|2026-06-06 13:45:00
+1125|1508|Room service - Desayuno a la habitación|28.00|2026-06-05 14:15:00
+1126|1508|Room service - Almuerzo o cena|40.00|2026-06-05 20:00:00
+1127|1508|Room service - Desayuno a la habitación|28.00|2026-06-06 19:15:00
+1128|1510|Lavandería|28.00|2026-06-11 20:30:00
+1129|1511|Lavandería|28.00|2026-06-06 18:00:00
+1130|1511|Minibar|20.00|2026-06-06 08:45:00
+1131|1513|Lavandería|28.00|2026-06-06 09:45:00
+1132|1515|Minibar|20.00|2026-06-06 21:15:00
+1133|1518|Minibar|20.00|2026-06-06 19:30:00
+1134|1518|Room service - Almuerzo o cena|40.00|2026-06-07 11:15:00
+1135|1527|Minibar|20.00|2026-06-07 14:15:00
+1136|1528|Room service - Desayuno a la habitación|28.00|2026-06-10 21:30:00
+1137|1528|Minibar|20.00|2026-06-12 14:00:00
+1138|1528|Minibar|20.00|2026-06-11 17:00:00
+1139|1528|Room service - Desayuno a la habitación|28.00|2026-06-11 16:15:00
+1140|1532|Minibar|20.00|2026-06-10 12:45:00
+1141|1532|Toalla dañada - reposición|45.00|2026-06-10 17:30:00
+1142|1532|Toalla dañada - reposición|45.00|2026-06-09 12:45:00
+1143|1534|Minibar|20.00|2026-06-10 08:15:00
+1144|1537|Minibar|20.00|2026-06-10 14:15:00
+1145|1537|Lavandería|28.00|2026-06-10 11:45:00
+1146|1539|Room service - Desayuno a la habitación|28.00|2026-06-13 14:15:00
+1147|1539|Minibar|20.00|2026-06-12 11:15:00
+1148|1541|Minibar|20.00|2026-06-12 21:45:00
+1149|1545|Room service - Desayuno a la habitación|28.00|2026-06-13 08:45:00
+1150|1545|Room service - Desayuno a la habitación|28.00|2026-06-12 09:00:00
+1151|1547|Room service - Desayuno a la habitación|28.00|2026-06-12 08:30:00
+1152|1551|Lavandería|28.00|2026-06-16 19:45:00
+1153|1551|Room service - Almuerzo o cena|40.00|2026-06-17 10:45:00
+1154|1551|Room service - Almuerzo o cena|40.00|2026-06-13 22:15:00
+1155|1551|Room service - Desayuno a la habitación|28.00|2026-06-16 14:45:00
+1156|1553|Lavandería|28.00|2026-06-13 19:15:00
+1157|1553|Room service - Almuerzo o cena|40.00|2026-06-14 08:15:00
+1158|1556|Room service - Almuerzo o cena|40.00|2026-06-13 19:00:00
+1159|1556|Room service - Desayuno a la habitación|28.00|2026-06-14 21:30:00
+1160|1557|Lavandería|28.00|2026-06-13 17:15:00
+1161|1557|Room service - Almuerzo o cena|40.00|2026-06-13 22:15:00
+1162|1557|Room service - Desayuno a la habitación|28.00|2026-06-15 10:30:00
+1163|1560|Lavandería|28.00|2026-06-14 19:45:00
+1164|1560|Lavandería|28.00|2026-06-16 16:30:00
+1165|1560|Room service - Desayuno a la habitación|28.00|2026-06-14 08:45:00
+1166|1560|Room service - Almuerzo o cena|40.00|2026-06-13 16:45:00
+1167|1562|Room service - Desayuno a la habitación|28.00|2026-06-13 12:30:00
+1168|1565|Room service - Almuerzo o cena|40.00|2026-06-14 12:15:00
+1169|1565|Room service - Desayuno a la habitación|28.00|2026-06-14 18:45:00
+1170|1567|Lavandería|28.00|2026-06-14 09:00:00
+1171|1574|Room service - Desayuno a la habitación|28.00|2026-06-15 09:15:00
+1172|1574|Room service - Almuerzo o cena|40.00|2026-06-16 20:15:00
+1173|1574|Minibar|20.00|2026-06-16 16:30:00
+1174|1575|Lavandería|28.00|2026-06-17 22:45:00
+1175|1576|Minibar|20.00|2026-06-16 20:45:00
+1176|1576|Room service - Desayuno a la habitación|28.00|2026-06-15 20:00:00
+1177|1577|Lavandería|28.00|2026-06-18 18:45:00
+1178|1577|Room service - Desayuno a la habitación|28.00|2026-06-16 17:00:00
+1179|1578|Room service - Desayuno a la habitación|28.00|2026-06-15 21:15:00
+1180|1579|Room service - Almuerzo o cena|40.00|2026-06-16 13:45:00
+1181|1581|Minibar|20.00|2026-06-17 17:00:00
+1182|1582|Lavandería|28.00|2026-06-16 22:30:00
+1183|1582|Room service - Desayuno a la habitación|28.00|2026-06-16 09:00:00
+1184|1589|Lavandería|28.00|2026-06-18 20:00:00
+1185|1592|Room service - Almuerzo o cena|40.00|2026-06-18 19:00:00
+1186|1592|Minibar|20.00|2026-06-19 22:30:00
+1187|1601|Room service - Desayuno a la habitación|28.00|2026-06-22 10:00:00
+1188|1603|Room service - Desayuno a la habitación|28.00|2026-06-22 09:00:00
+1189|1603|Room service - Almuerzo o cena|40.00|2026-06-19 19:00:00
+1190|1603|Room service - Desayuno a la habitación|28.00|2026-06-22 12:15:00
+1191|1605|Room service - Almuerzo o cena|40.00|2026-06-20 13:15:00
+1192|1606|Minibar|20.00|2026-06-19 22:45:00
+1193|1606|Lavandería|28.00|2026-06-19 10:30:00
+1194|1608|Room service - Desayuno a la habitación|28.00|2026-06-20 13:00:00
+1195|1609|Minibar|20.00|2026-06-19 22:00:00
+1196|1610|Room service - Almuerzo o cena|40.00|2026-06-19 09:45:00
+1197|1610|Minibar|20.00|2026-06-20 13:45:00
+1198|1613|Room service - Desayuno a la habitación|28.00|2026-06-22 12:45:00
+1199|1613|Room service - Almuerzo o cena|40.00|2026-06-20 13:00:00
+1200|1615|Minibar|20.00|2026-06-20 08:30:00
+1201|1616|Room service - Desayuno a la habitación|28.00|2026-06-20 12:45:00
+1202|1621|Room service - Almuerzo o cena|40.00|2026-06-21 13:45:00
+1203|1622|Lavandería|28.00|2026-06-22 19:45:00
+1204|1622|Lavandería|28.00|2026-06-21 14:15:00
+1205|1622|Minibar|20.00|2026-06-22 15:00:00
+1206|1622|Room service - Almuerzo o cena|40.00|2026-06-21 20:45:00
+1207|1624|Room service - Desayuno a la habitación|28.00|2026-06-24 18:15:00
+1208|1624|Minibar|20.00|2026-06-22 22:45:00
+1209|1632|Lavandería|28.00|2026-06-23 14:00:00
+1210|1633|Minibar|20.00|2026-06-24 11:15:00
+1211|1634|Lavandería|28.00|2026-06-23 16:45:00
+1212|1639|Room service - Almuerzo o cena|40.00|2026-06-24 18:00:00
+1213|1639|Room service - Desayuno a la habitación|28.00|2026-06-24 08:45:00
+1214|1640|Minibar|20.00|2026-06-24 21:30:00
+1215|1640|Minibar|20.00|2026-06-24 09:45:00
+1216|1642|Room service - Almuerzo o cena|40.00|2026-06-26 16:00:00
+1217|1642|Room service - Desayuno a la habitación|28.00|2026-06-26 11:15:00
+1218|1645|Room service - Almuerzo o cena|40.00|2026-06-26 15:45:00
+1219|1646|Minibar|20.00|2026-06-25 20:00:00
+1220|1650|Lavandería|28.00|2026-06-29 14:30:00
+1221|1650|Minibar|20.00|2026-06-25 16:30:00
+1222|1651|Room service - Desayuno a la habitación|28.00|2026-06-26 14:15:00
+1223|1651|Room service - Almuerzo o cena|40.00|2026-06-26 09:00:00
+1224|1654|Minibar|20.00|2026-06-29 10:30:00
+1225|1654|Room service - Desayuno a la habitación|28.00|2026-06-29 19:15:00
+1226|1655|Minibar|20.00|2026-06-29 17:15:00
+1227|1657|Room service - Desayuno a la habitación|28.00|2026-06-26 14:45:00
+1228|1664|Minibar|20.00|2026-06-27 21:15:00
+1229|1664|Lavandería|28.00|2026-06-27 12:45:00
+1230|1664|Minibar|20.00|2026-06-27 16:00:00
+1231|1670|Room service - Desayuno a la habitación|28.00|2026-06-29 18:00:00
+1232|1670|Minibar|20.00|2026-06-27 12:15:00
+1233|1678|Minibar|20.00|2026-07-03 15:00:00
+1234|1678|Room service - Almuerzo o cena|40.00|2026-07-03 12:15:00
+1235|1686|Room service - Almuerzo o cena|40.00|2026-06-30 19:15:00
+1236|1686|Room service - Desayuno a la habitación|28.00|2026-06-30 15:00:00
+1237|1687|Room service - Almuerzo o cena|40.00|2026-07-01 17:00:00
+1238|1687|Minibar|20.00|2026-07-01 08:30:00
+1239|1687|Lavandería|28.00|2026-07-01 20:15:00
+1240|1687|Room service - Desayuno a la habitación|28.00|2026-07-01 19:00:00
+1241|1693|Minibar|20.00|2026-07-02 16:45:00
+1242|1693|Minibar|20.00|2026-07-02 08:00:00
+1243|1694|Minibar|20.00|2026-07-02 19:45:00
+1244|1696|Minibar|20.00|2026-07-03 21:45:00
+1245|1699|Minibar|20.00|2026-07-04 12:15:00
+1246|1699|Minibar|20.00|2026-07-04 09:30:00
+1247|1699|Toalla dañada - reposición|45.00|2026-07-04 14:45:00
+1248|1712|Room service - Almuerzo o cena|40.00|2026-07-05 19:15:00
+1249|1712|Minibar|20.00|2026-07-05 17:15:00
+1250|1713|Minibar|20.00|2026-07-05 17:15:00
+1251|1714|Minibar|20.00|2026-07-06 13:45:00
+1252|1714|Lavandería|28.00|2026-07-04 12:30:00
+1253|1714|Minibar|20.00|2026-07-06 19:45:00
+1254|1715|Minibar|20.00|2026-07-05 20:00:00
+1255|1716|Minibar|20.00|2026-07-06 18:00:00
+1256|1719|Room service - Almuerzo o cena|40.00|2026-07-06 14:15:00
+1257|1720|Room service - Desayuno a la habitación|28.00|2026-07-07 08:30:00
+1258|1725|Room service - Almuerzo o cena|40.00|2026-07-07 12:30:00
+1259|1727|Room service - Desayuno a la habitación|28.00|2026-07-08 21:15:00
+1260|1727|Room service - Almuerzo o cena|40.00|2026-07-11 18:30:00
+1261|1727|Lavandería|28.00|2026-07-12 19:00:00
+1262|1728|Room service - Desayuno a la habitación|28.00|2026-07-09 16:00:00
+1263|1729|Toalla dañada - reposición|45.00|2026-07-07 08:00:00
+1264|1729|Lavandería|28.00|2026-07-09 10:15:00
+1265|1731|Room service - Desayuno a la habitación|28.00|2026-07-10 09:15:00
+1266|1731|Toalla dañada - reposición|45.00|2026-07-09 18:30:00
+1267|1732|Minibar|20.00|2026-07-10 17:45:00
+1268|1733|Minibar|20.00|2026-07-08 22:00:00
+1269|1734|Minibar|20.00|2026-07-09 22:30:00
+1270|1734|Minibar|20.00|2026-07-08 18:30:00
+1271|1735|Room service - Desayuno a la habitación|28.00|2026-07-11 09:15:00
+1272|1740|Toalla dañada - reposición|45.00|2026-07-09 08:15:00
+1273|1740|Minibar|20.00|2026-07-09 17:15:00
+1274|1740|Minibar|20.00|2026-07-09 16:30:00
+1275|1740|Room service - Almuerzo o cena|40.00|2026-07-09 11:00:00
+1276|1743|Room service - Almuerzo o cena|40.00|2026-07-11 14:15:00
+1277|1744|Room service - Almuerzo o cena|40.00|2026-07-10 18:00:00
+1278|1748|Room service - Desayuno a la habitación|28.00|2026-07-11 10:45:00
+1279|1748|Minibar|20.00|2026-07-11 11:00:00
+1280|1749|Minibar|20.00|2026-07-12 12:30:00
+1281|1751|Room service - Desayuno a la habitación|28.00|2026-07-12 08:45:00
+1282|1751|Lavandería|28.00|2026-07-13 16:00:00
+1283|1751|Minibar|20.00|2026-07-13 19:45:00
+1284|1751|Lavandería|28.00|2026-07-13 12:00:00
+1285|1754|Toalla dañada - reposición|45.00|2026-07-11 12:45:00
+1286|1755|Room service - Desayuno a la habitación|28.00|2026-07-13 18:45:00
+1287|1758|Room service - Desayuno a la habitación|28.00|2026-07-11 10:15:00
+1288|1758|Lavandería|28.00|2026-07-11 19:15:00
+1289|1758|Minibar|20.00|2026-07-11 19:00:00
+1290|1759|Room service - Almuerzo o cena|40.00|2026-07-11 08:15:00
+1291|1759|Minibar|20.00|2026-07-11 14:15:00
+1292|1759|Minibar|20.00|2026-07-11 10:30:00
+1293|1762|Room service - Almuerzo o cena|40.00|2026-07-11 08:00:00
+1294|1762|Minibar|20.00|2026-07-11 15:15:00
+1295|1773|Lavandería|28.00|2026-07-16 22:30:00
+1296|1773|Room service - Desayuno a la habitación|28.00|2026-07-15 08:45:00
+1297|1775|Room service - Desayuno a la habitación|28.00|2026-07-18 21:15:00
+1298|1777|Room service - Desayuno a la habitación|28.00|2026-07-16 08:45:00
+1299|1778|Lavandería|28.00|2026-07-16 17:45:00
+1300|1778|Room service - Desayuno a la habitación|28.00|2026-07-17 16:45:00
+1301|1778|Minibar|20.00|2026-07-17 22:45:00
+1302|1780|Minibar|20.00|2026-07-15 12:30:00
+1303|1780|Minibar|20.00|2026-07-16 15:30:00
+1304|1782|Room service - Desayuno a la habitación|28.00|2026-07-16 17:30:00
+1305|1782|Room service - Desayuno a la habitación|28.00|2026-07-16 16:45:00
+1306|1782|Lavandería|28.00|2026-07-16 09:30:00
+1307|1783|Minibar|20.00|2026-07-16 18:45:00
+1308|1783|Minibar|20.00|2026-07-16 11:00:00
+1309|1784|Room service - Desayuno a la habitación|28.00|2026-07-17 11:30:00
+1310|1789|Room service - Desayuno a la habitación|28.00|2026-07-18 08:45:00
+1311|1789|Toalla dañada - reposición|45.00|2026-07-17 12:15:00
+1312|1790|Minibar|20.00|2026-07-19 11:30:00
+1313|1790|Minibar|20.00|2026-07-19 17:00:00
+1314|1791|Room service - Desayuno a la habitación|28.00|2026-07-17 20:00:00
+1315|1798|Room service - Desayuno a la habitación|28.00|2026-07-18 16:00:00
+1316|1801|Minibar|20.00|2026-07-18 19:30:00
+1317|1801|Room service - Desayuno a la habitación|28.00|2026-07-19 12:00:00
+1318|1801|Lavandería|28.00|2026-07-18 19:15:00
+1319|1801|Minibar|20.00|2026-07-20 11:45:00
+1320|1802|Minibar|20.00|2026-07-21 11:30:00
+1321|1804|Room service - Desayuno a la habitación|28.00|2026-07-20 13:45:00
+1322|1804|Room service - Desayuno a la habitación|28.00|2026-07-20 12:45:00
+1323|1805|Minibar|20.00|2026-07-19 19:15:00
+1324|1805|Room service - Almuerzo o cena|40.00|2026-07-19 14:45:00
+1325|1805|Room service - Almuerzo o cena|40.00|2026-07-19 20:00:00
+1326|1807|Room service - Desayuno a la habitación|28.00|2026-07-21 10:45:00
+1327|1809|Minibar|20.00|2026-07-21 22:15:00
+1328|1809|Room service - Desayuno a la habitación|28.00|2026-07-20 18:15:00
+1329|1809|Minibar|20.00|2026-07-21 13:00:00
+1330|1809|Minibar|20.00|2026-07-21 09:45:00
+1331|1812|Room service - Almuerzo o cena|40.00|2026-07-21 13:30:00
+1332|1812|Room service - Desayuno a la habitación|28.00|2026-07-21 10:45:00
+1333|1815|Minibar|20.00|2026-07-23 22:15:00
+1334|1815|Room service - Desayuno a la habitación|28.00|2026-07-23 13:30:00
+1335|1815|Lavandería|28.00|2026-07-23 22:00:00
+1336|1817|Minibar|20.00|2026-07-25 08:00:00
+1337|1820|Minibar|20.00|2026-07-26 08:30:00
+1338|1820|Room service - Desayuno a la habitación|28.00|2026-07-24 09:45:00
+1339|1824|Minibar|20.00|2026-07-25 16:45:00
+1340|1826|Room service - Desayuno a la habitación|28.00|2026-07-25 15:30:00
+1341|1826|Room service - Desayuno a la habitación|28.00|2026-07-25 19:15:00
+1342|1827|Minibar|20.00|2026-07-25 13:15:00
+1343|1827|Room service - Desayuno a la habitación|28.00|2026-07-25 08:45:00
+1344|1830|Room service - Almuerzo o cena|40.00|2026-07-24 15:30:00
+1345|1830|Room service - Desayuno a la habitación|28.00|2026-07-26 21:00:00
+1346|1830|Room service - Desayuno a la habitación|28.00|2026-07-26 09:00:00
+1347|1835|Room service - Almuerzo o cena|40.00|2026-07-26 10:00:00
+1348|1837|Minibar|20.00|2026-07-25 13:00:00
+1349|1837|Room service - Desayuno a la habitación|28.00|2026-07-26 11:30:00
+1350|1838|Room service - Almuerzo o cena|40.00|2026-07-25 13:15:00
+1351|1840|Room service - Desayuno a la habitación|28.00|2026-07-25 21:45:00
+1352|1840|Minibar|20.00|2026-07-26 15:15:00
+1353|1841|Minibar|20.00|2026-07-26 21:30:00
+1354|1841|Room service - Almuerzo o cena|40.00|2026-07-25 13:30:00
+1355|1842|Room service - Desayuno a la habitación|28.00|2026-07-27 15:30:00
+1356|1844|Room service - Desayuno a la habitación|28.00|2026-07-25 22:00:00
+1357|1851|Minibar|20.00|2026-07-27 15:30:00
+1358|1851|Minibar|20.00|2026-07-28 11:15:00
+1359|1851|Lavandería|28.00|2026-07-27 17:30:00
+1360|1851|Room service - Almuerzo o cena|40.00|2026-07-27 22:00:00
+1361|1859|Room service - Desayuno a la habitación|28.00|2026-07-28 19:15:00
+1362|1859|Minibar|20.00|2026-07-28 14:15:00
+1363|1859|Lavandería|28.00|2026-07-28 22:45:00
+1364|1861|Room service - Desayuno a la habitación|28.00|2026-07-30 15:00:00
+1365|1864|Room service - Almuerzo o cena|40.00|2026-07-30 22:00:00
+1366|1864|Room service - Almuerzo o cena|40.00|2026-07-30 20:15:00
+1367|1865|Lavandería|28.00|2026-07-31 08:15:00
+1368|1866|Room service - Almuerzo o cena|40.00|2026-07-30 13:00:00
+1369|1866|Room service - Desayuno a la habitación|28.00|2026-07-31 18:15:00
+1370|1867|Minibar|20.00|2026-07-31 12:00:00
+1371|1867|Room service - Desayuno a la habitación|28.00|2026-07-31 18:15:00
+1372|1869|Lavandería|28.00|2026-07-31 19:00:00
+1373|1869|Minibar|20.00|2026-08-02 16:30:00
+1374|1871|Lavandería|28.00|2026-07-31 09:30:00
+1375|1871|Minibar|20.00|2026-08-01 15:00:00
+1376|1872|Room service - Almuerzo o cena|40.00|2026-07-31 21:45:00
+1377|1882|Minibar|20.00|2026-08-03 21:45:00
+1378|1883|Room service - Desayuno a la habitación|28.00|2026-08-02 13:30:00
+1379|1888|Room service - Desayuno a la habitación|28.00|2026-08-04 15:45:00
+1380|1890|Lavandería|28.00|2026-08-03 22:00:00
+1381|1890|Room service - Desayuno a la habitación|28.00|2026-08-03 11:00:00
+1382|1890|Minibar|20.00|2026-08-03 10:30:00
+1383|1895|Room service - Almuerzo o cena|40.00|2026-08-05 09:45:00
+1384|1898|Minibar|20.00|2026-08-06 16:30:00
+1385|1902|Room service - Desayuno a la habitación|28.00|2026-08-07 11:00:00
+1386|1902|Minibar|20.00|2026-08-06 16:15:00
+1387|1902|Minibar|20.00|2026-08-06 11:45:00
+1388|1903|Minibar|20.00|2026-08-08 10:45:00
+1389|1903|Minibar|20.00|2026-08-09 11:30:00
+1390|1906|Room service - Almuerzo o cena|40.00|2026-08-07 09:45:00
+1391|1908|Minibar|20.00|2026-08-07 12:00:00
+1392|1913|Minibar|20.00|2026-08-10 09:45:00
+1393|1914|Room service - Desayuno a la habitación|28.00|2026-08-11 08:45:00
+1394|1918|Room service - Desayuno a la habitación|28.00|2026-08-08 20:00:00
+1395|1918|Lavandería|28.00|2026-08-08 21:45:00
+1396|1918|Room service - Almuerzo o cena|40.00|2026-08-09 14:15:00
+1397|1919|Minibar|20.00|2026-08-08 16:15:00
+1398|1921|Room service - Almuerzo o cena|40.00|2026-08-13 16:15:00
+1399|1921|Room service - Almuerzo o cena|40.00|2026-08-13 17:45:00
+1400|1921|Lavandería|28.00|2026-08-10 14:45:00
+1401|1925|Lavandería|28.00|2026-08-11 18:00:00
+1402|1925|Room service - Almuerzo o cena|40.00|2026-08-11 12:30:00
+1403|1925|Minibar|20.00|2026-08-11 15:45:00
+1404|1925|Minibar|20.00|2026-08-11 10:15:00
+1405|1926|Room service - Desayuno a la habitación|28.00|2026-08-11 08:45:00
+1406|1929|Room service - Almuerzo o cena|40.00|2026-08-11 10:30:00
+1407|1929|Room service - Desayuno a la habitación|28.00|2026-08-11 08:00:00
+1408|1934|Lavandería|28.00|2026-08-14 16:45:00
+1409|1934|Minibar|20.00|2026-08-12 08:15:00
+1410|1936|Lavandería|28.00|2026-08-13 16:15:00
+1411|1936|Minibar|20.00|2026-08-13 09:30:00
+1412|1936|Room service - Desayuno a la habitación|28.00|2026-08-13 13:15:00
+1413|1936|Lavandería|28.00|2026-08-13 16:45:00
+1414|1939|Room service - Desayuno a la habitación|28.00|2026-08-13 20:45:00
+1415|1939|Minibar|20.00|2026-08-14 21:00:00
+1416|1939|Room service - Desayuno a la habitación|28.00|2026-08-13 14:30:00
+1417|1939|Toalla dañada - reposición|45.00|2026-08-13 10:15:00
+1418|1945|Minibar|20.00|2026-08-14 20:15:00
+1419|1945|Lavandería|28.00|2026-08-15 18:45:00
+1420|1947|Room service - Almuerzo o cena|40.00|2026-08-15 09:15:00
+1421|1947|Room service - Almuerzo o cena|40.00|2026-08-16 16:45:00
+1422|1951|Room service - Almuerzo o cena|40.00|2026-08-18 08:30:00
+1423|1952|Minibar|20.00|2026-08-18 09:15:00
+1424|1960|Room service - Almuerzo o cena|40.00|2026-08-19 20:15:00
+1425|1960|Room service - Desayuno a la habitación|28.00|2026-08-19 09:15:00
+1426|1960|Room service - Desayuno a la habitación|28.00|2026-08-19 17:30:00
+1427|1964|Room service - Desayuno a la habitación|28.00|2026-08-20 13:15:00
+1428|1964|Minibar|20.00|2026-08-20 12:00:00
+1429|1966|Minibar|20.00|2026-08-20 10:00:00
+1430|1966|Lavandería|28.00|2026-08-19 13:00:00
+1431|1966|Minibar|20.00|2026-08-20 09:00:00
+1432|1967|Lavandería|28.00|2026-08-21 20:45:00
+1433|1969|Room service - Almuerzo o cena|40.00|2026-08-21 20:15:00
+1434|1972|Room service - Almuerzo o cena|40.00|2026-08-20 11:15:00
+1435|1972|Lavandería|28.00|2026-08-20 14:15:00
+1436|1972|Minibar|20.00|2026-08-20 19:30:00
+1437|1975|Room service - Almuerzo o cena|40.00|2026-08-22 15:00:00
+1438|1975|Room service - Desayuno a la habitación|28.00|2026-08-21 08:45:00
+1439|1976|Lavandería|28.00|2026-08-21 12:45:00
+1440|1978|Minibar|20.00|2026-08-22 17:15:00
+1441|1978|Minibar|20.00|2026-08-25 19:15:00
+1442|1978|Minibar|20.00|2026-08-25 09:45:00
+1443|1978|Lavandería|28.00|2026-08-22 08:00:00
+1444|1984|Room service - Desayuno a la habitación|28.00|2026-08-24 11:45:00
+1445|1985|Minibar|20.00|2026-08-23 17:30:00
+1446|1992|Room service - Almuerzo o cena|40.00|2026-08-26 10:30:00
+1447|1994|Lavandería|28.00|2026-08-28 12:45:00
+1448|1994|Room service - Almuerzo o cena|40.00|2026-08-27 15:45:00
+1449|1994|Toalla dañada - reposición|45.00|2026-08-28 13:15:00
+1450|1996|Room service - Almuerzo o cena|40.00|2026-08-25 15:30:00
+1451|1996|Room service - Desayuno a la habitación|28.00|2026-08-27 22:45:00
+1452|2001|Room service - Almuerzo o cena|40.00|2026-08-29 14:00:00
+1453|2001|Minibar|20.00|2026-08-28 20:15:00
+1454|2002|Room service - Almuerzo o cena|40.00|2026-08-29 21:30:00
+1455|2013|Room service - Desayuno a la habitación|28.00|2026-09-01 15:15:00
+1456|2018|Room service - Desayuno a la habitación|28.00|2026-08-28 13:00:00
+1457|2018|Room service - Desayuno a la habitación|28.00|2026-08-28 21:15:00
+1458|2019|Lavandería|28.00|2026-08-30 18:00:00
+1459|2019|Minibar|20.00|2026-08-30 18:00:00
+1460|2019|Room service - Almuerzo o cena|40.00|2026-08-30 17:00:00
+1461|2020|Minibar|20.00|2026-08-30 15:30:00
+1462|2024|Minibar|20.00|2026-08-30 14:00:00
+1463|2024|Room service - Almuerzo o cena|40.00|2026-08-29 17:15:00
+1464|2024|Room service - Desayuno a la habitación|28.00|2026-09-01 14:15:00
+1465|2024|Room service - Desayuno a la habitación|28.00|2026-08-30 21:30:00
+1466|2026|Lavandería|28.00|2026-08-31 15:15:00
+1467|2026|Room service - Desayuno a la habitación|28.00|2026-08-30 13:00:00
+1468|2026|Minibar|20.00|2026-08-31 12:30:00
+1469|2029|Minibar|20.00|2026-08-30 11:30:00
+1470|2029|Room service - Almuerzo o cena|40.00|2026-08-31 17:45:00
+1471|2029|Lavandería|28.00|2026-08-31 12:00:00
+1472|2033|Minibar|20.00|2026-09-03 19:15:00
+1473|2040|Minibar|20.00|2026-09-05 22:15:00
+1474|2040|Toalla dañada - reposición|45.00|2026-09-03 17:15:00
+1475|2040|Minibar|20.00|2026-09-03 22:30:00
+1476|2043|Room service - Desayuno a la habitación|28.00|2026-09-06 20:15:00
+1477|2048|Room service - Desayuno a la habitación|28.00|2026-09-06 21:00:00
+1478|2050|Room service - Desayuno a la habitación|28.00|2026-09-04 08:00:00
+1479|2050|Minibar|20.00|2026-09-04 09:45:00
+1480|2051|Lavandería|28.00|2026-09-04 14:15:00
+1481|2051|Minibar|20.00|2026-09-04 18:00:00
+1482|2052|Minibar|20.00|2026-09-04 10:45:00
+1483|2052|Minibar|20.00|2026-09-05 14:15:00
+1484|2052|Minibar|20.00|2026-09-04 18:45:00
+1485|2053|Minibar|20.00|2026-09-05 15:15:00
+1486|2053|Minibar|20.00|2026-09-06 16:45:00
+1487|2054|Room service - Desayuno a la habitación|28.00|2026-09-04 15:00:00
+1488|2054|Lavandería|28.00|2026-09-06 16:15:00
+1489|2057|Room service - Desayuno a la habitación|28.00|2026-09-06 20:30:00
+1490|2057|Room service - Desayuno a la habitación|28.00|2026-09-06 15:15:00
+1491|2063|Minibar|20.00|2026-09-07 17:30:00
+1492|2064|Room service - Almuerzo o cena|40.00|2026-09-08 14:15:00
+1493|2064|Minibar|20.00|2026-09-07 12:30:00
+1494|2064|Lavandería|28.00|2026-09-08 22:15:00
+1495|2070|Lavandería|28.00|2026-09-10 15:00:00
+1496|2070|Room service - Almuerzo o cena|40.00|2026-09-10 20:30:00
+1497|2073|Room service - Desayuno a la habitación|28.00|2026-09-10 21:00:00
+1498|2073|Room service - Almuerzo o cena|40.00|2026-09-14 08:15:00
+1499|2077|Lavandería|28.00|2026-09-12 14:15:00
+1500|2080|Minibar|20.00|2026-09-11 15:00:00
+1501|2082|Room service - Desayuno a la habitación|28.00|2026-09-13 08:15:00
+1502|2082|Minibar|20.00|2026-09-12 09:30:00
+1503|2086|Room service - Desayuno a la habitación|28.00|2026-09-13 16:45:00
+1504|2093|Room service - Desayuno a la habitación|28.00|2026-09-15 14:45:00
+1505|2094|Room service - Desayuno a la habitación|28.00|2026-09-15 16:00:00
+1506|2100|Room service - Desayuno a la habitación|28.00|2026-09-17 14:00:00
+1507|2104|Room service - Desayuno a la habitación|28.00|2026-09-17 14:00:00
+1508|2104|Room service - Desayuno a la habitación|28.00|2026-09-17 14:00:00
+1509|2106|Toalla dañada - reposición|45.00|2026-09-17 13:45:00
+1510|2108|Room service - Desayuno a la habitación|28.00|2026-09-19 08:45:00
+1511|2114|Room service - Almuerzo o cena|40.00|2026-09-20 15:45:00
+1512|2114|Lavandería|28.00|2026-09-20 08:00:00
+1513|2115|Lavandería|28.00|2026-09-19 16:45:00
+1514|2120|Minibar|20.00|2026-09-23 20:00:00
+1515|2120|Room service - Desayuno a la habitación|28.00|2026-09-23 21:15:00
+1516|2121|Minibar|20.00|2026-09-23 20:00:00
+1517|2122|Room service - Desayuno a la habitación|28.00|2026-09-24 21:45:00
+1518|2124|Minibar|20.00|2026-09-20 21:15:00
+1519|2125|Minibar|20.00|2026-09-21 18:45:00
+1520|2129|Room service - Almuerzo o cena|40.00|2026-09-26 08:30:00
+1521|2130|Room service - Desayuno a la habitación|28.00|2026-09-24 09:30:00
+1522|2130|Room service - Almuerzo o cena|40.00|2026-09-24 20:30:00
+1523|2130|Room service - Almuerzo o cena|40.00|2026-09-23 12:45:00
+1524|2134|Room service - Desayuno a la habitación|28.00|2026-09-25 09:45:00
+1525|2135|Room service - Desayuno a la habitación|28.00|2026-09-23 20:45:00
+1526|2135|Minibar|20.00|2026-09-23 09:30:00
+1527|2137|Room service - Desayuno a la habitación|28.00|2026-09-26 13:45:00
+1528|2144|Room service - Desayuno a la habitación|28.00|2026-09-26 12:45:00
+1529|2144|Room service - Desayuno a la habitación|28.00|2026-09-25 16:00:00
+1530|2144|Lavandería|28.00|2026-09-25 18:30:00
+1531|2145|Room service - Almuerzo o cena|40.00|2026-09-26 21:45:00
+1532|2146|Minibar|20.00|2026-09-25 11:00:00
+1533|2146|Minibar|20.00|2026-09-25 09:15:00
+1534|2146|Room service - Almuerzo o cena|40.00|2026-09-25 09:30:00
+1535|2149|Room service - Desayuno a la habitación|28.00|2026-09-27 09:00:00
+1536|2149|Room service - Desayuno a la habitación|28.00|2026-09-26 17:45:00
+1537|2149|Lavandería|28.00|2026-09-27 15:30:00
+1538|2150|Minibar|20.00|2026-09-29 13:15:00
+1539|2150|Minibar|20.00|2026-09-29 14:45:00
+1540|2150|Lavandería|28.00|2026-09-30 21:45:00
+1541|2151|Room service - Desayuno a la habitación|28.00|2026-09-28 18:15:00
+1542|2151|Minibar|20.00|2026-09-28 21:00:00
+1543|2159|Room service - Desayuno a la habitación|28.00|2026-09-29 15:00:00
+1544|2159|Minibar|20.00|2026-09-28 20:00:00
+1545|2159|Room service - Desayuno a la habitación|28.00|2026-09-29 14:00:00
+1546|2159|Room service - Desayuno a la habitación|28.00|2026-09-28 08:15:00
+1547|2160|Room service - Almuerzo o cena|40.00|2026-09-28 13:00:00
+1548|2160|Room service - Almuerzo o cena|40.00|2026-09-28 15:30:00
+1549|2160|Room service - Almuerzo o cena|40.00|2026-09-29 11:15:00
+1550|2160|Minibar|20.00|2026-09-29 12:45:00
+1551|2166|Lavandería|28.00|2026-10-04 08:30:00
+1552|2169|Minibar|20.00|2026-10-01 18:30:00
+1553|2169|Minibar|20.00|2026-10-01 20:30:00
+1554|2169|Room service - Desayuno a la habitación|28.00|2026-10-02 15:15:00
+1555|2169|Room service - Desayuno a la habitación|28.00|2026-10-01 15:30:00
+1556|2171|Minibar|20.00|2026-10-02 11:00:00
+1557|2171|Lavandería|28.00|2026-10-02 11:15:00
+1558|2171|Minibar|20.00|2026-10-01 17:30:00
+1559|2171|Room service - Desayuno a la habitación|28.00|2026-10-03 08:45:00
+1560|2173|Room service - Desayuno a la habitación|28.00|2026-10-03 13:15:00
+1561|2175|Minibar|20.00|2026-10-06 13:30:00
+1562|2175|Room service - Desayuno a la habitación|28.00|2026-10-03 10:00:00
+1563|2175|Toalla dañada - reposición|45.00|2026-10-03 12:30:00
+1564|2176|Minibar|20.00|2026-10-02 17:30:00
+1565|2176|Room service - Almuerzo o cena|40.00|2026-10-02 22:30:00
+1566|2176|Lavandería|28.00|2026-10-02 21:30:00
+1567|2181|Room service - Almuerzo o cena|40.00|2026-10-03 14:00:00
+1568|2182|Room service - Desayuno a la habitación|28.00|2026-10-03 13:00:00
+1569|2184|Room service - Almuerzo o cena|40.00|2026-10-05 21:00:00
+1570|2187|Room service - Desayuno a la habitación|28.00|2026-10-07 11:00:00
+1571|2192|Lavandería|28.00|2026-10-08 16:30:00
+1572|2199|Minibar|20.00|2026-10-09 15:00:00
+1573|2201|Minibar|20.00|2026-10-10 08:30:00
+1574|2202|Lavandería|28.00|2026-10-13 20:45:00
+1575|2204|Room service - Desayuno a la habitación|28.00|2026-10-12 11:45:00
+1576|2204|Room service - Desayuno a la habitación|28.00|2026-10-11 10:00:00
+1577|2205|Room service - Almuerzo o cena|40.00|2026-10-10 16:45:00
+1578|2208|Room service - Desayuno a la habitación|28.00|2026-10-11 09:00:00
+1579|2208|Lavandería|28.00|2026-10-13 18:30:00
+1580|2214|Room service - Almuerzo o cena|40.00|2026-10-12 16:45:00
+1581|2215|Room service - Desayuno a la habitación|28.00|2026-10-13 12:45:00
+1582|2217|Room service - Desayuno a la habitación|28.00|2026-10-15 13:45:00
+1583|2218|Room service - Almuerzo o cena|40.00|2026-10-18 18:30:00
+1584|2221|Lavandería|28.00|2026-10-17 15:45:00
+1585|2221|Minibar|20.00|2026-10-16 17:30:00
+1586|2221|Lavandería|28.00|2026-10-16 08:30:00
+1587|2221|Room service - Desayuno a la habitación|28.00|2026-10-17 11:00:00
+1588|2222|Minibar|20.00|2026-10-16 11:00:00
+1589|2222|Minibar|20.00|2026-10-16 15:00:00
+1590|2222|Room service - Almuerzo o cena|40.00|2026-10-16 21:30:00
+1591|2224|Minibar|20.00|2026-10-16 19:00:00
+1592|2224|Lavandería|28.00|2026-10-16 08:30:00
+1593|2225|Minibar|20.00|2026-10-17 22:30:00
+1594|2228|Minibar|20.00|2026-10-17 20:30:00
+1595|2238|Minibar|20.00|2026-10-22 18:15:00
+1596|2238|Lavandería|28.00|2026-10-22 10:45:00
+1597|2238|Minibar|20.00|2026-10-22 11:30:00
+1598|2238|Lavandería|28.00|2026-10-22 08:00:00
+1599|2239|Room service - Desayuno a la habitación|28.00|2026-10-22 11:15:00
+1600|2242|Lavandería|28.00|2026-10-23 08:00:00
