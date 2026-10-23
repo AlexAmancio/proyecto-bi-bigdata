@@ -5,6 +5,7 @@
 --   5 dimensiones: tiempo, cliente, habitación, categoría, usuario
 --   1 tabla de hechos: fact_estadia (4 medidas)
 --   3 tablas de staging para los archivos planos
+--   1 bitácora del ETL: etl_log (tiempo, CPU y lecturas por paso)
 --
 -- Después de este script se ejecuta ETL_CARGA.sql
 -- =====================================================================
@@ -146,6 +147,23 @@ CREATE TABLE fact_estadia (
     CONSTRAINT FK_fact_habitacion FOREIGN KEY (id_habitacion)     REFERENCES dim_habitacion (id_habitacion),
     CONSTRAINT FK_fact_categoria  FOREIGN KEY (id_categoria)      REFERENCES dim_categoria (id_categoria),
     CONSTRAINT FK_fact_usuario    FOREIGN KEY (id_usuario)        REFERENCES dim_usuario (id_usuario)
+)
+go
+
+-- Bitácora del ETL: cada ejecución de ETL_CARGA.sql registra, por paso,
+-- cuánto tardó y cuántos recursos del servidor consumió.
+CREATE TABLE etl_log (
+    id               INT PRIMARY KEY IDENTITY,
+    ejecucion        INT,            -- número de ejecución del ETL (1, 2, 3...)
+    paso             VARCHAR(60),
+    inicio           DATETIME,
+    fin              DATETIME,
+    duracion_ms      INT,            -- tiempo total del paso
+    cpu_ms           INT,            -- tiempo de CPU que usó el paso
+    lecturas_logicas BIGINT,         -- páginas de 8 KB leídas en memoria
+    filas            INT,            -- filas que quedaron cargadas
+    cpu_inicio       INT,            -- valores al iniciar el paso (para la resta)
+    lecturas_inicio  BIGINT
 )
 go
 

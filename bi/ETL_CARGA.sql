@@ -3,6 +3,10 @@
 -- Ejecutar con F5 después de crear_datamart.sql. Se puede volver a
 -- ejecutar: el paso 1 limpia las tablas antes de cargar.
 --
+-- Cada paso queda registrado en etl_log con su duración, CPU, lecturas y
+-- filas (se toma de sys.dm_exec_sessions, la vista de SQL Server con los
+-- recursos consumidos por la sesión actual).
+--
 -- Fuentes: base OLTP alquiler (creada con bd/respaldo_bd_actual.sql)
 --          + estadias.txt, consumos.txt, habitaciones.txt (C:\txt\tunki\)
 -- =====================================================================
@@ -14,6 +18,13 @@ go
 -- ---------------------------------------------------------------------
 -- PASO 1: Limpiamos tablas (hechos, dimensiones y staging)
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT CASE WHEN MAX(ejecucion) IS NULL THEN 1 ELSE MAX(ejecucion) + 1 END FROM hotel_dw.dbo.etl_log),
+       'PASO 1: Limpieza de tablas', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 delete from fact_estadia
 go
 delete from dim_tiempo
@@ -33,10 +44,29 @@ go
 truncate table stg_habitacion
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.fact_estadia)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 2: Cargamos las dimensiones desde la base operativa alquiler
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 2: Dimensiones desde alquiler', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 USE alquiler
 go
 
@@ -68,10 +98,29 @@ SELECT id, nombres, apellidos, es_admin
 FROM dbo.usuario
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.dim_categoria) + (SELECT COUNT(*) FROM hotel_dw.dbo.dim_cliente) + (SELECT COUNT(*) FROM hotel_dw.dbo.dim_usuario)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 3: Cargamos staging de estadías (estadias.txt)
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 3: Staging estadias.txt', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 USE hotel_dw
 go
 
@@ -83,10 +132,29 @@ BULK INSERT hotel_dw.dbo.stg_estadia
       CODEPAGE = '65001')
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.stg_estadia)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 4: Cargamos staging de consumos (consumos.txt)
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 4: Staging consumos.txt', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 BULK INSERT hotel_dw.dbo.stg_consumo
       FROM 'C:\txt\tunki\consumos.txt'
       WITH
@@ -95,10 +163,29 @@ BULK INSERT hotel_dw.dbo.stg_consumo
       CODEPAGE = '65001')
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.stg_consumo)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 5: Cargamos DIM_HABITACION desde habitaciones.txt
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 5: dim_habitacion (habitaciones.txt)', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 BULK INSERT hotel_dw.dbo.stg_habitacion
       FROM 'C:\txt\tunki\habitaciones.txt'
       WITH
@@ -111,11 +198,30 @@ SELECT id, numero, piso, aforo
 FROM stg_habitacion
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.dim_habitacion)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 6: Cargamos la dimensión tiempo (día por día, desde el primer
 --         hasta el último check-in)
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 6: dim_tiempo', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 DECLARE @inicio DATE, @fin DATE
 SELECT @inicio = MIN(CAST(check_in AS DATE)), @fin = MAX(CAST(check_in AS DATE))
 FROM stg_estadia
@@ -151,12 +257,31 @@ BEGIN
 END
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.dim_tiempo)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- ---------------------------------------------------------------------
 -- PASO 7: Cargamos la FACT_ESTADIA (tabla de hechos)
 --         estadías (stg_estadia) + suma de consumos (stg_consumo)
 --         + categoría de la habitación + cliente recurrente
 -- ---------------------------------------------------------------------
+-- [bitácora] inicio del paso: hora, CPU y lecturas acumuladas de esta sesión
+INSERT INTO hotel_dw.dbo.etl_log (ejecucion, paso, inicio, cpu_inicio, lecturas_inicio)
+SELECT (SELECT MAX(ejecucion) FROM hotel_dw.dbo.etl_log),
+       'PASO 7: fact_estadia', GETDATE(), cpu_time, logical_reads
+FROM sys.dm_exec_sessions
+WHERE session_id = @@SPID
+go
 INSERT INTO fact_estadia (
     id_registro, id_tiempo_checkin, id_cliente, id_habitacion, id_categoria, id_usuario,
     noches, cantidad_estadias, monto_pagado, total_consumos,
@@ -201,6 +326,18 @@ JOIN dim_usuario    D_US   ON D_US.id_usuario    = E.usuario_id
 JOIN dim_tiempo     D_TI   ON D_TI.fecha         = CAST(E.check_in AS DATE)
 go
 
+-- [bitácora] fin del paso: lo consumido = valor actual - valor al inicio
+UPDATE L
+SET fin              = GETDATE(),
+    duracion_ms      = DATEDIFF(ms, L.inicio, GETDATE()),
+    cpu_ms           = S.cpu_time - L.cpu_inicio,
+    lecturas_logicas = S.logical_reads - L.lecturas_inicio,
+    filas            = (SELECT COUNT(*) FROM hotel_dw.dbo.fact_estadia)
+FROM hotel_dw.dbo.etl_log L
+JOIN sys.dm_exec_sessions S ON S.session_id = @@SPID
+WHERE L.id = (SELECT MAX(id) FROM hotel_dw.dbo.etl_log)
+go
+
 
 -- =====================================================================
 -- VERIFICACIÓN
@@ -235,4 +372,19 @@ FROM fact_estadia F
 JOIN dim_tiempo T ON T.id_tiempo = F.id_tiempo_checkin
 GROUP BY T.año, T.mes, T.nombre_mes
 ORDER BY T.año, T.mes
+go
+
+
+-- Consumo del ETL en esta ejecución (bitácora)
+SELECT paso, duracion_ms, cpu_ms, lecturas_logicas, filas
+FROM etl_log
+WHERE ejecucion = (SELECT MAX(ejecucion) FROM etl_log)
+ORDER BY id
+go
+
+SELECT ejecucion, SUM(duracion_ms) AS duracion_total_ms, SUM(cpu_ms) AS cpu_total_ms,
+       SUM(lecturas_logicas) AS lecturas_totales
+FROM etl_log
+GROUP BY ejecucion
+ORDER BY ejecucion
 go

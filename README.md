@@ -172,12 +172,14 @@ todos los datos de una sola vez. Al final muestra cuántas filas quedaron en
 cada tabla. No hace falta crear la base a mano ni insertar un usuario para
 poder loguearte, ya vienen incluidos.
 
-Las estadías son **datos simulados con fines de análisis** (enero a octubre
-de 2026): 2 274 registros, 1 838 clientes y 1 600 consumos. Las reservas bajan
-mes a mes (334 en enero, 108 en octubre), la tasa de cancelación sube del 5 %
-al 22 % y la de no-show del 3 % al 9 %. Esta es la situación que analiza la
-solución de BI. Categorías, habitaciones, productos y usuarios son los del
-sistema.
+Las estadías son **datos simulados con fines de análisis** (enero de 2024 a
+octubre de 2026): 9 036 registros, 6 594 clientes y 7 096 consumos. 2024 es un
+año normal con temporadas (ene–mar, julio y diciembre) y 2025 crece cerca de
+5 %. En 2026 las reservas caen mes a mes (334 en enero, 108 en octubre) y cada
+mes queda por debajo del mismo mes de 2025 (−7 % en enero, −59 % en octubre),
+mientras la tasa de cancelación sube del 5 % al 21 %. Esta es la situación que
+analiza la solución de BI. Categorías, habitaciones, productos y usuarios son
+los del sistema.
 
 La app se conecta a `localhost:1433` con el usuario `sa` (o el de `DB_USER`)
 y la contraseña de la variable de entorno `DB_PASSWORD`, que nunca se guarda
