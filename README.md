@@ -164,14 +164,13 @@ SQL Server. Se puede abrir en SSMS y ejecutar completo (F5), o desde la
 línea de comandos:
 
 ```bash
-sqlcmd -S localhost -U sa -C -i bd/respaldo_bd_actual.sql
+sqlcmd -S localhost -U sa -C -f 65001 -i bd/respaldo_bd_actual.sql
 ```
 
-El script crea la base `alquiler` si no existe, **borra y vuelve a crear sus
-tablas** y carga todos los datos de una sola vez, conservando los IDs
-originales. Al final muestra una tabla de verificación con las filas
-esperadas y cargadas por tabla. No hace falta crear la base a mano ni
-insertar un usuario para poder loguearte, ya vienen incluidos.
+El script **borra la base `alquiler` si existe, la vuelve a crear** y carga
+todos los datos de una sola vez, conservando los IDs originales. Al final
+muestra cuántas filas quedaron en cada tabla. No hace falta crear la base a
+mano ni insertar un usuario para poder loguearte, ya vienen incluidos.
 
 La app se conecta a `localhost:1433` con el usuario `sa` (o el de `DB_USER`)
 y la contraseña de la variable de entorno `DB_PASSWORD`, que nunca se guarda
