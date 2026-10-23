@@ -279,15 +279,6 @@ SET IDENTITY_INSERT producto_consumo OFF
 go
 
 
--- Roles
-CREATE TABLE rol (
-    id   INT IDENTITY(1,1) NOT NULL,
-    name VARCHAR(255),
-    CONSTRAINT PK_rol PRIMARY KEY (id)
-)
-go
-
-
 -- Habitaciones
 CREATE TABLE habitacion (
     id           INT IDENTITY(1,1) NOT NULL,
@@ -704,23 +695,11 @@ CREATE TABLE password_reset_token (
 go
 
 
--- Relación usuario - rol
-CREATE TABLE usuarios_roles (
-    usuario_id INT NOT NULL,
-    rol_id     INT NOT NULL,
-    CONSTRAINT PK_usuarios_roles PRIMARY KEY (usuario_id, rol_id),
-    CONSTRAINT FK_usuarios_roles_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id),
-    CONSTRAINT FK_usuarios_roles_rol FOREIGN KEY (rol_id) REFERENCES rol (id)
-)
-go
-
-
 -- Verificación: filas cargadas por tabla
 SELECT 'categoria' AS tabla, COUNT(*) AS filas FROM categoria
 UNION ALL SELECT 'cliente' AS tabla, COUNT(*) AS filas FROM cliente
 UNION ALL SELECT 'usuario' AS tabla, COUNT(*) AS filas FROM usuario
 UNION ALL SELECT 'producto_consumo' AS tabla, COUNT(*) AS filas FROM producto_consumo
-UNION ALL SELECT 'rol' AS tabla, COUNT(*) AS filas FROM rol
 UNION ALL SELECT 'habitacion' AS tabla, COUNT(*) AS filas FROM habitacion
 UNION ALL SELECT 'reserva' AS tabla, COUNT(*) AS filas FROM reserva
 UNION ALL SELECT 'registro' AS tabla, COUNT(*) AS filas FROM registro
@@ -728,5 +707,4 @@ UNION ALL SELECT 'consumo' AS tabla, COUNT(*) AS filas FROM consumo
 UNION ALL SELECT 'comprobante' AS tabla, COUNT(*) AS filas FROM comprobante
 UNION ALL SELECT 'login_attempts' AS tabla, COUNT(*) AS filas FROM login_attempts
 UNION ALL SELECT 'password_reset_token' AS tabla, COUNT(*) AS filas FROM password_reset_token
-UNION ALL SELECT 'usuarios_roles' AS tabla, COUNT(*) AS filas FROM usuarios_roles
 go
