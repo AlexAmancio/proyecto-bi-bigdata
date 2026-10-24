@@ -9,8 +9,6 @@
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.4-brightgreen)
 
-Proyecto final de **Base de Datos Avanzadas y Big Data** (NRC 26055, 2026-2), Universidad Privada del Norte — **Grupo 04**.
-
 Este repositorio contiene una solución completa de Inteligencia de Negocios construida sobre **Estadía**, el sistema web de gestión de estadías de Tunki Lodge (Oxapampa, Pasco): la base operativa, un **datamart en esquema estrella**, un **proceso ETL automatizado con reglas de calidad de datos y control de errores**, un **dashboard en Power BI** y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
 
 ---
@@ -712,7 +710,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 | Documento | Ubicación |
 |---|---|
-| Informe técnico (8 capítulos, plantilla oficial) | [`docs/Informe_Proyecto_Final_Grupo04.pdf`](docs/Informe_Proyecto_Final_Grupo04.pdf) · [`.docx`](docs/Informe_Proyecto_Final_Grupo04.docx) |
+| Informe técnico (8 capítulos) | [`docs/Informe_Proyecto_Final_Grupo04.pdf`](docs/Informe_Proyecto_Final_Grupo04.pdf) · [`.docx`](docs/Informe_Proyecto_Final_Grupo04.docx) |
 | Presentación (5 minutos) | [`docs/Presentacion_BI_Grupo04.pptx`](docs/Presentacion_BI_Grupo04.pptx) |
 | Procedimiento de replicación | [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf) · [`.docx`](docs/Procedimiento_Replicacion_Grupo04.docx) |
 
@@ -731,7 +729,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 ## 22. Equipo
 
-**Grupo 04** — Base de Datos Avanzadas y Big Data (NRC 26055), 2026-2.
+**Grupo 04**
 
 | Integrante |
 |---|
