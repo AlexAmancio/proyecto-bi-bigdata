@@ -731,15 +731,17 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 ## 22. Equipo
 
-**Grupo 04** — Base de Datos Avanzadas y Big Data (NRC 26055), 2026-2. Docente: Víctor Isaac Chávez Bardales.
+**Grupo 04** — Base de Datos Avanzadas y Big Data (NRC 26055), 2026-2.
 
-| Integrante | Participación |
-|---|---|
-| Ayala Hernandez, Gerardo | 100 % |
-| Bringas Veramendi, Julio Cesar Ricardo | 100 % |
-| Osorio Carbajal, Mijai | 100 % |
-| Racchumi Julon, Yeremi Adrian | 100 % |
-| Valencia Amancio, Alex | 100 % |
+| Integrante |
+|---|
+| Ayala Hernandez, Gerardo |
+| Bringas Veramendi, Julio Cesar Ricardo |
+| Osorio Carbajal, Mijai |
+| Racchumi Julon, Yeremi Adrian |
+| Valencia Amancio, Alex |
+
+Los aportes de cada integrante se detallan en la sección 5.6 del informe y en el historial de commits.
 
 ---
 
