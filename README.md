@@ -537,7 +537,9 @@ Entorno de las pruebas: AMD Ryzen 7 7730U (8 núcleos), 32 GB de RAM, Windows 11
 
 ## 15. Cómo replicar el proyecto paso a paso
 
-> El manual completo, con capturas del flujo y un guion de demostración de 10 minutos, está en [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf).
+> **Manual completo de instalación y ejecución:** [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf). Cubre desde la instalación de SQL Server (modo mixto, TCP/IP en el puerto 1433), SSMS, Java y Power BI hasta la ejecución de la aplicación, el ETL, su automatización y el dashboard, con el resultado esperado en cada paso, una lista de comprobación, la solución de errores frecuentes y el guion de la demostración. Se probó de principio a fin a partir de una copia del proyecto descargada como ZIP.
+>
+> Resumen de los pasos:
 
 ### Requisitos
 
@@ -711,7 +713,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 |---|---|
 | Informe técnico (8 capítulos) | [`docs/Informe_Proyecto_Final_Grupo04.pdf`](docs/Informe_Proyecto_Final_Grupo04.pdf) · [`.docx`](docs/Informe_Proyecto_Final_Grupo04.docx) |
 | Presentación (5 minutos) | [`docs/Presentacion_BI_Grupo04.pptx`](docs/Presentacion_BI_Grupo04.pptx) |
-| Procedimiento de replicación | [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf) · [`.docx`](docs/Procedimiento_Replicacion_Grupo04.docx) |
+| Procedimiento de replicación (manual de instalación y ejecución) | [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf) · [`.docx`](docs/Procedimiento_Replicacion_Grupo04.docx) |
 
 | Código | Evidencia | Ubicación |
 |---|---|---|
