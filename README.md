@@ -37,7 +37,6 @@ Este repositorio contiene una solución completa de Inteligencia de Negocios con
 20. [Limitaciones y trabajos futuros](#20-limitaciones-y-trabajos-futuros)
 21. [Documentación y evidencias](#21-documentación-y-evidencias)
 22. [Equipo](#22-equipo)
-23. [Uso responsable de inteligencia artificial](#23-uso-responsable-de-inteligencia-artificial)
 
 ---
 
@@ -741,8 +740,3 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 Los aportes de cada integrante se detallan en la sección 5.6 del informe y en el historial de commits.
 
----
-
-## 23. Uso responsable de inteligencia artificial
-
-Se utilizó un asistente de inteligencia artificial como apoyo en la generación y depuración de scripts T-SQL, del generador de datos simulados, de la migración a SQL Server, del proyecto de Power BI y en la revisión de la redacción. Todo el contenido fue verificado por el equipo: los scripts se ejecutaron en SQL Server, los resultados se reconciliaron entre origen y destino, los indicadores se compararon entre SQL y Power BI, y cada cambio se revisó en un pull request. No se ingresaron datos personales reales. El detalle se declara en la sección 5.7 del informe.
