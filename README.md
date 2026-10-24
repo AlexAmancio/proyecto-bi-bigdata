@@ -9,8 +9,6 @@
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.4-brightgreen)
 
-Proyecto final de **Base de Datos Avanzadas y Big Data** (NRC 26055, 2026-2), Universidad Privada del Norte — **Grupo 04**.
-
 Este repositorio contiene una solución completa de Inteligencia de Negocios construida sobre **Estadía**, el sistema web de gestión de estadías de Tunki Lodge (Oxapampa, Pasco): la base operativa, un **datamart en esquema estrella**, un **proceso ETL automatizado con reglas de calidad de datos y control de errores**, un **dashboard en Power BI** y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
 
 ---
@@ -39,7 +37,6 @@ Este repositorio contiene una solución completa de Inteligencia de Negocios con
 20. [Limitaciones y trabajos futuros](#20-limitaciones-y-trabajos-futuros)
 21. [Documentación y evidencias](#21-documentación-y-evidencias)
 22. [Equipo](#22-equipo)
-23. [Uso responsable de inteligencia artificial](#23-uso-responsable-de-inteligencia-artificial)
 
 ---
 
@@ -712,7 +709,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 | Documento | Ubicación |
 |---|---|
-| Informe técnico (8 capítulos, plantilla oficial) | [`docs/Informe_Proyecto_Final_Grupo04.pdf`](docs/Informe_Proyecto_Final_Grupo04.pdf) · [`.docx`](docs/Informe_Proyecto_Final_Grupo04.docx) |
+| Informe técnico (8 capítulos) | [`docs/Informe_Proyecto_Final_Grupo04.pdf`](docs/Informe_Proyecto_Final_Grupo04.pdf) · [`.docx`](docs/Informe_Proyecto_Final_Grupo04.docx) |
 | Presentación (5 minutos) | [`docs/Presentacion_BI_Grupo04.pptx`](docs/Presentacion_BI_Grupo04.pptx) |
 | Procedimiento de replicación | [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf) · [`.docx`](docs/Procedimiento_Replicacion_Grupo04.docx) |
 
@@ -731,7 +728,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 ## 22. Equipo
 
-**Grupo 04** — Base de Datos Avanzadas y Big Data (NRC 26055), 2026-2.
+**Grupo 04**
 
 | Integrante |
 |---|
@@ -743,8 +740,3 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 Los aportes de cada integrante se detallan en la sección 5.6 del informe y en el historial de commits.
 
----
-
-## 23. Uso responsable de inteligencia artificial
-
-Se utilizó un asistente de inteligencia artificial como apoyo en la generación y depuración de scripts T-SQL, del generador de datos simulados, de la migración a SQL Server, del proyecto de Power BI y en la revisión de la redacción. Todo el contenido fue verificado por el equipo: los scripts se ejecutaron en SQL Server, los resultados se reconciliaron entre origen y destino, los indicadores se compararon entre SQL y Power BI, y cada cambio se revisó en un pull request. No se ingresaron datos personales reales. El detalle se declara en la sección 5.7 del informe.
