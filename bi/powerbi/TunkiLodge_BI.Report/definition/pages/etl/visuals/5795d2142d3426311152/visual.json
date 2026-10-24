@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "5795d2142d3426311152",
+  "position": {
+    "x": 20,
+    "y": 215,
+    "z": 34000,
+    "height": 490,
+    "width": 620,
+    "tabOrder": 34000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "paso"
+                }
+              },
+              "queryRef": "etl_log.paso",
+              "nativeQueryRef": "paso",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "Duración total (ms)"
+                }
+              },
+              "queryRef": "etl_log.Duración total (ms)",
+              "nativeQueryRef": "Duración total (ms)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "CPU total (ms)"
+                }
+              },
+              "queryRef": "etl_log.CPU total (ms)",
+              "nativeQueryRef": "CPU total (ms)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Duración y CPU por paso (ms)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,30 @@
+relationship 53ab3471-bb30-4892-a031-8bc842a5d010
+	fromColumn: fact_estadia.id_tiempo_checkin
+	toColumn: dim_tiempo.id_tiempo
+
+relationship 11ed0d30-46b6-486c-803f-a47c0457268e
+	fromColumn: fact_estadia.id_cliente
+	toColumn: dim_cliente.id_cliente
+
+relationship 494e3bfc-c81c-4f7f-aace-82739080541a
+	fromColumn: fact_estadia.id_habitacion
+	toColumn: dim_habitacion.id_habitacion
+
+relationship 7e5f9205-13b9-4e45-a47f-746424b35841
+	fromColumn: fact_estadia.id_categoria
+	toColumn: dim_categoria.id_categoria
+
+relationship 6f6af2dc-6091-46db-952f-311d48a3cfa8
+	fromColumn: fact_estadia.id_usuario
+	toColumn: dim_usuario.id_usuario
+
+relationship 8657940d-0c91-4a2a-b657-f324f848e0c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: etl_log.inicio
+	toColumn: LocalDateTable_7c5695a3-b225-4923-b82f-ea9921c917be.Date
+
+relationship e7bcbcc7-91fe-4fcc-811a-1bd23627d6e9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: etl_log.fin
+	toColumn: LocalDateTable_7524d97d-1d80-413f-8022-78879d45eac2.Date
+

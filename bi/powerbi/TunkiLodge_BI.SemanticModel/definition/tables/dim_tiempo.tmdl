@@ -1,0 +1,78 @@
+table dim_tiempo
+	lineageTag: 07ba3ffb-b49e-481e-a518-380c5754e45d
+	dataCategory: Time
+
+	column id_tiempo
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ab151211-0a95-4a40-b531-7fbf013b5ef9
+		summarizeBy: none
+		sourceColumn: id_tiempo
+
+	column fecha
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 7a69a7fa-15e4-469a-a2b2-2eea015743b2
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column año
+		dataType: int64
+		formatString: 0
+		lineageTag: 429cf373-08e1-4bd3-a1ec-ec3e893ea6a3
+		summarizeBy: none
+		sourceColumn: año
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: da8f54fb-25ae-47fd-9eff-95c76e60f366
+		summarizeBy: none
+		sourceColumn: mes
+
+	column nombre_mes
+		dataType: string
+		lineageTag: 4e3dd121-d8cb-44bd-9003-34949b9da1cf
+		summarizeBy: none
+		sourceColumn: nombre_mes
+		sortByColumn: mes
+
+	column dia
+		dataType: int64
+		formatString: 0
+		lineageTag: b2d884d5-9c10-4278-a36e-2786a86ae3e6
+		summarizeBy: none
+		sourceColumn: dia
+
+	column dia_semana
+		dataType: string
+		lineageTag: 6195ba49-3f78-4066-9e26-ac0db5117cd8
+		summarizeBy: none
+		sourceColumn: dia_semana
+
+	column es_fin_semana
+		dataType: boolean
+		lineageTag: af6baf05-6dd0-48eb-a391-f5adee26b0b6
+		summarizeBy: none
+		sourceColumn: es_fin_semana
+
+	column trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: ffc57220-5cda-438c-9ff9-8b90a64590d2
+		summarizeBy: none
+		sourceColumn: trimestre
+
+	partition dim_tiempo = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="dim_tiempo"]}[Data]
+				in
+				    Datos
+

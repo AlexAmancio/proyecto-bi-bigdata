@@ -1,0 +1,56 @@
+table dim_cliente
+	lineageTag: 5d576ab2-88d2-48d8-9d1e-e21f87791ed2
+
+	column id_cliente
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3ffe8e59-e3d8-433d-9954-53dbe74d17f6
+		summarizeBy: none
+		sourceColumn: id_cliente
+
+	column nombres
+		dataType: string
+		lineageTag: e8da95de-b7e6-4a54-9c94-7dd8bd504d8b
+		summarizeBy: none
+		sourceColumn: nombres
+
+	column apellidos
+		dataType: string
+		lineageTag: 8a7dad3c-ee1d-40cf-9d5e-d19f7346b05e
+		summarizeBy: none
+		sourceColumn: apellidos
+
+	column pais
+		dataType: string
+		lineageTag: 74677fb8-84ff-495b-ace9-cc34dc08a830
+		summarizeBy: none
+		sourceColumn: pais
+
+	column ciudad
+		dataType: string
+		lineageTag: 5cb18cf1-3fd0-470f-9096-3bb1f90d2ad3
+		summarizeBy: none
+		sourceColumn: ciudad
+
+	column zona
+		dataType: string
+		lineageTag: 73445aa9-d823-4fd3-8bd5-49a65ae96f66
+		summarizeBy: none
+		sourceColumn: zona
+
+	column ocupacion
+		dataType: string
+		lineageTag: f4e5f1af-0bac-479a-9cd5-a0002fd32c31
+		summarizeBy: none
+		sourceColumn: ocupacion
+
+	partition dim_cliente = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="dim_cliente"]}[Data]
+				in
+				    Datos
+

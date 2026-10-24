@@ -5,7 +5,8 @@
 --   5 dimensiones: tiempo, cliente, habitación, categoría, usuario
 --   1 tabla de hechos: fact_estadia (4 medidas)
 --   3 tablas de staging para los archivos planos
---   1 bitácora del ETL: etl_log (tiempo, CPU y lecturas por paso)
+--   1 bitácora del ETL: etl_log (tiempo, CPU, lecturas y estado por paso)
+--   1 registro de calidad: etl_calidad (reglas aplicadas a los datos)
 --
 -- Después de este script se ejecuta ETL_CARGA.sql
 -- =====================================================================
@@ -86,8 +87,8 @@ CREATE TABLE dim_usuario (
 go
 
 -- Tablas de STAGING: reciben tal cual los archivos planos (BULK INSERT)
-CREATE TABLE stg_estadia (            -- estadias.txt
-    id             INT NOT NULL PRIMARY KEY,
+CREATE TABLE stg_estadia (            -- estadias.txt (sin PK: los duplicados se controlan en el ETL)
+    id             INT,
     check_in       DATETIME2(0),
     estado         VARCHAR(20),
     cliente_id     INT,
@@ -101,7 +102,7 @@ CREATE TABLE stg_estadia (            -- estadias.txt
 )
 go
 CREATE TABLE stg_consumo (            -- consumos.txt
-    id             INT NOT NULL PRIMARY KEY,
+    id             INT,
     registro_id    INT,
     descripcion    VARCHAR(255),
     monto          DECIMAL(10,2),
@@ -163,7 +164,22 @@ CREATE TABLE etl_log (
     lecturas_logicas BIGINT,         -- páginas de 8 KB leídas en memoria
     filas            INT,            -- filas que quedaron cargadas
     cpu_inicio       INT,            -- valores al iniciar el paso (para la resta)
-    lecturas_inicio  BIGINT
+    lecturas_inicio  BIGINT,
+    estado           VARCHAR(10),    -- OK / ERROR
+    mensaje          VARCHAR(400)    -- detalle del error, si lo hubo
+)
+go
+
+-- Calidad de datos: cada regla del ETL registra cuántos registros afectó y qué hizo con ellos
+CREATE TABLE etl_calidad (
+    id                  INT PRIMARY KEY IDENTITY,
+    ejecucion           INT,
+    regla               VARCHAR(10),
+    descripcion         VARCHAR(150),
+    tabla               VARCHAR(30),
+    registros_afectados INT,
+    accion              VARCHAR(60),
+    fecha               DATETIME
 )
 go
 

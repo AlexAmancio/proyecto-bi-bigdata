@@ -1,0 +1,38 @@
+table dim_usuario
+	lineageTag: b8697303-c265-427e-943d-5351a94d6a20
+
+	column id_usuario
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 096e14d0-c180-455a-8768-4403185488bc
+		summarizeBy: none
+		sourceColumn: id_usuario
+
+	column nombres
+		dataType: string
+		lineageTag: 8da39394-5f37-45e5-a6bd-1019a59d655d
+		summarizeBy: none
+		sourceColumn: nombres
+
+	column apellidos
+		dataType: string
+		lineageTag: c4428526-9924-4f0f-be3e-8b987756a55c
+		summarizeBy: none
+		sourceColumn: apellidos
+
+	column es_admin
+		dataType: boolean
+		lineageTag: bf67dedd-72f8-486c-b8dc-24b6818a496d
+		summarizeBy: none
+		sourceColumn: es_admin
+
+	partition dim_usuario = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="dim_usuario"]}[Data]
+				in
+				    Datos
+

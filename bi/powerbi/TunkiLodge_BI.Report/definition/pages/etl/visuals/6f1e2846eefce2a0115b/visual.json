@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.3.0/schema.json",
+  "name": "6f1e2846eefce2a0115b",
+  "position": {
+    "x": 650,
+    "y": 215,
+    "z": 35000,
+    "width": 610,
+    "height": 235,
+    "tabOrder": 35000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "ejecucion"
+                }
+              },
+              "queryRef": "etl_log.ejecucion",
+              "nativeQueryRef": "ejecucion"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "paso"
+                }
+              },
+              "queryRef": "etl_log.paso",
+              "nativeQueryRef": "paso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "estado"
+                }
+              },
+              "queryRef": "etl_log.estado",
+              "nativeQueryRef": "estado"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "duracion_ms"
+                }
+              },
+              "queryRef": "etl_log.duracion_ms",
+              "nativeQueryRef": "duracion_ms"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "cpu_ms"
+                }
+              },
+              "queryRef": "etl_log.cpu_ms",
+              "nativeQueryRef": "cpu_ms"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "lecturas_logicas"
+                }
+              },
+              "queryRef": "etl_log.lecturas_logicas",
+              "nativeQueryRef": "lecturas_logicas"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "etl_log"
+                    }
+                  },
+                  "Property": "filas"
+                }
+              },
+              "queryRef": "etl_log.filas",
+              "nativeQueryRef": "filas"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bitácora del ETL'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
