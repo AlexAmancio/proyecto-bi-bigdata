@@ -1,0 +1,134 @@
+table etl_log
+	lineageTag: 6d94273b-0427-4064-a9f9-a145d18b4d66
+
+	measure 'Duración total (ms)' = SUM(etl_log[duracion_ms])
+		formatString: #,0
+		lineageTag: fb22bec5-a898-462e-a9a6-74917f0ae85b
+
+	measure 'CPU total (ms)' = SUM(etl_log[cpu_ms])
+		formatString: #,0
+		lineageTag: 2d2acc9d-0e28-49ca-9b3b-f0c0cc13da6e
+
+	measure 'Lecturas totales' = SUM(etl_log[lecturas_logicas])
+		formatString: #,0
+		lineageTag: 5c8d9cd4-ceca-406c-babc-ee15deec3339
+
+	column id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5e43f7fe-e702-468e-ac73-3285e9de623b
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ejecucion
+		dataType: int64
+		formatString: 0
+		lineageTag: 373513d8-6581-4870-891e-0838a4a979a5
+		summarizeBy: sum
+		sourceColumn: ejecucion
+
+		annotation SummarizationSetBy = Automatic
+
+	column paso
+		dataType: string
+		lineageTag: c30594b3-b616-4485-b7a6-ceaf373863ec
+		summarizeBy: none
+		sourceColumn: paso
+		sortByColumn: id
+
+	column inicio
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn:ss
+		lineageTag: 329b366f-89d8-4aa7-8dd1-1b67de78e513
+		summarizeBy: none
+		sourceColumn: inicio
+
+		variation Variación
+			isDefault
+			relationship: 8657940d-0c91-4a2a-b657-f324f848e0c8
+			defaultHierarchy: LocalDateTable_7c5695a3-b225-4923-b82f-ea9921c917be.'Jerarquía de fechas'
+
+	column fin
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn:ss
+		lineageTag: 959d3685-761e-447a-875c-425c4646a42d
+		summarizeBy: none
+		sourceColumn: fin
+
+		variation Variación
+			isDefault
+			relationship: e7bcbcc7-91fe-4fcc-811a-1bd23627d6e9
+			defaultHierarchy: LocalDateTable_7524d97d-1d80-413f-8022-78879d45eac2.'Jerarquía de fechas'
+
+	column duracion_ms
+		dataType: int64
+		formatString: #,0
+		lineageTag: 0e987d81-367a-4a84-b1d4-0aeb761e5b97
+		summarizeBy: sum
+		sourceColumn: duracion_ms
+
+	column cpu_ms
+		dataType: int64
+		formatString: #,0
+		lineageTag: b153b0bb-2e99-40de-9c4c-176802141324
+		summarizeBy: sum
+		sourceColumn: cpu_ms
+
+	column lecturas_logicas
+		dataType: int64
+		formatString: #,0
+		lineageTag: ac0318b0-336a-4d8e-878f-a8ad2005ddc0
+		summarizeBy: sum
+		sourceColumn: lecturas_logicas
+
+	column filas
+		dataType: int64
+		formatString: #,0
+		lineageTag: 0e735bd5-cc88-4a8a-b222-3e09bcc1c560
+		summarizeBy: sum
+		sourceColumn: filas
+
+	column cpu_inicio
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4f40303c-bf6d-4f89-bd48-8fcefb95976f
+		summarizeBy: sum
+		sourceColumn: cpu_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column lecturas_inicio
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: db316017-fd9a-4ece-9cd7-5cb655f83e27
+		summarizeBy: sum
+		sourceColumn: lecturas_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: 80e7d5f6-007d-4700-a8ae-38fdbea21f35
+		summarizeBy: none
+		sourceColumn: estado
+
+	column mensaje
+		dataType: string
+		lineageTag: c25dc4dd-77a2-4966-9dac-ca501dab5b7b
+		summarizeBy: none
+		sourceColumn: mensaje
+
+	partition etl_log = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="etl_log"]}[Data]
+				in
+				    Datos
+

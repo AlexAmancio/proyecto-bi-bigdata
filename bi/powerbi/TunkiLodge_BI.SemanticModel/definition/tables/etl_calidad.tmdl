@@ -1,0 +1,69 @@
+table etl_calidad
+	lineageTag: 97896d19-10f3-4c9d-b894-baf0025633fe
+
+	measure 'Registros corregidos o descartados' = SUM(etl_calidad[registros_afectados])
+		formatString: #,0
+		lineageTag: b775a5cb-b64d-4758-a920-f044bf9edf7f
+
+	column id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b2656692-063c-4086-b91e-0eb20facc5ed
+		summarizeBy: none
+		sourceColumn: id
+
+	column ejecucion
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f29c3ff-f8ca-452b-9c56-880651143cdf
+		summarizeBy: none
+		sourceColumn: ejecucion
+
+	column regla
+		dataType: string
+		lineageTag: 6a6db9a6-d20f-4371-9655-02c7f108e1a1
+		summarizeBy: none
+		sourceColumn: regla
+
+	column descripcion
+		dataType: string
+		lineageTag: 9b45b76f-3d82-4840-b3dd-c7ea558817de
+		summarizeBy: none
+		sourceColumn: descripcion
+
+	column tabla
+		dataType: string
+		lineageTag: faede4b9-4ee0-4f98-ad36-466f75f1f3dd
+		summarizeBy: none
+		sourceColumn: tabla
+
+	column registros_afectados
+		dataType: int64
+		formatString: #,0
+		lineageTag: 80c36a41-e68c-49e4-8357-9ec5e83f6bd3
+		summarizeBy: none
+		sourceColumn: registros_afectados
+
+	column accion
+		dataType: string
+		lineageTag: 757af68a-74d4-4cbc-8e9e-02f9dd1a2430
+		summarizeBy: none
+		sourceColumn: accion
+
+	column fecha
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn:ss
+		lineageTag: b0496ca4-d069-4d0d-98e0-e4b81969fa5d
+		summarizeBy: none
+		sourceColumn: fecha
+
+	partition etl_calidad = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="etl_calidad"]}[Data]
+				in
+				    Datos
+

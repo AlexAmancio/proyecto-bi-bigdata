@@ -1,0 +1,230 @@
+table fact_estadia
+	lineageTag: 7f992c64-6c6c-4153-96dd-beaf833a4292
+
+	measure Reservas = SUM(fact_estadia[cantidad_estadias])
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: 749d7c38-f6bc-4907-8a0b-ee40a8844bde
+
+	measure 'Noches vendidas' = SUM(fact_estadia[noches])
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: 22ff4ba8-4371-422c-82c6-fe5052e700f7
+
+	measure 'Ingreso (S/)' = SUM(fact_estadia[monto_pagado])
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: 57708ee6-74a7-4ffd-9bea-a4afeb1108db
+
+	measure 'Consumos (S/)' = SUM(fact_estadia[total_consumos])
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: 92112132-aacb-48ff-a16c-10aed2be5efa
+
+	measure Canceladas = CALCULATE([Reservas], fact_estadia[es_cancelada] = TRUE())
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: d0524aa1-e83f-4ea8-b031-1441c2639a25
+
+	measure No-show = CALCULATE([Reservas], fact_estadia[es_no_show] = TRUE())
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: d452fff5-a445-42f4-9457-7d4ab9f3eb6a
+
+	measure Finalizadas = CALCULATE([Reservas], fact_estadia[es_finalizada] = TRUE())
+		formatString: #,0
+		displayFolder: Medidas base
+		lineageTag: 60b3ca0f-c01d-4dc8-9c20-ca20092697d5
+
+	measure '% Cancelación' = DIVIDE([Canceladas], [Reservas])
+		formatString: 0.0%
+		displayFolder: KPIs
+		lineageTag: 75f0b6aa-0b66-4f72-96fb-f5bf28158024
+
+	measure '% No-show' = DIVIDE([No-show], [Reservas])
+		formatString: 0.0%
+		displayFolder: KPIs
+		lineageTag: 20310368-fbb6-4322-98a1-5cd3c9d70f88
+
+	measure '% No-llegada' = DIVIDE([Canceladas] + [No-show], [Reservas])
+		formatString: 0.0%
+		displayFolder: KPIs
+		lineageTag: b4181e8a-c37f-44fd-9c93-68c57838bc1c
+
+	measure 'Ingreso por estadía (S/)' = DIVIDE([Ingreso (S/)], [Finalizadas])
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: 5394f0f8-177e-4a4e-b295-d15af795fa16
+
+	measure 'Reservas año anterior' = CALCULATE([Reservas], SAMEPERIODLASTYEAR(dim_tiempo[fecha]))
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: c53c3e21-696f-4b72-8c79-22cf44bbf976
+
+	measure 'Var. interanual reservas' = IF(HASONEVALUE(dim_tiempo[año]), DIVIDE([Reservas] - [Reservas año anterior], [Reservas año anterior]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: KPIs
+		lineageTag: 249faebe-1d66-410d-97dd-b7c8d1796afd
+
+	measure 'Ingreso año anterior (S/)' = CALCULATE([Ingreso (S/)], SAMEPERIODLASTYEAR(dim_tiempo[fecha]))
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: 4fe2ae10-723d-41d1-95e1-98f3431f5565
+
+	measure 'Var. interanual ingreso' = IF(HASONEVALUE(dim_tiempo[año]), DIVIDE([Ingreso (S/)] - [Ingreso año anterior (S/)], [Ingreso año anterior (S/)]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: KPIs
+		lineageTag: 81f0f55b-43ac-4281-b3c0-19800d9a416f
+
+	column id_registro
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9bf88e9d-750f-4040-8e70-c3263a76b3ba
+		summarizeBy: none
+		sourceColumn: id_registro
+
+	column id_tiempo_checkin
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f56a4280-248c-4f5a-91a0-fa4c9d1ca21b
+		summarizeBy: none
+		sourceColumn: id_tiempo_checkin
+
+	column id_cliente
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c942d889-1a56-461b-a00f-00c86b4928dd
+		summarizeBy: none
+		sourceColumn: id_cliente
+
+	column id_habitacion
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a4149b1a-7da5-47c9-9e2e-3758e7425620
+		summarizeBy: none
+		sourceColumn: id_habitacion
+
+	column id_categoria
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1c60dd22-7b60-444c-a583-bdfc810f5ad4
+		summarizeBy: none
+		sourceColumn: id_categoria
+
+	column id_usuario
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f8cfa1b1-dff2-4d97-baed-3af1483fcd6f
+		summarizeBy: none
+		sourceColumn: id_usuario
+
+	column noches
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b66901c-2ead-4e06-91c0-40ed9769b4e9
+		summarizeBy: sum
+		sourceColumn: noches
+
+	column cantidad_estadias
+		dataType: int64
+		formatString: 0
+		lineageTag: e252f3f5-bf1d-4c83-a037-5e50735b5b0b
+		summarizeBy: sum
+		sourceColumn: cantidad_estadias
+
+	column monto_pagado
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 1af5f723-d79e-450f-adaa-bfd94b475a13
+		summarizeBy: sum
+		sourceColumn: monto_pagado
+
+	column total_consumos
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 4179cbca-2d1a-445a-ae4a-8484041512e7
+		summarizeBy: sum
+		sourceColumn: total_consumos
+
+	column num_huespedes
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e4db810-a498-4d75-b12f-5c4a5d2e19ca
+		summarizeBy: none
+		sourceColumn: num_huespedes
+
+	column tarifa
+		dataType: double
+		formatString: #,0.00
+		lineageTag: f0bd8a26-6c61-47a6-9116-067cc931aa23
+		summarizeBy: sum
+		sourceColumn: tarifa
+
+	column saldo_pendiente
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 6dcc3f4b-78a2-4d55-a976-5ecee73ffc00
+		summarizeBy: sum
+		sourceColumn: saldo_pendiente
+
+	column estado
+		dataType: string
+		lineageTag: 40a39e2a-9863-4ee1-b9e8-5f02e5bbf119
+		summarizeBy: none
+		sourceColumn: estado
+
+	column metodo_pago
+		dataType: string
+		lineageTag: 9beb76d8-3e34-4105-b53c-e58b7b2ff9b8
+		summarizeBy: none
+		sourceColumn: metodo_pago
+
+	column es_cliente_recurrente
+		dataType: boolean
+		lineageTag: 95c30c8b-611a-4e14-b10f-cb69dbb4a57b
+		summarizeBy: none
+		sourceColumn: es_cliente_recurrente
+
+	column es_cancelada
+		dataType: boolean
+		lineageTag: 89ab9272-6001-45c3-abeb-6d887018418b
+		summarizeBy: none
+		sourceColumn: es_cancelada
+
+	column es_no_show
+		dataType: boolean
+		lineageTag: 5fce7aa5-57dc-4f30-89a6-5be016b6697b
+		summarizeBy: none
+		sourceColumn: es_no_show
+
+	column es_finalizada
+		dataType: boolean
+		lineageTag: 1fa281f4-8f2f-482b-b4d5-0635eeeb1aba
+		summarizeBy: none
+		sourceColumn: es_finalizada
+
+	column tipo_cliente = IF(fact_estadia[es_cliente_recurrente], "Recurrente", "Nuevo")
+		dataType: string
+		lineageTag: 7831299d-0d3e-44f7-9795-4da38b608fd4
+		summarizeBy: none
+
+	column tamaño_grupo = IF(fact_estadia[num_huespedes] >= 5, "5 o más huéspedes", "1 a 4 huéspedes")
+		dataType: string
+		lineageTag: b146edab-278c-4e51-847b-47f61bcf86d4
+		summarizeBy: none
+
+	partition fact_estadia = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="fact_estadia"]}[Data]
+				in
+				    Datos
+

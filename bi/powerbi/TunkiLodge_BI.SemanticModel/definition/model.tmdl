@@ -1,0 +1,26 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dim_tiempo","dim_cliente","dim_habitacion","dim_categoria","dim_usuario","fact_estadia","etl_log","etl_calidad"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_tiempo
+ref table dim_cliente
+ref table dim_habitacion
+ref table dim_categoria
+ref table dim_usuario
+ref table fact_estadia
+ref table etl_log
+ref table DateTableTemplate_405695db-c6ec-45ca-bab6-b78ef3d9c292
+ref table LocalDateTable_7c5695a3-b225-4923-b82f-ea9921c917be
+ref table LocalDateTable_7524d97d-1d80-413f-8022-78879d45eac2
+ref table etl_calidad
+

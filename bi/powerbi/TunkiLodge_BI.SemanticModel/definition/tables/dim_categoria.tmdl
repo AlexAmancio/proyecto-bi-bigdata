@@ -1,0 +1,35 @@
+table dim_categoria
+	lineageTag: aff2534c-83e1-46ef-8d2f-825ea0798215
+
+	column id_categoria
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 71a9a75f-af70-444f-a4c6-a6c57a843629
+		summarizeBy: none
+		sourceColumn: id_categoria
+
+	column nombre
+		dataType: string
+		lineageTag: 589d8480-3206-476a-a529-59a5f546f1e2
+		summarizeBy: none
+		sourceColumn: nombre
+
+	column precio_base
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 238586c1-21b1-4ff4-9a20-e3431ac3b124
+		summarizeBy: none
+		sourceColumn: precio_base
+
+	partition dim_categoria = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("localhost", "hotel_dw"),
+				    Datos = Origen{[Schema="dbo",Item="dim_categoria"]}[Data]
+				in
+				    Datos
+
+	annotation PBI_ResultType = Table
+
