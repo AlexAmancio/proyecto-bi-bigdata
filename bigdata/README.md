@@ -135,7 +135,7 @@ flowchart LR
 
 En Databricks, los notebooks desplegados quedan en *Workspace → Users → (tu usuario) → .bundle → tunki_bigdata → prod* y los Jobs en *Jobs & Pipelines* ("Tunki Lodge - Pipeline Medallion" y "Tunki Lodge - Experimentos Big Data", este último se ejecuta a mano).
 
-**Dashboard:** el bundle también despliega el dashboard **"Tunki Lodge - Reservas y no-llegada"** (*Dashboards* en el menú izquierdo), con una página y seis visualizaciones: KPIs de 2026, reservas por mes y año, % de cancelación por mes y año, % de no-llegada por zona de origen y por método de pago, y la escalabilidad del EXP-BD-01. Está definido en [`dashboard/tunki_lodge.lvdash.json`](dashboard/tunki_lodge.lvdash.json); para cambiarlo se edita [`dashboard/generar_dashboard.js`](dashboard/generar_dashboard.js), se ejecuta `node bigdata/dashboard/generar_dashboard.js` y se integra por pull request.
+**Dashboard:** el bundle también despliega el dashboard **"Tunki Lodge - Reservas y no-llegada"** (*Dashboards* en el menú izquierdo), con tres páginas: Resumen, Factores de no-llegada y Calidad y experimentos. Está definido en [`dashboard/tunki_lodge.lvdash.json`](dashboard/tunki_lodge.lvdash.json); para cambiarlo se edita [`dashboard/generar_dashboard.js`](dashboard/generar_dashboard.js), se ejecuta `node bigdata/dashboard/generar_dashboard.js` y se integra por pull request.
 
 ---
 
