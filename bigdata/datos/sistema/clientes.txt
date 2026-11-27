@@ -1,0 +1,6595 @@
+id|pais|ciudad|ocupacion
+1|Perú|Lima|Diseñadora UX
+2|Perú|Arequipa|Contador
+3|Perú|Lima|Abogada
+4|Perú|Huánuco|Comerciante
+5|Perú|Lima|Médica
+6|Perú|Cusco|Ingeniero
+7|Perú|Lima|Profesora
+8|Perú|Trujillo|Arquitecto
+9|Perú|Lima|Psicóloga
+10|Perú|Lima|Enfermera
+12|Perú|Lima|Chef
+13|Francia|París|Fotógrafa
+14|Perú|Cajamarca|Contador
+15|Perú|Trujillo|Médico
+16|Perú|Huancayo|Diseñador
+17|Perú|Cajamarca|Programador
+18|Perú|Cajamarca|Periodista
+19|Perú|Cajamarca|Chef
+20|Perú|Ica|Estudiante
+21|Perú|Ica|Estudiante
+22|Perú|Huánuco|Contador
+23|Perú|Oxapampa|Técnico
+24|Perú|Puno|Diseñador
+25|Perú|Puno|Estudiante
+26|Perú|Cajamarca|Arquitecto
+27|Perú|Oxapampa|Chef
+28|Perú|Iquitos|Arquitecto
+29|Perú|Iquitos|Técnico
+30|Perú|Huánuco|Chef
+31|Perú|Piura|Enfermera
+32|Perú|Chiclayo|Periodista
+33|Perú|Piura|Enfermera
+34|Perú|Ica|Diseñador
+35|Perú|Cusco|Médico
+36|Perú|Chiclayo|Chef
+37|Perú|Arequipa|Diseñador
+38|Perú|Lima|Docente
+39|Perú|Tacna|Docente
+40|Perú|Lima|Vendedor
+41|Perú|Tacna|Arquitecto
+42|Perú|Iquitos|Comerciante
+43|Perú|Puno|Administrador
+44|Perú|Arequipa|Programador
+45|Perú|Cajamarca|Administrador
+46|Perú|Trujillo|Docente
+47|Perú|Puno|Chef
+48|Perú|Huancayo|Diseñador
+49|Perú|Lima|Comerciante
+50|Perú|Huánuco|Administrador
+51|Perú|Cusco|Médico
+52|Perú|Oxapampa|Contador
+53|Perú|Puno|Enfermera
+54|Perú|Cusco|Periodista
+55|Perú|Arequipa|Programador
+56|Perú|Pucallpa|Ingeniero
+57|Perú|Iquitos|Técnico
+58|Perú|Huancayo|Técnico
+59|Perú|Trujillo|Docente
+60|Perú|Trujillo|Chef
+61|Perú|Chiclayo|Diseñador
+62|Perú|Iquitos|Diseñador
+63|Perú|Trujillo|Programador
+64|Perú|Trujillo|Técnico
+65|Perú|Huánuco|Abogado
+66|Perú|Iquitos|Arquitecto
+67|Perú|Huancayo|Arquitecto
+68|Perú|Iquitos|Docente
+69|Perú|Oxapampa|Docente
+70|Perú|Piura|Comerciante
+71|Perú|Oxapampa|Contador
+72|Perú|Cusco|Periodista
+73|Perú|Arequipa|Arquitecto
+74|Perú|Iquitos|Técnico
+75|Perú|Trujillo|Vendedor
+76|Perú|Cajamarca|Programador
+77|Perú|Iquitos|Ingeniero
+78|Perú|Oxapampa|Abogado
+79|Perú|Lima|Enfermera
+80|Perú|Huánuco|Administrador
+81|Perú|Ica|Abogado
+82|Perú|Tacna|Vendedor
+83|Perú|Huánuco|Docente
+84|Perú|Arequipa|Programador
+85|Perú|Tacna|Comerciante
+86|Perú|Arequipa|Estudiante
+87|Perú|Iquitos|Enfermera
+88|Perú|Huánuco|Administrador
+89|Perú|Piura|Comerciante
+90|Perú|Tacna|Médico
+91|Perú|Tacna|Programador
+92|Perú|Oxapampa|Ingeniero
+93|Perú|Tacna|Vendedor
+94|Perú|Oxapampa|Comerciante
+95|Perú|Ica|Programador
+96|Perú|Cajamarca|Comerciante
+97|Perú|Arequipa|Médico
+98|Perú|Oxapampa|Enfermera
+99|Perú|Tacna|Médico
+100|Perú|Cajamarca|Chef
+101|Perú|Huancayo|Docente
+102|Perú|Trujillo|Chef
+103|Perú|Piura|Vendedor
+104|Perú|Tacna|Diseñador
+105|Perú|Arequipa|Contador
+106|Perú|Chiclayo|Chef
+107|Perú|Cajamarca|Docente
+108|Perú|Cusco|Enfermera
+109|Perú|Iquitos|Enfermera
+110|Perú|Chiclayo|Arquitecto
+111|Perú|Lima|Médico
+112|Perú|Puno|Enfermera
+113|Perú|Cajamarca|Chef
+114|Perú|Cajamarca|Chef
+115|Perú|Chiclayo|Administrador
+116|Perú|Huancayo|Diseñador
+117|Perú|Cajamarca|Administrador
+118|Perú|Chiclayo|Enfermera
+119|Perú|Iquitos|Enfermera
+120|Perú|Lima|Administrador
+121|Perú|Chiclayo|Docente
+122|Perú|Lima|Ingeniero
+123|Perú|Tacna|Programador
+124|Perú|Piura|Diseñador
+125|Perú|Lima|Abogado
+126|Perú|Cajamarca|Arquitecto
+127|Perú|Pucallpa|Abogado
+128|Perú|Iquitos|Médico
+129|Perú|Ica|Contador
+130|Perú|Arequipa|Administrador
+131|Perú|Chiclayo|Periodista
+132|Perú|Lima|Médico
+133|Perú|Iquitos|Estudiante
+134|Perú|Trujillo|Chef
+135|Perú|Huancayo|Técnico
+136|Perú|Trujillo|Vendedor
+137|Perú|Pucallpa|Periodista
+138|Perú|Puno|Diseñador
+139|Perú|Huancayo|Abogado
+140|Perú|Huánuco|Estudiante
+141|Perú|Lima|Abogado
+142|Perú|Cusco|Programador
+143|Perú|Piura|Administrador
+144|Perú|Huancayo|Programador
+145|Perú|Cajamarca|Arquitecto
+146|Perú|Chiclayo|Vendedor
+147|Perú|Huánuco|Enfermera
+148|Perú|Arequipa|Vendedor
+149|Perú|Tacna|Contador
+150|Perú|Tacna|Técnico
+151|Perú|Huánuco|Diseñador
+152|Perú|Arequipa|Programador
+153|Perú|Cusco|Chef
+154|Perú|Puno|Abogado
+155|Perú|Chiclayo|Diseñador
+156|Perú|Huánuco|Ingeniero
+157|Perú|Cajamarca|Diseñador
+158|Perú|Trujillo|Chef
+159|Perú|Ica|Abogado
+160|Perú|Ica|Arquitecto
+161|Perú|Lima|Docente
+162|Perú|Lima|Médico
+163|Perú|Huánuco|Diseñador
+164|Perú|Lima|Ingeniera de sistemas
+165|Perú|Lima|Arquitecto
+166|Perú|Piura|Administrador
+167|Perú|Lima|Enfermera
+168|Perú|Huancayo|Psicólogo
+169|Perú|Lima|Economista
+170|Perú|Huancayo|Enfermera
+171|Perú|Lima|Empresario
+172|Perú|Lima|Psicólogo
+173|Perú|Lima|Ingeniero
+174|Colombia|Bogotá|Chef
+175|Argentina|Buenos Aires|Comerciante
+176|Perú|Trujillo|Estudiante
+177|Perú|Lima|Empresario
+178|Perú|Tacna|Chef
+179|Perú|Cusco|Jubilado
+180|Perú|Lima|Médico
+181|Perú|Iquitos|Economista
+182|Perú|Lima|Médico
+183|Perú|Huancayo|Arquitecto
+184|Perú|Cerro de Pasco|Comerciante
+185|Perú|Puno|Docente
+186|Perú|Chiclayo|Técnico
+187|Perú|Lima|Ingeniero
+188|Perú|Trujillo|Médico
+189|Perú|Huancayo|Técnico
+190|Perú|Lima|Ingeniera de sistemas
+191|Perú|Oxapampa|Psicólogo
+192|Perú|Lima|Periodista
+193|Perú|Ica|Economista
+194|Perú|Arequipa|Enfermera
+195|Perú|Lima|Enfermera
+196|Perú|Lima|Estudiante
+197|Perú|Lima|Diseñador
+198|Perú|Lima|Arquitecto
+199|Perú|Puno|Enfermera
+200|Perú|La Merced|Periodista
+201|Perú|Piura|Comerciante
+202|Perú|Lima|Abogado
+203|Perú|Iquitos|Economista
+204|Perú|Lima|Comerciante
+205|Perú|Arequipa|Ingeniero
+206|Perú|Iquitos|Profesora
+207|Perú|Lima|Contador
+208|Perú|Lima|Diseñador
+209|Perú|Lima|Arquitecto
+210|Perú|Piura|Psicólogo
+211|Perú|Lima|Economista
+212|Chile|Santiago|Diseñador
+213|Chile|Santiago|Ingeniera de sistemas
+214|Perú|Lima|Profesora
+215|Perú|Huánuco|Ingeniera de sistemas
+216|Perú|Cusco|Técnico
+217|Perú|Lima|Contador
+218|Argentina|Buenos Aires|Médico
+219|Perú|Tacna|Jubilado
+220|Perú|Lima|Comerciante
+221|Perú|Cusco|Profesora
+222|Perú|Cerro de Pasco|Comerciante
+223|Perú|Huancayo|Enfermera
+224|Perú|Piura|Psicólogo
+225|Perú|Lima|Empresario
+226|Perú|Lima|Arquitecto
+227|Perú|Lima|Enfermera
+228|Perú|Huancayo|Médico
+229|Perú|La Merced|Administrador
+230|Perú|Huancayo|Profesora
+231|Perú|Tarma|Profesora
+232|Perú|Ica|Estudiante
+233|Perú|Lima|Periodista
+234|Perú|Puno|Ingeniero
+235|Alemania|Berlín|Ingeniera de sistemas
+236|Colombia|Bogotá|Abogado
+237|Perú|Lima|Contador
+238|Perú|Lima|Diseñador
+239|Perú|Trujillo|Ingeniera de sistemas
+240|Perú|Lima|Periodista
+241|Perú|Lima|Administrador
+242|Perú|Arequipa|Técnico
+243|Perú|Tarma|Abogado
+244|Perú|Lima|Comerciante
+245|Perú|Piura|Técnico
+246|Perú|Lima|Empresario
+247|Perú|Chiclayo|Contador
+248|Perú|Cusco|Médico
+249|Perú|Trujillo|Contador
+250|Perú|Lima|Diseñador
+251|Perú|Tarma|Profesora
+252|Perú|Lima|Economista
+253|Perú|Ica|Ingeniera de sistemas
+254|Perú|Lima|Ingeniera de sistemas
+255|Perú|Huancayo|Periodista
+256|Perú|Huánuco|Comerciante
+257|Perú|Trujillo|Economista
+258|Perú|Piura|Arquitecto
+259|Perú|Huancayo|Diseñador
+260|Perú|Cajamarca|Abogado
+261|Perú|Arequipa|Profesora
+262|Perú|Puno|Chef
+263|Perú|La Merced|Ingeniera de sistemas
+264|Perú|Chiclayo|Chef
+265|Perú|Piura|Abogado
+266|Perú|Lima|Ingeniera de sistemas
+267|Perú|Tarma|Ingeniera de sistemas
+268|Perú|Lima|Contador
+269|Perú|Lima|Médico
+270|Perú|Lima|Enfermera
+271|Perú|Lima|Contador
+272|Perú|Lima|Psicólogo
+273|Estados Unidos|Nueva York|Docente
+274|Perú|Lima|Ingeniero
+275|Perú|La Merced|Jubilado
+276|Perú|Huancayo|Estudiante
+277|Perú|Huánuco|Psicólogo
+278|Perú|Lima|Economista
+279|Perú|Puno|Empresario
+280|Perú|Lima|Profesora
+281|Perú|Piura|Arquitecto
+282|Perú|Lima|Enfermera
+283|Perú|Puno|Abogado
+284|Perú|Lima|Economista
+285|Perú|La Merced|Ingeniera de sistemas
+286|Perú|Lima|Comerciante
+287|Francia|París|Ingeniera de sistemas
+288|Perú|Lima|Jubilado
+289|Perú|Lima|Economista
+290|Perú|Lima|Jubilado
+291|Perú|Lima|Administrador
+292|Perú|Lima|Jubilado
+293|Perú|Lima|Diseñador
+294|Perú|Cajamarca|Administrador
+295|Perú|Lima|Docente
+296|Perú|Tarma|Ingeniera de sistemas
+297|Perú|Tarma|Diseñador
+298|Perú|Chiclayo|Economista
+299|Perú|Arequipa|Administrador
+300|Perú|Lima|Contador
+301|Perú|Huancayo|Médico
+302|Perú|Huancayo|Periodista
+303|Perú|La Merced|Médico
+304|Perú|Huánuco|Periodista
+305|Perú|Tarma|Economista
+306|Perú|Huancayo|Economista
+307|Perú|Huánuco|Docente
+308|Perú|Lima|Técnico
+309|Perú|La Merced|Médico
+310|Perú|Cajamarca|Psicólogo
+311|Argentina|Buenos Aires|Técnico
+312|Perú|La Merced|Profesora
+313|Perú|Lima|Jubilado
+314|Perú|Cajamarca|Técnico
+315|Perú|Ica|Periodista
+316|Perú|Lima|Ingeniero
+317|Perú|Tacna|Técnico
+318|Perú|Chiclayo|Ingeniero
+319|Perú|Tacna|Abogado
+320|Perú|Lima|Empresario
+321|Perú|Lima|Empresario
+322|España|Madrid|Periodista
+323|Perú|Lima|Técnico
+324|Perú|Huancayo|Chef
+325|Perú|Lima|Contador
+326|Perú|Lima|Jubilado
+327|Perú|Trujillo|Chef
+328|Perú|La Merced|Médico
+329|Argentina|Buenos Aires|Administrador
+330|Perú|Trujillo|Administrador
+331|Perú|Lima|Docente
+332|Perú|Lima|Enfermera
+333|Perú|Lima|Jubilado
+334|Perú|La Merced|Contador
+335|Perú|Lima|Chef
+336|Perú|Lima|Empresario
+337|Perú|Lima|Técnico
+338|Perú|Chiclayo|Chef
+339|Perú|Lima|Estudiante
+340|Perú|La Merced|Jubilado
+341|Perú|Lima|Técnico
+342|Perú|Lima|Contador
+343|Perú|Lima|Médico
+344|Perú|Lima|Estudiante
+345|Perú|Lima|Estudiante
+346|Perú|Lima|Diseñador
+347|Perú|Huancayo|Comerciante
+348|Perú|Lima|Psicólogo
+349|Perú|Huancayo|Estudiante
+350|Perú|Lima|Economista
+351|Perú|Lima|Estudiante
+352|Perú|Cusco|Empresario
+353|Perú|Cerro de Pasco|Docente
+354|Perú|Chiclayo|Arquitecto
+355|Perú|Cajamarca|Chef
+356|Perú|Lima|Empresario
+357|Perú|Piura|Profesora
+358|Perú|La Merced|Periodista
+359|Perú|Cerro de Pasco|Periodista
+360|Perú|Huancayo|Docente
+361|Perú|Oxapampa|Médico
+362|Chile|Santiago|Diseñador
+363|Perú|Huancayo|Administrador
+364|Perú|Arequipa|Ingeniera de sistemas
+365|Perú|Lima|Comerciante
+366|Perú|Lima|Técnico
+367|Perú|Cerro de Pasco|Docente
+368|Perú|Chiclayo|Docente
+369|Perú|Huánuco|Jubilado
+370|Perú|Piura|Economista
+371|Perú|La Merced|Médico
+372|Perú|Lima|Diseñador
+373|Perú|Ica|Arquitecto
+374|Perú|Puno|Contador
+375|Perú|Lima|Jubilado
+376|Perú|Oxapampa|Jubilado
+377|Perú|Tarma|Enfermera
+378|Perú|Piura|Jubilado
+379|Perú|Piura|Chef
+380|Perú|Lima|Chef
+381|Perú|Lima|Abogado
+382|Perú|Lima|Contador
+383|Perú|Lima|Profesora
+384|Perú|Cerro de Pasco|Administrador
+385|Perú|Lima|Empresario
+386|Perú|Huánuco|Abogado
+387|Perú|Lima|Profesora
+388|Perú|Lima|Jubilado
+389|Perú|La Merced|Ingeniera de sistemas
+390|Perú|Cerro de Pasco|Profesora
+391|Perú|Tarma|Contador
+392|Perú|Lima|Ingeniera de sistemas
+393|Perú|Huancayo|Contador
+394|Perú|Lima|Arquitecto
+395|Perú|Lima|Comerciante
+396|Perú|Lima|Técnico
+397|Perú|Tarma|Docente
+398|Perú|Lima|Jubilado
+399|Perú|Lima|Economista
+400|Perú|Arequipa|Docente
+401|Perú|Puno|Comerciante
+402|Perú|Lima|Profesora
+403|Perú|Tacna|Chef
+404|Perú|Lima|Estudiante
+405|Perú|Huancayo|Chef
+406|Perú|Lima|Docente
+407|Perú|Tarma|Ingeniera de sistemas
+408|Perú|Lima|Técnico
+409|Perú|Lima|Contador
+410|Perú|Lima|Ingeniera de sistemas
+411|Perú|Lima|Economista
+412|Perú|Lima|Contador
+413|Perú|Lima|Comerciante
+414|Perú|Cerro de Pasco|Diseñador
+415|Perú|Lima|Médico
+416|Perú|Cusco|Psicólogo
+417|Perú|Lima|Empresario
+418|Perú|Lima|Periodista
+419|Perú|Chiclayo|Profesora
+420|Perú|Arequipa|Médico
+421|Perú|Lima|Abogado
+422|Perú|Piura|Abogado
+423|Perú|Lima|Comerciante
+424|Perú|La Merced|Enfermera
+425|Perú|Lima|Psicólogo
+426|Perú|Lima|Jubilado
+427|Perú|Lima|Técnico
+428|Perú|Cerro de Pasco|Abogado
+429|Perú|Huancayo|Ingeniero
+430|Perú|Huancayo|Empresario
+431|Perú|Tacna|Psicólogo
+432|Perú|Puno|Administrador
+433|Perú|Oxapampa|Chef
+434|Colombia|Bogotá|Médico
+435|Francia|París|Arquitecto
+436|Perú|Lima|Técnico
+437|Perú|Lima|Administrador
+438|Perú|Tarma|Ingeniero
+439|Perú|Lima|Psicólogo
+440|Perú|Huancayo|Empresario
+441|Perú|Chiclayo|Profesora
+442|Perú|Lima|Arquitecto
+443|Perú|Oxapampa|Docente
+444|Perú|La Merced|Diseñador
+445|Perú|Chiclayo|Empresario
+446|Perú|Huancayo|Arquitecto
+447|España|Madrid|Periodista
+448|Perú|Lima|Jubilado
+449|Perú|Lima|Chef
+450|Argentina|Buenos Aires|Estudiante
+451|Perú|Lima|Ingeniero
+452|Perú|Lima|Arquitecto
+453|Perú|Lima|Administrador
+454|Perú|Lima|Enfermera
+455|Perú|Lima|Profesora
+456|Perú|Lima|Psicólogo
+457|Perú|Oxapampa|Médico
+458|Perú|Arequipa|Arquitecto
+459|Perú|Huánuco|Administrador
+460|Perú|Lima|Periodista
+461|Perú|Huancayo|Enfermera
+462|Perú|Huánuco|Arquitecto
+463|Perú|La Merced|Contador
+464|Perú|Huancayo|Psicólogo
+465|Perú|Lima|Economista
+466|Perú|Lima|Empresario
+467|Perú|Lima|Empresario
+468|Perú|Lima|Enfermera
+469|Perú|Piura|Abogado
+470|Perú|Lima|Abogado
+471|Perú|Piura|Médico
+472|Perú|Cusco|Enfermera
+473|Perú|La Merced|Docente
+474|Perú|Piura|Psicólogo
+475|Perú|Lima|Estudiante
+476|Perú|Trujillo|Ingeniero
+477|Perú|Lima|Ingeniero
+478|España|Madrid|Técnico
+479|Perú|Lima|Administrador
+480|Francia|París|Periodista
+481|Perú|Tarma|Médico
+482|Perú|Lima|Psicólogo
+483|Perú|La Merced|Empresario
+484|Perú|Huánuco|Psicólogo
+485|Perú|Cajamarca|Empresario
+486|Perú|Piura|Ingeniero
+487|Perú|Ica|Contador
+488|Perú|Huancayo|Empresario
+489|Perú|Lima|Psicólogo
+490|Perú|Tacna|Docente
+491|Perú|Lima|Enfermera
+492|Perú|Huánuco|Jubilado
+493|Perú|Huánuco|Administrador
+494|Perú|Cusco|Comerciante
+495|Perú|Lima|Profesora
+496|Perú|Huánuco|Economista
+497|Perú|Lima|Diseñador
+498|Perú|Lima|Arquitecto
+499|Perú|Lima|Economista
+500|Perú|Lima|Profesora
+501|Perú|Tacna|Docente
+502|Perú|Iquitos|Arquitecto
+503|Perú|Lima|Ingeniero
+504|Perú|Tarma|Economista
+505|Perú|Huancayo|Periodista
+506|Perú|Iquitos|Enfermera
+507|Perú|Huancayo|Diseñador
+508|Perú|Lima|Profesora
+509|Perú|Huancayo|Ingeniera de sistemas
+510|Perú|Lima|Arquitecto
+511|Perú|Lima|Diseñador
+512|Perú|Puno|Arquitecto
+513|Perú|La Merced|Ingeniero
+514|Perú|Lima|Enfermera
+515|Alemania|Berlín|Médico
+516|Perú|Lima|Psicólogo
+517|Perú|Huánuco|Docente
+518|Perú|Piura|Economista
+519|Perú|Arequipa|Docente
+520|Perú|Lima|Comerciante
+521|Perú|Cerro de Pasco|Médico
+522|Perú|Lima|Abogado
+523|Perú|Lima|Estudiante
+524|Perú|Cerro de Pasco|Enfermera
+525|Perú|Huancayo|Estudiante
+526|Perú|Cerro de Pasco|Ingeniero
+527|Perú|Lima|Psicólogo
+528|Perú|Huancayo|Chef
+529|Perú|Lima|Arquitecto
+530|Perú|Iquitos|Administrador
+531|Perú|La Merced|Diseñador
+532|Perú|Lima|Empresario
+533|Perú|Tarma|Ingeniera de sistemas
+534|Perú|Tarma|Contador
+535|Perú|Lima|Diseñador
+536|Perú|Trujillo|Economista
+537|Perú|Lima|Estudiante
+538|Perú|Lima|Ingeniero
+539|Perú|Chiclayo|Periodista
+540|Perú|Lima|Economista
+541|Perú|Lima|Periodista
+542|Perú|Tarma|Profesora
+543|Perú|Iquitos|Comerciante
+544|Perú|Arequipa|Diseñador
+545|Perú|Lima|Arquitecto
+546|Perú|Lima|Administrador
+547|Perú|Lima|Profesora
+548|Perú|Lima|Periodista
+549|Perú|La Merced|Docente
+550|Perú|Cerro de Pasco|Empresario
+551|Perú|Lima|Estudiante
+552|Perú|Huancayo|Ingeniero
+553|Perú|Lima|Administrador
+554|Perú|Lima|Técnico
+555|Perú|Cerro de Pasco|Técnico
+556|Alemania|Berlín|Estudiante
+557|Perú|Lima|Jubilado
+558|Perú|Lima|Administrador
+559|Perú|Puno|Ingeniero
+560|Perú|Chiclayo|Estudiante
+561|Perú|Lima|Empresario
+562|Colombia|Bogotá|Estudiante
+563|Perú|Huancayo|Comerciante
+564|Perú|Lima|Periodista
+565|Perú|Oxapampa|Enfermera
+566|Perú|Lima|Chef
+567|Perú|Lima|Docente
+568|Estados Unidos|Nueva York|Docente
+569|Perú|La Merced|Psicólogo
+570|Perú|Lima|Arquitecto
+571|Perú|Lima|Profesora
+572|Perú|Huánuco|Empresario
+573|Perú|Ica|Estudiante
+574|Perú|Cusco|Comerciante
+575|Perú|Lima|Profesora
+576|Perú|Cerro de Pasco|Jubilado
+577|Perú|La Merced|Periodista
+578|Perú|Lima|Economista
+579|Perú|Lima|Técnico
+580|Perú|Lima|Contador
+581|Perú|Tarma|Diseñador
+582|Perú|Cerro de Pasco|Diseñador
+583|Perú|Puno|Comerciante
+584|Perú|Cerro de Pasco|Empresario
+585|Perú|Trujillo|Contador
+586|Perú|Cusco|Profesora
+587|Perú|Tarma|Administrador
+588|Perú|Lima|Jubilado
+589|Perú|Tarma|Arquitecto
+590|Perú|Cusco|Empresario
+591|Perú|Huánuco|Empresario
+592|Perú|Lima|Jubilado
+593|Perú|Lima|Chef
+594|Perú|Huancayo|Enfermera
+595|Perú|Lima|Profesora
+596|Perú|Cerro de Pasco|Jubilado
+597|Perú|La Merced|Jubilado
+598|Perú|Lima|Ingeniera de sistemas
+599|Perú|Piura|Psicólogo
+600|Perú|Tarma|Docente
+601|Perú|Lima|Técnico
+602|Perú|Lima|Economista
+603|Perú|Lima|Ingeniero
+604|Perú|Huancayo|Médico
+605|Perú|Lima|Arquitecto
+606|Perú|Huancayo|Abogado
+607|Perú|Lima|Periodista
+608|Perú|Arequipa|Empresario
+609|Perú|Puno|Abogado
+610|Perú|Oxapampa|Chef
+611|Perú|Lima|Técnico
+612|Perú|Huancayo|Abogado
+613|Perú|Huánuco|Abogado
+614|Perú|Cusco|Ingeniero
+615|Perú|Huancayo|Arquitecto
+616|Perú|Lima|Docente
+617|Perú|Cerro de Pasco|Periodista
+618|Perú|Trujillo|Administrador
+619|Perú|Huancayo|Profesora
+620|Perú|Cusco|Enfermera
+621|Perú|Lima|Técnico
+622|Perú|Lima|Periodista
+623|Perú|Cerro de Pasco|Arquitecto
+624|Perú|Huancayo|Administrador
+625|Perú|Cusco|Enfermera
+626|Perú|Arequipa|Periodista
+627|Perú|Tarma|Administrador
+628|Perú|Trujillo|Economista
+629|Perú|Chiclayo|Docente
+630|Perú|Lima|Profesora
+631|Perú|Ica|Estudiante
+632|Perú|Lima|Economista
+633|Perú|Lima|Periodista
+634|Perú|La Merced|Jubilado
+635|Perú|Huánuco|Administrador
+636|Perú|Cusco|Contador
+637|Perú|Lima|Ingeniera de sistemas
+638|Perú|Piura|Economista
+639|Perú|Lima|Economista
+640|Perú|Lima|Arquitecto
+641|Perú|Lima|Chef
+642|Perú|Ica|Contador
+643|Perú|Piura|Economista
+644|Perú|Cerro de Pasco|Ingeniero
+645|Perú|Lima|Empresario
+646|Perú|Cerro de Pasco|Estudiante
+647|Francia|París|Economista
+648|Perú|Huancayo|Ingeniera de sistemas
+649|Perú|Lima|Docente
+650|Perú|Lima|Comerciante
+651|Perú|Lima|Comerciante
+652|Perú|Oxapampa|Jubilado
+653|Perú|Lima|Ingeniero
+654|Perú|Huancayo|Enfermera
+655|Perú|Lima|Docente
+656|Perú|Cajamarca|Estudiante
+657|Perú|Lima|Comerciante
+658|Perú|Lima|Arquitecto
+659|Perú|Lima|Chef
+660|Perú|Tarma|Médico
+661|Perú|Lima|Contador
+662|Perú|Piura|Contador
+663|Perú|La Merced|Diseñador
+664|Perú|Huancayo|Profesora
+665|Perú|Lima|Enfermera
+666|Perú|Huancayo|Docente
+667|Perú|Tarma|Técnico
+668|Perú|Cerro de Pasco|Contador
+669|Chile|Santiago|Comerciante
+670|Perú|Trujillo|Profesora
+671|Perú|Huancayo|Economista
+672|Perú|Lima|Administrador
+673|Perú|Lima|Ingeniero
+674|Perú|Arequipa|Arquitecto
+675|Perú|Cusco|Administrador
+676|Perú|Lima|Docente
+677|Perú|Lima|Docente
+678|Perú|Lima|Chef
+679|Perú|Trujillo|Diseñador
+680|Perú|Huancayo|Docente
+681|Perú|Tacna|Técnico
+682|Perú|Tacna|Economista
+683|Perú|Cerro de Pasco|Médico
+684|Perú|Lima|Comerciante
+685|Perú|Tacna|Periodista
+686|Perú|Lima|Técnico
+687|Perú|Lima|Empresario
+688|Perú|Cerro de Pasco|Chef
+689|Perú|Huancayo|Estudiante
+690|Perú|Lima|Periodista
+691|Perú|Lima|Economista
+692|Perú|Huánuco|Estudiante
+693|Perú|Huánuco|Ingeniero
+694|Perú|Huancayo|Periodista
+695|Perú|Lima|Ingeniero
+696|Perú|Huánuco|Diseñador
+697|Perú|Lima|Contador
+698|Perú|Huánuco|Economista
+699|Perú|Lima|Empresario
+700|Perú|Huancayo|Ingeniera de sistemas
+701|Perú|Lima|Enfermera
+702|Perú|Lima|Enfermera
+703|Perú|Piura|Jubilado
+704|Perú|Tarma|Profesora
+705|Perú|La Merced|Administrador
+706|Perú|Huancayo|Periodista
+707|Perú|Lima|Diseñador
+708|Perú|Lima|Comerciante
+709|Perú|Cajamarca|Arquitecto
+710|Perú|Huancayo|Docente
+711|Perú|Huancayo|Administrador
+712|Perú|Arequipa|Administrador
+713|Perú|Oxapampa|Estudiante
+714|Perú|Lima|Administrador
+715|Perú|Lima|Economista
+716|Perú|Huancayo|Ingeniero
+717|Perú|Tarma|Abogado
+718|Perú|Tarma|Ingeniera de sistemas
+719|Perú|Lima|Docente
+720|Francia|París|Estudiante
+721|Perú|La Merced|Periodista
+722|Perú|Cusco|Ingeniero
+723|Perú|Huánuco|Economista
+724|Perú|Cajamarca|Diseñador
+725|Perú|Lima|Comerciante
+726|Perú|Arequipa|Economista
+727|Perú|Lima|Chef
+728|Perú|Huánuco|Diseñador
+729|Perú|Lima|Profesora
+730|Perú|Huancayo|Comerciante
+731|Perú|Iquitos|Técnico
+732|Colombia|Bogotá|Profesora
+733|Perú|Trujillo|Arquitecto
+734|Perú|Huánuco|Docente
+735|Perú|Cajamarca|Enfermera
+736|Perú|Lima|Contador
+737|Perú|Huánuco|Administrador
+738|Perú|Lima|Empresario
+739|Perú|Tarma|Administrador
+740|Perú|Lima|Enfermera
+741|Perú|Tacna|Estudiante
+742|Perú|Chiclayo|Enfermera
+743|Perú|Huánuco|Psicólogo
+744|Perú|Lima|Enfermera
+745|Perú|Chiclayo|Jubilado
+746|Perú|Lima|Ingeniera de sistemas
+747|Perú|Ica|Ingeniero
+748|Perú|Lima|Empresario
+749|Perú|Huánuco|Empresario
+750|Perú|Lima|Profesora
+751|Perú|Lima|Docente
+752|Perú|Huánuco|Profesora
+753|Estados Unidos|Nueva York|Estudiante
+754|Perú|Lima|Estudiante
+755|Perú|Lima|Abogado
+756|Perú|Cerro de Pasco|Ingeniera de sistemas
+757|Perú|Lima|Profesora
+758|Perú|Arequipa|Docente
+759|Perú|Lima|Diseñador
+760|Perú|Trujillo|Jubilado
+761|Perú|Puno|Diseñador
+762|Perú|Cusco|Enfermera
+763|Perú|Lima|Jubilado
+764|Perú|Arequipa|Periodista
+765|Perú|Cusco|Economista
+766|Perú|Huancayo|Chef
+767|Perú|Iquitos|Administrador
+768|Perú|Lima|Periodista
+769|Perú|Lima|Diseñador
+770|Perú|Huancayo|Jubilado
+771|Perú|Cerro de Pasco|Diseñador
+772|Perú|La Merced|Chef
+773|Perú|Lima|Chef
+774|Perú|Huánuco|Psicólogo
+775|Perú|Lima|Arquitecto
+776|Perú|Ica|Enfermera
+777|Perú|Lima|Estudiante
+778|Perú|Lima|Empresario
+779|Perú|Arequipa|Chef
+780|Perú|Piura|Abogado
+781|Perú|Arequipa|Empresario
+782|Perú|Lima|Comerciante
+783|Perú|Lima|Docente
+784|Perú|Huancayo|Médico
+785|Perú|Lima|Técnico
+786|Perú|Chiclayo|Arquitecto
+787|Perú|Lima|Diseñador
+788|Perú|Lima|Estudiante
+789|Perú|Chiclayo|Ingeniera de sistemas
+790|Perú|Lima|Diseñador
+791|Perú|Cerro de Pasco|Ingeniero
+792|Perú|Oxapampa|Jubilado
+793|Perú|La Merced|Empresario
+794|Perú|Lima|Chef
+795|Perú|La Merced|Profesora
+796|Perú|Cerro de Pasco|Periodista
+797|Perú|Cerro de Pasco|Técnico
+798|Perú|Lima|Docente
+799|Perú|Huancayo|Administrador
+800|Perú|Lima|Diseñador
+801|Perú|Cerro de Pasco|Psicólogo
+802|Perú|Lima|Técnico
+803|Perú|Lima|Estudiante
+804|Perú|Huancayo|Chef
+805|Colombia|Bogotá|Diseñador
+806|Perú|Lima|Estudiante
+807|Perú|Cerro de Pasco|Contador
+808|Perú|Lima|Chef
+809|Perú|Lima|Diseñador
+810|Perú|Lima|Ingeniero
+811|Perú|La Merced|Periodista
+812|Perú|Ica|Empresario
+813|Perú|Lima|Empresario
+814|Perú|Tarma|Técnico
+815|Perú|Lima|Jubilado
+816|Perú|Tacna|Jubilado
+817|Perú|Lima|Diseñador
+818|Perú|Huancayo|Administrador
+819|Perú|Lima|Contador
+820|España|Madrid|Jubilado
+821|Perú|Lima|Docente
+822|Perú|Lima|Estudiante
+823|Perú|La Merced|Periodista
+824|Perú|Lima|Periodista
+825|Perú|Lima|Psicólogo
+826|Colombia|Bogotá|Médico
+827|Perú|Lima|Administrador
+828|Perú|Lima|Estudiante
+829|Perú|Tacna|Técnico
+830|Perú|Piura|Empresario
+831|Perú|Lima|Diseñador
+832|Perú|Cajamarca|Ingeniero
+833|Perú|Lima|Arquitecto
+834|Perú|Huánuco|Diseñador
+835|Perú|Tacna|Jubilado
+836|Perú|Ica|Economista
+837|Perú|Lima|Ingeniero
+838|Perú|Lima|Ingeniera de sistemas
+839|Perú|Chiclayo|Empresario
+840|Perú|Trujillo|Técnico
+841|Perú|La Merced|Psicólogo
+842|Perú|Lima|Comerciante
+843|Perú|Lima|Comerciante
+844|Perú|Lima|Diseñador
+845|Perú|Lima|Periodista
+846|Perú|Huancayo|Contador
+847|Perú|Ica|Economista
+848|Perú|Lima|Abogado
+849|Colombia|Bogotá|Comerciante
+850|Perú|Lima|Abogado
+851|Perú|Cerro de Pasco|Ingeniero
+852|Perú|Piura|Empresario
+853|Perú|Lima|Periodista
+854|Perú|La Merced|Médico
+855|Perú|Huancayo|Enfermera
+856|Perú|Huánuco|Estudiante
+857|Perú|Arequipa|Estudiante
+858|Perú|Cerro de Pasco|Empresario
+859|Perú|La Merced|Ingeniero
+860|Perú|Huancayo|Diseñador
+861|Perú|Huancayo|Periodista
+862|Perú|Huancayo|Médico
+863|Perú|Lima|Docente
+864|Perú|Lima|Contador
+865|Perú|Lima|Médico
+866|Perú|La Merced|Profesora
+867|Perú|Tarma|Ingeniero
+868|Perú|Lima|Diseñador
+869|Perú|Iquitos|Docente
+870|Perú|Tarma|Contador
+871|Perú|La Merced|Arquitecto
+872|Perú|Lima|Ingeniero
+873|Perú|Huánuco|Médico
+874|Perú|Huánuco|Jubilado
+875|Perú|Cerro de Pasco|Abogado
+876|Perú|Arequipa|Empresario
+877|Perú|Piura|Estudiante
+878|Perú|Lima|Psicólogo
+879|Perú|Lima|Estudiante
+880|Perú|Tarma|Arquitecto
+881|Perú|Tarma|Docente
+882|Perú|Lima|Técnico
+883|Perú|Cajamarca|Enfermera
+884|Perú|Lima|Economista
+885|Argentina|Buenos Aires|Docente
+886|Perú|Huancayo|Ingeniera de sistemas
+887|Perú|Lima|Abogado
+888|Perú|Huancayo|Abogado
+889|Perú|La Merced|Economista
+890|Colombia|Bogotá|Ingeniera de sistemas
+891|Perú|Trujillo|Diseñador
+892|Perú|Lima|Contador
+893|Perú|Arequipa|Arquitecto
+894|Perú|Lima|Periodista
+895|Perú|Lima|Ingeniera de sistemas
+896|Perú|Huánuco|Ingeniero
+897|Perú|Huancayo|Arquitecto
+898|Perú|Lima|Administrador
+899|Perú|Lima|Contador
+900|Perú|Iquitos|Docente
+901|Perú|Cerro de Pasco|Contador
+902|Perú|Ica|Enfermera
+903|Estados Unidos|Nueva York|Administrador
+904|Perú|Ica|Chef
+905|Perú|Ica|Arquitecto
+906|Perú|La Merced|Profesora
+907|Perú|Lima|Empresario
+908|Perú|Iquitos|Médico
+909|Perú|Huancayo|Abogado
+910|Perú|Lima|Psicólogo
+911|Perú|Lima|Psicólogo
+912|Perú|Lima|Chef
+913|Perú|La Merced|Diseñador
+914|Perú|Tarma|Psicólogo
+915|Perú|Tarma|Economista
+916|Perú|Tarma|Abogado
+917|Perú|Huancayo|Técnico
+918|Perú|Lima|Periodista
+919|Perú|Tarma|Administrador
+920|Perú|Cajamarca|Técnico
+921|Perú|Trujillo|Médico
+922|Perú|Lima|Arquitecto
+923|Perú|Lima|Jubilado
+924|Perú|Huánuco|Jubilado
+925|Perú|Puno|Psicólogo
+926|Perú|Lima|Empresario
+927|Perú|Lima|Administrador
+928|Perú|Oxapampa|Empresario
+929|Perú|Lima|Administrador
+930|Chile|Santiago|Enfermera
+931|Perú|Lima|Ingeniera de sistemas
+932|Perú|Trujillo|Ingeniera de sistemas
+933|Perú|Chiclayo|Periodista
+934|Perú|Iquitos|Técnico
+935|Perú|Oxapampa|Jubilado
+936|Perú|Lima|Estudiante
+937|Perú|Lima|Arquitecto
+938|Perú|Lima|Contador
+939|Perú|Lima|Psicólogo
+940|Perú|Huancayo|Contador
+941|Perú|Huancayo|Psicólogo
+942|Perú|Lima|Médico
+943|Perú|Trujillo|Comerciante
+944|Perú|Lima|Abogado
+945|Perú|Iquitos|Economista
+946|Perú|Huánuco|Arquitecto
+947|Perú|Tarma|Psicólogo
+948|Perú|Lima|Abogado
+949|Perú|Huánuco|Chef
+950|Perú|Huánuco|Profesora
+951|Perú|Lima|Médico
+952|Perú|Cajamarca|Estudiante
+953|Argentina|Buenos Aires|Profesora
+954|Perú|Oxapampa|Periodista
+955|Perú|Tarma|Profesora
+956|Perú|Lima|Ingeniero
+957|España|Madrid|Administrador
+958|Perú|Lima|Economista
+959|Chile|Santiago|Docente
+960|Perú|Huánuco|Estudiante
+961|Perú|Lima|Abogado
+962|Perú|Lima|Enfermera
+963|Perú|Huancayo|Profesora
+964|Perú|Lima|Arquitecto
+965|Perú|Lima|Técnico
+966|Perú|Lima|Técnico
+967|Perú|Lima|Periodista
+968|Perú|Lima|Ingeniera de sistemas
+969|Perú|La Merced|Ingeniero
+970|Perú|Huánuco|Comerciante
+971|Perú|La Merced|Docente
+972|Perú|Arequipa|Ingeniero
+973|Perú|Lima|Psicólogo
+974|Perú|Huánuco|Diseñador
+975|Perú|Lima|Arquitecto
+976|Perú|Huánuco|Chef
+977|Perú|Cusco|Psicólogo
+978|Perú|Cusco|Comerciante
+979|Perú|Ica|Docente
+980|Perú|Iquitos|Psicólogo
+981|Perú|La Merced|Docente
+982|Perú|Arequipa|Ingeniera de sistemas
+983|Perú|Lima|Administrador
+984|Perú|Huánuco|Comerciante
+985|Perú|Cusco|Arquitecto
+986|Perú|Chiclayo|Periodista
+987|Perú|Arequipa|Periodista
+988|Perú|Tarma|Arquitecto
+989|Perú|Lima|Diseñador
+990|Perú|Cusco|Estudiante
+991|Perú|Tacna|Periodista
+992|Perú|Arequipa|Psicólogo
+993|Perú|Huánuco|Administrador
+994|Perú|Lima|Periodista
+995|Alemania|Berlín|Diseñador
+996|Perú|Trujillo|Ingeniero
+997|Perú|Ica|Psicólogo
+998|Perú|Huancayo|Periodista
+999|Perú|Lima|Estudiante
+1000|Perú|Cusco|Periodista
+1001|Perú|Lima|Comerciante
+1002|Perú|Lima|Estudiante
+1003|Perú|Puno|Chef
+1004|Perú|Tarma|Profesora
+1005|Perú|Lima|Ingeniero
+1006|Perú|Lima|Abogado
+1007|Perú|Lima|Enfermera
+1008|Perú|Lima|Empresario
+1009|Perú|Lima|Enfermera
+1010|Perú|Iquitos|Abogado
+1011|Perú|Lima|Chef
+1012|Perú|Lima|Economista
+1013|Perú|Lima|Comerciante
+1014|Perú|Lima|Jubilado
+1015|Perú|Trujillo|Ingeniera de sistemas
+1016|Perú|Lima|Psicólogo
+1017|Perú|Lima|Comerciante
+1018|Perú|Ica|Ingeniero
+1019|Perú|Huancayo|Técnico
+1020|Perú|Lima|Comerciante
+1021|Argentina|Buenos Aires|Médico
+1022|Perú|Lima|Médico
+1023|Perú|Lima|Economista
+1024|Perú|Huánuco|Economista
+1025|Perú|Huancayo|Ingeniero
+1026|Perú|Lima|Abogado
+1027|Perú|Lima|Chef
+1028|Perú|Oxapampa|Profesora
+1029|Perú|Trujillo|Economista
+1030|Perú|Lima|Profesora
+1031|Perú|Lima|Periodista
+1032|Perú|Cerro de Pasco|Chef
+1033|Perú|Lima|Jubilado
+1034|Perú|Lima|Contador
+1035|Perú|Lima|Administrador
+1036|Perú|Iquitos|Ingeniero
+1037|Perú|Lima|Técnico
+1038|Perú|Trujillo|Enfermera
+1039|Perú|Cerro de Pasco|Ingeniera de sistemas
+1040|Perú|La Merced|Comerciante
+1041|Perú|La Merced|Profesora
+1042|Perú|Huánuco|Técnico
+1043|Perú|Ica|Abogado
+1044|Perú|Ica|Docente
+1045|Perú|Chiclayo|Ingeniera de sistemas
+1046|Perú|Lima|Ingeniero
+1047|Perú|Lima|Profesora
+1048|Perú|Lima|Abogado
+1049|Perú|Ica|Chef
+1050|Perú|Chiclayo|Ingeniero
+1051|Perú|Lima|Docente
+1052|Perú|Huancayo|Contador
+1053|Perú|Lima|Empresario
+1054|Perú|Huancayo|Empresario
+1055|Perú|Huancayo|Economista
+1056|Perú|Lima|Administrador
+1057|Perú|Lima|Docente
+1058|Perú|Trujillo|Administrador
+1059|Perú|Huánuco|Contador
+1060|Perú|Tarma|Estudiante
+1061|Perú|Tarma|Economista
+1062|Perú|Lima|Diseñador
+1063|Perú|Piura|Ingeniera de sistemas
+1064|Perú|Lima|Empresario
+1065|Perú|Lima|Empresario
+1066|Perú|Huánuco|Profesora
+1067|Chile|Santiago|Enfermera
+1068|Perú|Lima|Médico
+1069|Perú|Trujillo|Técnico
+1070|Perú|Lima|Empresario
+1071|Perú|Lima|Técnico
+1072|Perú|Tarma|Chef
+1073|Perú|Cajamarca|Periodista
+1074|Perú|Ica|Abogado
+1075|Perú|Huancayo|Enfermera
+1076|Perú|Lima|Ingeniera de sistemas
+1077|Perú|Trujillo|Periodista
+1078|Perú|Lima|Arquitecto
+1079|Perú|Lima|Diseñador
+1080|Perú|Huánuco|Jubilado
+1081|Perú|Cajamarca|Estudiante
+1082|Perú|Chiclayo|Psicólogo
+1083|Perú|Lima|Ingeniera de sistemas
+1084|Perú|Trujillo|Ingeniero
+1085|Perú|Lima|Profesora
+1086|Perú|Lima|Administrador
+1087|Perú|Huancayo|Docente
+1088|Perú|Trujillo|Técnico
+1089|Perú|Huancayo|Diseñador
+1090|Perú|Lima|Comerciante
+1091|Perú|Lima|Docente
+1092|Perú|Lima|Técnico
+1093|Perú|Lima|Abogado
+1094|Perú|Lima|Empresario
+1095|Perú|Lima|Periodista
+1096|Chile|Santiago|Chef
+1097|Perú|Lima|Jubilado
+1098|Perú|Lima|Chef
+1099|Perú|La Merced|Contador
+1100|Perú|Lima|Chef
+1101|Perú|Lima|Docente
+1102|Chile|Santiago|Administrador
+1103|Perú|Tarma|Profesora
+1104|Perú|Trujillo|Abogado
+1105|Perú|Lima|Estudiante
+1106|Perú|La Merced|Empresario
+1107|Perú|Huánuco|Periodista
+1108|Perú|Lima|Estudiante
+1109|Perú|Ica|Periodista
+1110|Perú|Lima|Arquitecto
+1111|Colombia|Bogotá|Contador
+1112|Perú|Tarma|Médico
+1113|Perú|Lima|Comerciante
+1114|Perú|La Merced|Empresario
+1115|Perú|La Merced|Técnico
+1116|Perú|Huánuco|Economista
+1117|Perú|Lima|Comerciante
+1118|Perú|Lima|Técnico
+1119|Perú|Lima|Economista
+1120|Perú|Lima|Enfermera
+1121|Perú|Lima|Chef
+1122|Perú|Lima|Jubilado
+1123|Perú|Lima|Jubilado
+1124|Perú|Lima|Estudiante
+1125|Perú|Huánuco|Diseñador
+1126|Perú|Piura|Ingeniera de sistemas
+1127|Perú|Puno|Profesora
+1128|Perú|Lima|Administrador
+1129|Perú|Lima|Ingeniera de sistemas
+1130|Perú|Tarma|Contador
+1131|Perú|Puno|Abogado
+1132|Perú|Cerro de Pasco|Ingeniera de sistemas
+1133|Perú|Lima|Profesora
+1134|Perú|Lima|Ingeniero
+1135|Perú|Lima|Economista
+1136|Perú|Huánuco|Jubilado
+1137|Perú|Lima|Empresario
+1138|Perú|Lima|Técnico
+1139|Perú|Lima|Comerciante
+1140|Perú|Lima|Ingeniero
+1141|Perú|Huancayo|Jubilado
+1142|Perú|Huancayo|Abogado
+1143|Perú|Arequipa|Chef
+1144|Perú|Lima|Administrador
+1145|Perú|Huancayo|Abogado
+1146|Perú|Lima|Empresario
+1147|Perú|Lima|Economista
+1148|Perú|Cerro de Pasco|Administrador
+1149|Perú|La Merced|Empresario
+1150|Perú|La Merced|Médico
+1151|Perú|Lima|Arquitecto
+1152|Perú|Lima|Economista
+1153|Perú|Cerro de Pasco|Comerciante
+1154|Perú|Chiclayo|Arquitecto
+1155|Perú|Huánuco|Economista
+1156|Perú|Lima|Enfermera
+1157|Perú|Lima|Enfermera
+1158|Perú|Lima|Psicólogo
+1159|Perú|Cerro de Pasco|Periodista
+1160|Perú|La Merced|Contador
+1161|Colombia|Bogotá|Profesora
+1162|Perú|Cusco|Profesora
+1163|Perú|Tacna|Administrador
+1164|Perú|La Merced|Chef
+1165|Perú|Lima|Estudiante
+1166|Perú|Lima|Psicólogo
+1167|Perú|Cusco|Periodista
+1168|Perú|Ica|Médico
+1169|Perú|Lima|Ingeniera de sistemas
+1170|Perú|Cerro de Pasco|Profesora
+1171|Perú|Oxapampa|Psicólogo
+1172|Perú|Lima|Periodista
+1173|Perú|La Merced|Empresario
+1174|Perú|La Merced|Profesora
+1175|Perú|Lima|Administrador
+1176|Perú|Lima|Psicólogo
+1177|Perú|Huancayo|Enfermera
+1178|Perú|Tarma|Médico
+1179|Perú|Puno|Empresario
+1180|Perú|Cerro de Pasco|Ingeniera de sistemas
+1181|Perú|Huánuco|Comerciante
+1182|Perú|Trujillo|Chef
+1183|Perú|La Merced|Contador
+1184|Perú|Cajamarca|Economista
+1185|Perú|Chiclayo|Chef
+1186|Perú|Arequipa|Médico
+1187|Perú|Piura|Médico
+1188|Perú|Piura|Profesora
+1189|Perú|Cusco|Arquitecto
+1190|Perú|Puno|Docente
+1191|Perú|Huancayo|Periodista
+1192|Perú|Lima|Abogado
+1193|Perú|Huancayo|Abogado
+1194|Perú|Tacna|Enfermera
+1195|Perú|Lima|Chef
+1196|Perú|Lima|Empresario
+1197|Perú|Lima|Periodista
+1198|Perú|Lima|Técnico
+1199|Perú|Huancayo|Periodista
+1200|Perú|Huánuco|Periodista
+1201|Perú|Lima|Abogado
+1202|Perú|Lima|Jubilado
+1203|Perú|Lima|Jubilado
+1204|Perú|Lima|Técnico
+1205|Estados Unidos|Nueva York|Diseñador
+1206|Perú|Huánuco|Abogado
+1207|Perú|Lima|Contador
+1208|Perú|Trujillo|Administrador
+1209|Perú|Huánuco|Jubilado
+1210|Perú|Lima|Docente
+1211|Perú|Tarma|Administrador
+1212|Perú|Cerro de Pasco|Economista
+1213|Perú|Trujillo|Arquitecto
+1214|Perú|Lima|Contador
+1215|Perú|Tarma|Contador
+1216|Perú|Lima|Abogado
+1217|Perú|Lima|Ingeniero
+1218|Perú|Chiclayo|Técnico
+1219|Perú|Lima|Empresario
+1220|Perú|Huancayo|Abogado
+1221|Perú|Lima|Psicólogo
+1222|Perú|Chiclayo|Empresario
+1223|Perú|La Merced|Profesora
+1224|Perú|Cerro de Pasco|Médico
+1225|Perú|Lima|Ingeniero
+1226|Perú|Tarma|Contador
+1227|Perú|Lima|Empresario
+1228|Perú|Huánuco|Profesora
+1229|Perú|Lima|Enfermera
+1230|Perú|Tarma|Docente
+1231|Perú|Trujillo|Economista
+1232|Perú|Lima|Abogado
+1233|Perú|Lima|Abogado
+1234|Perú|Huancayo|Chef
+1235|Perú|Trujillo|Chef
+1236|Perú|Lima|Arquitecto
+1237|Perú|Arequipa|Psicólogo
+1238|Perú|La Merced|Chef
+1239|Perú|Arequipa|Psicólogo
+1240|Perú|Iquitos|Diseñador
+1241|Perú|Lima|Arquitecto
+1242|Perú|Lima|Chef
+1243|Perú|La Merced|Comerciante
+1244|Perú|Huánuco|Abogado
+1245|Perú|Tarma|Estudiante
+1246|Perú|Lima|Contador
+1247|Perú|Lima|Chef
+1248|Perú|Lima|Estudiante
+1249|Colombia|Bogotá|Técnico
+1250|Perú|Cerro de Pasco|Chef
+1251|Perú|Chiclayo|Ingeniero
+1252|Perú|Huánuco|Comerciante
+1253|Perú|Tacna|Arquitecto
+1254|Perú|Lima|Arquitecto
+1255|Colombia|Bogotá|Administrador
+1256|Perú|Cusco|Diseñador
+1257|Perú|Iquitos|Diseñador
+1258|Perú|Lima|Empresario
+1259|Perú|La Merced|Empresario
+1260|Perú|La Merced|Chef
+1261|Perú|Lima|Periodista
+1262|Perú|La Merced|Psicólogo
+1263|Perú|Lima|Empresario
+1264|Perú|Lima|Docente
+1265|Perú|Lima|Contador
+1266|Perú|Lima|Jubilado
+1267|Perú|Lima|Docente
+1268|Perú|Tacna|Psicólogo
+1269|Perú|Cerro de Pasco|Periodista
+1270|Perú|Trujillo|Administrador
+1271|Perú|Iquitos|Periodista
+1272|Perú|Lima|Empresario
+1273|Perú|Tacna|Ingeniera de sistemas
+1274|Perú|Huancayo|Profesora
+1275|Perú|Tarma|Economista
+1276|Perú|Puno|Administrador
+1277|Perú|Lima|Administrador
+1278|Argentina|Buenos Aires|Administrador
+1279|Perú|Trujillo|Chef
+1280|Perú|Ica|Psicólogo
+1281|Perú|Lima|Técnico
+1282|Perú|Lima|Chef
+1283|Perú|La Merced|Ingeniera de sistemas
+1284|Colombia|Bogotá|Ingeniero
+1285|Perú|Lima|Arquitecto
+1286|Perú|La Merced|Administrador
+1287|Perú|Tacna|Economista
+1288|Perú|Lima|Médico
+1289|Perú|Lima|Diseñador
+1290|Perú|Lima|Chef
+1291|Perú|Puno|Periodista
+1292|Perú|Oxapampa|Comerciante
+1293|Perú|Cusco|Enfermera
+1294|Perú|Huancayo|Docente
+1295|Perú|Lima|Arquitecto
+1296|Perú|Huancayo|Docente
+1297|Perú|Cerro de Pasco|Periodista
+1298|Perú|Lima|Psicólogo
+1299|Perú|Lima|Periodista
+1300|Perú|Lima|Profesora
+1301|Perú|Lima|Técnico
+1302|Perú|Chiclayo|Ingeniero
+1303|Perú|Lima|Arquitecto
+1304|Perú|Piura|Diseñador
+1305|Perú|Lima|Técnico
+1306|Perú|Arequipa|Abogado
+1307|Perú|Tarma|Empresario
+1308|Perú|Arequipa|Administrador
+1309|Perú|La Merced|Administrador
+1310|Perú|Lima|Diseñador
+1311|Alemania|Berlín|Ingeniera de sistemas
+1312|Perú|Huánuco|Docente
+1313|Perú|Lima|Médico
+1314|Perú|La Merced|Empresario
+1315|Perú|Iquitos|Diseñador
+1316|Perú|Cerro de Pasco|Periodista
+1317|Perú|Lima|Profesora
+1318|Perú|Lima|Psicólogo
+1319|Perú|Cerro de Pasco|Empresario
+1320|Perú|Huánuco|Arquitecto
+1321|Perú|Lima|Abogado
+1322|Perú|Cajamarca|Economista
+1323|Perú|Trujillo|Profesora
+1324|Perú|Lima|Periodista
+1325|Perú|Cerro de Pasco|Ingeniera de sistemas
+1326|Perú|Huancayo|Jubilado
+1327|Perú|Piura|Chef
+1328|Perú|Lima|Ingeniera de sistemas
+1329|Perú|La Merced|Diseñador
+1330|Perú|Lima|Empresario
+1331|Perú|Lima|Periodista
+1332|Perú|Lima|Técnico
+1333|Perú|Lima|Jubilado
+1334|Perú|Cerro de Pasco|Ingeniera de sistemas
+1335|Perú|Huánuco|Docente
+1336|Perú|Cerro de Pasco|Economista
+1337|Perú|Lima|Arquitecto
+1338|Perú|Trujillo|Ingeniero
+1339|Perú|Iquitos|Médico
+1340|Perú|Tacna|Enfermera
+1341|Perú|Puno|Ingeniera de sistemas
+1342|Perú|Lima|Comerciante
+1343|Perú|Tarma|Chef
+1344|Perú|Huánuco|Ingeniera de sistemas
+1345|Perú|Tarma|Empresario
+1346|Perú|Lima|Empresario
+1347|Perú|Lima|Docente
+1348|Perú|Lima|Empresario
+1349|Francia|París|Economista
+1350|Perú|Lima|Abogado
+1351|Argentina|Buenos Aires|Docente
+1352|Perú|Lima|Jubilado
+1353|Perú|Chiclayo|Comerciante
+1354|Perú|Chiclayo|Chef
+1355|Perú|Oxapampa|Chef
+1356|Perú|Ica|Periodista
+1357|Chile|Santiago|Periodista
+1358|Perú|Lima|Médico
+1359|Perú|Puno|Comerciante
+1360|Perú|Cusco|Chef
+1361|Perú|Huancayo|Médico
+1362|Perú|Lima|Ingeniero
+1363|Perú|Cerro de Pasco|Periodista
+1364|Perú|Lima|Profesora
+1365|Perú|Lima|Profesora
+1366|Perú|Lima|Jubilado
+1367|Perú|Cajamarca|Jubilado
+1368|Perú|Cusco|Técnico
+1369|Perú|Arequipa|Psicólogo
+1370|Perú|Trujillo|Ingeniera de sistemas
+1371|Perú|Arequipa|Ingeniera de sistemas
+1372|Alemania|Berlín|Empresario
+1373|Perú|Tarma|Arquitecto
+1374|Perú|Huancayo|Periodista
+1375|Perú|Trujillo|Técnico
+1376|Perú|Cerro de Pasco|Estudiante
+1377|Perú|Lima|Técnico
+1378|Perú|Lima|Docente
+1379|Perú|Cerro de Pasco|Comerciante
+1380|Perú|Lima|Médico
+1381|Perú|Tacna|Técnico
+1382|Perú|Huánuco|Comerciante
+1383|Perú|Lima|Comerciante
+1384|Perú|Ica|Administrador
+1385|Perú|Tarma|Técnico
+1386|Perú|Tarma|Periodista
+1387|Perú|Puno|Comerciante
+1388|Perú|Lima|Jubilado
+1389|Perú|Cerro de Pasco|Enfermera
+1390|Perú|Tarma|Arquitecto
+1391|Perú|Lima|Estudiante
+1392|Perú|Huánuco|Empresario
+1393|Perú|Lima|Economista
+1394|Perú|Trujillo|Chef
+1395|Perú|Lima|Estudiante
+1396|Perú|Huancayo|Chef
+1397|Perú|Piura|Profesora
+1398|Perú|La Merced|Jubilado
+1399|Perú|Lima|Psicólogo
+1400|Perú|Huancayo|Docente
+1401|Colombia|Bogotá|Empresario
+1402|Perú|Huancayo|Psicólogo
+1403|Perú|Huancayo|Estudiante
+1404|Perú|Lima|Docente
+1405|Perú|La Merced|Estudiante
+1406|Perú|Huancayo|Técnico
+1407|Perú|Lima|Empresario
+1408|Perú|Trujillo|Arquitecto
+1409|Perú|Iquitos|Enfermera
+1410|Perú|Ica|Estudiante
+1411|Perú|Chiclayo|Periodista
+1412|Perú|Lima|Docente
+1413|Perú|Lima|Técnico
+1414|Perú|Lima|Profesora
+1415|Perú|Trujillo|Comerciante
+1416|Perú|Chiclayo|Estudiante
+1417|Perú|Lima|Diseñador
+1418|Perú|Cerro de Pasco|Docente
+1419|Perú|Huánuco|Jubilado
+1420|Perú|Huancayo|Jubilado
+1421|Perú|Lima|Arquitecto
+1422|Perú|Lima|Médico
+1423|Perú|Tacna|Profesora
+1424|Perú|La Merced|Ingeniero
+1425|Perú|Tarma|Arquitecto
+1426|Perú|Lima|Psicólogo
+1427|Perú|Piura|Enfermera
+1428|Perú|Cerro de Pasco|Economista
+1429|Perú|Cerro de Pasco|Empresario
+1430|Perú|Arequipa|Profesora
+1431|Perú|Huancayo|Diseñador
+1432|Perú|Trujillo|Comerciante
+1433|Perú|Arequipa|Empresario
+1434|Perú|La Merced|Técnico
+1435|Chile|Santiago|Chef
+1436|Perú|Lima|Diseñador
+1437|Perú|Lima|Técnico
+1438|Perú|Lima|Técnico
+1439|Perú|Huánuco|Diseñador
+1440|Perú|Puno|Estudiante
+1441|Perú|Trujillo|Diseñador
+1442|Perú|Huancayo|Docente
+1443|Chile|Santiago|Técnico
+1444|Perú|Lima|Contador
+1445|Perú|Cerro de Pasco|Economista
+1446|Perú|Lima|Chef
+1447|Colombia|Bogotá|Ingeniero
+1448|Perú|Trujillo|Comerciante
+1449|Perú|Cajamarca|Médico
+1450|Perú|Cerro de Pasco|Empresario
+1451|Perú|Huánuco|Abogado
+1452|Perú|La Merced|Empresario
+1453|Perú|Lima|Médico
+1454|Perú|Lima|Médico
+1455|Perú|La Merced|Ingeniero
+1456|Perú|Huancayo|Diseñador
+1457|Perú|Iquitos|Ingeniero
+1458|Perú|Lima|Profesora
+1459|Francia|París|Ingeniero
+1460|Perú|Lima|Empresario
+1461|Perú|Piura|Docente
+1462|Perú|Cusco|Arquitecto
+1463|Perú|Lima|Docente
+1464|Perú|Piura|Psicólogo
+1465|Perú|Piura|Arquitecto
+1466|Perú|Lima|Técnico
+1467|Perú|Lima|Diseñador
+1468|Perú|Lima|Chef
+1469|Perú|Huancayo|Administrador
+1470|Perú|Ica|Jubilado
+1471|Perú|Tarma|Profesora
+1472|Perú|Lima|Jubilado
+1473|Estados Unidos|Nueva York|Psicólogo
+1474|Perú|Arequipa|Chef
+1475|Perú|Lima|Estudiante
+1476|Perú|Cusco|Docente
+1477|Perú|Trujillo|Arquitecto
+1478|Perú|Piura|Profesora
+1479|Perú|La Merced|Contador
+1480|Perú|Cerro de Pasco|Jubilado
+1481|Perú|Lima|Profesora
+1482|Perú|Cerro de Pasco|Empresario
+1483|Perú|Tacna|Ingeniera de sistemas
+1484|Perú|Ica|Ingeniera de sistemas
+1485|Perú|Lima|Chef
+1486|Perú|Huancayo|Ingeniera de sistemas
+1487|Perú|Chiclayo|Administrador
+1488|Perú|Huánuco|Psicólogo
+1489|Perú|Lima|Economista
+1490|Perú|Cusco|Economista
+1491|Perú|Lima|Docente
+1492|Perú|Huánuco|Médico
+1493|Perú|Lima|Arquitecto
+1494|Perú|La Merced|Jubilado
+1495|Perú|Trujillo|Economista
+1496|Perú|Lima|Diseñador
+1497|Perú|Lima|Ingeniero
+1498|Perú|Piura|Ingeniero
+1499|Francia|París|Chef
+1500|Perú|Lima|Jubilado
+1501|Perú|Huancayo|Diseñador
+1502|Perú|Lima|Empresario
+1503|Perú|Oxapampa|Ingeniero
+1504|Perú|Tarma|Ingeniera de sistemas
+1505|Perú|Lima|Estudiante
+1506|Perú|Lima|Contador
+1507|Perú|Huancayo|Economista
+1508|Perú|Lima|Profesora
+1509|Perú|Lima|Ingeniero
+1510|Perú|Lima|Médico
+1511|Perú|Huancayo|Ingeniero
+1512|Perú|Huánuco|Técnico
+1513|Perú|Cerro de Pasco|Docente
+1514|Perú|Huancayo|Abogado
+1515|Perú|Piura|Abogado
+1516|Perú|Lima|Ingeniera de sistemas
+1517|Perú|Lima|Enfermera
+1518|Perú|Huancayo|Abogado
+1519|Perú|Lima|Contador
+1520|Perú|Lima|Economista
+1521|Perú|Lima|Contador
+1522|Perú|Huancayo|Economista
+1523|Perú|Lima|Enfermera
+1524|Perú|La Merced|Contador
+1525|Perú|Lima|Comerciante
+1526|Perú|Lima|Ingeniero
+1527|Perú|Ica|Profesora
+1528|Estados Unidos|Nueva York|Administrador
+1529|Perú|Lima|Chef
+1530|Perú|Tarma|Abogado
+1531|Perú|La Merced|Psicólogo
+1532|Perú|Tarma|Contador
+1533|Perú|Cajamarca|Médico
+1534|Perú|Lima|Administrador
+1535|Perú|Piura|Docente
+1536|Perú|Lima|Ingeniera de sistemas
+1537|Perú|Huánuco|Economista
+1538|Perú|Lima|Administrador
+1539|Perú|Tarma|Ingeniero
+1540|Perú|Cerro de Pasco|Periodista
+1541|Perú|Lima|Abogado
+1542|Perú|Lima|Ingeniero
+1543|Perú|Lima|Profesora
+1544|Perú|Lima|Economista
+1545|Perú|Cerro de Pasco|Médico
+1546|Perú|Arequipa|Psicólogo
+1547|Perú|Piura|Administrador
+1548|Perú|Huánuco|Economista
+1549|Perú|Cerro de Pasco|Ingeniero
+1550|Perú|Huánuco|Jubilado
+1551|Perú|Oxapampa|Técnico
+1552|Perú|Tarma|Contador
+1553|Perú|La Merced|Técnico
+1554|Perú|Chiclayo|Abogado
+1555|Perú|Lima|Enfermera
+1556|Perú|Arequipa|Comerciante
+1557|Perú|Lima|Arquitecto
+1558|Perú|Lima|Enfermera
+1559|Colombia|Bogotá|Ingeniero
+1560|Perú|Lima|Profesora
+1561|Perú|Tarma|Psicólogo
+1562|Perú|Arequipa|Administrador
+1563|Perú|Tarma|Periodista
+1564|Perú|Ica|Enfermera
+1565|Perú|Trujillo|Docente
+1566|Perú|Huancayo|Enfermera
+1567|Perú|Trujillo|Arquitecto
+1568|Perú|Lima|Administrador
+1569|Perú|Chiclayo|Arquitecto
+1570|Perú|Lima|Arquitecto
+1571|Perú|Huancayo|Ingeniero
+1572|Perú|Huancayo|Comerciante
+1573|Perú|Lima|Ingeniero
+1574|Perú|Huancayo|Economista
+1575|Chile|Santiago|Diseñador
+1576|Perú|Lima|Periodista
+1577|Perú|Lima|Médico
+1578|Perú|Lima|Psicólogo
+1579|Perú|Trujillo|Administrador
+1580|Perú|Lima|Médico
+1581|Perú|Cerro de Pasco|Chef
+1582|Perú|Huancayo|Psicólogo
+1583|Perú|Lima|Economista
+1584|Chile|Santiago|Abogado
+1585|Alemania|Berlín|Contador
+1586|Perú|Lima|Contador
+1587|Perú|Cusco|Docente
+1588|Perú|Lima|Enfermera
+1589|Perú|Lima|Comerciante
+1590|Perú|La Merced|Psicólogo
+1591|Perú|Huancayo|Economista
+1592|Perú|Lima|Chef
+1593|Perú|La Merced|Economista
+1594|Perú|Oxapampa|Ingeniera de sistemas
+1595|Perú|Trujillo|Contador
+1596|Perú|Huánuco|Ingeniera de sistemas
+1597|Perú|Huánuco|Empresario
+1598|Perú|Lima|Chef
+1599|Perú|Lima|Técnico
+1600|Perú|Iquitos|Comerciante
+1601|Perú|Arequipa|Economista
+1602|Perú|Huánuco|Profesora
+1603|Perú|Huancayo|Chef
+1604|Perú|Tacna|Estudiante
+1605|Perú|Lima|Empresario
+1606|Perú|Lima|Ingeniera de sistemas
+1607|Perú|Cerro de Pasco|Contador
+1608|Perú|Huancayo|Médico
+1609|Perú|Chiclayo|Estudiante
+1610|Perú|Chiclayo|Psicólogo
+1611|Perú|Huancayo|Estudiante
+1612|Perú|Lima|Abogado
+1613|Perú|Lima|Docente
+1614|Perú|Huancayo|Chef
+1615|Perú|Ica|Empresario
+1616|Perú|Lima|Estudiante
+1617|Perú|Trujillo|Ingeniera de sistemas
+1618|Perú|Lima|Ingeniera de sistemas
+1619|Perú|Lima|Economista
+1620|Perú|Lima|Psicólogo
+1621|Perú|Arequipa|Abogado
+1622|Perú|Tarma|Comerciante
+1623|Perú|Huánuco|Contador
+1624|Argentina|Buenos Aires|Abogado
+1625|Perú|Cusco|Docente
+1626|Perú|Lima|Abogado
+1627|Perú|Lima|Diseñador
+1628|Alemania|Berlín|Enfermera
+1629|Perú|Tarma|Contador
+1630|Perú|Puno|Psicólogo
+1631|Perú|Arequipa|Chef
+1632|Perú|Cerro de Pasco|Comerciante
+1633|Perú|Huánuco|Médico
+1634|Perú|Lima|Arquitecto
+1635|Perú|Lima|Contador
+1636|Perú|Puno|Economista
+1637|Perú|Huánuco|Jubilado
+1638|Perú|Tarma|Ingeniero
+1639|Perú|Tarma|Docente
+1640|Perú|Lima|Docente
+1641|Argentina|Buenos Aires|Médico
+1642|Perú|Lima|Psicólogo
+1643|Perú|Puno|Abogado
+1644|Perú|Lima|Administrador
+1645|Perú|Cerro de Pasco|Técnico
+1646|Perú|Piura|Profesora
+1647|Perú|Piura|Ingeniero
+1648|Perú|Huancayo|Abogado
+1649|Perú|Lima|Enfermera
+1650|Perú|Arequipa|Comerciante
+1651|Perú|Huánuco|Jubilado
+1652|Perú|Lima|Jubilado
+1653|Francia|París|Técnico
+1654|Perú|Lima|Médico
+1655|Perú|La Merced|Arquitecto
+1656|Perú|Lima|Economista
+1657|Perú|Piura|Enfermera
+1658|Perú|Huánuco|Economista
+1659|Perú|Lima|Psicólogo
+1660|Perú|Arequipa|Estudiante
+1661|Perú|Puno|Abogado
+1662|España|Madrid|Profesora
+1663|Perú|Lima|Contador
+1664|Perú|Lima|Administrador
+1665|Perú|Lima|Comerciante
+1666|España|Madrid|Administrador
+1667|Perú|Piura|Periodista
+1668|Perú|Huánuco|Chef
+1669|Perú|Cerro de Pasco|Contador
+1670|Perú|Huancayo|Técnico
+1671|Perú|La Merced|Médico
+1672|Perú|Lima|Empresario
+1673|Perú|Huancayo|Ingeniero
+1674|Perú|Trujillo|Administrador
+1675|Perú|La Merced|Administrador
+1676|Perú|Huancayo|Comerciante
+1677|Perú|Lima|Técnico
+1678|Perú|Lima|Profesora
+1679|Colombia|Bogotá|Empresario
+1680|Perú|Cusco|Periodista
+1681|Perú|Huancayo|Periodista
+1682|Perú|La Merced|Docente
+1683|Perú|Trujillo|Comerciante
+1684|Perú|Lima|Enfermera
+1685|Perú|Huancayo|Profesora
+1686|Perú|Lima|Periodista
+1687|Perú|Lima|Profesora
+1688|Perú|La Merced|Periodista
+1689|Perú|Lima|Ingeniera de sistemas
+1690|Perú|Lima|Profesora
+1691|Perú|Oxapampa|Docente
+1692|Perú|Lima|Chef
+1693|Perú|Lima|Ingeniero
+1694|Perú|Lima|Diseñador
+1695|Perú|Lima|Chef
+1696|Perú|Huancayo|Chef
+1697|Colombia|Bogotá|Psicólogo
+1698|Perú|Lima|Psicólogo
+1699|Perú|Lima|Jubilado
+1700|Argentina|Buenos Aires|Chef
+1701|Perú|Lima|Profesora
+1702|Perú|Cajamarca|Periodista
+1703|Perú|Lima|Abogado
+1704|Perú|Lima|Profesora
+1705|Perú|Lima|Ingeniero
+1706|Perú|Chiclayo|Administrador
+1707|Perú|Lima|Estudiante
+1708|Perú|Lima|Abogado
+1709|Perú|Chiclayo|Comerciante
+1710|Perú|Cerro de Pasco|Técnico
+1711|Perú|Cerro de Pasco|Psicólogo
+1712|Perú|Lima|Psicólogo
+1713|Perú|Tarma|Comerciante
+1714|Perú|Lima|Enfermera
+1715|Perú|Tarma|Ingeniero
+1716|Perú|Huancayo|Ingeniera de sistemas
+1717|Perú|Arequipa|Administrador
+1718|Perú|Lima|Profesora
+1719|Perú|Lima|Técnico
+1720|Perú|Lima|Psicólogo
+1721|Perú|Lima|Empresario
+1722|Perú|Ica|Ingeniera de sistemas
+1723|Perú|Huancayo|Docente
+1724|Perú|Cajamarca|Estudiante
+1725|Perú|Lima|Técnico
+1726|Perú|Cajamarca|Ingeniero
+1727|Perú|Lima|Diseñador
+1728|Perú|La Merced|Psicólogo
+1729|Perú|Lima|Contador
+1730|Perú|Arequipa|Chef
+1731|Perú|Chiclayo|Profesora
+1732|Perú|Cusco|Chef
+1733|Perú|Puno|Profesora
+1734|Perú|La Merced|Estudiante
+1735|Perú|Lima|Estudiante
+1736|Perú|Lima|Administrador
+1737|Perú|Lima|Chef
+1738|Perú|Lima|Abogado
+1739|Perú|Chiclayo|Abogado
+1740|Perú|Lima|Economista
+1741|Perú|Lima|Docente
+1742|Perú|Puno|Ingeniera de sistemas
+1743|Perú|Iquitos|Psicólogo
+1744|Perú|Lima|Diseñador
+1745|Chile|Santiago|Diseñador
+1746|Francia|París|Arquitecto
+1747|Perú|Huancayo|Técnico
+1748|Perú|Lima|Arquitecto
+1749|Perú|La Merced|Médico
+1750|Perú|Lima|Estudiante
+1751|Perú|Lima|Ingeniero
+1752|Perú|Huancayo|Jubilado
+1753|Perú|Lima|Enfermera
+1754|Perú|Ica|Estudiante
+1755|Perú|Lima|Docente
+1756|Perú|Huánuco|Psicólogo
+1757|Perú|Huancayo|Periodista
+1758|Perú|Cajamarca|Psicólogo
+1759|Perú|Tarma|Psicólogo
+1760|Perú|Chiclayo|Diseñador
+1761|Perú|Lima|Contador
+1762|Perú|La Merced|Profesora
+1763|Perú|Arequipa|Enfermera
+1764|Perú|Lima|Profesora
+1765|Perú|Lima|Comerciante
+1766|Perú|Trujillo|Empresario
+1767|Perú|Lima|Jubilado
+1768|Perú|Lima|Enfermera
+1769|Perú|Chiclayo|Abogado
+1770|Perú|Ica|Administrador
+1771|Perú|Trujillo|Técnico
+1772|Perú|La Merced|Médico
+1773|Perú|Piura|Diseñador
+1774|Perú|Lima|Docente
+1775|Perú|Lima|Empresario
+1776|Perú|Lima|Técnico
+1777|Perú|Lima|Abogado
+1778|Perú|Lima|Empresario
+1779|Perú|Huánuco|Psicólogo
+1780|Perú|Huánuco|Ingeniera de sistemas
+1781|Perú|La Merced|Abogado
+1782|Perú|Lima|Profesora
+1783|Perú|La Merced|Periodista
+1784|Perú|Chiclayo|Abogado
+1785|Perú|Ica|Estudiante
+1786|Perú|Lima|Comerciante
+1787|Perú|La Merced|Profesora
+1788|Perú|Lima|Contador
+1789|Perú|Lima|Comerciante
+1790|Perú|Huánuco|Diseñador
+1791|Perú|La Merced|Abogado
+1792|Perú|La Merced|Ingeniero
+1793|Perú|Huancayo|Profesora
+1794|Perú|Lima|Ingeniero
+1795|Perú|La Merced|Economista
+1796|Perú|La Merced|Médico
+1797|Perú|Piura|Periodista
+1798|Perú|Tarma|Periodista
+1799|Perú|Lima|Estudiante
+1800|Perú|Trujillo|Ingeniero
+1801|Perú|Lima|Empresario
+1802|Perú|Lima|Economista
+1803|Perú|Lima|Médico
+1804|Perú|Huánuco|Técnico
+1805|Perú|Huánuco|Diseñador
+1806|Perú|Lima|Profesora
+1807|Perú|Lima|Docente
+1808|Perú|Tarma|Periodista
+1809|Perú|Lima|Profesora
+1810|Perú|Piura|Estudiante
+1811|Perú|Huancayo|Diseñador
+1812|Perú|Tarma|Docente
+1813|Perú|Chiclayo|Chef
+1814|Perú|Piura|Abogado
+1815|Perú|Lima|Abogado
+1816|Perú|Lima|Enfermera
+1817|Perú|Tarma|Abogado
+1818|Perú|La Merced|Diseñador
+1819|Perú|Tarma|Psicólogo
+1820|Perú|Arequipa|Médico
+1821|Perú|Lima|Jubilado
+1822|Perú|Cerro de Pasco|Profesora
+1823|Perú|Huánuco|Médico
+1824|Perú|Chiclayo|Arquitecto
+1825|Perú|Iquitos|Profesora
+1826|Perú|Huánuco|Comerciante
+1827|Perú|Lima|Periodista
+1828|Perú|Cajamarca|Profesora
+1829|Perú|La Merced|Jubilado
+1830|Perú|Iquitos|Arquitecto
+1831|Perú|Tarma|Ingeniera de sistemas
+1832|Perú|Huancayo|Comerciante
+1833|Perú|Lima|Docente
+1834|Perú|Lima|Profesora
+1835|Perú|Cerro de Pasco|Abogado
+1836|Perú|Lima|Técnico
+1837|Perú|Lima|Arquitecto
+1838|Perú|La Merced|Médico
+1839|Perú|Cusco|Técnico
+1840|Perú|Trujillo|Economista
+1841|Perú|Huancayo|Periodista
+1842|Perú|Chiclayo|Periodista
+1843|Perú|Tarma|Periodista
+1844|Chile|Santiago|Enfermera
+1845|Perú|Lima|Enfermera
+1846|Perú|Lima|Comerciante
+1847|Perú|Puno|Técnico
+1848|Perú|Huancayo|Médico
+1849|Perú|Lima|Administrador
+1850|Perú|Lima|Periodista
+1851|Perú|Lima|Chef
+1852|Perú|Cusco|Comerciante
+1853|Perú|Huánuco|Contador
+1854|Perú|Tarma|Empresario
+1855|Perú|Puno|Chef
+1856|Perú|Lima|Economista
+1857|Perú|Huancayo|Empresario
+1858|Perú|Huánuco|Economista
+1859|Perú|Puno|Abogado
+1860|Perú|Chiclayo|Técnico
+1861|Chile|Santiago|Médico
+1862|Perú|La Merced|Profesora
+1863|España|Madrid|Chef
+1864|Perú|Huánuco|Psicólogo
+1865|Perú|Lima|Administrador
+1866|Perú|Lima|Enfermera
+1867|Colombia|Bogotá|Técnico
+1868|Perú|Lima|Técnico
+1869|Perú|Huancayo|Psicólogo
+1870|Perú|Chiclayo|Contador
+1871|Perú|Huancayo|Comerciante
+1872|Perú|Oxapampa|Estudiante
+1873|Perú|Trujillo|Empresario
+1874|Perú|Lima|Arquitecto
+1875|Perú|Piura|Chef
+1876|Perú|Lima|Comerciante
+1877|Perú|Arequipa|Diseñador
+1878|Perú|Huánuco|Empresario
+1879|Perú|Arequipa|Médico
+1880|Perú|Lima|Comerciante
+1881|Perú|Huánuco|Médico
+1882|Perú|Arequipa|Contador
+1883|Perú|Cajamarca|Ingeniero
+1884|Perú|Cerro de Pasco|Estudiante
+1885|Perú|Oxapampa|Chef
+1886|Perú|Tarma|Enfermera
+1887|Perú|Cusco|Economista
+1888|Perú|Cusco|Estudiante
+1889|Perú|Lima|Chef
+1890|Perú|Lima|Estudiante
+1891|Perú|Lima|Médico
+1892|Perú|Huánuco|Arquitecto
+1893|Perú|Lima|Administrador
+1894|Perú|Lima|Médico
+1895|Perú|Arequipa|Administrador
+1896|Perú|Huancayo|Abogado
+1897|Perú|Huánuco|Médico
+1898|Perú|Trujillo|Abogado
+1899|Perú|Trujillo|Arquitecto
+1900|Perú|Cerro de Pasco|Médico
+1901|Perú|Lima|Empresario
+1902|Perú|Lima|Diseñador
+1903|Perú|Lima|Estudiante
+1904|Perú|Lima|Chef
+1905|Perú|Lima|Arquitecto
+1906|Perú|Huánuco|Jubilado
+1907|Perú|Huánuco|Psicólogo
+1908|Perú|Ica|Enfermera
+1909|Perú|Lima|Profesora
+1910|Perú|Lima|Psicólogo
+1911|Perú|Trujillo|Enfermera
+1912|Perú|Lima|Profesora
+1913|Perú|Lima|Estudiante
+1914|Perú|La Merced|Médico
+1915|Perú|Lima|Jubilado
+1916|Perú|Lima|Ingeniero
+1917|Perú|Lima|Médico
+1918|Perú|Lima|Psicólogo
+1919|Perú|Lima|Ingeniero
+1920|Perú|La Merced|Empresario
+1921|Perú|Lima|Periodista
+1922|Perú|Lima|Enfermera
+1923|Perú|Lima|Comerciante
+1924|Perú|Cusco|Contador
+1925|Perú|Lima|Administrador
+1926|Perú|Huancayo|Diseñador
+1927|Perú|Lima|Comerciante
+1928|Perú|Iquitos|Profesora
+1929|Perú|Lima|Administrador
+1930|Perú|Huánuco|Administrador
+1931|Perú|Lima|Técnico
+1932|Perú|Tarma|Economista
+1933|Perú|Lima|Ingeniera de sistemas
+1934|Perú|Tarma|Empresario
+1935|Perú|Cusco|Economista
+1936|Argentina|Buenos Aires|Contador
+1937|Perú|Huancayo|Comerciante
+1938|Perú|Huánuco|Economista
+1939|Perú|Huánuco|Psicólogo
+1940|Perú|Piura|Arquitecto
+1941|Perú|Lima|Técnico
+1942|Perú|Huánuco|Técnico
+1943|Perú|Cajamarca|Empresario
+1944|Colombia|Bogotá|Empresario
+1945|Estados Unidos|Nueva York|Empresario
+1946|Perú|Cerro de Pasco|Psicólogo
+1947|Perú|Arequipa|Contador
+1948|Perú|Tarma|Periodista
+1949|Perú|Ica|Jubilado
+1950|Perú|Lima|Psicólogo
+1951|Perú|Huánuco|Profesora
+1952|Perú|Huánuco|Ingeniero
+1953|Perú|Lima|Empresario
+1954|Perú|Chiclayo|Técnico
+1955|Perú|Lima|Ingeniera de sistemas
+1956|Perú|Lima|Administrador
+1957|Perú|Iquitos|Arquitecto
+1958|Perú|Lima|Técnico
+1959|Perú|Tarma|Periodista
+1960|Perú|Lima|Ingeniera de sistemas
+1961|Perú|Lima|Chef
+1962|Perú|Lima|Técnico
+1963|Perú|Chiclayo|Jubilado
+1964|Perú|Lima|Economista
+1965|Perú|Huancayo|Diseñador
+1966|Perú|Lima|Técnico
+1967|Perú|Arequipa|Estudiante
+1968|Perú|Iquitos|Técnico
+1969|Perú|Tarma|Periodista
+1970|Perú|Oxapampa|Economista
+1971|Perú|Lima|Docente
+1972|Perú|Lima|Docente
+1973|Perú|Cusco|Economista
+1974|Perú|Huánuco|Ingeniero
+1975|Perú|Piura|Comerciante
+1976|Perú|Huánuco|Diseñador
+1977|Perú|Tacna|Empresario
+1978|Perú|Cerro de Pasco|Estudiante
+1979|Perú|Lima|Comerciante
+1980|Perú|Lima|Economista
+1981|Perú|Cusco|Contador
+1982|Perú|La Merced|Economista
+1983|Perú|Lima|Periodista
+1984|Perú|Cerro de Pasco|Estudiante
+1985|Perú|La Merced|Chef
+1986|Perú|Lima|Chef
+1987|Perú|Cusco|Médico
+1988|Perú|Lima|Administrador
+1989|Perú|Chiclayo|Comerciante
+1990|Perú|Arequipa|Abogado
+1991|Perú|Lima|Médico
+1992|Perú|Lima|Abogado
+1993|Perú|Lima|Arquitecto
+1994|Perú|Lima|Comerciante
+1995|Perú|La Merced|Técnico
+1996|Perú|Lima|Comerciante
+1997|Perú|Cusco|Enfermera
+1998|Perú|Lima|Contador
+1999|Perú|Huancayo|Ingeniero
+2000|Perú|Lima|Empresario
+2001|Perú|Lima|Docente
+2002|Perú|Cusco|Economista
+2003|Perú|Cerro de Pasco|Periodista
+2004|Chile|Santiago|Estudiante
+2005|Perú|Oxapampa|Psicólogo
+2006|Perú|La Merced|Estudiante
+2007|Perú|Lima|Abogado
+2008|Perú|Lima|Chef
+2009|Perú|Lima|Ingeniero
+2010|Perú|Huánuco|Arquitecto
+2011|Perú|La Merced|Ingeniera de sistemas
+2012|Perú|Arequipa|Médico
+2013|Perú|Huancayo|Empresario
+2014|Perú|Tarma|Economista
+2015|Perú|Huánuco|Contador
+2016|Perú|Lima|Docente
+2017|Perú|Ica|Chef
+2018|Perú|Trujillo|Contador
+2019|Colombia|Bogotá|Arquitecto
+2020|Perú|Tarma|Psicólogo
+2021|Perú|Huancayo|Contador
+2022|Perú|Piura|Técnico
+2023|Perú|Huánuco|Chef
+2024|Chile|Santiago|Jubilado
+2025|Estados Unidos|Nueva York|Contador
+2026|Perú|Chiclayo|Docente
+2027|Perú|Lima|Economista
+2028|Perú|Huánuco|Enfermera
+2029|Perú|Cusco|Docente
+2030|Perú|Lima|Profesora
+2031|Perú|Lima|Ingeniero
+2032|Perú|Lima|Enfermera
+2033|Perú|Huánuco|Economista
+2034|España|Madrid|Empresario
+2035|Perú|Lima|Chef
+2036|Perú|Lima|Arquitecto
+2037|Perú|Huánuco|Economista
+2038|Perú|Lima|Docente
+2039|Perú|Cusco|Ingeniera de sistemas
+2040|Perú|Huánuco|Enfermera
+2041|Perú|Huánuco|Arquitecto
+2042|Perú|Piura|Contador
+2043|Perú|Lima|Profesora
+2044|Perú|Arequipa|Ingeniera de sistemas
+2045|Perú|Lima|Docente
+2046|Perú|Lima|Ingeniero
+2047|Perú|Lima|Enfermera
+2048|Perú|Lima|Técnico
+2049|Perú|Lima|Arquitecto
+2050|Perú|Cerro de Pasco|Arquitecto
+2051|Perú|Oxapampa|Enfermera
+2052|Perú|Chiclayo|Chef
+2053|Perú|La Merced|Contador
+2054|Perú|Lima|Periodista
+2055|Perú|Huánuco|Técnico
+2056|Perú|Lima|Comerciante
+2057|Perú|Lima|Psicólogo
+2058|Perú|Tarma|Periodista
+2059|Perú|Chiclayo|Abogado
+2060|Perú|Tarma|Periodista
+2061|Perú|La Merced|Enfermera
+2062|Perú|Lima|Periodista
+2063|Perú|Lima|Empresario
+2064|Perú|Cerro de Pasco|Chef
+2065|Perú|Huancayo|Psicólogo
+2066|Perú|La Merced|Médico
+2067|Perú|Cajamarca|Psicólogo
+2068|Perú|Lima|Economista
+2069|Perú|Lima|Ingeniera de sistemas
+2070|Perú|Arequipa|Periodista
+2071|Estados Unidos|Nueva York|Docente
+2072|Perú|Lima|Estudiante
+2073|Chile|Santiago|Empresario
+2074|Perú|Lima|Economista
+2075|Perú|Cerro de Pasco|Economista
+2076|Perú|Lima|Enfermera
+2077|Perú|Trujillo|Técnico
+2078|Perú|Huánuco|Docente
+2079|Perú|Arequipa|Técnico
+2080|Perú|Huánuco|Médico
+2081|Perú|Lima|Enfermera
+2082|Perú|Lima|Médico
+2083|Perú|Lima|Contador
+2084|Perú|Lima|Empresario
+2085|Perú|Trujillo|Estudiante
+2086|Perú|Huánuco|Periodista
+2087|Perú|Cajamarca|Estudiante
+2088|Perú|Huancayo|Docente
+2089|Perú|Chiclayo|Profesora
+2090|Perú|Iquitos|Chef
+2091|Perú|Huancayo|Estudiante
+2092|Perú|Cajamarca|Ingeniero
+2093|Perú|Lima|Docente
+2094|Perú|La Merced|Profesora
+2095|Perú|Lima|Economista
+2096|Perú|Lima|Médico
+2097|Perú|Huánuco|Enfermera
+2098|Perú|Puno|Economista
+2099|Perú|Cusco|Profesora
+2100|Perú|Lima|Psicólogo
+2101|Perú|Tarma|Abogado
+2102|Perú|Lima|Empresario
+2103|Perú|Lima|Docente
+2104|Perú|Cusco|Técnico
+2105|Perú|Lima|Estudiante
+2106|Perú|Huánuco|Economista
+2107|Perú|Lima|Contador
+2108|Francia|París|Abogado
+2109|Perú|Lima|Profesora
+2110|Perú|Lima|Periodista
+2111|Perú|Puno|Ingeniera de sistemas
+2112|Perú|Lima|Docente
+2113|Perú|Lima|Diseñador
+2114|Perú|Trujillo|Docente
+2115|Perú|Oxapampa|Diseñador
+2116|Perú|Arequipa|Arquitecto
+2117|Perú|Huancayo|Contador
+2118|Perú|Huancayo|Enfermera
+2119|Perú|Lima|Ingeniero
+2120|Perú|Huánuco|Técnico
+2121|Perú|Lima|Arquitecto
+2122|Estados Unidos|Nueva York|Ingeniera de sistemas
+2123|Perú|Lima|Arquitecto
+2124|Perú|La Merced|Ingeniera de sistemas
+2125|Perú|Oxapampa|Economista
+2126|Perú|Trujillo|Arquitecto
+2127|Perú|Ica|Periodista
+2128|Perú|Cajamarca|Empresario
+2129|Perú|Cusco|Estudiante
+2130|Perú|Huancayo|Arquitecto
+2131|Perú|Lima|Administrador
+2132|Perú|Iquitos|Estudiante
+2133|Perú|Huánuco|Ingeniero
+2134|Perú|Lima|Abogado
+2135|Perú|La Merced|Abogado
+2136|Perú|Cusco|Técnico
+2137|Perú|Lima|Jubilado
+2138|Perú|Lima|Ingeniera de sistemas
+2139|Perú|Lima|Comerciante
+2140|Chile|Santiago|Diseñador
+2141|Perú|Iquitos|Periodista
+2142|Perú|Trujillo|Estudiante
+2143|Perú|Lima|Comerciante
+2144|Perú|Cerro de Pasco|Profesora
+2145|Perú|Lima|Abogado
+2146|Perú|Lima|Economista
+2147|Perú|Lima|Diseñador
+2148|Perú|Huancayo|Estudiante
+2149|Argentina|Buenos Aires|Contador
+2150|Perú|Lima|Estudiante
+2151|Perú|Arequipa|Psicólogo
+2152|Perú|Lima|Chef
+2153|Perú|Lima|Médico
+2154|Perú|Cusco|Estudiante
+2155|Perú|Huánuco|Estudiante
+2156|Perú|Tacna|Docente
+2157|Perú|Lima|Chef
+2158|Perú|Tarma|Enfermera
+2159|Perú|Iquitos|Ingeniero
+2160|Perú|Lima|Ingeniero
+2161|Perú|Ica|Ingeniero
+2162|Perú|Lima|Docente
+2163|Perú|Lima|Empresario
+2164|Perú|Arequipa|Administrador
+2165|Perú|La Merced|Contador
+2166|Perú|La Merced|Comerciante
+2167|Alemania|Berlín|Psicólogo
+2168|Perú|La Merced|Jubilado
+2169|Perú|Lima|Médico
+2170|Perú|Huánuco|Ingeniero
+2171|Perú|Arequipa|Ingeniera de sistemas
+2172|Perú|Huánuco|Ingeniera de sistemas
+2173|Perú|Tarma|Comerciante
+2174|Perú|Huánuco|Chef
+2175|Perú|Lima|Psicólogo
+2176|Perú|Oxapampa|Administrador
+2177|Chile|Santiago|Ingeniero
+2178|Perú|Cusco|Comerciante
+2179|Perú|Lima|Comerciante
+2180|Perú|Cusco|Comerciante
+2181|Perú|Lima|Médico
+2182|Chile|Santiago|Médico
+2183|Perú|Chiclayo|Administrador
+2184|Perú|Lima|Ingeniera de sistemas
+2185|Perú|Lima|Docente
+2186|Perú|Lima|Ingeniera de sistemas
+2187|Perú|Lima|Ingeniera de sistemas
+2188|Perú|Chiclayo|Psicólogo
+2189|Perú|La Merced|Economista
+2190|Perú|Huánuco|Ingeniero
+2191|Perú|Ica|Chef
+2192|Perú|Lima|Empresario
+2193|Perú|Lima|Estudiante
+2194|Perú|Huancayo|Arquitecto
+2195|Perú|Lima|Periodista
+2196|Perú|Lima|Ingeniero
+2197|Perú|Lima|Profesora
+2198|Perú|Lima|Economista
+2199|Perú|Lima|Comerciante
+2200|Perú|Cusco|Contador
+2201|Perú|Huánuco|Chef
+2202|Perú|Lima|Economista
+2203|Perú|Lima|Contador
+2204|Perú|Arequipa|Arquitecto
+2205|Chile|Santiago|Ingeniero
+2206|Perú|La Merced|Jubilado
+2207|Perú|Chiclayo|Psicólogo
+2208|Perú|La Merced|Enfermera
+2209|Perú|La Merced|Diseñador
+2210|Perú|Lima|Contador
+2211|Perú|Piura|Estudiante
+2212|Perú|Cerro de Pasco|Chef
+2213|Perú|Lima|Economista
+2214|Perú|La Merced|Enfermera
+2215|Perú|La Merced|Estudiante
+2216|Perú|Tarma|Estudiante
+2217|Perú|Lima|Ingeniero
+2218|Perú|Cerro de Pasco|Comerciante
+2219|Perú|Lima|Docente
+2220|Perú|Lima|Contador
+2221|Perú|Lima|Docente
+2222|Perú|Cerro de Pasco|Comerciante
+2223|Perú|Huancayo|Chef
+2224|Perú|Trujillo|Administrador
+2225|Perú|La Merced|Psicólogo
+2226|Perú|Lima|Médico
+2227|Perú|Lima|Psicólogo
+2228|Perú|Lima|Administrador
+2229|Perú|Lima|Jubilado
+2230|Perú|La Merced|Estudiante
+2231|Perú|Huánuco|Contador
+2232|Perú|Huancayo|Profesora
+2233|Perú|Huánuco|Estudiante
+2234|Perú|Lima|Periodista
+2235|Perú|Ica|Estudiante
+2236|Perú|La Merced|Contador
+2237|Perú|Arequipa|Psicólogo
+2238|Perú|Arequipa|Empresario
+2239|Perú|Oxapampa|Docente
+2240|Perú|Huancayo|Diseñador
+2241|Perú|Oxapampa|Economista
+2242|Perú|Tarma|Chef
+2243|Perú|Tarma|Contador
+2244|Perú|Lima|Técnico
+2245|Perú|La Merced|Contador
+2246|España|Madrid|Abogado
+2247|Perú|Lima|Diseñador
+2248|Perú|Cusco|Profesora
+2249|Perú|Lima|Ingeniera de sistemas
+2250|Perú|Piura|Periodista
+2251|Colombia|Bogotá|Arquitecto
+2252|Perú|Lima|Abogado
+2253|Perú|Trujillo|Ingeniera de sistemas
+2254|Perú|Huancayo|Abogado
+2255|Perú|Tarma|Médico
+2256|Perú|La Merced|Periodista
+2257|Perú|Lima|Arquitecto
+2258|Colombia|Bogotá|Enfermera
+2259|Perú|Trujillo|Ingeniera de sistemas
+2260|Perú|Cusco|Arquitecto
+2261|Perú|Huánuco|Psicólogo
+2262|Perú|Huancayo|Chef
+2263|Perú|Trujillo|Administrador
+2264|Perú|La Merced|Chef
+2265|Perú|Lima|Profesora
+2266|Perú|Chiclayo|Empresario
+2267|Perú|Lima|Ingeniera de sistemas
+2268|Perú|Huánuco|Empresario
+2269|Argentina|Buenos Aires|Enfermera
+2270|Perú|Tacna|Diseñador
+2271|Perú|Huancayo|Ingeniera de sistemas
+2272|Perú|Tarma|Chef
+2273|España|Madrid|Psicólogo
+2274|Perú|Cerro de Pasco|Estudiante
+2275|Perú|Lima|Arquitecto
+2276|Perú|Lima|Economista
+2277|Perú|Lima|Ingeniero
+2278|Perú|Lima|Enfermera
+2279|Perú|Huancayo|Periodista
+2280|Perú|Lima|Profesora
+2281|Perú|Tarma|Enfermera
+2282|Perú|Lima|Abogado
+2283|Perú|Lima|Jubilado
+2284|Perú|Huancayo|Economista
+2285|Perú|Lima|Administrador
+2286|Perú|Huancayo|Estudiante
+2287|Perú|Lima|Periodista
+2288|Perú|Lima|Psicólogo
+2289|Perú|Lima|Periodista
+2290|Perú|Iquitos|Médico
+2291|Perú|Lima|Administrador
+2292|Perú|Oxapampa|Abogado
+2293|Perú|Lima|Estudiante
+2294|Perú|Lima|Docente
+2295|Perú|Lima|Ingeniera de sistemas
+2296|Perú|Lima|Profesora
+2297|España|Madrid|Ingeniera de sistemas
+2298|Perú|Ica|Ingeniero
+2299|Perú|Chiclayo|Chef
+2300|Perú|Cusco|Administrador
+2301|Perú|La Merced|Docente
+2302|Perú|Lima|Comerciante
+2303|Perú|Lima|Enfermera
+2304|Perú|Lima|Psicólogo
+2305|Perú|Cusco|Ingeniero
+2306|Perú|Huancayo|Psicólogo
+2307|Perú|Lima|Profesora
+2308|Perú|Lima|Empresario
+2309|Perú|La Merced|Contador
+2310|Perú|Huánuco|Arquitecto
+2311|Perú|Lima|Chef
+2312|Perú|Arequipa|Jubilado
+2313|Perú|Cerro de Pasco|Enfermera
+2314|Perú|Lima|Economista
+2315|Perú|Huancayo|Abogado
+2316|Perú|Chiclayo|Administrador
+2317|Perú|Lima|Jubilado
+2318|Perú|Trujillo|Técnico
+2319|Perú|Huancayo|Docente
+2320|Perú|Chiclayo|Estudiante
+2321|Perú|Chiclayo|Contador
+2322|Perú|Puno|Psicólogo
+2323|Perú|Lima|Ingeniero
+2324|Perú|Iquitos|Periodista
+2325|Perú|Lima|Psicólogo
+2326|Perú|Lima|Periodista
+2327|Perú|Huánuco|Ingeniera de sistemas
+2328|Perú|Lima|Técnico
+2329|Perú|Trujillo|Jubilado
+2330|Perú|Lima|Psicólogo
+2331|Perú|Huánuco|Empresario
+2332|Perú|Huánuco|Chef
+2333|Perú|Cerro de Pasco|Médico
+2334|Perú|La Merced|Estudiante
+2335|Perú|Cajamarca|Empresario
+2336|Perú|Huancayo|Psicólogo
+2337|Perú|Huancayo|Arquitecto
+2338|Perú|Lima|Jubilado
+2339|Perú|Arequipa|Comerciante
+2340|Perú|Lima|Chef
+2341|Perú|Tarma|Ingeniera de sistemas
+2342|Perú|Arequipa|Técnico
+2343|Colombia|Bogotá|Chef
+2344|Perú|Lima|Ingeniera de sistemas
+2345|Perú|Lima|Enfermera
+2346|Perú|Huancayo|Empresario
+2347|Perú|Arequipa|Ingeniero
+2348|Perú|Cerro de Pasco|Diseñador
+2349|Perú|Huancayo|Enfermera
+2350|Perú|Lima|Ingeniera de sistemas
+2351|Perú|Trujillo|Técnico
+2352|Perú|Lima|Jubilado
+2353|Perú|Cerro de Pasco|Empresario
+2354|Perú|Puno|Abogado
+2355|Perú|Cajamarca|Ingeniera de sistemas
+2356|Perú|Lima|Psicólogo
+2357|Perú|Huánuco|Contador
+2358|Perú|Puno|Jubilado
+2359|Perú|Lima|Ingeniero
+2360|Perú|Lima|Docente
+2361|Perú|Tarma|Diseñador
+2362|Alemania|Berlín|Psicólogo
+2363|Perú|La Merced|Jubilado
+2364|Perú|Lima|Profesora
+2365|Perú|Ica|Médico
+2366|Perú|Chiclayo|Periodista
+2367|Francia|París|Periodista
+2368|Perú|Huánuco|Ingeniera de sistemas
+2369|Perú|Tarma|Técnico
+2370|Perú|Lima|Enfermera
+2371|Perú|Lima|Estudiante
+2372|Perú|Lima|Abogado
+2373|Perú|Lima|Docente
+2374|Perú|Huancayo|Ingeniero
+2375|Perú|Huánuco|Médico
+2376|Perú|Lima|Chef
+2377|Perú|Lima|Técnico
+2378|Perú|Lima|Economista
+2379|Perú|Tarma|Psicólogo
+2380|Perú|Lima|Docente
+2381|Perú|Lima|Economista
+2382|Perú|Arequipa|Psicólogo
+2383|Perú|Lima|Psicólogo
+2384|Perú|Lima|Psicólogo
+2385|Perú|Tacna|Diseñador
+2386|Perú|Lima|Jubilado
+2387|Perú|Cajamarca|Psicólogo
+2388|Perú|Cajamarca|Abogado
+2389|Perú|Trujillo|Ingeniero
+2390|Perú|Cajamarca|Estudiante
+2391|Perú|Huancayo|Administrador
+2392|Perú|Lima|Estudiante
+2393|Perú|Huánuco|Diseñador
+2394|Perú|Lima|Jubilado
+2395|Perú|Arequipa|Arquitecto
+2396|Perú|Huancayo|Estudiante
+2397|Perú|Arequipa|Estudiante
+2398|Perú|Tarma|Docente
+2399|Perú|Cusco|Chef
+2400|Perú|Lima|Ingeniero
+2401|Perú|Lima|Técnico
+2402|Perú|Lima|Jubilado
+2403|Perú|Oxapampa|Chef
+2404|Perú|Piura|Chef
+2405|Perú|Lima|Periodista
+2406|Perú|Huancayo|Administrador
+2407|Perú|Puno|Chef
+2408|Perú|Lima|Jubilado
+2409|Perú|Lima|Jubilado
+2410|Perú|Huancayo|Enfermera
+2411|Perú|Huancayo|Médico
+2412|Perú|Lima|Administrador
+2413|Perú|Lima|Técnico
+2414|Perú|La Merced|Chef
+2415|Perú|Lima|Empresario
+2416|Estados Unidos|Nueva York|Periodista
+2417|Perú|Puno|Diseñador
+2418|Perú|Trujillo|Diseñador
+2419|Perú|La Merced|Médico
+2420|Perú|Lima|Administrador
+2421|Perú|Huánuco|Diseñador
+2422|Perú|Arequipa|Profesora
+2423|Perú|Huánuco|Jubilado
+2424|Perú|Lima|Enfermera
+2425|Perú|Cajamarca|Diseñador
+2426|Perú|Lima|Psicólogo
+2427|Perú|Lima|Psicólogo
+2428|Perú|Lima|Abogado
+2429|Perú|Huánuco|Ingeniero
+2430|Perú|Huancayo|Enfermera
+2431|Perú|Lima|Técnico
+2432|Alemania|Berlín|Contador
+2433|Perú|Tarma|Diseñador
+2434|Perú|Ica|Comerciante
+2435|Perú|Huancayo|Economista
+2436|Perú|La Merced|Periodista
+2437|Perú|Lima|Docente
+2438|España|Madrid|Administrador
+2439|Perú|Arequipa|Psicólogo
+2440|Perú|Trujillo|Enfermera
+2441|Perú|Chiclayo|Comerciante
+2442|Perú|Chiclayo|Administrador
+2443|Perú|Chiclayo|Administrador
+2444|Perú|La Merced|Profesora
+2445|Perú|Tarma|Médico
+2446|Perú|Lima|Médico
+2447|Perú|Lima|Periodista
+2448|Argentina|Buenos Aires|Chef
+2449|Perú|Lima|Ingeniero
+2450|Perú|Piura|Enfermera
+2451|Perú|Lima|Ingeniero
+2452|Perú|La Merced|Empresario
+2453|Perú|Tarma|Docente
+2454|Perú|La Merced|Enfermera
+2455|Perú|Lima|Contador
+2456|Perú|Lima|Ingeniero
+2457|Perú|Huancayo|Ingeniera de sistemas
+2458|Perú|Tarma|Abogado
+2459|Colombia|Bogotá|Profesora
+2460|Perú|Lima|Docente
+2461|Perú|Huancayo|Contador
+2462|Perú|Lima|Profesora
+2463|Perú|Cerro de Pasco|Enfermera
+2464|Perú|Iquitos|Psicólogo
+2465|Perú|Lima|Técnico
+2466|Perú|Tacna|Empresario
+2467|Perú|Huancayo|Jubilado
+2468|Perú|Tarma|Profesora
+2469|Perú|Arequipa|Técnico
+2470|Perú|Cusco|Administrador
+2471|Perú|Lima|Comerciante
+2472|Perú|La Merced|Docente
+2473|Perú|Cusco|Profesora
+2474|Perú|Tacna|Empresario
+2475|Perú|Trujillo|Economista
+2476|Perú|Arequipa|Docente
+2477|Perú|Arequipa|Docente
+2478|Perú|Ica|Abogado
+2479|Perú|Huancayo|Chef
+2480|Perú|Lima|Contador
+2481|Perú|Huánuco|Economista
+2482|Perú|Chiclayo|Técnico
+2483|Perú|Cajamarca|Ingeniera de sistemas
+2484|Perú|Lima|Jubilado
+2485|Perú|Lima|Enfermera
+2486|Perú|Huánuco|Estudiante
+2487|Perú|Huánuco|Empresario
+2488|Perú|Cerro de Pasco|Estudiante
+2489|Perú|Lima|Diseñador
+2490|Perú|Lima|Docente
+2491|Perú|Chiclayo|Profesora
+2492|Perú|Lima|Estudiante
+2493|Perú|Lima|Empresario
+2494|Perú|Trujillo|Ingeniera de sistemas
+2495|Perú|Lima|Diseñador
+2496|Perú|Cusco|Psicólogo
+2497|Perú|Tacna|Arquitecto
+2498|Perú|Trujillo|Arquitecto
+2499|Perú|Lima|Periodista
+2500|Perú|Huánuco|Profesora
+2501|Perú|Tarma|Empresario
+2502|Perú|Cusco|Chef
+2503|Perú|Tarma|Enfermera
+2504|Chile|Santiago|Jubilado
+2505|Argentina|Buenos Aires|Economista
+2506|Perú|Lima|Contador
+2507|Perú|Huánuco|Ingeniera de sistemas
+2508|Perú|Lima|Chef
+2509|Perú|Lima|Enfermera
+2510|Perú|Lima|Ingeniero
+2511|Perú|Lima|Abogado
+2512|Perú|Tacna|Chef
+2513|Perú|Lima|Chef
+2514|Perú|Lima|Docente
+2515|Perú|Lima|Comerciante
+2516|Perú|Lima|Economista
+2517|Perú|Cusco|Contador
+2518|Perú|Lima|Abogado
+2519|Perú|Lima|Estudiante
+2520|Perú|Lima|Abogado
+2521|Perú|Tarma|Contador
+2522|Perú|Lima|Chef
+2523|Perú|Puno|Ingeniero
+2524|Perú|Oxapampa|Chef
+2525|Perú|Lima|Economista
+2526|Perú|Lima|Enfermera
+2527|Perú|Tarma|Médico
+2528|Perú|Trujillo|Economista
+2529|Perú|Trujillo|Periodista
+2530|Perú|Lima|Enfermera
+2531|Perú|Tarma|Docente
+2532|Perú|Chiclayo|Contador
+2533|Perú|Lima|Docente
+2534|Perú|Cerro de Pasco|Contador
+2535|Perú|Cerro de Pasco|Abogado
+2536|Perú|Lima|Ingeniera de sistemas
+2537|Perú|Iquitos|Arquitecto
+2538|Perú|Lima|Diseñador
+2539|Perú|Lima|Periodista
+2540|Perú|Huánuco|Contador
+2541|Estados Unidos|Nueva York|Estudiante
+2542|Perú|Lima|Profesora
+2543|Perú|Cerro de Pasco|Psicólogo
+2544|Perú|Lima|Contador
+2545|Perú|Lima|Arquitecto
+2546|Perú|Huánuco|Arquitecto
+2547|Perú|La Merced|Periodista
+2548|Perú|Cajamarca|Contador
+2549|Perú|Cusco|Enfermera
+2550|Perú|Huancayo|Profesora
+2551|Colombia|Bogotá|Abogado
+2552|Perú|Lima|Ingeniero
+2553|Perú|Ica|Profesora
+2554|Perú|Huánuco|Administrador
+2555|Perú|Lima|Psicólogo
+2556|Perú|Arequipa|Periodista
+2557|Perú|Lima|Contador
+2558|Perú|Huancayo|Contador
+2559|Perú|Lima|Contador
+2560|Perú|Chiclayo|Estudiante
+2561|Perú|Lima|Estudiante
+2562|Perú|Trujillo|Profesora
+2563|Perú|Ica|Ingeniera de sistemas
+2564|Perú|La Merced|Psicólogo
+2565|Perú|Oxapampa|Enfermera
+2566|Perú|Lima|Chef
+2567|Perú|Cerro de Pasco|Arquitecto
+2568|Alemania|Berlín|Docente
+2569|Argentina|Buenos Aires|Contador
+2570|Perú|Trujillo|Administrador
+2571|Perú|Piura|Profesora
+2572|Perú|Lima|Empresario
+2573|Perú|Lima|Enfermera
+2574|Perú|Cerro de Pasco|Economista
+2575|Perú|La Merced|Diseñador
+2576|Perú|Tarma|Psicólogo
+2577|Perú|Lima|Ingeniera de sistemas
+2578|Perú|Lima|Ingeniera de sistemas
+2579|Perú|Tarma|Chef
+2580|Perú|Lima|Arquitecto
+2581|Perú|Huánuco|Jubilado
+2582|Perú|Lima|Arquitecto
+2583|Perú|Piura|Comerciante
+2584|Perú|Cajamarca|Estudiante
+2585|Perú|La Merced|Enfermera
+2586|Perú|Puno|Chef
+2587|Perú|Arequipa|Jubilado
+2588|Perú|La Merced|Economista
+2589|Perú|Cusco|Psicólogo
+2590|Perú|Cerro de Pasco|Ingeniero
+2591|Perú|Lima|Empresario
+2592|Perú|Cajamarca|Chef
+2593|Perú|Huancayo|Estudiante
+2594|Perú|Huánuco|Economista
+2595|Perú|Lima|Diseñador
+2596|Perú|Lima|Médico
+2597|Perú|Lima|Diseñador
+2598|Perú|Cerro de Pasco|Jubilado
+2599|Perú|Lima|Abogado
+2600|Perú|Lima|Médico
+2601|Perú|Arequipa|Jubilado
+2602|Perú|Piura|Psicólogo
+2603|Perú|Lima|Economista
+2604|Perú|La Merced|Comerciante
+2605|Perú|Lima|Chef
+2606|Perú|Tarma|Periodista
+2607|Perú|Huancayo|Ingeniera de sistemas
+2608|Perú|Arequipa|Contador
+2609|Perú|Lima|Ingeniera de sistemas
+2610|Perú|Lima|Docente
+2611|Perú|Lima|Psicólogo
+2612|Perú|Lima|Empresario
+2613|Perú|Arequipa|Médico
+2614|Perú|Cerro de Pasco|Ingeniera de sistemas
+2615|Perú|Huánuco|Técnico
+2616|Perú|Tarma|Abogado
+2617|Perú|Lima|Estudiante
+2618|Perú|Lima|Docente
+2619|Argentina|Buenos Aires|Empresario
+2620|Perú|Lima|Ingeniera de sistemas
+2621|Perú|Lima|Contador
+2622|Perú|Lima|Diseñador
+2623|Perú|Lima|Docente
+2624|Perú|Lima|Psicólogo
+2625|Perú|Lima|Psicólogo
+2626|Perú|Cerro de Pasco|Contador
+2627|Perú|Iquitos|Periodista
+2628|Perú|Arequipa|Diseñador
+2629|Perú|Chiclayo|Médico
+2630|Perú|Trujillo|Médico
+2631|Perú|La Merced|Docente
+2632|Perú|Huancayo|Estudiante
+2633|Perú|Lima|Economista
+2634|Perú|Tarma|Médico
+2635|Perú|Huánuco|Estudiante
+2636|Perú|Lima|Profesora
+2637|Perú|Lima|Docente
+2638|Perú|La Merced|Comerciante
+2639|Perú|Huancayo|Periodista
+2640|Alemania|Berlín|Médico
+2641|Perú|Trujillo|Contador
+2642|Perú|La Merced|Jubilado
+2643|Perú|Oxapampa|Enfermera
+2644|Perú|Huánuco|Técnico
+2645|Perú|La Merced|Economista
+2646|Perú|La Merced|Estudiante
+2647|Perú|Lima|Profesora
+2648|Perú|Lima|Periodista
+2649|Perú|Tarma|Enfermera
+2650|Perú|Lima|Médico
+2651|Perú|Iquitos|Periodista
+2652|Perú|Tacna|Arquitecto
+2653|Perú|Piura|Estudiante
+2654|Perú|Lima|Contador
+2655|Perú|Cerro de Pasco|Empresario
+2656|Perú|Lima|Chef
+2657|Francia|París|Profesora
+2658|Perú|Lima|Enfermera
+2659|Perú|Tarma|Administrador
+2660|Perú|Chiclayo|Abogado
+2661|Perú|Arequipa|Abogado
+2662|Perú|Tarma|Ingeniera de sistemas
+2663|Perú|La Merced|Arquitecto
+2664|Perú|La Merced|Diseñador
+2665|Perú|Huancayo|Chef
+2666|Perú|Lima|Profesora
+2667|Perú|Huancayo|Economista
+2668|Perú|Chiclayo|Periodista
+2669|Perú|Tacna|Profesora
+2670|Perú|Piura|Técnico
+2671|Perú|Lima|Abogado
+2672|Perú|Lima|Economista
+2673|Perú|Tarma|Economista
+2674|Perú|Lima|Contador
+2675|Perú|La Merced|Estudiante
+2676|Perú|Chiclayo|Docente
+2677|Perú|Lima|Administrador
+2678|Perú|Iquitos|Enfermera
+2679|Perú|Puno|Docente
+2680|Perú|Lima|Arquitecto
+2681|Perú|Lima|Docente
+2682|Perú|Huancayo|Ingeniero
+2683|Perú|Lima|Profesora
+2684|Perú|Lima|Economista
+2685|Perú|Lima|Ingeniero
+2686|Perú|Lima|Abogado
+2687|Perú|Chiclayo|Profesora
+2688|Perú|Lima|Contador
+2689|Perú|Lima|Economista
+2690|Perú|Huánuco|Técnico
+2691|Perú|Lima|Docente
+2692|Perú|Cerro de Pasco|Docente
+2693|Perú|Lima|Comerciante
+2694|Perú|Lima|Comerciante
+2695|Colombia|Bogotá|Empresario
+2696|Chile|Santiago|Enfermera
+2697|Perú|Chiclayo|Contador
+2698|Perú|Lima|Diseñador
+2699|Perú|Cerro de Pasco|Técnico
+2700|Perú|Huánuco|Enfermera
+2701|Perú|Cerro de Pasco|Contador
+2702|Perú|Oxapampa|Chef
+2703|Perú|Tarma|Empresario
+2704|Perú|Lima|Docente
+2705|Perú|Cusco|Chef
+2706|Perú|Tarma|Psicólogo
+2707|Perú|Huancayo|Empresario
+2708|Perú|Trujillo|Médico
+2709|Perú|Lima|Profesora
+2710|Perú|Lima|Administrador
+2711|Perú|Lima|Chef
+2712|Perú|Lima|Empresario
+2713|Perú|Cajamarca|Abogado
+2714|Perú|Tarma|Economista
+2715|Perú|Huánuco|Comerciante
+2716|Perú|Ica|Estudiante
+2717|Perú|Chiclayo|Médico
+2718|Perú|Lima|Periodista
+2719|Perú|Lima|Abogado
+2720|Perú|Huancayo|Comerciante
+2721|Perú|Cerro de Pasco|Comerciante
+2722|Perú|Arequipa|Administrador
+2723|Perú|Huánuco|Estudiante
+2724|Perú|Huánuco|Chef
+2725|Perú|La Merced|Enfermera
+2726|Perú|Trujillo|Contador
+2727|Perú|Trujillo|Psicólogo
+2728|Perú|Ica|Ingeniera de sistemas
+2729|Perú|Lima|Ingeniera de sistemas
+2730|Perú|La Merced|Administrador
+2731|Perú|Lima|Diseñador
+2732|Perú|La Merced|Jubilado
+2733|Perú|Lima|Psicólogo
+2734|Argentina|Buenos Aires|Jubilado
+2735|Estados Unidos|Nueva York|Chef
+2736|Perú|La Merced|Docente
+2737|Perú|Arequipa|Psicólogo
+2738|Perú|Cerro de Pasco|Chef
+2739|Perú|Huancayo|Abogado
+2740|Perú|Lima|Arquitecto
+2741|Perú|Lima|Economista
+2742|Perú|Lima|Ingeniera de sistemas
+2743|Perú|Arequipa|Jubilado
+2744|Perú|Cusco|Psicólogo
+2745|Perú|La Merced|Comerciante
+2746|Perú|Cusco|Técnico
+2747|Perú|La Merced|Arquitecto
+2748|Perú|Chiclayo|Chef
+2749|Perú|Lima|Periodista
+2750|Perú|Lima|Médico
+2751|Perú|La Merced|Diseñador
+2752|Perú|Lima|Estudiante
+2753|Perú|Lima|Médico
+2754|Perú|Puno|Médico
+2755|Argentina|Buenos Aires|Docente
+2756|Perú|Lima|Profesora
+2757|Perú|Lima|Administrador
+2758|Chile|Santiago|Enfermera
+2759|Perú|La Merced|Chef
+2760|Perú|Lima|Médico
+2761|Argentina|Buenos Aires|Estudiante
+2762|Chile|Santiago|Contador
+2763|Perú|Lima|Diseñador
+2764|Perú|Lima|Economista
+2765|Perú|La Merced|Arquitecto
+2766|Perú|Lima|Arquitecto
+2767|Perú|Lima|Psicólogo
+2768|Perú|Trujillo|Administrador
+2769|Perú|Huancayo|Ingeniero
+2770|Perú|Lima|Contador
+2771|Perú|Lima|Ingeniero
+2772|Perú|Tarma|Jubilado
+2773|Perú|Lima|Arquitecto
+2774|Perú|Trujillo|Psicólogo
+2775|Perú|Lima|Ingeniera de sistemas
+2776|Perú|Huancayo|Administrador
+2777|Perú|Huánuco|Comerciante
+2778|Perú|Huancayo|Médico
+2779|Perú|Huancayo|Abogado
+2780|Perú|La Merced|Comerciante
+2781|Perú|Huancayo|Técnico
+2782|Perú|Huánuco|Chef
+2783|Perú|Cusco|Administrador
+2784|Colombia|Bogotá|Contador
+2785|Perú|Lima|Jubilado
+2786|Perú|Trujillo|Economista
+2787|Perú|Puno|Comerciante
+2788|Perú|Huancayo|Comerciante
+2789|Perú|Trujillo|Ingeniero
+2790|Perú|Chiclayo|Ingeniera de sistemas
+2791|Perú|La Merced|Profesora
+2792|Perú|Huancayo|Contador
+2793|Perú|Tarma|Diseñador
+2794|Perú|Huánuco|Economista
+2795|Perú|Huancayo|Ingeniera de sistemas
+2796|Perú|Arequipa|Arquitecto
+2797|Perú|Lima|Enfermera
+2798|Perú|Lima|Arquitecto
+2799|Perú|Cerro de Pasco|Empresario
+2800|Perú|Huancayo|Estudiante
+2801|Perú|Lima|Diseñador
+2802|Perú|Cerro de Pasco|Empresario
+2803|Perú|La Merced|Chef
+2804|Perú|Iquitos|Economista
+2805|Perú|Huancayo|Jubilado
+2806|Chile|Santiago|Enfermera
+2807|Perú|Lima|Ingeniera de sistemas
+2808|Perú|Chiclayo|Economista
+2809|Perú|Lima|Enfermera
+2810|Perú|Lima|Profesora
+2811|Perú|Puno|Empresario
+2812|Perú|Cerro de Pasco|Periodista
+2813|Perú|Huánuco|Arquitecto
+2814|Perú|Lima|Enfermera
+2815|Perú|Huancayo|Abogado
+2816|Perú|La Merced|Contador
+2817|Perú|Huancayo|Jubilado
+2818|Perú|Cajamarca|Jubilado
+2819|Perú|Lima|Médico
+2820|Perú|Tarma|Enfermera
+2821|Perú|Lima|Economista
+2822|Perú|La Merced|Periodista
+2823|Perú|Huánuco|Profesora
+2824|Perú|Lima|Periodista
+2825|Perú|Arequipa|Jubilado
+2826|Perú|Huánuco|Docente
+2827|Perú|Huánuco|Economista
+2828|Perú|Chiclayo|Profesora
+2829|Perú|Lima|Comerciante
+2830|Perú|La Merced|Jubilado
+2831|Perú|Arequipa|Médico
+2832|Chile|Santiago|Psicólogo
+2833|Perú|La Merced|Estudiante
+2834|Perú|Lima|Periodista
+2835|Perú|Huancayo|Periodista
+2836|Perú|La Merced|Enfermera
+2837|Perú|Cusco|Empresario
+2838|Perú|Ica|Ingeniero
+2839|Perú|Cerro de Pasco|Profesora
+2840|Perú|Chiclayo|Médico
+2841|Perú|Arequipa|Arquitecto
+2842|Perú|Huancayo|Diseñador
+2843|Perú|Trujillo|Psicólogo
+2844|Perú|Piura|Enfermera
+2845|Perú|Huancayo|Estudiante
+2846|Perú|La Merced|Médico
+2847|Perú|Lima|Abogado
+2848|Perú|Trujillo|Estudiante
+2849|Perú|Lima|Comerciante
+2850|Perú|Lima|Empresario
+2851|Perú|Tacna|Comerciante
+2852|Perú|Huancayo|Abogado
+2853|Perú|Lima|Diseñador
+2854|Perú|Lima|Médico
+2855|Perú|Lima|Abogado
+2856|Perú|Lima|Empresario
+2857|Perú|Cerro de Pasco|Docente
+2858|Perú|La Merced|Periodista
+2859|Perú|Chiclayo|Profesora
+2860|Perú|Tarma|Enfermera
+2861|Perú|Lima|Empresario
+2862|Perú|Huánuco|Administrador
+2863|Perú|Piura|Contador
+2864|Perú|Lima|Comerciante
+2865|Perú|Lima|Chef
+2866|Perú|Huánuco|Docente
+2867|Perú|Lima|Administrador
+2868|Perú|La Merced|Ingeniera de sistemas
+2869|Perú|Lima|Psicólogo
+2870|Perú|Lima|Jubilado
+2871|Perú|Lima|Economista
+2872|Perú|Lima|Estudiante
+2873|Perú|Huancayo|Abogado
+2874|Perú|Cerro de Pasco|Profesora
+2875|Perú|Trujillo|Diseñador
+2876|Perú|Lima|Ingeniera de sistemas
+2877|Perú|Huancayo|Comerciante
+2878|Perú|La Merced|Abogado
+2879|Perú|Lima|Abogado
+2880|Perú|Oxapampa|Ingeniero
+2881|Perú|Ica|Chef
+2882|Argentina|Buenos Aires|Empresario
+2883|Perú|Lima|Técnico
+2884|Perú|Lima|Docente
+2885|Perú|Lima|Periodista
+2886|Perú|Lima|Diseñador
+2887|Perú|Chiclayo|Ingeniero
+2888|Perú|Huánuco|Contador
+2889|Perú|Huánuco|Docente
+2890|Perú|Puno|Estudiante
+2891|Perú|Ica|Diseñador
+2892|Perú|Trujillo|Estudiante
+2893|Perú|Tarma|Docente
+2894|Perú|Piura|Profesora
+2895|Perú|Cerro de Pasco|Abogado
+2896|Perú|Puno|Profesora
+2897|Perú|La Merced|Arquitecto
+2898|Perú|Lima|Economista
+2899|Perú|Huancayo|Ingeniera de sistemas
+2900|Perú|Tarma|Estudiante
+2901|Perú|Lima|Ingeniero
+2902|Perú|Arequipa|Contador
+2903|Perú|Lima|Estudiante
+2904|Perú|Lima|Empresario
+2905|Perú|Cerro de Pasco|Diseñador
+2906|Perú|Lima|Periodista
+2907|Perú|Huancayo|Economista
+2908|Perú|Cusco|Administrador
+2909|Colombia|Bogotá|Comerciante
+2910|Perú|Huánuco|Técnico
+2911|Chile|Santiago|Enfermera
+2912|Perú|Huánuco|Docente
+2913|Perú|Lima|Psicólogo
+2914|Perú|Lima|Empresario
+2915|Perú|Lima|Técnico
+2916|Perú|Lima|Comerciante
+2917|Perú|Lima|Psicólogo
+2918|España|Madrid|Empresario
+2919|Perú|Arequipa|Administrador
+2920|Perú|Arequipa|Comerciante
+2921|Perú|Huánuco|Ingeniero
+2922|Estados Unidos|Nueva York|Ingeniera de sistemas
+2923|Perú|La Merced|Chef
+2924|Perú|Lima|Periodista
+2925|Perú|Iquitos|Docente
+2926|Perú|Puno|Jubilado
+2927|Perú|Huancayo|Técnico
+2928|Perú|Ica|Jubilado
+2929|Perú|Lima|Estudiante
+2930|Perú|Chiclayo|Empresario
+2931|Perú|Oxapampa|Ingeniera de sistemas
+2932|Estados Unidos|Nueva York|Economista
+2933|Perú|Lima|Periodista
+2934|Perú|Huánuco|Periodista
+2935|Perú|Huánuco|Chef
+2936|Perú|Lima|Psicólogo
+2937|Perú|Lima|Chef
+2938|Perú|Lima|Comerciante
+2939|Perú|Cerro de Pasco|Médico
+2940|Perú|Cusco|Enfermera
+2941|Perú|Huancayo|Estudiante
+2942|Perú|Huánuco|Estudiante
+2943|Perú|Lima|Contador
+2944|Perú|Piura|Docente
+2945|Francia|París|Economista
+2946|Perú|Huancayo|Estudiante
+2947|Perú|Lima|Comerciante
+2948|Perú|Lima|Técnico
+2949|Perú|La Merced|Jubilado
+2950|Perú|Lima|Periodista
+2951|Perú|Huánuco|Ingeniera de sistemas
+2952|Chile|Santiago|Enfermera
+2953|Perú|Tacna|Ingeniero
+2954|Perú|Lima|Contador
+2955|Perú|Huancayo|Jubilado
+2956|Perú|Lima|Enfermera
+2957|Perú|Lima|Comerciante
+2958|Perú|Lima|Contador
+2959|Perú|Cerro de Pasco|Periodista
+2960|Perú|Lima|Docente
+2961|Perú|Lima|Administrador
+2962|Perú|Lima|Diseñador
+2963|Estados Unidos|Nueva York|Jubilado
+2964|Perú|La Merced|Contador
+2965|Francia|París|Ingeniero
+2966|Chile|Santiago|Abogado
+2967|Perú|Huánuco|Contador
+2968|Perú|Trujillo|Periodista
+2969|Perú|Tarma|Economista
+2970|Perú|Huancayo|Abogado
+2971|Perú|Arequipa|Jubilado
+2972|Perú|Piura|Psicólogo
+2973|Perú|Puno|Diseñador
+2974|Perú|Lima|Arquitecto
+2975|Perú|Lima|Jubilado
+2976|Perú|Tarma|Docente
+2977|Perú|Tarma|Periodista
+2978|Perú|Trujillo|Contador
+2979|Perú|Huancayo|Chef
+2980|Perú|Lima|Abogado
+2981|Perú|Lima|Ingeniero
+2982|Perú|Cusco|Médico
+2983|Argentina|Buenos Aires|Enfermera
+2984|Perú|Lima|Estudiante
+2985|Perú|Arequipa|Psicólogo
+2986|Perú|Iquitos|Chef
+2987|Perú|Cerro de Pasco|Jubilado
+2988|Perú|Oxapampa|Ingeniera de sistemas
+2989|Perú|Lima|Periodista
+2990|Perú|Lima|Ingeniero
+2991|Perú|Tacna|Estudiante
+2992|Perú|Lima|Administrador
+2993|Perú|Tarma|Ingeniero
+2994|Perú|Huancayo|Técnico
+2995|Perú|Iquitos|Arquitecto
+2996|Perú|Cusco|Arquitecto
+2997|Perú|Arequipa|Ingeniera de sistemas
+2998|Perú|Trujillo|Técnico
+2999|Perú|Lima|Periodista
+3000|Perú|Lima|Periodista
+3001|Perú|Huancayo|Docente
+3002|Perú|Arequipa|Enfermera
+3003|Perú|Lima|Diseñador
+3004|Perú|Cusco|Periodista
+3005|Perú|Lima|Psicólogo
+3006|Perú|Huancayo|Empresario
+3007|Perú|Huánuco|Chef
+3008|Perú|Iquitos|Economista
+3009|Perú|Cerro de Pasco|Chef
+3010|Perú|Puno|Abogado
+3011|Perú|Lima|Periodista
+3012|Perú|Huancayo|Contador
+3013|Perú|Trujillo|Jubilado
+3014|Perú|La Merced|Empresario
+3015|Perú|Chiclayo|Economista
+3016|Perú|Tarma|Docente
+3017|Perú|Ica|Chef
+3018|Perú|Lima|Arquitecto
+3019|Perú|Huancayo|Ingeniera de sistemas
+3020|Perú|Huancayo|Estudiante
+3021|Perú|Ica|Chef
+3022|Perú|Oxapampa|Economista
+3023|Perú|Lima|Chef
+3024|Perú|Tarma|Arquitecto
+3025|Perú|Huancayo|Economista
+3026|Perú|Chiclayo|Docente
+3027|Perú|La Merced|Comerciante
+3028|Perú|Huancayo|Jubilado
+3029|Perú|Huancayo|Profesora
+3030|Perú|Cusco|Comerciante
+3031|Perú|Lima|Técnico
+3032|Perú|Cerro de Pasco|Jubilado
+3033|Perú|Lima|Diseñador
+3034|Perú|Lima|Ingeniero
+3035|Perú|Lima|Contador
+3036|Perú|Lima|Contador
+3037|España|Madrid|Ingeniera de sistemas
+3038|Perú|Cusco|Administrador
+3039|Perú|Cerro de Pasco|Enfermera
+3040|Perú|Ica|Periodista
+3041|Perú|Lima|Empresario
+3042|Perú|Lima|Chef
+3043|Perú|Huánuco|Ingeniero
+3044|Perú|Ica|Profesora
+3045|Perú|Lima|Médico
+3046|Argentina|Buenos Aires|Abogado
+3047|Perú|Lima|Chef
+3048|Perú|Arequipa|Psicólogo
+3049|Perú|Lima|Estudiante
+3050|Perú|Lima|Profesora
+3051|Perú|Lima|Médico
+3052|Perú|La Merced|Chef
+3053|Perú|Cajamarca|Ingeniera de sistemas
+3054|Francia|París|Empresario
+3055|Perú|Iquitos|Diseñador
+3056|Perú|Cerro de Pasco|Periodista
+3057|Perú|Trujillo|Administrador
+3058|Perú|Puno|Periodista
+3059|Perú|Lima|Docente
+3060|Perú|Lima|Arquitecto
+3061|Perú|Lima|Arquitecto
+3062|Perú|Huánuco|Estudiante
+3063|Perú|Huancayo|Empresario
+3064|Perú|Lima|Ingeniera de sistemas
+3065|Perú|Lima|Comerciante
+3066|Perú|Huánuco|Arquitecto
+3067|Perú|Huancayo|Docente
+3068|Perú|Tarma|Chef
+3069|Perú|Lima|Psicólogo
+3070|Perú|Huancayo|Estudiante
+3071|Perú|Lima|Psicólogo
+3072|Perú|Trujillo|Médico
+3073|Perú|Chiclayo|Jubilado
+3074|Perú|Huancayo|Economista
+3075|Perú|Huancayo|Empresario
+3076|Perú|Huánuco|Empresario
+3077|Perú|Chiclayo|Abogado
+3078|Perú|Oxapampa|Comerciante
+3079|Perú|Cajamarca|Docente
+3080|Perú|Cerro de Pasco|Profesora
+3081|Perú|La Merced|Psicólogo
+3082|Perú|Cerro de Pasco|Estudiante
+3083|Perú|La Merced|Estudiante
+3084|Perú|Lima|Técnico
+3085|Perú|Huánuco|Abogado
+3086|Perú|Ica|Jubilado
+3087|Perú|Lima|Profesora
+3088|Perú|Lima|Técnico
+3089|Perú|La Merced|Psicólogo
+3090|Perú|Lima|Chef
+3091|Perú|Lima|Estudiante
+3092|Perú|Lima|Chef
+3093|Perú|Lima|Jubilado
+3094|Perú|Lima|Médico
+3095|Perú|La Merced|Empresario
+3096|Perú|Lima|Diseñador
+3097|Perú|La Merced|Empresario
+3098|Perú|Arequipa|Psicólogo
+3099|Perú|Lima|Administrador
+3100|Perú|Oxapampa|Psicólogo
+3101|Perú|Iquitos|Periodista
+3102|Perú|La Merced|Estudiante
+3103|Perú|Trujillo|Comerciante
+3104|Perú|Huancayo|Diseñador
+3105|Perú|Lima|Contador
+3106|Perú|Lima|Comerciante
+3107|Perú|Arequipa|Médico
+3108|Perú|Lima|Contador
+3109|Perú|Lima|Docente
+3110|Perú|Lima|Estudiante
+3111|Perú|Huancayo|Administrador
+3112|Perú|Lima|Psicólogo
+3113|Perú|La Merced|Psicólogo
+3114|Perú|Lima|Psicólogo
+3115|Perú|Piura|Administrador
+3116|Perú|Lima|Jubilado
+3117|Perú|Huancayo|Ingeniera de sistemas
+3118|Perú|Huancayo|Periodista
+3119|Perú|Lima|Jubilado
+3120|Perú|Cajamarca|Comerciante
+3121|Perú|Huánuco|Ingeniero
+3122|Perú|Lima|Contador
+3123|Perú|Huánuco|Periodista
+3124|Perú|Huánuco|Enfermera
+3125|Perú|La Merced|Empresario
+3126|Perú|Tarma|Chef
+3127|Perú|Lima|Economista
+3128|Perú|Huancayo|Enfermera
+3129|Perú|Lima|Administrador
+3130|Perú|Lima|Ingeniero
+3131|Perú|Lima|Chef
+3132|Perú|La Merced|Comerciante
+3133|Perú|Cusco|Economista
+3134|Perú|Tarma|Docente
+3135|Perú|Lima|Docente
+3136|Perú|Lima|Administrador
+3137|Perú|Huánuco|Economista
+3138|Perú|Trujillo|Médico
+3139|Perú|Lima|Estudiante
+3140|Perú|Huánuco|Economista
+3141|Perú|Cusco|Abogado
+3142|Perú|La Merced|Médico
+3143|Perú|Iquitos|Jubilado
+3144|Perú|Piura|Médico
+3145|Perú|Lima|Docente
+3146|Perú|Lima|Profesora
+3147|España|Madrid|Diseñador
+3148|Perú|Ica|Ingeniera de sistemas
+3149|Francia|París|Contador
+3150|Perú|Oxapampa|Comerciante
+3151|Perú|Cerro de Pasco|Comerciante
+3152|Perú|La Merced|Chef
+3153|Perú|Lima|Enfermera
+3154|Perú|Huancayo|Chef
+3155|Perú|Huánuco|Abogado
+3156|Perú|Lima|Psicólogo
+3157|Perú|Lima|Contador
+3158|Perú|Cajamarca|Administrador
+3159|España|Madrid|Chef
+3160|Perú|Chiclayo|Diseñador
+3161|Perú|Lima|Comerciante
+3162|Perú|Piura|Técnico
+3163|Perú|La Merced|Estudiante
+3164|Perú|La Merced|Docente
+3165|Perú|Lima|Enfermera
+3166|Perú|Cerro de Pasco|Ingeniera de sistemas
+3167|Perú|Lima|Comerciante
+3168|Perú|Lima|Empresario
+3169|Perú|Lima|Comerciante
+3170|Perú|Arequipa|Administrador
+3171|Perú|Tarma|Estudiante
+3172|Perú|Tarma|Jubilado
+3173|Perú|Huancayo|Administrador
+3174|Perú|Cusco|Diseñador
+3175|Chile|Santiago|Técnico
+3176|Perú|Lima|Abogado
+3177|Perú|Lima|Comerciante
+3178|Perú|Iquitos|Jubilado
+3179|Perú|Cerro de Pasco|Empresario
+3180|Perú|Cerro de Pasco|Periodista
+3181|Perú|Lima|Profesora
+3182|Perú|Lima|Administrador
+3183|Alemania|Berlín|Periodista
+3184|Perú|Huánuco|Jubilado
+3185|Perú|Piura|Comerciante
+3186|Perú|Chiclayo|Profesora
+3187|Perú|Cerro de Pasco|Diseñador
+3188|Perú|Chiclayo|Administrador
+3189|Colombia|Bogotá|Comerciante
+3190|Perú|Arequipa|Administrador
+3191|Perú|Huánuco|Diseñador
+3192|Perú|Lima|Ingeniero
+3193|Perú|Lima|Periodista
+3194|Perú|Lima|Jubilado
+3195|Perú|Ica|Diseñador
+3196|Argentina|Buenos Aires|Arquitecto
+3197|Perú|Lima|Médico
+3198|Perú|Lima|Jubilado
+3199|Perú|Arequipa|Docente
+3200|Perú|Lima|Psicólogo
+3201|Perú|Lima|Ingeniera de sistemas
+3202|Perú|Oxapampa|Economista
+3203|Perú|Huancayo|Arquitecto
+3204|Perú|La Merced|Periodista
+3205|Perú|Lima|Economista
+3206|Perú|Oxapampa|Médico
+3207|Perú|Trujillo|Arquitecto
+3208|Perú|Ica|Jubilado
+3209|Perú|Lima|Estudiante
+3210|Perú|Lima|Administrador
+3211|Perú|Lima|Profesora
+3212|Perú|Cerro de Pasco|Empresario
+3213|Colombia|Bogotá|Economista
+3214|Perú|Huancayo|Empresario
+3215|Perú|Lima|Técnico
+3216|Argentina|Buenos Aires|Abogado
+3217|Perú|Lima|Técnico
+3218|Estados Unidos|Nueva York|Docente
+3219|Perú|Tacna|Abogado
+3220|Perú|Huancayo|Estudiante
+3221|Perú|Huancayo|Jubilado
+3222|Perú|Lima|Jubilado
+3223|Perú|Lima|Profesora
+3224|Perú|Trujillo|Chef
+3225|Perú|Puno|Comerciante
+3226|Perú|La Merced|Periodista
+3227|Perú|Huánuco|Estudiante
+3228|Perú|La Merced|Psicólogo
+3229|Perú|Tacna|Ingeniero
+3230|Perú|Arequipa|Comerciante
+3231|Perú|Huánuco|Periodista
+3232|Perú|Lima|Abogado
+3233|Perú|Lima|Empresario
+3234|Perú|Lima|Arquitecto
+3235|Perú|Huancayo|Comerciante
+3236|Perú|Huánuco|Profesora
+3237|Perú|Cusco|Técnico
+3238|Perú|Trujillo|Médico
+3239|Perú|Huánuco|Médico
+3240|Perú|Chiclayo|Empresario
+3241|Perú|Cusco|Ingeniero
+3242|Perú|Cajamarca|Administrador
+3243|Perú|Lima|Comerciante
+3244|Perú|Huánuco|Economista
+3245|Perú|Lima|Enfermera
+3246|Perú|Lima|Ingeniero
+3247|Perú|Cerro de Pasco|Arquitecto
+3248|Perú|Cajamarca|Chef
+3249|Perú|Cerro de Pasco|Empresario
+3250|Perú|Tarma|Abogado
+3251|Perú|Lima|Comerciante
+3252|Perú|Iquitos|Contador
+3253|Perú|Huánuco|Economista
+3254|Perú|Iquitos|Comerciante
+3255|Perú|La Merced|Chef
+3256|Perú|Tarma|Economista
+3257|Perú|Huánuco|Ingeniera de sistemas
+3258|Perú|Lima|Estudiante
+3259|Perú|Cajamarca|Ingeniero
+3260|Perú|Huancayo|Ingeniera de sistemas
+3261|Perú|Chiclayo|Economista
+3262|Perú|Arequipa|Abogado
+3263|Alemania|Berlín|Estudiante
+3264|Perú|Tacna|Ingeniero
+3265|Perú|Lima|Administrador
+3266|Perú|Huancayo|Periodista
+3267|Perú|Lima|Abogado
+3268|Perú|Lima|Ingeniero
+3269|Perú|Lima|Contador
+3270|Perú|Cusco|Administrador
+3271|Perú|Ica|Contador
+3272|Perú|Lima|Técnico
+3273|Perú|La Merced|Ingeniera de sistemas
+3274|Chile|Santiago|Arquitecto
+3275|Perú|Lima|Diseñador
+3276|Perú|Lima|Comerciante
+3277|Perú|Lima|Estudiante
+3278|Perú|Puno|Arquitecto
+3279|Perú|Huancayo|Jubilado
+3280|Perú|La Merced|Profesora
+3281|Perú|Trujillo|Periodista
+3282|Perú|Ica|Psicólogo
+3283|Perú|Trujillo|Abogado
+3284|Perú|Lima|Profesora
+3285|Perú|Chiclayo|Comerciante
+3286|Perú|Lima|Docente
+3287|Perú|Tacna|Estudiante
+3288|Perú|Lima|Periodista
+3289|Perú|Cusco|Estudiante
+3290|Perú|Piura|Ingeniero
+3291|Perú|Lima|Médico
+3292|Perú|Tarma|Comerciante
+3293|Perú|Trujillo|Enfermera
+3294|Perú|Tacna|Arquitecto
+3295|Perú|Trujillo|Comerciante
+3296|Perú|Lima|Técnico
+3297|Perú|Huancayo|Contador
+3298|Perú|Huánuco|Abogado
+3299|Perú|Tarma|Docente
+3300|Colombia|Bogotá|Chef
+3301|Perú|Lima|Médico
+3302|Perú|Lima|Psicólogo
+3303|Perú|La Merced|Abogado
+3304|Perú|Lima|Enfermera
+3305|Perú|Lima|Diseñador
+3306|Perú|Lima|Diseñador
+3307|Perú|Lima|Técnico
+3308|Perú|Cerro de Pasco|Ingeniero
+3309|Perú|Ica|Arquitecto
+3310|Perú|Lima|Comerciante
+3311|Perú|La Merced|Periodista
+3312|Perú|Huánuco|Docente
+3313|Perú|Lima|Ingeniero
+3314|Perú|Lima|Técnico
+3315|Perú|Lima|Periodista
+3316|Perú|Tarma|Profesora
+3317|Perú|Lima|Comerciante
+3318|Perú|Iquitos|Profesora
+3319|Perú|Lima|Contador
+3320|Perú|Lima|Médico
+3321|Perú|Cusco|Economista
+3322|Perú|Lima|Abogado
+3323|Perú|Chiclayo|Diseñador
+3324|Perú|Huancayo|Arquitecto
+3325|Perú|Lima|Abogado
+3326|Perú|Huancayo|Contador
+3327|Perú|Huancayo|Docente
+3328|Perú|Piura|Economista
+3329|Perú|Huánuco|Comerciante
+3330|Perú|Cusco|Ingeniero
+3331|Perú|Arequipa|Docente
+3332|Chile|Santiago|Ingeniera de sistemas
+3333|Perú|Huancayo|Ingeniera de sistemas
+3334|Perú|Tarma|Periodista
+3335|Perú|Huancayo|Periodista
+3336|Perú|Lima|Economista
+3337|Perú|Lima|Enfermera
+3338|Perú|Lima|Abogado
+3339|Perú|Lima|Administrador
+3340|Perú|Tarma|Empresario
+3341|Perú|Lima|Ingeniero
+3342|Perú|Lima|Abogado
+3343|Argentina|Buenos Aires|Comerciante
+3344|Perú|Cajamarca|Comerciante
+3345|Perú|Lima|Ingeniera de sistemas
+3346|Perú|Lima|Estudiante
+3347|Perú|Lima|Periodista
+3348|Alemania|Berlín|Docente
+3349|Perú|Huancayo|Profesora
+3350|Perú|Lima|Jubilado
+3351|Perú|Huancayo|Profesora
+3352|Perú|Huánuco|Economista
+3353|Perú|Lima|Médico
+3354|Estados Unidos|Nueva York|Ingeniero
+3355|Perú|La Merced|Diseñador
+3356|Perú|Trujillo|Jubilado
+3357|Perú|Cusco|Abogado
+3358|Perú|Lima|Docente
+3359|Perú|Cajamarca|Contador
+3360|Perú|Lima|Profesora
+3361|Perú|Lima|Psicólogo
+3362|Perú|Puno|Enfermera
+3363|Perú|Tacna|Técnico
+3364|Argentina|Buenos Aires|Chef
+3365|Perú|Lima|Abogado
+3366|Perú|Lima|Empresario
+3367|Perú|Lima|Ingeniero
+3368|Perú|Lima|Administrador
+3369|Perú|Huancayo|Enfermera
+3370|Perú|Lima|Profesora
+3371|Perú|Lima|Contador
+3372|Perú|Lima|Contador
+3373|Perú|Cerro de Pasco|Ingeniero
+3374|Perú|Huancayo|Contador
+3375|Perú|Puno|Ingeniero
+3376|Perú|Trujillo|Docente
+3377|Perú|Lima|Periodista
+3378|Perú|Lima|Comerciante
+3379|Chile|Santiago|Enfermera
+3380|Perú|Lima|Jubilado
+3381|Perú|Lima|Administrador
+3382|Perú|Huánuco|Arquitecto
+3383|Perú|Ica|Profesora
+3384|Perú|Cerro de Pasco|Comerciante
+3385|Perú|Trujillo|Docente
+3386|Perú|Tarma|Profesora
+3387|Perú|Lima|Médico
+3388|Perú|Lima|Administrador
+3389|Perú|Lima|Jubilado
+3390|Perú|Lima|Enfermera
+3391|Perú|Cusco|Profesora
+3392|Francia|París|Médico
+3393|Colombia|Bogotá|Contador
+3394|Perú|Cajamarca|Psicólogo
+3395|Perú|Lima|Docente
+3396|Perú|Lima|Psicólogo
+3397|Perú|Huancayo|Periodista
+3398|Perú|Cerro de Pasco|Médico
+3399|Perú|Lima|Administrador
+3400|Perú|Iquitos|Economista
+3401|Perú|Oxapampa|Economista
+3402|Perú|Trujillo|Administrador
+3403|Perú|Huánuco|Ingeniera de sistemas
+3404|Perú|Huánuco|Docente
+3405|Perú|Lima|Jubilado
+3406|Perú|Cajamarca|Diseñador
+3407|Perú|Tarma|Técnico
+3408|Perú|Lima|Chef
+3409|Perú|Lima|Ingeniera de sistemas
+3410|Estados Unidos|Nueva York|Contador
+3411|Perú|Cerro de Pasco|Docente
+3412|Perú|Huancayo|Diseñador
+3413|Perú|Ica|Estudiante
+3414|Perú|Lima|Psicólogo
+3415|Perú|Trujillo|Ingeniera de sistemas
+3416|Perú|Puno|Empresario
+3417|Perú|Huánuco|Periodista
+3418|Perú|Huancayo|Enfermera
+3419|Perú|Huánuco|Jubilado
+3420|Perú|Cajamarca|Diseñador
+3421|Perú|Lima|Comerciante
+3422|Perú|Lima|Psicólogo
+3423|Perú|Lima|Diseñador
+3424|Perú|Lima|Economista
+3425|Perú|Lima|Comerciante
+3426|Perú|Lima|Estudiante
+3427|Perú|Tarma|Médico
+3428|Perú|Lima|Contador
+3429|Perú|Lima|Economista
+3430|Perú|Lima|Ingeniero
+3431|Perú|Lima|Empresario
+3432|Perú|Trujillo|Periodista
+3433|Perú|Lima|Profesora
+3434|Perú|Tarma|Diseñador
+3435|Perú|Huánuco|Estudiante
+3436|Perú|Lima|Arquitecto
+3437|Perú|Lima|Técnico
+3438|Perú|Cajamarca|Economista
+3439|Perú|Lima|Psicólogo
+3440|Perú|Chiclayo|Docente
+3441|Colombia|Bogotá|Periodista
+3442|Perú|Tarma|Diseñador
+3443|Perú|Lima|Comerciante
+3444|Perú|Chiclayo|Administrador
+3445|Perú|Lima|Médico
+3446|Perú|Huancayo|Médico
+3447|Perú|Lima|Diseñador
+3448|Perú|La Merced|Chef
+3449|Perú|Lima|Diseñador
+3450|Perú|La Merced|Contador
+3451|Alemania|Berlín|Psicólogo
+3452|Perú|Huancayo|Técnico
+3453|Perú|La Merced|Médico
+3454|Perú|Lima|Profesora
+3455|Perú|Cerro de Pasco|Enfermera
+3456|Perú|Cerro de Pasco|Arquitecto
+3457|Perú|Lima|Enfermera
+3458|Perú|Huánuco|Contador
+3459|Perú|Cusco|Contador
+3460|Perú|Lima|Médico
+3461|Perú|Lima|Jubilado
+3462|Perú|Lima|Administrador
+3463|Perú|Lima|Administrador
+3464|Perú|Lima|Docente
+3465|Colombia|Bogotá|Comerciante
+3466|Perú|Lima|Ingeniera de sistemas
+3467|Perú|Lima|Médico
+3468|Perú|Lima|Profesora
+3469|Perú|Ica|Comerciante
+3470|Estados Unidos|Nueva York|Estudiante
+3471|Perú|Lima|Psicólogo
+3472|Perú|La Merced|Profesora
+3473|Perú|Cajamarca|Abogado
+3474|Perú|Chiclayo|Chef
+3475|Perú|Huancayo|Comerciante
+3476|Perú|Huánuco|Chef
+3477|Perú|Huancayo|Chef
+3478|Perú|Lima|Psicólogo
+3479|Perú|Lima|Psicólogo
+3480|Perú|Lima|Periodista
+3481|Perú|Arequipa|Arquitecto
+3482|Perú|Huancayo|Profesora
+3483|Perú|Cerro de Pasco|Psicólogo
+3484|Perú|Lima|Arquitecto
+3485|Perú|Lima|Economista
+3486|Perú|Tarma|Comerciante
+3487|Perú|Piura|Psicólogo
+3488|Perú|Ica|Ingeniero
+3489|Perú|Lima|Chef
+3490|Perú|Huánuco|Abogado
+3491|Perú|Puno|Ingeniera de sistemas
+3492|Perú|Huancayo|Docente
+3493|Perú|Cusco|Jubilado
+3494|Perú|Lima|Chef
+3495|Perú|Lima|Enfermera
+3496|Perú|Huancayo|Técnico
+3497|Perú|Arequipa|Profesora
+3498|Perú|Chiclayo|Periodista
+3499|Perú|Tacna|Administrador
+3500|Perú|Lima|Comerciante
+3501|Perú|Chiclayo|Administrador
+3502|Perú|Lima|Arquitecto
+3503|Perú|Tacna|Diseñador
+3504|Perú|Lima|Ingeniera de sistemas
+3505|Perú|Trujillo|Enfermera
+3506|Perú|Piura|Chef
+3507|Perú|Cerro de Pasco|Abogado
+3508|Argentina|Buenos Aires|Jubilado
+3509|Perú|Lima|Docente
+3510|Perú|Lima|Enfermera
+3511|Perú|Lima|Médico
+3512|Perú|Lima|Jubilado
+3513|España|Madrid|Estudiante
+3514|Perú|Huancayo|Economista
+3515|Perú|Ica|Empresario
+3516|Perú|Tarma|Arquitecto
+3517|Perú|Huancayo|Jubilado
+3518|Perú|Lima|Enfermera
+3519|Perú|Lima|Comerciante
+3520|Perú|Huánuco|Enfermera
+3521|España|Madrid|Técnico
+3522|Perú|Lima|Periodista
+3523|Perú|Lima|Economista
+3524|Perú|Huánuco|Periodista
+3525|Perú|Cerro de Pasco|Ingeniero
+3526|Perú|Puno|Psicólogo
+3527|Perú|Lima|Médico
+3528|Perú|Huancayo|Técnico
+3529|Perú|Arequipa|Comerciante
+3530|Perú|La Merced|Economista
+3531|Francia|París|Médico
+3532|Perú|Chiclayo|Periodista
+3533|Perú|Lima|Comerciante
+3534|Perú|Tacna|Estudiante
+3535|Perú|Lima|Chef
+3536|Perú|Lima|Ingeniera de sistemas
+3537|Perú|Cajamarca|Técnico
+3538|Perú|Chiclayo|Contador
+3539|Perú|Huancayo|Empresario
+3540|Perú|Huánuco|Administrador
+3541|Perú|Huánuco|Periodista
+3542|Perú|Arequipa|Arquitecto
+3543|Perú|Huancayo|Enfermera
+3544|Perú|Lima|Empresario
+3545|Perú|La Merced|Enfermera
+3546|Argentina|Buenos Aires|Chef
+3547|Perú|Arequipa|Profesora
+3548|Perú|Cerro de Pasco|Periodista
+3549|Perú|Lima|Médico
+3550|Perú|Lima|Diseñador
+3551|Perú|Huancayo|Médico
+3552|Perú|Tacna|Empresario
+3553|Perú|Cerro de Pasco|Abogado
+3554|Perú|Arequipa|Empresario
+3555|Perú|Lima|Abogado
+3556|Perú|Lima|Docente
+3557|Perú|Puno|Enfermera
+3558|Perú|Cerro de Pasco|Estudiante
+3559|Perú|Lima|Jubilado
+3560|Perú|Arequipa|Arquitecto
+3561|Perú|Trujillo|Enfermera
+3562|Perú|Lima|Estudiante
+3563|Perú|Lima|Chef
+3564|Perú|La Merced|Comerciante
+3565|Perú|Lima|Abogado
+3566|Perú|Trujillo|Ingeniera de sistemas
+3567|Perú|La Merced|Diseñador
+3568|Perú|Chiclayo|Contador
+3569|Perú|Iquitos|Empresario
+3570|Argentina|Buenos Aires|Periodista
+3571|Perú|Huancayo|Abogado
+3572|Perú|Lima|Docente
+3573|Perú|Tarma|Abogado
+3574|Perú|Oxapampa|Economista
+3575|Perú|Cerro de Pasco|Contador
+3576|Perú|Lima|Periodista
+3577|Perú|Iquitos|Ingeniero
+3578|Perú|Lima|Arquitecto
+3579|Perú|Lima|Psicólogo
+3580|Perú|Lima|Técnico
+3581|Perú|Piura|Docente
+3582|Perú|Lima|Médico
+3583|Perú|Huancayo|Jubilado
+3584|Perú|Puno|Médico
+3585|Perú|Cajamarca|Arquitecto
+3586|Perú|Lima|Enfermera
+3587|Perú|Lima|Chef
+3588|Perú|Lima|Profesora
+3589|Perú|Lima|Empresario
+3590|Perú|Huancayo|Comerciante
+3591|Perú|Trujillo|Contador
+3592|Perú|Trujillo|Docente
+3593|Perú|Lima|Docente
+3594|Perú|Tarma|Comerciante
+3595|Perú|Lima|Psicólogo
+3596|Perú|Arequipa|Economista
+3597|Perú|Tarma|Periodista
+3598|Perú|La Merced|Médico
+3599|Perú|Cerro de Pasco|Contador
+3600|Perú|Lima|Ingeniero
+3601|Perú|Lima|Ingeniera de sistemas
+3602|Perú|Huancayo|Administrador
+3603|Perú|Cerro de Pasco|Empresario
+3604|Perú|Cusco|Psicólogo
+3605|Perú|Arequipa|Diseñador
+3606|Perú|Lima|Diseñador
+3607|Perú|Tarma|Docente
+3608|Perú|Tarma|Jubilado
+3609|Perú|Huancayo|Médico
+3610|Perú|Lima|Estudiante
+3611|España|Madrid|Psicólogo
+3612|Perú|Puno|Diseñador
+3613|Perú|Lima|Empresario
+3614|Perú|La Merced|Arquitecto
+3615|Perú|Tarma|Comerciante
+3616|Perú|Trujillo|Docente
+3617|Perú|Tarma|Empresario
+3618|Perú|Lima|Empresario
+3619|Perú|Cusco|Médico
+3620|Perú|Lima|Docente
+3621|Perú|Cerro de Pasco|Técnico
+3622|Perú|Oxapampa|Profesora
+3623|Perú|Lima|Jubilado
+3624|Perú|Lima|Chef
+3625|Perú|Lima|Arquitecto
+3626|Perú|Lima|Ingeniera de sistemas
+3627|Perú|Trujillo|Empresario
+3628|Perú|Lima|Economista
+3629|Perú|Huancayo|Empresario
+3630|Perú|Huánuco|Jubilado
+3631|Perú|Tarma|Médico
+3632|Perú|La Merced|Diseñador
+3633|Perú|Tarma|Economista
+3634|Perú|Lima|Abogado
+3635|Perú|Lima|Contador
+3636|Perú|Lima|Médico
+3637|Perú|Lima|Periodista
+3638|Perú|Lima|Ingeniero
+3639|Perú|Huánuco|Profesora
+3640|Perú|Tarma|Médico
+3641|Perú|Lima|Contador
+3642|Perú|Arequipa|Médico
+3643|Perú|Cerro de Pasco|Chef
+3644|Perú|Cerro de Pasco|Empresario
+3645|Perú|La Merced|Médico
+3646|Perú|Lima|Abogado
+3647|Perú|La Merced|Médico
+3648|Perú|Lima|Arquitecto
+3649|Perú|Lima|Empresario
+3650|Chile|Santiago|Chef
+3651|Perú|Lima|Administrador
+3652|Perú|Lima|Docente
+3653|Perú|Piura|Empresario
+3654|Perú|Cerro de Pasco|Contador
+3655|Perú|Lima|Psicólogo
+3656|Perú|Lima|Médico
+3657|Perú|Iquitos|Comerciante
+3658|Perú|Oxapampa|Ingeniero
+3659|Perú|Lima|Comerciante
+3660|Perú|Huánuco|Economista
+3661|Perú|Huancayo|Abogado
+3662|Perú|Lima|Ingeniera de sistemas
+3663|Perú|Tarma|Docente
+3664|Perú|La Merced|Técnico
+3665|Perú|Huánuco|Jubilado
+3666|Perú|Lima|Contador
+3667|Perú|Lima|Abogado
+3668|Perú|La Merced|Docente
+3669|Perú|Lima|Periodista
+3670|Perú|Huancayo|Administrador
+3671|Perú|La Merced|Economista
+3672|Perú|Lima|Economista
+3673|Perú|Chiclayo|Periodista
+3674|Perú|Lima|Profesora
+3675|Perú|Lima|Chef
+3676|Perú|Lima|Profesora
+3677|Perú|Huánuco|Abogado
+3678|Perú|Lima|Docente
+3679|Perú|Lima|Chef
+3680|Perú|Lima|Empresario
+3681|Perú|Huánuco|Chef
+3682|Perú|Arequipa|Contador
+3683|Perú|Lima|Contador
+3684|Francia|París|Diseñador
+3685|Perú|Cusco|Periodista
+3686|Perú|Lima|Economista
+3687|Perú|Lima|Médico
+3688|Perú|Lima|Chef
+3689|Perú|Chiclayo|Estudiante
+3690|Perú|Huancayo|Comerciante
+3691|Perú|Cusco|Ingeniero
+3692|Perú|Lima|Profesora
+3693|Chile|Santiago|Ingeniero
+3694|Perú|Huancayo|Administrador
+3695|Perú|Lima|Estudiante
+3696|Perú|Lima|Comerciante
+3697|Perú|La Merced|Profesora
+3698|Perú|Tacna|Administrador
+3699|Perú|Huánuco|Abogado
+3700|Perú|Tarma|Técnico
+3701|Perú|Chiclayo|Periodista
+3702|Perú|La Merced|Jubilado
+3703|Perú|Lima|Arquitecto
+3704|Perú|Lima|Arquitecto
+3705|Perú|Tarma|Administrador
+3706|Perú|Lima|Chef
+3707|Perú|Puno|Comerciante
+3708|Perú|Lima|Diseñador
+3709|Perú|Huancayo|Ingeniera de sistemas
+3710|Perú|Lima|Periodista
+3711|Perú|Lima|Diseñador
+3712|Perú|Lima|Economista
+3713|Perú|Arequipa|Periodista
+3714|Perú|Lima|Economista
+3715|Perú|Lima|Abogado
+3716|Perú|Iquitos|Comerciante
+3717|Perú|Lima|Docente
+3718|Perú|Lima|Ingeniero
+3719|Perú|Lima|Médico
+3720|Perú|Arequipa|Enfermera
+3721|Perú|Cerro de Pasco|Chef
+3722|Perú|La Merced|Comerciante
+3723|Perú|Lima|Periodista
+3724|Perú|Lima|Diseñador
+3725|Perú|Arequipa|Empresario
+3726|Perú|Lima|Médico
+3727|Perú|Huancayo|Jubilado
+3728|Perú|Lima|Administrador
+3729|Chile|Santiago|Diseñador
+3730|Perú|Lima|Periodista
+3731|Perú|Chiclayo|Economista
+3732|Perú|Lima|Chef
+3733|Perú|Lima|Enfermera
+3734|Perú|Tarma|Profesora
+3735|Perú|Lima|Administrador
+3736|Perú|Oxapampa|Médico
+3737|Perú|La Merced|Ingeniero
+3738|Perú|Lima|Contador
+3739|Perú|Lima|Empresario
+3740|Perú|Huancayo|Contador
+3741|Perú|Huánuco|Estudiante
+3742|Perú|Lima|Psicólogo
+3743|Perú|Lima|Profesora
+3744|Perú|Oxapampa|Contador
+3745|Perú|Huánuco|Contador
+3746|Perú|Lima|Estudiante
+3747|Perú|Lima|Médico
+3748|Perú|Lima|Administrador
+3749|Perú|Oxapampa|Arquitecto
+3750|Perú|Huánuco|Técnico
+3751|Perú|Chiclayo|Economista
+3752|Chile|Santiago|Jubilado
+3753|Perú|Huancayo|Ingeniera de sistemas
+3754|Perú|Huánuco|Arquitecto
+3755|Perú|Lima|Ingeniero
+3756|Alemania|Berlín|Contador
+3757|Perú|Lima|Docente
+3758|Perú|Lima|Docente
+3759|Perú|Lima|Profesora
+3760|Perú|Huánuco|Empresario
+3761|Perú|Huánuco|Médico
+3762|Perú|Huancayo|Chef
+3763|Perú|Lima|Estudiante
+3764|Perú|Tarma|Docente
+3765|Perú|Tarma|Arquitecto
+3766|Perú|Tacna|Docente
+3767|Perú|Lima|Administrador
+3768|Perú|Lima|Enfermera
+3769|Perú|Lima|Contador
+3770|Perú|Tacna|Técnico
+3771|Perú|Tarma|Docente
+3772|Perú|Lima|Empresario
+3773|Perú|Lima|Diseñador
+3774|Perú|Cerro de Pasco|Estudiante
+3775|Perú|Lima|Periodista
+3776|Perú|Lima|Arquitecto
+3777|Perú|Lima|Empresario
+3778|Perú|Lima|Economista
+3779|Perú|La Merced|Jubilado
+3780|Perú|Lima|Psicólogo
+3781|Perú|Lima|Comerciante
+3782|Perú|Lima|Abogado
+3783|Perú|Lima|Psicólogo
+3784|Perú|Arequipa|Periodista
+3785|Perú|Huánuco|Ingeniero
+3786|Perú|Piura|Ingeniera de sistemas
+3787|Perú|Huánuco|Contador
+3788|Colombia|Bogotá|Jubilado
+3789|España|Madrid|Arquitecto
+3790|Perú|La Merced|Docente
+3791|Perú|Lima|Administrador
+3792|Perú|Lima|Comerciante
+3793|Perú|Trujillo|Arquitecto
+3794|Perú|Cerro de Pasco|Arquitecto
+3795|Perú|Lima|Técnico
+3796|Perú|Huancayo|Médico
+3797|Perú|Huánuco|Economista
+3798|Perú|Lima|Técnico
+3799|Perú|Huancayo|Técnico
+3800|Perú|Lima|Profesora
+3801|Perú|Trujillo|Técnico
+3802|Perú|Lima|Administrador
+3803|Perú|Huánuco|Comerciante
+3804|Perú|Huánuco|Médico
+3805|Perú|Lima|Economista
+3806|Perú|La Merced|Administrador
+3807|Perú|Oxapampa|Periodista
+3808|Perú|Lima|Diseñador
+3809|Perú|Huánuco|Ingeniera de sistemas
+3810|Perú|Lima|Arquitecto
+3811|Perú|Tarma|Ingeniera de sistemas
+3812|Perú|Lima|Arquitecto
+3813|Perú|Cajamarca|Comerciante
+3814|Perú|Lima|Economista
+3815|Perú|La Merced|Ingeniera de sistemas
+3816|Perú|Cusco|Economista
+3817|Perú|Huánuco|Técnico
+3818|Perú|Trujillo|Ingeniero
+3819|Perú|Lima|Médico
+3820|Perú|Lima|Técnico
+3821|Perú|Iquitos|Técnico
+3822|Perú|Lima|Profesora
+3823|Perú|Trujillo|Jubilado
+3824|Perú|Lima|Chef
+3825|Colombia|Bogotá|Psicólogo
+3826|Perú|Piura|Economista
+3827|Chile|Santiago|Contador
+3828|Perú|Lima|Arquitecto
+3829|Perú|Oxapampa|Ingeniero
+3830|Alemania|Berlín|Chef
+3831|Perú|Cerro de Pasco|Administrador
+3832|Perú|Tarma|Docente
+3833|Perú|Lima|Periodista
+3834|Estados Unidos|Nueva York|Ingeniero
+3835|Perú|Cusco|Empresario
+3836|Perú|Lima|Diseñador
+3837|España|Madrid|Economista
+3838|Perú|Cajamarca|Estudiante
+3839|Perú|Lima|Jubilado
+3840|Perú|Cerro de Pasco|Periodista
+3841|Perú|Cerro de Pasco|Chef
+3842|Argentina|Buenos Aires|Profesora
+3843|Perú|Lima|Arquitecto
+3844|Perú|Trujillo|Economista
+3845|Perú|Cerro de Pasco|Empresario
+3846|Perú|Tacna|Diseñador
+3847|Perú|Cerro de Pasco|Ingeniera de sistemas
+3848|Perú|Lima|Ingeniero
+3849|Perú|Puno|Docente
+3850|Perú|Tarma|Docente
+3851|Perú|Lima|Psicólogo
+3852|Perú|Tacna|Economista
+3853|Perú|La Merced|Estudiante
+3854|Perú|Lima|Diseñador
+3855|Perú|Lima|Estudiante
+3856|Perú|Piura|Periodista
+3857|Perú|Arequipa|Ingeniera de sistemas
+3858|Perú|Lima|Economista
+3859|Perú|La Merced|Ingeniero
+3860|Perú|Lima|Arquitecto
+3861|Perú|Lima|Empresario
+3862|Perú|Lima|Periodista
+3863|Perú|Lima|Diseñador
+3864|Perú|Lima|Chef
+3865|Perú|Huancayo|Ingeniero
+3866|Perú|Huancayo|Ingeniero
+3867|Perú|Arequipa|Técnico
+3868|Perú|Lima|Profesora
+3869|Perú|Lima|Contador
+3870|Perú|Lima|Enfermera
+3871|Perú|La Merced|Arquitecto
+3872|Perú|Tacna|Ingeniero
+3873|Perú|Lima|Enfermera
+3874|Perú|Huancayo|Comerciante
+3875|Perú|Lima|Enfermera
+3876|Perú|Huánuco|Contador
+3877|Perú|Huánuco|Ingeniero
+3878|Perú|Lima|Ingeniera de sistemas
+3879|Perú|Lima|Comerciante
+3880|Perú|Tarma|Psicólogo
+3881|Perú|Lima|Ingeniero
+3882|Perú|Cajamarca|Psicólogo
+3883|Perú|Lima|Chef
+3884|Perú|Huánuco|Abogado
+3885|Perú|Huancayo|Jubilado
+3886|Perú|Huancayo|Estudiante
+3887|Perú|Lima|Comerciante
+3888|Perú|Huancayo|Enfermera
+3889|Perú|Tarma|Ingeniera de sistemas
+3890|Chile|Santiago|Economista
+3891|Perú|Lima|Administrador
+3892|Perú|Lima|Economista
+3893|Perú|Lima|Docente
+3894|Perú|Lima|Abogado
+3895|Perú|Huancayo|Estudiante
+3896|Perú|Iquitos|Ingeniero
+3897|Perú|Huancayo|Periodista
+3898|Perú|Lima|Abogado
+3899|Perú|Tacna|Psicólogo
+3900|Perú|Lima|Contador
+3901|Perú|Lima|Ingeniera de sistemas
+3902|Perú|Lima|Ingeniero
+3903|Perú|Lima|Docente
+3904|Perú|Lima|Abogado
+3905|Perú|Lima|Arquitecto
+3906|Perú|Lima|Médico
+3907|Perú|Lima|Profesora
+3908|Perú|Lima|Chef
+3909|Perú|Huancayo|Chef
+3910|Perú|Lima|Diseñador
+3911|Perú|Huancayo|Psicólogo
+3912|Perú|Tarma|Contador
+3913|Perú|Huancayo|Contador
+3914|Perú|Lima|Chef
+3915|Perú|Huancayo|Economista
+3916|Perú|Lima|Comerciante
+3917|Perú|Huancayo|Comerciante
+3918|Perú|Huánuco|Médico
+3919|Perú|Arequipa|Ingeniera de sistemas
+3920|Perú|Lima|Abogado
+3921|Perú|Lima|Enfermera
+3922|Perú|Piura|Contador
+3923|Perú|La Merced|Jubilado
+3924|Perú|Cerro de Pasco|Empresario
+3925|Perú|Oxapampa|Comerciante
+3926|Perú|Lima|Estudiante
+3927|Perú|Tarma|Comerciante
+3928|Perú|Tarma|Contador
+3929|Perú|Lima|Diseñador
+3930|Perú|Huancayo|Abogado
+3931|Perú|Cajamarca|Profesora
+3932|Perú|Lima|Periodista
+3933|Perú|Lima|Enfermera
+3934|Perú|Arequipa|Estudiante
+3935|Perú|Tarma|Estudiante
+3936|Perú|Piura|Comerciante
+3937|Perú|Lima|Arquitecto
+3938|Perú|Lima|Comerciante
+3939|Perú|Iquitos|Economista
+3940|Perú|Lima|Contador
+3941|Perú|Lima|Empresario
+3942|Perú|Lima|Docente
+3943|Perú|Lima|Profesora
+3944|Perú|Cusco|Periodista
+3945|Perú|Huancayo|Economista
+3946|Perú|Lima|Chef
+3947|Perú|Lima|Profesora
+3948|Perú|Lima|Economista
+3949|Perú|Huancayo|Psicólogo
+3950|Perú|Chiclayo|Jubilado
+3951|Perú|Arequipa|Administrador
+3952|Perú|Iquitos|Profesora
+3953|Perú|Huancayo|Técnico
+3954|Perú|Cusco|Empresario
+3955|Perú|Huancayo|Ingeniero
+3956|Perú|Lima|Administrador
+3957|Perú|Trujillo|Docente
+3958|Perú|Piura|Ingeniera de sistemas
+3959|Estados Unidos|Nueva York|Estudiante
+3960|Perú|Huánuco|Psicólogo
+3961|Perú|Huancayo|Profesora
+3962|Perú|Huancayo|Estudiante
+3963|Perú|Arequipa|Abogado
+3964|Colombia|Bogotá|Ingeniero
+3965|Perú|Lima|Arquitecto
+3966|Perú|Lima|Administrador
+3967|Perú|Huánuco|Psicólogo
+3968|Perú|Chiclayo|Docente
+3969|Perú|Iquitos|Abogado
+3970|Perú|La Merced|Jubilado
+3971|Perú|Lima|Empresario
+3972|Perú|La Merced|Arquitecto
+3973|Perú|Lima|Médico
+3974|Perú|Cusco|Periodista
+3975|Perú|Cerro de Pasco|Chef
+3976|Perú|Lima|Empresario
+3977|Perú|Piura|Comerciante
+3978|Perú|Huancayo|Psicólogo
+3979|Perú|Lima|Arquitecto
+3980|Estados Unidos|Nueva York|Profesora
+3981|Perú|Huancayo|Estudiante
+3982|Perú|Lima|Enfermera
+3983|Perú|Lima|Diseñador
+3984|Perú|Lima|Comerciante
+3985|Perú|Lima|Periodista
+3986|Perú|Cerro de Pasco|Administrador
+3987|Perú|Lima|Profesora
+3988|Perú|Huancayo|Enfermera
+3989|Perú|Lima|Profesora
+3990|Perú|Ica|Chef
+3991|Perú|Lima|Técnico
+3992|Perú|Huánuco|Enfermera
+3993|Perú|Iquitos|Empresario
+3994|Perú|Chiclayo|Contador
+3995|Perú|Trujillo|Administrador
+3996|Perú|Oxapampa|Estudiante
+3997|Perú|Huancayo|Chef
+3998|Perú|Huánuco|Chef
+3999|Perú|Lima|Chef
+4000|Perú|Cerro de Pasco|Diseñador
+4001|Perú|Lima|Ingeniera de sistemas
+4002|Perú|Lima|Abogado
+4003|Perú|Huánuco|Enfermera
+4004|Perú|Lima|Ingeniera de sistemas
+4005|Perú|Lima|Chef
+4006|Perú|Lima|Economista
+4007|Perú|Lima|Economista
+4008|Perú|Chiclayo|Docente
+4009|Perú|Lima|Diseñador
+4010|Perú|Huancayo|Docente
+4011|Chile|Santiago|Jubilado
+4012|Perú|Lima|Docente
+4013|Perú|Cusco|Administrador
+4014|Perú|Lima|Médico
+4015|Perú|Piura|Ingeniero
+4016|Perú|Lima|Diseñador
+4017|Perú|Arequipa|Diseñador
+4018|Perú|Lima|Ingeniero
+4019|Argentina|Buenos Aires|Periodista
+4020|Perú|Puno|Economista
+4021|Perú|Lima|Técnico
+4022|Perú|Trujillo|Psicólogo
+4023|Estados Unidos|Nueva York|Economista
+4024|Perú|Lima|Chef
+4025|Perú|Ica|Ingeniera de sistemas
+4026|Perú|La Merced|Periodista
+4027|Chile|Santiago|Docente
+4028|Perú|Huancayo|Jubilado
+4029|Perú|Tacna|Jubilado
+4030|Perú|Chiclayo|Jubilado
+4031|Perú|Lima|Enfermera
+4032|Perú|Lima|Contador
+4033|Perú|Lima|Psicólogo
+4034|Perú|Cajamarca|Estudiante
+4035|Perú|Oxapampa|Diseñador
+4036|Perú|Lima|Empresario
+4037|Perú|Lima|Docente
+4038|Perú|Trujillo|Periodista
+4039|Perú|Puno|Psicólogo
+4040|Perú|Lima|Profesora
+4041|Perú|Cajamarca|Empresario
+4042|Perú|Arequipa|Administrador
+4043|Perú|Lima|Estudiante
+4044|Perú|Lima|Contador
+4045|Perú|Lima|Ingeniero
+4046|Perú|La Merced|Médico
+4047|Perú|Huancayo|Ingeniera de sistemas
+4048|Perú|Lima|Comerciante
+4049|Perú|Tarma|Técnico
+4050|Perú|Trujillo|Chef
+4051|Perú|Arequipa|Ingeniera de sistemas
+4052|Perú|La Merced|Médico
+4053|Perú|Huánuco|Médico
+4054|Perú|La Merced|Psicólogo
+4055|Perú|Lima|Periodista
+4056|Perú|Huánuco|Arquitecto
+4057|Perú|Tacna|Periodista
+4058|Perú|Tarma|Chef
+4059|Perú|Lima|Enfermera
+4060|Perú|Arequipa|Enfermera
+4061|Perú|Tarma|Chef
+4062|Perú|Lima|Médico
+4063|Perú|Lima|Enfermera
+4064|Perú|Lima|Diseñador
+4065|Perú|Lima|Técnico
+4066|Perú|Lima|Psicólogo
+4067|Perú|Lima|Técnico
+4068|Perú|Cusco|Médico
+4069|Perú|Lima|Jubilado
+4070|Perú|Lima|Chef
+4071|Perú|Huánuco|Chef
+4072|Argentina|Buenos Aires|Abogado
+4073|Perú|Lima|Enfermera
+4074|Perú|Huancayo|Técnico
+4075|Perú|La Merced|Economista
+4076|Perú|Piura|Contador
+4077|Perú|Huancayo|Contador
+4078|Perú|Arequipa|Diseñador
+4079|Perú|Lima|Abogado
+4080|Perú|Piura|Jubilado
+4081|Perú|Lima|Diseñador
+4082|Perú|Arequipa|Periodista
+4083|Perú|Cerro de Pasco|Jubilado
+4084|Perú|Lima|Periodista
+4085|Perú|Cerro de Pasco|Comerciante
+4086|Perú|Lima|Médico
+4087|Perú|Cusco|Periodista
+4088|Perú|Iquitos|Abogado
+4089|Perú|Tarma|Ingeniera de sistemas
+4090|Perú|Puno|Ingeniera de sistemas
+4091|Perú|Tarma|Economista
+4092|Perú|Lima|Médico
+4093|Perú|Oxapampa|Administrador
+4094|Perú|Lima|Ingeniera de sistemas
+4095|Perú|Huancayo|Abogado
+4096|Perú|Iquitos|Docente
+4097|Perú|Huancayo|Médico
+4098|Perú|Huánuco|Diseñador
+4099|Perú|Lima|Técnico
+4100|Perú|Lima|Ingeniera de sistemas
+4101|Argentina|Buenos Aires|Psicólogo
+4102|Perú|Lima|Docente
+4103|Perú|Huánuco|Administrador
+4104|Perú|Huancayo|Estudiante
+4105|Perú|Puno|Ingeniero
+4106|Perú|Lima|Técnico
+4107|Perú|Lima|Ingeniero
+4108|Perú|Lima|Contador
+4109|Perú|Lima|Empresario
+4110|Perú|Cusco|Profesora
+4111|Perú|La Merced|Arquitecto
+4112|Perú|Huancayo|Periodista
+4113|Perú|Lima|Comerciante
+4114|Perú|Lima|Administrador
+4115|Perú|Lima|Comerciante
+4116|Perú|Lima|Abogado
+4117|Perú|Cerro de Pasco|Periodista
+4118|Perú|Lima|Profesora
+4119|Perú|Huancayo|Jubilado
+4120|Perú|Huánuco|Arquitecto
+4121|Perú|Chiclayo|Administrador
+4122|Perú|Huancayo|Empresario
+4123|Perú|Huánuco|Diseñador
+4124|Perú|Huancayo|Economista
+4125|Chile|Santiago|Docente
+4126|Perú|Tarma|Enfermera
+4127|Perú|Huancayo|Contador
+4128|Perú|Lima|Administrador
+4129|Perú|Lima|Enfermera
+4130|Perú|Cusco|Ingeniera de sistemas
+4131|Perú|La Merced|Ingeniero
+4132|Perú|Ica|Enfermera
+4133|Perú|Lima|Empresario
+4134|Perú|Piura|Técnico
+4135|Perú|Puno|Empresario
+4136|Perú|La Merced|Economista
+4137|Perú|Iquitos|Ingeniero
+4138|España|Madrid|Abogado
+4139|Perú|Huánuco|Profesora
+4140|Perú|Arequipa|Chef
+4141|Perú|Lima|Chef
+4142|Perú|Lima|Docente
+4143|Perú|Chiclayo|Jubilado
+4144|Perú|Cajamarca|Diseñador
+4145|Perú|Huancayo|Profesora
+4146|Perú|Lima|Chef
+4147|Perú|Trujillo|Ingeniera de sistemas
+4148|Perú|Lima|Profesora
+4149|Perú|Huánuco|Docente
+4150|Perú|Cusco|Abogado
+4151|Perú|Lima|Contador
+4152|Perú|Lima|Enfermera
+4153|Perú|Lima|Chef
+4154|Perú|Cajamarca|Estudiante
+4155|Perú|Lima|Administrador
+4156|Perú|Lima|Arquitecto
+4157|Perú|Lima|Contador
+4158|Perú|Lima|Arquitecto
+4159|Chile|Santiago|Comerciante
+4160|Perú|Tarma|Arquitecto
+4161|Perú|Lima|Estudiante
+4162|Perú|Lima|Empresario
+4163|Perú|Huancayo|Jubilado
+4164|Perú|Cusco|Arquitecto
+4165|Perú|Ica|Ingeniera de sistemas
+4166|Perú|Lima|Abogado
+4167|Perú|Tarma|Economista
+4168|Perú|Arequipa|Administrador
+4169|España|Madrid|Ingeniera de sistemas
+4170|Perú|Lima|Chef
+4171|Perú|Huánuco|Psicólogo
+4172|España|Madrid|Comerciante
+4173|Perú|Lima|Chef
+4174|Perú|Lima|Jubilado
+4175|Perú|Lima|Contador
+4176|Perú|Lima|Abogado
+4177|Perú|Trujillo|Comerciante
+4178|Perú|Huánuco|Periodista
+4179|Perú|Huánuco|Comerciante
+4180|Perú|Lima|Profesora
+4181|Perú|Tacna|Psicólogo
+4182|Perú|Lima|Diseñador
+4183|Perú|Lima|Economista
+4184|Perú|Huánuco|Abogado
+4185|Perú|Cusco|Chef
+4186|Perú|Lima|Abogado
+4187|Perú|Tacna|Profesora
+4188|Perú|Huánuco|Comerciante
+4189|Perú|Lima|Psicólogo
+4190|Perú|Lima|Contador
+4191|Perú|Trujillo|Técnico
+4192|Perú|Lima|Periodista
+4193|Perú|Lima|Comerciante
+4194|Perú|Chiclayo|Economista
+4195|Perú|Tarma|Periodista
+4196|Perú|Lima|Enfermera
+4197|Perú|Lima|Docente
+4198|Perú|Lima|Médico
+4199|Perú|Piura|Contador
+4200|Perú|Lima|Técnico
+4201|Perú|Huancayo|Abogado
+4202|Perú|La Merced|Diseñador
+4203|Perú|Lima|Docente
+4204|Perú|Piura|Técnico
+4205|Perú|Lima|Arquitecto
+4206|España|Madrid|Contador
+4207|Perú|Piura|Jubilado
+4208|Perú|Lima|Comerciante
+4209|Perú|Lima|Administrador
+4210|Perú|Huancayo|Estudiante
+4211|Perú|Cerro de Pasco|Docente
+4212|Perú|Arequipa|Enfermera
+4213|Perú|Tacna|Diseñador
+4214|Perú|La Merced|Médico
+4215|Perú|Huánuco|Arquitecto
+4216|Perú|Arequipa|Psicólogo
+4217|Perú|Lima|Enfermera
+4218|Perú|Lima|Economista
+4219|Perú|Cerro de Pasco|Empresario
+4220|Perú|Lima|Profesora
+4221|Perú|Lima|Arquitecto
+4222|Perú|Cerro de Pasco|Arquitecto
+4223|Perú|Lima|Psicólogo
+4224|Perú|Huancayo|Contador
+4225|Perú|Tarma|Diseñador
+4226|Perú|Lima|Contador
+4227|Perú|Tacna|Diseñador
+4228|Perú|Arequipa|Profesora
+4229|Perú|Trujillo|Contador
+4230|Perú|Cerro de Pasco|Economista
+4231|Perú|Lima|Comerciante
+4232|Chile|Santiago|Jubilado
+4233|Perú|Arequipa|Empresario
+4234|Perú|Trujillo|Arquitecto
+4235|Perú|Lima|Contador
+4236|Perú|Lima|Jubilado
+4237|Perú|Huánuco|Abogado
+4238|Perú|Iquitos|Arquitecto
+4239|Perú|Lima|Contador
+4240|Perú|Cerro de Pasco|Técnico
+4241|Perú|Arequipa|Técnico
+4242|Perú|Puno|Jubilado
+4243|Perú|Lima|Abogado
+4244|Perú|Lima|Periodista
+4245|Perú|Lima|Médico
+4246|Perú|Huancayo|Profesora
+4247|Perú|Lima|Comerciante
+4248|Perú|Lima|Chef
+4249|Perú|La Merced|Jubilado
+4250|Perú|Lima|Estudiante
+4251|Perú|Piura|Periodista
+4252|Perú|Trujillo|Arquitecto
+4253|Perú|Oxapampa|Administrador
+4254|Perú|La Merced|Periodista
+4255|Perú|Huánuco|Psicólogo
+4256|Perú|Arequipa|Diseñador
+4257|Perú|Arequipa|Jubilado
+4258|Perú|Lima|Chef
+4259|Perú|Lima|Profesora
+4260|Perú|Chiclayo|Contador
+4261|Perú|Lima|Economista
+4262|Perú|Lima|Estudiante
+4263|Perú|Huancayo|Enfermera
+4264|Perú|Tarma|Médico
+4265|Perú|Lima|Estudiante
+4266|Perú|Trujillo|Contador
+4267|Perú|Huancayo|Técnico
+4268|Perú|Lima|Enfermera
+4269|Perú|Cerro de Pasco|Estudiante
+4270|Perú|Iquitos|Estudiante
+4271|Perú|Huancayo|Jubilado
+4272|Perú|Huánuco|Médico
+4273|Perú|Lima|Ingeniera de sistemas
+4274|Colombia|Bogotá|Comerciante
+4275|Perú|Tacna|Administrador
+4276|Perú|La Merced|Chef
+4277|Argentina|Buenos Aires|Psicólogo
+4278|Perú|Cusco|Técnico
+4279|Perú|Piura|Técnico
+4280|Perú|Arequipa|Administrador
+4281|Perú|Lima|Comerciante
+4282|Perú|Piura|Chef
+4283|Perú|Lima|Enfermera
+4284|Perú|Lima|Economista
+4285|Perú|Cerro de Pasco|Estudiante
+4286|Perú|Lima|Profesora
+4287|Perú|Lima|Periodista
+4288|Perú|Lima|Profesora
+4289|Perú|Tarma|Chef
+4290|Perú|Huancayo|Técnico
+4291|Perú|Piura|Médico
+4292|Perú|Huánuco|Abogado
+4293|Perú|Cusco|Empresario
+4294|Perú|Cerro de Pasco|Técnico
+4295|Perú|Huánuco|Psicólogo
+4296|Perú|Trujillo|Abogado
+4297|Perú|Cusco|Ingeniera de sistemas
+4298|Perú|Lima|Chef
+4299|Perú|Lima|Ingeniera de sistemas
+4300|Perú|Lima|Ingeniera de sistemas
+4301|Perú|Lima|Economista
+4302|Perú|Iquitos|Docente
+4303|Perú|Huánuco|Empresario
+4304|Perú|Trujillo|Periodista
+4305|Perú|Lima|Profesora
+4306|Perú|Lima|Jubilado
+4307|Perú|Huancayo|Enfermera
+4308|Perú|Lima|Diseñador
+4309|Perú|Lima|Ingeniera de sistemas
+4310|Perú|Lima|Abogado
+4311|Argentina|Buenos Aires|Empresario
+4312|Perú|La Merced|Administrador
+4313|Perú|Lima|Empresario
+4314|Perú|Lima|Jubilado
+4315|Perú|Huánuco|Periodista
+4316|Perú|Lima|Empresario
+4317|Perú|Huánuco|Chef
+4318|Perú|Lima|Jubilado
+4319|Perú|Lima|Estudiante
+4320|Perú|Arequipa|Estudiante
+4321|Perú|Lima|Ingeniera de sistemas
+4322|Perú|Lima|Empresario
+4323|Perú|La Merced|Contador
+4324|Perú|Lima|Docente
+4325|Estados Unidos|Nueva York|Enfermera
+4326|Perú|Huancayo|Jubilado
+4327|Perú|Lima|Contador
+4328|Perú|Cerro de Pasco|Arquitecto
+4329|Perú|Tarma|Arquitecto
+4330|Perú|Lima|Psicólogo
+4331|Perú|Lima|Contador
+4332|Perú|Lima|Médico
+4333|Perú|Lima|Arquitecto
+4334|Perú|Arequipa|Empresario
+4335|Perú|Lima|Economista
+4336|Chile|Santiago|Abogado
+4337|Perú|Puno|Docente
+4338|Perú|Trujillo|Contador
+4339|Perú|Cajamarca|Abogado
+4340|Perú|Huancayo|Diseñador
+4341|Perú|Lima|Estudiante
+4342|Perú|Huancayo|Contador
+4343|Perú|Chiclayo|Profesora
+4344|Perú|Chiclayo|Profesora
+4345|Perú|Lima|Enfermera
+4346|Perú|Tarma|Profesora
+4347|Perú|Huancayo|Ingeniero
+4348|Perú|Huancayo|Médico
+4349|Perú|Tarma|Estudiante
+4350|Perú|Lima|Periodista
+4351|Perú|Huancayo|Jubilado
+4352|Perú|Lima|Ingeniera de sistemas
+4353|Perú|Lima|Abogado
+4354|Perú|Cerro de Pasco|Administrador
+4355|Perú|Huancayo|Médico
+4356|Perú|Lima|Economista
+4357|Perú|Lima|Abogado
+4358|Perú|Lima|Diseñador
+4359|Perú|Lima|Profesora
+4360|Perú|Lima|Empresario
+4361|Perú|Arequipa|Jubilado
+4362|Perú|Cerro de Pasco|Economista
+4363|Perú|Ica|Médico
+4364|Perú|Huancayo|Contador
+4365|Perú|Lima|Arquitecto
+4366|Perú|Lima|Contador
+4367|Perú|Cusco|Estudiante
+4368|Perú|Cajamarca|Jubilado
+4369|Perú|Lima|Docente
+4370|Perú|Lima|Enfermera
+4371|Perú|La Merced|Empresario
+4372|Perú|Lima|Docente
+4373|Perú|Tarma|Psicólogo
+4374|Perú|La Merced|Enfermera
+4375|Perú|Lima|Arquitecto
+4376|Perú|Cusco|Docente
+4377|Perú|Lima|Jubilado
+4378|Perú|Tacna|Psicólogo
+4379|Perú|Lima|Contador
+4380|Perú|Iquitos|Médico
+4381|Perú|Lima|Docente
+4382|Perú|Huánuco|Profesora
+4383|Perú|Oxapampa|Contador
+4384|Perú|Huancayo|Enfermera
+4385|Perú|Lima|Jubilado
+4386|Perú|Huánuco|Estudiante
+4387|Perú|Lima|Enfermera
+4388|Perú|Lima|Contador
+4389|Perú|Cerro de Pasco|Ingeniera de sistemas
+4390|Perú|Piura|Docente
+4391|Perú|Lima|Diseñador
+4392|Perú|Lima|Técnico
+4393|Perú|Huánuco|Arquitecto
+4394|Perú|Piura|Médico
+4395|Perú|Lima|Ingeniero
+4396|Perú|Lima|Psicólogo
+4397|Perú|Chiclayo|Empresario
+4398|Perú|Lima|Abogado
+4399|Alemania|Berlín|Jubilado
+4400|Perú|Lima|Jubilado
+4401|Perú|Lima|Chef
+4402|Perú|La Merced|Técnico
+4403|Perú|Lima|Periodista
+4404|Perú|Cerro de Pasco|Enfermera
+4405|Perú|Huancayo|Docente
+4406|Perú|Lima|Jubilado
+4407|Perú|Cerro de Pasco|Comerciante
+4408|Perú|Lima|Empresario
+4409|Perú|Lima|Ingeniera de sistemas
+4410|Perú|La Merced|Jubilado
+4411|Perú|Lima|Diseñador
+4412|Perú|Lima|Técnico
+4413|Perú|La Merced|Diseñador
+4414|Perú|Ica|Contador
+4415|Chile|Santiago|Abogado
+4416|Perú|Cerro de Pasco|Arquitecto
+4417|Perú|Oxapampa|Arquitecto
+4418|Perú|Huancayo|Comerciante
+4419|Perú|La Merced|Periodista
+4420|Perú|Trujillo|Profesora
+4421|Perú|Puno|Empresario
+4422|Perú|Lima|Diseñador
+4423|Perú|Cajamarca|Administrador
+4424|Perú|Lima|Técnico
+4425|Perú|Lima|Médico
+4426|Perú|Cajamarca|Administrador
+4427|Perú|La Merced|Ingeniero
+4428|Perú|Lima|Médico
+4429|Perú|Lima|Comerciante
+4430|Chile|Santiago|Enfermera
+4431|Perú|Trujillo|Administrador
+4432|Colombia|Bogotá|Profesora
+4433|Perú|Tacna|Administrador
+4434|Perú|Huancayo|Psicólogo
+4435|Perú|Huánuco|Ingeniero
+4436|Argentina|Buenos Aires|Arquitecto
+4437|Perú|Cajamarca|Administrador
+4438|Perú|Huancayo|Periodista
+4439|Perú|Lima|Diseñador
+4440|Perú|Lima|Diseñador
+4441|Perú|Lima|Estudiante
+4442|Perú|Lima|Chef
+4443|Perú|Cusco|Contador
+4444|Perú|Tarma|Médico
+4445|Perú|Lima|Periodista
+4446|Perú|Lima|Diseñador
+4447|Perú|Huancayo|Docente
+4448|Perú|Piura|Psicólogo
+4449|Perú|Cerro de Pasco|Abogado
+4450|Perú|Piura|Diseñador
+4451|Colombia|Bogotá|Docente
+4452|Estados Unidos|Nueva York|Ingeniera de sistemas
+4453|Perú|Huancayo|Chef
+4454|Perú|Huánuco|Abogado
+4455|Perú|Huancayo|Comerciante
+4456|Perú|Lima|Técnico
+4457|Perú|Lima|Enfermera
+4458|Chile|Santiago|Chef
+4459|Perú|Huancayo|Estudiante
+4460|Perú|Huánuco|Psicólogo
+4461|Perú|Chiclayo|Empresario
+4462|Perú|Iquitos|Comerciante
+4463|Perú|Lima|Economista
+4464|Perú|Piura|Jubilado
+4465|Perú|Lima|Médico
+4466|Perú|Puno|Jubilado
+4467|Perú|Tarma|Empresario
+4468|Perú|Iquitos|Jubilado
+4469|Perú|Arequipa|Empresario
+4470|Perú|Cerro de Pasco|Contador
+4471|Perú|Lima|Psicólogo
+4472|Colombia|Bogotá|Profesora
+4473|Perú|Piura|Estudiante
+4474|Perú|Cajamarca|Empresario
+4475|Perú|La Merced|Jubilado
+4476|Perú|La Merced|Comerciante
+4477|Perú|Cajamarca|Periodista
+4478|Argentina|Buenos Aires|Profesora
+4479|Perú|Lima|Economista
+4480|Perú|La Merced|Médico
+4481|Perú|Tarma|Docente
+4482|Argentina|Buenos Aires|Psicólogo
+4483|Perú|Piura|Periodista
+4484|Perú|Lima|Enfermera
+4485|Perú|Cerro de Pasco|Abogado
+4486|Perú|Puno|Periodista
+4487|Perú|Huánuco|Diseñador
+4488|Perú|Lima|Contador
+4489|Perú|Piura|Estudiante
+4490|Chile|Santiago|Abogado
+4491|Perú|Huánuco|Psicólogo
+4492|Perú|Lima|Psicólogo
+4493|Perú|Lima|Comerciante
+4494|Perú|Arequipa|Economista
+4495|Perú|Huancayo|Abogado
+4496|Perú|Piura|Estudiante
+4497|Perú|Tarma|Estudiante
+4498|Perú|Lima|Periodista
+4499|Perú|Huánuco|Abogado
+4500|Perú|Lima|Docente
+4501|Perú|Lima|Ingeniero
+4502|Perú|Ica|Abogado
+4503|Perú|Huánuco|Técnico
+4504|Perú|Tacna|Abogado
+4505|Perú|Lima|Economista
+4506|Perú|Lima|Periodista
+4507|Perú|Lima|Comerciante
+4508|Perú|Puno|Ingeniera de sistemas
+4509|Perú|Lima|Psicólogo
+4510|Perú|Lima|Empresario
+4511|Perú|Chiclayo|Jubilado
+4512|Perú|Lima|Psicólogo
+4513|Perú|Huancayo|Diseñador
+4514|Perú|Oxapampa|Administrador
+4515|Perú|Chiclayo|Estudiante
+4516|Perú|Lima|Administrador
+4517|Perú|La Merced|Ingeniera de sistemas
+4518|Perú|Huánuco|Economista
+4519|Perú|Huánuco|Empresario
+4520|España|Madrid|Profesora
+4521|Perú|Lima|Administrador
+4522|Perú|Chiclayo|Diseñador
+4523|Perú|Lima|Periodista
+4524|Perú|Lima|Periodista
+4525|Perú|Piura|Jubilado
+4526|Perú|Huancayo|Diseñador
+4527|Perú|Arequipa|Periodista
+4528|Perú|Lima|Técnico
+4529|Perú|Cajamarca|Empresario
+4530|Perú|Lima|Jubilado
+4531|Perú|Huancayo|Abogado
+4532|Perú|Arequipa|Jubilado
+4533|Perú|Cerro de Pasco|Docente
+4534|Perú|Lima|Administrador
+4535|Perú|Lima|Comerciante
+4536|Perú|Iquitos|Abogado
+4537|Perú|Lima|Administrador
+4538|Perú|Lima|Chef
+4539|Perú|Lima|Arquitecto
+4540|Perú|Lima|Técnico
+4541|Perú|Lima|Periodista
+4542|Francia|París|Enfermera
+4543|Perú|La Merced|Ingeniera de sistemas
+4544|Perú|Ica|Abogado
+4545|Perú|Lima|Ingeniero
+4546|Perú|Lima|Enfermera
+4547|Perú|Lima|Ingeniero
+4548|Perú|Cerro de Pasco|Docente
+4549|Perú|La Merced|Enfermera
+4550|Perú|Huánuco|Abogado
+4551|Perú|Cerro de Pasco|Ingeniera de sistemas
+4552|Perú|Lima|Ingeniera de sistemas
+4553|Perú|Trujillo|Empresario
+4554|Perú|Puno|Abogado
+4555|Perú|Piura|Jubilado
+4556|Perú|Huánuco|Periodista
+4557|Chile|Santiago|Chef
+4558|Perú|Huánuco|Periodista
+4559|Perú|Lima|Psicólogo
+4560|España|Madrid|Psicólogo
+4561|Perú|Lima|Contador
+4562|Perú|La Merced|Médico
+4563|Perú|La Merced|Médico
+4564|Perú|La Merced|Médico
+4565|Perú|Tacna|Contador
+4566|Perú|Lima|Docente
+4567|Perú|Arequipa|Diseñador
+4568|Perú|Lima|Periodista
+4569|Perú|Lima|Profesora
+4570|Perú|Huancayo|Economista
+4571|Perú|Lima|Economista
+4572|Perú|Lima|Enfermera
+4573|Perú|Lima|Jubilado
+4574|Perú|Cerro de Pasco|Ingeniera de sistemas
+4575|Francia|París|Ingeniera de sistemas
+4576|Perú|Oxapampa|Estudiante
+4577|Perú|Huánuco|Arquitecto
+4578|Perú|Piura|Docente
+4579|Perú|Trujillo|Técnico
+4580|Perú|Huancayo|Técnico
+4581|Perú|Ica|Administrador
+4582|Perú|Lima|Empresario
+4583|Perú|Huancayo|Comerciante
+4584|Perú|Tarma|Ingeniero
+4585|Perú|Huancayo|Ingeniero
+4586|Perú|Huancayo|Economista
+4587|Francia|París|Técnico
+4588|Perú|Lima|Periodista
+4589|Perú|Lima|Periodista
+4590|Perú|Lima|Contador
+4591|Perú|Huánuco|Empresario
+4592|Perú|Huancayo|Profesora
+4593|Perú|Trujillo|Administrador
+4594|Perú|Piura|Psicólogo
+4595|Chile|Santiago|Comerciante
+4596|Perú|Cerro de Pasco|Profesora
+4597|Francia|París|Psicólogo
+4598|Perú|Lima|Docente
+4599|Perú|Lima|Administrador
+4600|Perú|La Merced|Arquitecto
+4601|Perú|Trujillo|Administrador
+4602|Perú|Arequipa|Administrador
+4603|Perú|Huánuco|Diseñador
+4604|Perú|Huánuco|Contador
+4605|Perú|Huancayo|Psicólogo
+4606|Perú|Chiclayo|Periodista
+4607|Perú|Lima|Abogado
+4608|Perú|Iquitos|Enfermera
+4609|Perú|La Merced|Ingeniera de sistemas
+4610|Perú|Huánuco|Jubilado
+4611|Perú|Lima|Diseñador
+4612|Perú|Iquitos|Contador
+4613|Perú|Huancayo|Jubilado
+4614|Perú|Lima|Diseñador
+4615|Perú|Cerro de Pasco|Psicólogo
+4616|Perú|Tacna|Arquitecto
+4617|Perú|Lima|Psicólogo
+4618|Perú|Lima|Diseñador
+4619|Perú|Trujillo|Comerciante
+4620|Perú|Lima|Docente
+4621|Perú|Puno|Psicólogo
+4622|Perú|Lima|Comerciante
+4623|Perú|Huancayo|Psicólogo
+4624|Perú|La Merced|Abogado
+4625|Perú|Arequipa|Abogado
+4626|Perú|Lima|Chef
+4627|Chile|Santiago|Ingeniera de sistemas
+4628|Francia|París|Psicólogo
+4629|Perú|Cerro de Pasco|Ingeniero
+4630|Perú|Lima|Profesora
+4631|Perú|Ica|Docente
+4632|Perú|La Merced|Periodista
+4633|Perú|Lima|Contador
+4634|Perú|Huancayo|Estudiante
+4635|Perú|Huancayo|Estudiante
+4636|Perú|Lima|Administrador
+4637|Perú|Lima|Técnico
+4638|Perú|Huánuco|Ingeniero
+4639|Perú|Lima|Ingeniera de sistemas
+4640|Perú|Huánuco|Técnico
+4641|Perú|La Merced|Contador
+4642|Perú|Huánuco|Enfermera
+4643|Perú|Cerro de Pasco|Abogado
+4644|Perú|Cajamarca|Técnico
+4645|Perú|Tarma|Chef
+4646|Perú|Cerro de Pasco|Abogado
+4647|Perú|La Merced|Enfermera
+4648|Perú|Lima|Contador
+4649|Perú|Lima|Contador
+4650|Perú|Arequipa|Periodista
+4651|Perú|La Merced|Economista
+4652|Perú|Lima|Abogado
+4653|Perú|Oxapampa|Técnico
+4654|Perú|La Merced|Economista
+4655|Perú|Lima|Periodista
+4656|Perú|Lima|Empresario
+4657|Perú|Lima|Empresario
+4658|Perú|Lima|Médico
+4659|Perú|Lima|Empresario
+4660|Perú|Lima|Estudiante
+4661|Perú|Lima|Comerciante
+4662|Perú|Lima|Estudiante
+4663|Perú|Oxapampa|Abogado
+4664|Perú|Lima|Psicólogo
+4665|Perú|Huánuco|Psicólogo
+4666|Perú|Lima|Médico
+4667|Perú|Lima|Diseñador
+4668|Perú|Lima|Chef
+4669|Perú|Lima|Médico
+4670|Perú|Huancayo|Empresario
+4671|Perú|Cusco|Ingeniero
+4672|Perú|Arequipa|Empresario
+4673|Perú|Cusco|Arquitecto
+4674|Perú|Cusco|Jubilado
+4675|Perú|Lima|Enfermera
+4676|Perú|Huancayo|Enfermera
+4677|Perú|Lima|Ingeniera de sistemas
+4678|Perú|Lima|Médico
+4679|Perú|Tarma|Técnico
+4680|Perú|Ica|Administrador
+4681|Perú|Ica|Administrador
+4682|Perú|Lima|Comerciante
+4683|Perú|Lima|Chef
+4684|Perú|Lima|Estudiante
+4685|Perú|Trujillo|Empresario
+4686|Perú|Piura|Docente
+4687|Perú|Lima|Jubilado
+4688|Perú|Huancayo|Abogado
+4689|Perú|Cerro de Pasco|Jubilado
+4690|Perú|Trujillo|Comerciante
+4691|Perú|Lima|Administrador
+4692|Perú|Huánuco|Enfermera
+4693|Perú|Lima|Arquitecto
+4694|Perú|Lima|Abogado
+4695|Perú|Lima|Profesora
+4696|Perú|Iquitos|Administrador
+4697|Perú|Cusco|Contador
+4698|Perú|Lima|Empresario
+4699|Chile|Santiago|Contador
+4700|Perú|La Merced|Empresario
+4701|Perú|Cerro de Pasco|Médico
+4702|Perú|Lima|Ingeniero
+4703|Alemania|Berlín|Economista
+4704|Perú|Huancayo|Arquitecto
+4705|Perú|La Merced|Abogado
+4706|Perú|Tacna|Jubilado
+4707|Perú|La Merced|Diseñador
+4708|Perú|Lima|Diseñador
+4709|Perú|Trujillo|Psicólogo
+4710|Perú|Lima|Contador
+4711|Perú|Iquitos|Estudiante
+4712|Perú|Lima|Ingeniera de sistemas
+4713|Perú|Trujillo|Economista
+4714|Perú|Huánuco|Contador
+4715|Perú|Lima|Chef
+4716|Perú|La Merced|Diseñador
+4717|Perú|Lima|Psicólogo
+4718|Perú|Oxapampa|Médico
+4719|Perú|Lima|Jubilado
+4720|Perú|Lima|Abogado
+4721|Perú|Lima|Docente
+4722|Perú|Huánuco|Comerciante
+4723|Perú|Lima|Jubilado
+4724|Perú|Iquitos|Economista
+4725|Perú|Lima|Administrador
+4726|Perú|La Merced|Diseñador
+4727|Perú|Lima|Periodista
+4728|Perú|Lima|Técnico
+4729|Perú|Lima|Docente
+4730|Perú|Piura|Periodista
+4731|Perú|Cusco|Empresario
+4732|Perú|Huancayo|Contador
+4733|Perú|La Merced|Jubilado
+4734|Perú|Lima|Diseñador
+4735|Perú|Lima|Empresario
+4736|Perú|Tarma|Ingeniero
+4737|Perú|Lima|Chef
+4738|Perú|Lima|Psicólogo
+4739|Perú|La Merced|Administrador
+4740|Perú|Lima|Economista
+4741|Colombia|Bogotá|Médico
+4742|Perú|Cerro de Pasco|Periodista
+4743|Perú|La Merced|Economista
+4744|Perú|Huancayo|Periodista
+4745|Perú|Lima|Administrador
+4746|Perú|Lima|Diseñador
+4747|Perú|Oxapampa|Docente
+4748|Perú|Huánuco|Médico
+4749|Perú|Chiclayo|Ingeniero
+4750|Perú|Lima|Ingeniera de sistemas
+4751|Perú|La Merced|Abogado
+4752|Perú|Lima|Psicólogo
+4753|Perú|Lima|Ingeniero
+4754|Perú|Lima|Economista
+4755|Perú|Tarma|Profesora
+4756|Perú|Chiclayo|Jubilado
+4757|Perú|Lima|Economista
+4758|Perú|Cajamarca|Profesora
+4759|Perú|Lima|Estudiante
+4760|Perú|Lima|Abogado
+4761|Perú|La Merced|Ingeniero
+4762|Perú|Lima|Profesora
+4763|Perú|Huancayo|Empresario
+4764|Perú|Lima|Docente
+4765|Perú|Lima|Periodista
+4766|Perú|La Merced|Comerciante
+4767|Perú|Ica|Jubilado
+4768|Perú|Cerro de Pasco|Contador
+4769|Perú|Huánuco|Chef
+4770|Perú|Lima|Profesora
+4771|Perú|Huancayo|Docente
+4772|Perú|La Merced|Administrador
+4773|Perú|Huánuco|Docente
+4774|Perú|Huancayo|Profesora
+4775|Perú|Huancayo|Arquitecto
+4776|Perú|Huánuco|Jubilado
+4777|Perú|Chiclayo|Médico
+4778|Perú|Puno|Arquitecto
+4779|Perú|Huánuco|Contador
+4780|Perú|Piura|Administrador
+4781|Perú|Tarma|Chef
+4782|Perú|Lima|Ingeniera de sistemas
+4783|Perú|Huancayo|Técnico
+4784|Perú|Lima|Empresario
+4785|Perú|Piura|Ingeniero
+4786|Perú|Cusco|Diseñador
+4787|Perú|Huancayo|Chef
+4788|Perú|Lima|Jubilado
+4789|Perú|Lima|Empresario
+4790|Perú|Lima|Periodista
+4791|Perú|Lima|Ingeniero
+4792|Perú|Lima|Profesora
+4793|Perú|Puno|Ingeniero
+4794|Perú|Lima|Psicólogo
+4795|Perú|Huancayo|Enfermera
+4796|Perú|Trujillo|Periodista
+4797|Perú|Tarma|Empresario
+4798|Perú|Huancayo|Profesora
+4799|Perú|Cusco|Abogado
+4800|Perú|Arequipa|Contador
+4801|Perú|Trujillo|Ingeniera de sistemas
+4802|Perú|Lima|Periodista
+4803|Perú|Huánuco|Médico
+4804|Perú|Lima|Diseñador
+4805|Perú|Lima|Jubilado
+4806|Perú|Huánuco|Ingeniera de sistemas
+4807|Perú|La Merced|Enfermera
+4808|Argentina|Buenos Aires|Profesora
+4809|Perú|Cusco|Chef
+4810|Perú|Lima|Enfermera
+4811|Perú|Lima|Empresario
+4812|Perú|Cajamarca|Abogado
+4813|Perú|La Merced|Arquitecto
+4814|Perú|Lima|Enfermera
+4815|Perú|Chiclayo|Economista
+4816|Perú|Lima|Contador
+4817|Perú|Huancayo|Chef
+4818|Perú|Tarma|Ingeniero
+4819|Perú|Tarma|Médico
+4820|Perú|Tarma|Profesora
+4821|Perú|Piura|Economista
+4822|Perú|Lima|Contador
+4823|Perú|Arequipa|Contador
+4824|Perú|Huánuco|Estudiante
+4825|Perú|La Merced|Técnico
+4826|Argentina|Buenos Aires|Estudiante
+4827|Perú|Arequipa|Ingeniero
+4828|Perú|Lima|Arquitecto
+4829|Perú|Cajamarca|Médico
+4830|Perú|Lima|Empresario
+4831|Perú|Huánuco|Periodista
+4832|Perú|Lima|Estudiante
+4833|Perú|Lima|Economista
+4834|Perú|Trujillo|Administrador
+4835|Perú|Oxapampa|Jubilado
+4836|Perú|Chiclayo|Empresario
+4837|Perú|Huancayo|Profesora
+4838|Colombia|Bogotá|Médico
+4839|Perú|Lima|Periodista
+4840|Perú|Lima|Ingeniero
+4841|Perú|Lima|Comerciante
+4842|Perú|Arequipa|Ingeniero
+4843|Perú|La Merced|Profesora
+4844|Perú|Oxapampa|Abogado
+4845|Perú|Lima|Empresario
+4846|Perú|Huancayo|Psicólogo
+4847|Perú|La Merced|Psicólogo
+4848|Perú|Trujillo|Empresario
+4849|Perú|Huánuco|Ingeniero
+4850|Perú|Huancayo|Ingeniera de sistemas
+4851|Perú|Lima|Técnico
+4852|Perú|Cusco|Empresario
+4853|Perú|Huánuco|Comerciante
+4854|Perú|Cajamarca|Empresario
+4855|Perú|Huancayo|Psicólogo
+4856|Perú|Trujillo|Técnico
+4857|Argentina|Buenos Aires|Médico
+4858|Perú|La Merced|Psicólogo
+4859|Perú|Huancayo|Ingeniero
+4860|Perú|Tarma|Estudiante
+4861|Perú|Lima|Técnico
+4862|Perú|Lima|Jubilado
+4863|Perú|Lima|Médico
+4864|Perú|Lima|Psicólogo
+4865|Perú|Lima|Ingeniero
+4866|Perú|Cerro de Pasco|Contador
+4867|Perú|Lima|Ingeniero
+4868|Perú|Lima|Abogado
+4869|Perú|Lima|Profesora
+4870|Perú|Huancayo|Psicólogo
+4871|Perú|Lima|Empresario
+4872|Perú|Cerro de Pasco|Jubilado
+4873|Perú|Arequipa|Ingeniera de sistemas
+4874|Perú|Lima|Ingeniera de sistemas
+4875|Perú|Huánuco|Médico
+4876|Perú|Tarma|Jubilado
+4877|Perú|Iquitos|Psicólogo
+4878|Perú|Lima|Técnico
+4879|Perú|Lima|Chef
+4880|Perú|Lima|Administrador
+4881|Perú|Lima|Contador
+4882|Perú|Tarma|Diseñador
+4883|Perú|Lima|Docente
+4884|Perú|Huánuco|Jubilado
+4885|Perú|Lima|Comerciante
+4886|Perú|Cusco|Jubilado
+4887|Argentina|Buenos Aires|Comerciante
+4888|Perú|Cerro de Pasco|Ingeniero
+4889|Perú|Lima|Administrador
+4890|Alemania|Berlín|Diseñador
+4891|Perú|Iquitos|Economista
+4892|Perú|Lima|Enfermera
+4893|Perú|Lima|Chef
+4894|Perú|Huánuco|Técnico
+4895|Perú|Oxapampa|Economista
+4896|Perú|Ica|Comerciante
+4897|Perú|Lima|Economista
+4898|Perú|Huánuco|Profesora
+4899|Perú|Lima|Profesora
+4900|Perú|Lima|Administrador
+4901|Perú|Lima|Psicólogo
+4902|Perú|Tarma|Economista
+4903|Perú|Lima|Abogado
+4904|Perú|Piura|Técnico
+4905|Perú|Lima|Estudiante
+4906|Perú|Lima|Técnico
+4907|Perú|Lima|Jubilado
+4908|Perú|Huánuco|Estudiante
+4909|Perú|Lima|Economista
+4910|Perú|Lima|Chef
+4911|Perú|Lima|Chef
+4912|Perú|Lima|Médico
+4913|Perú|Lima|Diseñador
+4914|Chile|Santiago|Comerciante
+4915|Perú|Lima|Periodista
+4916|Perú|Lima|Ingeniera de sistemas
+4917|Perú|Lima|Contador
+4918|Perú|Puno|Ingeniero
+4919|Perú|Huancayo|Contador
+4920|Perú|Lima|Administrador
+4921|Perú|Huánuco|Periodista
+4922|Perú|Lima|Diseñador
+4923|Perú|La Merced|Empresario
+4924|Perú|Piura|Profesora
+4925|Perú|Huánuco|Empresario
+4926|Perú|Huánuco|Periodista
+4927|Perú|Lima|Ingeniera de sistemas
+4928|Chile|Santiago|Empresario
+4929|Perú|Lima|Médico
+4930|Perú|Piura|Profesora
+4931|Perú|Huánuco|Comerciante
+4932|Argentina|Buenos Aires|Periodista
+4933|Perú|Lima|Abogado
+4934|Perú|Lima|Estudiante
+4935|Perú|Lima|Abogado
+4936|Perú|Lima|Ingeniero
+4937|Perú|La Merced|Ingeniero
+4938|Perú|Lima|Estudiante
+4939|Perú|Cerro de Pasco|Diseñador
+4940|Perú|Lima|Ingeniera de sistemas
+4941|Perú|Lima|Diseñador
+4942|Perú|Lima|Abogado
+4943|Perú|Huánuco|Médico
+4944|Perú|Chiclayo|Comerciante
+4945|Perú|La Merced|Enfermera
+4946|Perú|Lima|Diseñador
+4947|Perú|Lima|Jubilado
+4948|Perú|Arequipa|Docente
+4949|Perú|Huánuco|Psicólogo
+4950|Perú|Piura|Administrador
+4951|Perú|Lima|Docente
+4952|Perú|La Merced|Diseñador
+4953|Perú|Lima|Diseñador
+4954|Perú|Tarma|Profesora
+4955|Perú|Arequipa|Empresario
+4956|Francia|París|Abogado
+4957|Perú|Huancayo|Técnico
+4958|Perú|La Merced|Psicólogo
+4959|Perú|Huánuco|Chef
+4960|Perú|Trujillo|Periodista
+4961|Perú|Huancayo|Jubilado
+4962|Perú|Cusco|Psicólogo
+4963|Perú|Lima|Periodista
+4964|Perú|Huancayo|Chef
+4965|Perú|Lima|Médico
+4966|Perú|Piura|Empresario
+4967|Perú|Huánuco|Psicólogo
+4968|Perú|Huánuco|Profesora
+4969|Perú|Lima|Chef
+4970|Perú|Lima|Arquitecto
+4971|Perú|Tarma|Empresario
+4972|Perú|Lima|Ingeniera de sistemas
+4973|Perú|Huánuco|Comerciante
+4974|Perú|Arequipa|Comerciante
+4975|Perú|Piura|Abogado
+4976|Perú|Lima|Periodista
+4977|Perú|Lima|Abogado
+4978|Perú|Huancayo|Enfermera
+4979|Perú|Huánuco|Ingeniera de sistemas
+4980|Perú|Oxapampa|Enfermera
+4981|Perú|Puno|Técnico
+4982|Perú|La Merced|Ingeniero
+4983|Perú|Huancayo|Médico
+4984|Perú|Huancayo|Comerciante
+4985|Perú|Arequipa|Ingeniero
+4986|Perú|Huancayo|Administrador
+4987|Perú|Arequipa|Ingeniero
+4988|Perú|Lima|Profesora
+4989|Perú|Lima|Médico
+4990|Francia|París|Médico
+4991|Perú|Trujillo|Técnico
+4992|Francia|París|Psicólogo
+4993|Perú|Lima|Ingeniera de sistemas
+4994|Perú|Puno|Economista
+4995|Perú|Lima|Estudiante
+4996|Perú|Puno|Comerciante
+4997|Perú|Arequipa|Médico
+4998|Perú|Huánuco|Empresario
+4999|Perú|Lima|Ingeniero
+5000|Perú|Cusco|Técnico
+5001|Perú|Huánuco|Contador
+5002|Perú|Huancayo|Economista
+5003|Perú|Lima|Economista
+5004|Perú|La Merced|Profesora
+5005|Estados Unidos|Nueva York|Diseñador
+5006|Perú|Lima|Abogado
+5007|Perú|Chiclayo|Empresario
+5008|Perú|Lima|Administrador
+5009|Perú|Lima|Médico
+5010|Perú|Arequipa|Contador
+5011|Perú|La Merced|Economista
+5012|Perú|Tarma|Comerciante
+5013|Perú|Cerro de Pasco|Técnico
+5014|Perú|Lima|Periodista
+5015|Perú|Arequipa|Médico
+5016|Perú|Lima|Ingeniero
+5017|Perú|Tarma|Psicólogo
+5018|Perú|Iquitos|Contador
+5019|Perú|Lima|Empresario
+5020|Perú|Chiclayo|Abogado
+5021|Perú|Lima|Empresario
+5022|Perú|La Merced|Ingeniero
+5023|Perú|Lima|Docente
+5024|Perú|Lima|Docente
+5025|Perú|Huancayo|Comerciante
+5026|Perú|Piura|Ingeniera de sistemas
+5027|Perú|Lima|Profesora
+5028|Perú|Huancayo|Abogado
+5029|Perú|Lima|Ingeniera de sistemas
+5030|Perú|Huancayo|Economista
+5031|Perú|Lima|Ingeniera de sistemas
+5032|Perú|Lima|Jubilado
+5033|Perú|Lima|Diseñador
+5034|Perú|Lima|Psicólogo
+5035|Perú|La Merced|Enfermera
+5036|Perú|Ica|Chef
+5037|Perú|Huancayo|Técnico
+5038|Perú|Oxapampa|Abogado
+5039|Perú|Lima|Economista
+5040|Perú|La Merced|Periodista
+5041|Perú|Huánuco|Arquitecto
+5042|Perú|La Merced|Abogado
+5043|Perú|Lima|Ingeniera de sistemas
+5044|Perú|La Merced|Contador
+5045|Perú|Lima|Psicólogo
+5046|Perú|Cajamarca|Abogado
+5047|Perú|Ica|Diseñador
+5048|Perú|Lima|Empresario
+5049|Perú|Huánuco|Empresario
+5050|Perú|Lima|Estudiante
+5051|Perú|Lima|Profesora
+5052|Perú|Cerro de Pasco|Técnico
+5053|España|Madrid|Ingeniera de sistemas
+5054|Perú|Tarma|Psicólogo
+5055|Perú|Lima|Periodista
+5056|Perú|Arequipa|Enfermera
+5057|Perú|Arequipa|Ingeniera de sistemas
+5058|Perú|Cerro de Pasco|Jubilado
+5059|Perú|Lima|Estudiante
+5060|Perú|Iquitos|Arquitecto
+5061|Perú|Tarma|Empresario
+5062|Chile|Santiago|Abogado
+5063|Perú|Huánuco|Técnico
+5064|Perú|Lima|Médico
+5065|Perú|Ica|Psicólogo
+5066|Perú|Huancayo|Médico
+5067|Perú|Cajamarca|Médico
+5068|Perú|Lima|Chef
+5069|Perú|Lima|Profesora
+5070|Perú|Huancayo|Contador
+5071|Perú|Lima|Técnico
+5072|Perú|Lima|Docente
+5073|Perú|Lima|Comerciante
+5074|Perú|Puno|Docente
+5075|Perú|Arequipa|Ingeniero
+5076|Perú|Oxapampa|Periodista
+5077|Perú|Lima|Jubilado
+5078|Perú|Puno|Comerciante
+5079|Perú|Lima|Profesora
+5080|Perú|Lima|Ingeniero
+5081|Perú|Lima|Profesora
+5082|Perú|Lima|Empresario
+5083|Perú|Ica|Periodista
+5084|Perú|Lima|Arquitecto
+5085|Perú|Trujillo|Psicólogo
+5086|Perú|Huancayo|Docente
+5087|Perú|Lima|Administrador
+5088|Perú|Chiclayo|Contador
+5089|Perú|Arequipa|Arquitecto
+5090|Perú|Iquitos|Diseñador
+5091|Perú|Huancayo|Economista
+5092|Perú|Lima|Economista
+5093|Perú|Huancayo|Economista
+5094|Perú|Lima|Enfermera
+5095|Perú|Trujillo|Ingeniera de sistemas
+5096|Perú|Lima|Docente
+5097|Perú|Cusco|Periodista
+5098|Perú|Oxapampa|Enfermera
+5099|Perú|Tacna|Empresario
+5100|Perú|Puno|Enfermera
+5101|Perú|Lima|Psicólogo
+5102|Perú|Lima|Ingeniera de sistemas
+5103|Perú|Lima|Chef
+5104|Perú|Tacna|Abogado
+5105|Perú|Huánuco|Profesora
+5106|Perú|Huánuco|Administrador
+5107|Perú|Tacna|Contador
+5108|Perú|Cusco|Economista
+5109|Perú|Lima|Estudiante
+5110|Perú|Cusco|Ingeniero
+5111|Perú|Trujillo|Diseñador
+5112|Perú|Lima|Abogado
+5113|Perú|Lima|Enfermera
+5114|Perú|Cusco|Arquitecto
+5115|Perú|Tarma|Administrador
+5116|Perú|Lima|Ingeniero
+5117|Perú|Lima|Docente
+5118|Perú|Piura|Ingeniero
+5119|Perú|Cusco|Contador
+5120|Perú|Lima|Docente
+5121|Perú|Lima|Comerciante
+5122|Perú|Lima|Arquitecto
+5123|Colombia|Bogotá|Chef
+5124|Perú|La Merced|Jubilado
+5125|Perú|Huancayo|Empresario
+5126|Perú|Piura|Ingeniero
+5127|Perú|Lima|Técnico
+5128|Perú|Lima|Docente
+5129|Perú|Piura|Profesora
+5130|Perú|Lima|Chef
+5131|Perú|Lima|Enfermera
+5132|Perú|Tarma|Docente
+5133|Perú|Lima|Comerciante
+5134|Perú|Lima|Contador
+5135|Perú|Huánuco|Economista
+5136|Perú|Lima|Economista
+5137|Perú|Lima|Economista
+5138|Perú|Lima|Docente
+5139|Perú|Lima|Arquitecto
+5140|Perú|Lima|Profesora
+5141|Perú|Oxapampa|Empresario
+5142|Perú|Lima|Médico
+5143|Perú|La Merced|Médico
+5144|Perú|Lima|Periodista
+5145|Perú|Huancayo|Diseñador
+5146|Perú|Lima|Abogado
+5147|Perú|Lima|Ingeniera de sistemas
+5148|Perú|Trujillo|Contador
+5149|Perú|Huánuco|Enfermera
+5150|Perú|Lima|Profesora
+5151|Perú|Cerro de Pasco|Médico
+5152|Perú|Lima|Jubilado
+5153|Perú|Huánuco|Abogado
+5154|Perú|Tarma|Abogado
+5155|Perú|Lima|Periodista
+5156|Perú|Cerro de Pasco|Jubilado
+5157|Perú|Huancayo|Profesora
+5158|Perú|Cerro de Pasco|Administrador
+5159|Perú|Lima|Economista
+5160|Perú|Lima|Contador
+5161|Argentina|Buenos Aires|Técnico
+5162|Perú|Lima|Contador
+5163|Perú|Puno|Abogado
+5164|Argentina|Buenos Aires|Diseñador
+5165|Perú|Lima|Ingeniera de sistemas
+5166|Perú|Huancayo|Técnico
+5167|Perú|Lima|Ingeniera de sistemas
+5168|Perú|Oxapampa|Abogado
+5169|Perú|Lima|Diseñador
+5170|Alemania|Berlín|Empresario
+5171|Perú|Tarma|Técnico
+5172|Perú|Lima|Profesora
+5173|Perú|Lima|Comerciante
+5174|Perú|Lima|Enfermera
+5175|Perú|Oxapampa|Ingeniera de sistemas
+5176|Perú|Ica|Chef
+5177|Colombia|Bogotá|Enfermera
+5178|Perú|Trujillo|Jubilado
+5179|Perú|Huánuco|Empresario
+5180|Perú|Trujillo|Estudiante
+5181|Perú|Cusco|Economista
+5182|Perú|Piura|Médico
+5183|Perú|Huancayo|Docente
+5184|Perú|Cusco|Docente
+5185|Perú|Lima|Estudiante
+5186|Perú|Huánuco|Ingeniera de sistemas
+5187|Perú|Huánuco|Periodista
+5188|Perú|Lima|Psicólogo
+5189|Perú|Cerro de Pasco|Periodista
+5190|Perú|Lima|Ingeniero
+5191|Argentina|Buenos Aires|Estudiante
+5192|Perú|Iquitos|Empresario
+5193|Perú|Lima|Contador
+5194|Perú|Lima|Economista
+5195|Perú|La Merced|Estudiante
+5196|Perú|Lima|Diseñador
+5197|Perú|La Merced|Ingeniera de sistemas
+5198|Perú|Lima|Estudiante
+5199|Perú|Arequipa|Técnico
+5200|Perú|Chiclayo|Diseñador
+5201|Perú|Puno|Periodista
+5202|Perú|Lima|Profesora
+5203|Perú|Lima|Ingeniera de sistemas
+5204|Perú|Iquitos|Economista
+5205|Perú|Lima|Abogado
+5206|Perú|Trujillo|Empresario
+5207|Perú|Puno|Periodista
+5208|Perú|Lima|Periodista
+5209|Perú|Oxapampa|Empresario
+5210|Perú|Huánuco|Jubilado
+5211|Perú|Huancayo|Profesora
+5212|Perú|La Merced|Economista
+5213|Perú|Lima|Arquitecto
+5214|Perú|Lima|Comerciante
+5215|Colombia|Bogotá|Ingeniera de sistemas
+5216|Perú|Trujillo|Economista
+5217|Perú|Trujillo|Contador
+5218|Perú|Lima|Estudiante
+5219|Perú|Tacna|Técnico
+5220|Perú|Lima|Estudiante
+5221|Perú|Huancayo|Empresario
+5222|Perú|Cusco|Psicólogo
+5223|Perú|Lima|Estudiante
+5224|Perú|Lima|Periodista
+5225|Perú|Lima|Jubilado
+5226|Perú|Lima|Contador
+5227|Perú|Piura|Técnico
+5228|Perú|Lima|Médico
+5229|Perú|Tarma|Estudiante
+5230|Estados Unidos|Nueva York|Técnico
+5231|Perú|Cusco|Ingeniera de sistemas
+5232|Perú|Huancayo|Administrador
+5233|Perú|Chiclayo|Chef
+5234|Perú|Lima|Chef
+5235|Perú|La Merced|Estudiante
+5236|Perú|Chiclayo|Técnico
+5237|Perú|Huánuco|Técnico
+5238|Perú|Tarma|Técnico
+5239|Colombia|Bogotá|Ingeniero
+5240|Perú|La Merced|Arquitecto
+5241|Perú|Lima|Ingeniera de sistemas
+5242|Perú|La Merced|Enfermera
+5243|Perú|Chiclayo|Comerciante
+5244|Perú|Huancayo|Docente
+5245|Perú|Huánuco|Chef
+5246|Perú|Huánuco|Enfermera
+5247|Argentina|Buenos Aires|Técnico
+5248|Perú|Lima|Docente
+5249|Perú|Lima|Economista
+5250|Perú|Lima|Estudiante
+5251|Perú|Lima|Ingeniera de sistemas
+5252|Perú|Lima|Estudiante
+5253|Perú|Lima|Economista
+5254|Perú|Puno|Administrador
+5255|Perú|Cerro de Pasco|Enfermera
+5256|Perú|Lima|Ingeniera de sistemas
+5257|Perú|Trujillo|Ingeniera de sistemas
+5258|Perú|Lima|Economista
+5259|Perú|Chiclayo|Ingeniera de sistemas
+5260|Perú|Lima|Estudiante
+5261|Perú|Lima|Arquitecto
+5262|Perú|Huancayo|Médico
+5263|Perú|Huancayo|Economista
+5264|Perú|Lima|Abogado
+5265|Perú|Oxapampa|Profesora
+5266|Perú|La Merced|Diseñador
+5267|Perú|Lima|Médico
+5268|Perú|Lima|Periodista
+5269|Perú|Arequipa|Administrador
+5270|Perú|Lima|Comerciante
+5271|Perú|Huancayo|Diseñador
+5272|Perú|Tacna|Chef
+5273|Colombia|Bogotá|Economista
+5274|Perú|Huancayo|Ingeniera de sistemas
+5275|Perú|Lima|Docente
+5276|Perú|Arequipa|Administrador
+5277|Perú|Cerro de Pasco|Abogado
+5278|Perú|Lima|Abogado
+5279|Perú|Huancayo|Administrador
+5280|Perú|Lima|Enfermera
+5281|Perú|La Merced|Comerciante
+5282|Estados Unidos|Nueva York|Docente
+5283|Perú|Lima|Chef
+5284|Perú|Chiclayo|Chef
+5285|Perú|Lima|Arquitecto
+5286|Perú|Lima|Ingeniera de sistemas
+5287|Perú|Huancayo|Periodista
+5288|Perú|Huancayo|Abogado
+5289|Chile|Santiago|Comerciante
+5290|Perú|Lima|Contador
+5291|Francia|París|Arquitecto
+5292|Perú|Lima|Periodista
+5293|Perú|Lima|Comerciante
+5294|Perú|Lima|Administrador
+5295|Perú|Lima|Comerciante
+5296|Perú|Lima|Empresario
+5297|Perú|Lima|Diseñador
+5298|Perú|Lima|Empresario
+5299|Perú|Trujillo|Empresario
+5300|Perú|Lima|Administrador
+5301|Perú|Huancayo|Administrador
+5302|Perú|Chiclayo|Arquitecto
+5303|Perú|Lima|Médico
+5304|Perú|La Merced|Economista
+5305|Perú|Huancayo|Administrador
+5306|Perú|Piura|Médico
+5307|Perú|Huancayo|Profesora
+5308|Perú|Tarma|Contador
+5309|Perú|Lima|Médico
+5310|Perú|Huancayo|Profesora
+5311|Perú|Lima|Docente
+5312|Perú|Tarma|Empresario
+5313|Perú|Lima|Comerciante
+5314|Perú|Chiclayo|Enfermera
+5315|Perú|Lima|Contador
+5316|Perú|La Merced|Periodista
+5317|Perú|Lima|Profesora
+5318|Perú|Lima|Jubilado
+5319|Perú|Huánuco|Arquitecto
+5320|Perú|Tacna|Comerciante
+5321|Perú|Lima|Enfermera
+5322|Perú|Lima|Comerciante
+5323|Perú|La Merced|Empresario
+5324|Perú|Arequipa|Comerciante
+5325|Perú|Chiclayo|Administrador
+5326|Alemania|Berlín|Diseñador
+5327|Perú|Oxapampa|Contador
+5328|Perú|Huánuco|Jubilado
+5329|Perú|Huancayo|Abogado
+5330|Perú|Lima|Arquitecto
+5331|Perú|Lima|Empresario
+5332|Argentina|Buenos Aires|Jubilado
+5333|Perú|Huancayo|Chef
+5334|Perú|Lima|Administrador
+5335|Perú|Iquitos|Estudiante
+5336|Perú|Oxapampa|Profesora
+5337|Perú|Oxapampa|Diseñador
+5338|Perú|Lima|Comerciante
+5339|Perú|La Merced|Administrador
+5340|Perú|Lima|Economista
+5341|Perú|Lima|Economista
+5342|Perú|Lima|Contador
+5343|Perú|Huancayo|Ingeniera de sistemas
+5344|Perú|Cusco|Economista
+5345|Perú|Cerro de Pasco|Docente
+5346|Perú|Lima|Docente
+5347|Perú|Iquitos|Comerciante
+5348|Perú|Lima|Abogado
+5349|Perú|Tacna|Enfermera
+5350|Perú|Huancayo|Médico
+5351|Perú|Piura|Abogado
+5352|Perú|Chiclayo|Psicólogo
+5353|Perú|Lima|Jubilado
+5354|Perú|Huancayo|Técnico
+5355|Perú|Lima|Administrador
+5356|Perú|Lima|Jubilado
+5357|Perú|Arequipa|Administrador
+5358|Perú|Ica|Docente
+5359|Perú|Piura|Jubilado
+5360|Perú|Lima|Técnico
+5361|Perú|La Merced|Profesora
+5362|Perú|Huánuco|Periodista
+5363|Perú|Iquitos|Enfermera
+5364|Perú|Lima|Psicólogo
+5365|Perú|Trujillo|Abogado
+5366|Perú|Piura|Médico
+5367|Perú|Cusco|Ingeniera de sistemas
+5368|Perú|Lima|Administrador
+5369|Perú|Chiclayo|Contador
+5370|Perú|Cerro de Pasco|Chef
+5371|Perú|Lima|Comerciante
+5372|Perú|La Merced|Administrador
+5373|Perú|Ica|Ingeniero
+5374|Perú|Iquitos|Técnico
+5375|Perú|Chiclayo|Médico
+5376|Perú|Lima|Ingeniero
+5377|Perú|Lima|Estudiante
+5378|Perú|Ica|Estudiante
+5379|Perú|Lima|Arquitecto
+5380|Perú|La Merced|Arquitecto
+5381|Perú|Chiclayo|Psicólogo
+5382|Perú|Huancayo|Administrador
+5383|Perú|Cerro de Pasco|Psicólogo
+5384|Perú|Tarma|Enfermera
+5385|Argentina|Buenos Aires|Técnico
+5386|Perú|Piura|Estudiante
+5387|Perú|Piura|Contador
+5388|Perú|Tarma|Administrador
+5389|Perú|Cajamarca|Abogado
+5390|Perú|Lima|Chef
+5391|Perú|Lima|Enfermera
+5392|Perú|Huancayo|Economista
+5393|Perú|La Merced|Diseñador
+5394|Francia|París|Enfermera
+5395|Perú|Lima|Ingeniera de sistemas
+5396|Perú|Lima|Profesora
+5397|Perú|Huánuco|Técnico
+5398|Perú|Arequipa|Arquitecto
+5399|Perú|Cusco|Comerciante
+5400|Perú|Iquitos|Economista
+5401|Perú|Piura|Abogado
+5402|Perú|Huánuco|Arquitecto
+5403|Perú|Lima|Diseñador
+5404|Perú|Lima|Psicólogo
+5405|Perú|Lima|Enfermera
+5406|Perú|Huancayo|Ingeniera de sistemas
+5407|Perú|Lima|Diseñador
+5408|Perú|Huancayo|Ingeniera de sistemas
+5409|Perú|Cerro de Pasco|Técnico
+5410|Perú|Lima|Ingeniera de sistemas
+5411|Perú|Tacna|Abogado
+5412|Perú|Huancayo|Estudiante
+5413|Colombia|Bogotá|Abogado
+5414|Perú|Lima|Administrador
+5415|Perú|Lima|Empresario
+5416|Estados Unidos|Nueva York|Médico
+5417|Perú|Huánuco|Comerciante
+5418|Perú|Lima|Jubilado
+5419|Perú|Chiclayo|Economista
+5420|Perú|Trujillo|Ingeniero
+5421|Perú|Lima|Docente
+5422|Perú|Lima|Chef
+5423|Perú|Lima|Estudiante
+5424|Perú|Piura|Comerciante
+5425|Perú|Lima|Contador
+5426|Perú|Tacna|Ingeniero
+5427|Perú|Lima|Comerciante
+5428|Perú|Lima|Docente
+5429|Perú|La Merced|Médico
+5430|Perú|Lima|Administrador
+5431|Perú|Ica|Administrador
+5432|Perú|Lima|Ingeniera de sistemas
+5433|Perú|Lima|Enfermera
+5434|Perú|La Merced|Contador
+5435|Perú|Arequipa|Arquitecto
+5436|Perú|Lima|Jubilado
+5437|Perú|Lima|Ingeniera de sistemas
+5438|Perú|Huánuco|Arquitecto
+5439|Perú|Arequipa|Psicólogo
+5440|Perú|Oxapampa|Estudiante
+5441|Perú|Lima|Diseñador
+5442|Perú|Tarma|Técnico
+5443|Perú|Lima|Contador
+5444|Perú|Iquitos|Enfermera
+5445|Perú|Lima|Técnico
+5446|Perú|Iquitos|Empresario
+5447|Perú|Lima|Ingeniera de sistemas
+5448|Perú|Puno|Profesora
+5449|Perú|La Merced|Economista
+5450|Perú|Arequipa|Profesora
+5451|Perú|Lima|Técnico
+5452|Perú|Lima|Enfermera
+5453|Perú|Arequipa|Chef
+5454|Perú|Lima|Periodista
+5455|Perú|Lima|Ingeniero
+5456|Perú|Lima|Arquitecto
+5457|Perú|Cerro de Pasco|Chef
+5458|Perú|Lima|Estudiante
+5459|Perú|Tarma|Docente
+5460|Perú|Lima|Chef
+5461|Perú|Lima|Ingeniera de sistemas
+5462|Perú|Lima|Administrador
+5463|Perú|Lima|Arquitecto
+5464|Perú|La Merced|Empresario
+5465|Perú|Cerro de Pasco|Jubilado
+5466|Perú|Lima|Docente
+5467|Perú|Piura|Técnico
+5468|Perú|Huánuco|Docente
+5469|Perú|Lima|Jubilado
+5470|Perú|Lima|Docente
+5471|Perú|Huancayo|Psicólogo
+5472|Perú|Chiclayo|Arquitecto
+5473|Perú|Trujillo|Economista
+5474|Perú|Lima|Chef
+5475|Perú|Trujillo|Enfermera
+5476|Perú|Cerro de Pasco|Enfermera
+5477|Perú|Lima|Abogado
+5478|Perú|Lima|Médico
+5479|Perú|Lima|Contador
+5480|Perú|Lima|Administrador
+5481|Perú|Chiclayo|Ingeniero
+5482|Perú|Huánuco|Empresario
+5483|Perú|Cerro de Pasco|Ingeniera de sistemas
+5484|Perú|Huancayo|Ingeniero
+5485|Perú|La Merced|Contador
+5486|Perú|Huancayo|Ingeniera de sistemas
+5487|Perú|Lima|Diseñador
+5488|Perú|Lima|Enfermera
+5489|Perú|Lima|Enfermera
+5490|Perú|Lima|Arquitecto
+5491|Perú|Cerro de Pasco|Diseñador
+5492|Perú|Lima|Arquitecto
+5493|Perú|Lima|Ingeniera de sistemas
+5494|Perú|Lima|Abogado
+5495|Perú|Lima|Chef
+5496|Perú|Oxapampa|Abogado
+5497|Perú|Lima|Técnico
+5498|Perú|Lima|Chef
+5499|Chile|Santiago|Ingeniera de sistemas
+5500|Perú|Lima|Contador
+5501|Perú|Trujillo|Profesora
+5502|Perú|Huancayo|Administrador
+5503|Perú|Tacna|Comerciante
+5504|Perú|Trujillo|Contador
+5505|Perú|Huánuco|Jubilado
+5506|Perú|Huánuco|Periodista
+5507|Perú|Tacna|Técnico
+5508|Perú|Tacna|Profesora
+5509|Perú|Cajamarca|Jubilado
+5510|Perú|Trujillo|Enfermera
+5511|Perú|Lima|Periodista
+5512|Perú|Arequipa|Estudiante
+5513|Alemania|Berlín|Contador
+5514|Perú|Lima|Diseñador
+5515|Perú|Chiclayo|Psicólogo
+5516|Perú|Huancayo|Estudiante
+5517|Perú|Huánuco|Médico
+5518|Perú|Lima|Técnico
+5519|Perú|Cerro de Pasco|Contador
+5520|Argentina|Buenos Aires|Administrador
+5521|Perú|Lima|Empresario
+5522|Perú|Piura|Enfermera
+5523|Perú|Tarma|Enfermera
+5524|Perú|Lima|Psicólogo
+5525|Perú|Lima|Ingeniero
+5526|Perú|Trujillo|Médico
+5527|Perú|Huánuco|Empresario
+5528|Perú|Huancayo|Contador
+5529|Perú|Piura|Chef
+5530|Perú|La Merced|Estudiante
+5531|Perú|Lima|Economista
+5532|Perú|Cerro de Pasco|Psicólogo
+5533|Perú|La Merced|Enfermera
+5534|Perú|Lima|Ingeniero
+5535|Perú|Cerro de Pasco|Comerciante
+5536|Perú|Tacna|Administrador
+5537|Perú|Trujillo|Jubilado
+5538|Alemania|Berlín|Profesora
+5539|Perú|Huánuco|Psicólogo
+5540|Perú|Lima|Técnico
+5541|Perú|Huánuco|Chef
+5542|Perú|Lima|Ingeniera de sistemas
+5543|Perú|Cajamarca|Periodista
+5544|Perú|Cajamarca|Comerciante
+5545|Perú|Lima|Abogado
+5546|Perú|Lima|Administrador
+5547|Perú|Lima|Técnico
+5548|Perú|Oxapampa|Economista
+5549|Perú|Cerro de Pasco|Periodista
+5550|Perú|Lima|Profesora
+5551|Perú|La Merced|Abogado
+5552|Perú|Tacna|Ingeniera de sistemas
+5553|Perú|Lima|Arquitecto
+5554|Perú|Lima|Empresario
+5555|Perú|La Merced|Psicólogo
+5556|Perú|Lima|Docente
+5557|Perú|Lima|Comerciante
+5558|Perú|Lima|Empresario
+5559|Perú|Puno|Psicólogo
+5560|Perú|Ica|Médico
+5561|Perú|Lima|Jubilado
+5562|Perú|La Merced|Economista
+5563|Perú|Huánuco|Médico
+5564|Perú|Lima|Abogado
+5565|Perú|Lima|Empresario
+5566|Perú|Lima|Periodista
+5567|Perú|Tarma|Estudiante
+5568|Perú|Lima|Jubilado
+5569|Perú|Lima|Diseñador
+5570|Perú|La Merced|Periodista
+5571|Perú|Lima|Médico
+5572|Perú|Lima|Economista
+5573|Perú|Arequipa|Empresario
+5574|Perú|Lima|Ingeniero
+5575|Perú|Trujillo|Técnico
+5576|Perú|Arequipa|Estudiante
+5577|Perú|Piura|Jubilado
+5578|Perú|Lima|Jubilado
+5579|Perú|Lima|Técnico
+5580|Perú|Huancayo|Empresario
+5581|Perú|Arequipa|Chef
+5582|Perú|Lima|Comerciante
+5583|Perú|Cerro de Pasco|Docente
+5584|Perú|Lima|Profesora
+5585|Perú|Tarma|Arquitecto
+5586|Perú|Lima|Jubilado
+5587|Perú|Chiclayo|Ingeniera de sistemas
+5588|Perú|Lima|Chef
+5589|Perú|Lima|Profesora
+5590|Perú|Oxapampa|Abogado
+5591|Perú|La Merced|Diseñador
+5592|Perú|Huánuco|Ingeniera de sistemas
+5593|Perú|Lima|Periodista
+5594|Perú|Cusco|Enfermera
+5595|Argentina|Buenos Aires|Empresario
+5596|Perú|Cusco|Ingeniero
+5597|Perú|Lima|Diseñador
+5598|Perú|Chiclayo|Ingeniero
+5599|Perú|Piura|Profesora
+5600|Perú|Lima|Economista
+5601|Perú|Lima|Enfermera
+5602|Perú|Cerro de Pasco|Docente
+5603|Perú|Lima|Administrador
+5604|Perú|Huancayo|Profesora
+5605|Perú|Huancayo|Técnico
+5606|Perú|Lima|Arquitecto
+5607|Perú|Iquitos|Contador
+5608|Perú|Cerro de Pasco|Profesora
+5609|Perú|Huánuco|Arquitecto
+5610|Perú|Lima|Médico
+5611|Perú|Ica|Periodista
+5612|Perú|Lima|Periodista
+5613|Perú|Tacna|Enfermera
+5614|Perú|Tacna|Ingeniera de sistemas
+5615|Perú|Huánuco|Ingeniera de sistemas
+5616|Perú|Iquitos|Médico
+5617|Perú|Arequipa|Contador
+5618|Argentina|Buenos Aires|Empresario
+5619|Perú|Lima|Ingeniera de sistemas
+5620|Perú|Cerro de Pasco|Empresario
+5621|Perú|Cusco|Enfermera
+5622|Perú|Lima|Jubilado
+5623|Perú|Chiclayo|Contador
+5624|Perú|Lima|Comerciante
+5625|Perú|Lima|Docente
+5626|Perú|Lima|Profesora
+5627|Perú|La Merced|Abogado
+5628|Perú|Trujillo|Enfermera
+5629|Perú|Lima|Ingeniera de sistemas
+5630|Estados Unidos|Nueva York|Ingeniera de sistemas
+5631|Perú|Lima|Técnico
+5632|Perú|Lima|Docente
+5633|Perú|Lima|Estudiante
+5634|Perú|Lima|Ingeniero
+5635|Perú|Lima|Contador
+5636|Perú|Lima|Diseñador
+5637|Perú|Cerro de Pasco|Enfermera
+5638|Perú|Huánuco|Médico
+5639|Perú|Trujillo|Estudiante
+5640|Perú|Trujillo|Ingeniero
+5641|Perú|Cajamarca|Abogado
+5642|Perú|Arequipa|Administrador
+5643|Perú|Lima|Médico
+5644|Perú|Trujillo|Abogado
+5645|Perú|Cajamarca|Enfermera
+5646|Perú|Lima|Arquitecto
+5647|Perú|Lima|Docente
+5648|Perú|Lima|Técnico
+5649|Perú|Tarma|Chef
+5650|Perú|La Merced|Administrador
+5651|Perú|Huancayo|Administrador
+5652|Perú|Tarma|Médico
+5653|Perú|Huancayo|Empresario
+5654|Perú|Iquitos|Diseñador
+5655|Perú|Ica|Profesora
+5656|Perú|Huánuco|Ingeniera de sistemas
+5657|Perú|Huánuco|Ingeniera de sistemas
+5658|Perú|Lima|Técnico
+5659|Perú|Lima|Contador
+5660|Perú|Huánuco|Psicólogo
+5661|Perú|Lima|Economista
+5662|Perú|Cerro de Pasco|Médico
+5663|Perú|Cusco|Técnico
+5664|Perú|Lima|Empresario
+5665|Perú|Piura|Estudiante
+5666|Perú|Lima|Psicólogo
+5667|Perú|Trujillo|Comerciante
+5668|Chile|Santiago|Psicólogo
+5669|Perú|Puno|Abogado
+5670|Perú|Lima|Diseñador
+5671|Chile|Santiago|Técnico
+5672|Perú|Lima|Profesora
+5673|Francia|París|Psicólogo
+5674|Perú|Cusco|Economista
+5675|Perú|Lima|Comerciante
+5676|Perú|Lima|Chef
+5677|España|Madrid|Periodista
+5678|Perú|Trujillo|Contador
+5679|Perú|Arequipa|Economista
+5680|Perú|Cusco|Economista
+5681|Perú|Piura|Chef
+5682|Perú|Lima|Periodista
+5683|Perú|Arequipa|Ingeniero
+5684|Perú|La Merced|Jubilado
+5685|Perú|Huancayo|Técnico
+5686|Perú|Lima|Comerciante
+5687|Perú|Huancayo|Diseñador
+5688|Perú|La Merced|Jubilado
+5689|Perú|Lima|Contador
+5690|Perú|Lima|Arquitecto
+5691|Perú|Oxapampa|Enfermera
+5692|Perú|Cajamarca|Periodista
+5693|Perú|Lima|Jubilado
+5694|Perú|Huancayo|Empresario
+5695|Perú|Lima|Diseñador
+5696|Colombia|Bogotá|Docente
+5697|Perú|Lima|Empresario
+5698|Perú|Piura|Profesora
+5699|Perú|Huancayo|Técnico
+5700|Perú|Arequipa|Técnico
+5701|Perú|Tacna|Docente
+5702|Perú|Huancayo|Chef
+5703|Perú|Ica|Abogado
+5704|Perú|Lima|Arquitecto
+5705|Perú|Lima|Diseñador
+5706|Perú|Piura|Administrador
+5707|Perú|Huancayo|Estudiante
+5708|Perú|Iquitos|Jubilado
+5709|Perú|Lima|Contador
+5710|Perú|Arequipa|Empresario
+5711|Perú|La Merced|Ingeniera de sistemas
+5712|Perú|Lima|Ingeniero
+5713|Perú|Puno|Empresario
+5714|Perú|Arequipa|Administrador
+5715|Perú|La Merced|Técnico
+5716|Perú|Arequipa|Empresario
+5717|Perú|La Merced|Enfermera
+5718|Perú|Piura|Comerciante
+5719|Colombia|Bogotá|Diseñador
+5720|Perú|Huancayo|Abogado
+5721|Perú|Oxapampa|Ingeniero
+5722|Perú|Lima|Psicólogo
+5723|Perú|Tarma|Periodista
+5724|Perú|Puno|Contador
+5725|Perú|Lima|Jubilado
+5726|Perú|Trujillo|Empresario
+5727|Perú|Lima|Docente
+5728|Perú|Piura|Empresario
+5729|Perú|Lima|Diseñador
+5730|Perú|Arequipa|Diseñador
+5731|Perú|Lima|Enfermera
+5732|Perú|Trujillo|Médico
+5733|Perú|Huancayo|Docente
+5734|Perú|Arequipa|Estudiante
+5735|Perú|Iquitos|Enfermera
+5736|Argentina|Buenos Aires|Comerciante
+5737|Perú|Lima|Ingeniero
+5738|Perú|La Merced|Técnico
+5739|Perú|Lima|Psicólogo
+5740|Perú|Cusco|Médico
+5741|Perú|Lima|Comerciante
+5742|Perú|Ica|Periodista
+5743|Perú|Lima|Jubilado
+5744|Argentina|Buenos Aires|Contador
+5745|Perú|Huancayo|Profesora
+5746|Perú|Lima|Estudiante
+5747|Perú|Cerro de Pasco|Diseñador
+5748|Perú|Huánuco|Estudiante
+5749|Argentina|Buenos Aires|Chef
+5750|Perú|Huancayo|Enfermera
+5751|Perú|Lima|Estudiante
+5752|Perú|Lima|Arquitecto
+5753|Perú|Huancayo|Empresario
+5754|Perú|Cerro de Pasco|Médico
+5755|Perú|Lima|Enfermera
+5756|Perú|Lima|Ingeniera de sistemas
+5757|Perú|Lima|Psicólogo
+5758|Perú|Cerro de Pasco|Profesora
+5759|Perú|Piura|Psicólogo
+5760|Perú|Huancayo|Psicólogo
+5761|Perú|Arequipa|Diseñador
+5762|Perú|Lima|Médico
+5763|Perú|Cajamarca|Empresario
+5764|Perú|Tarma|Ingeniera de sistemas
+5765|Perú|Ica|Técnico
+5766|Perú|Iquitos|Contador
+5767|Perú|Lima|Estudiante
+5768|Francia|París|Jubilado
+5769|Perú|Huánuco|Empresario
+5770|Perú|Lima|Diseñador
+5771|Perú|Tarma|Chef
+5772|Perú|Tarma|Administrador
+5773|Perú|Lima|Técnico
+5774|Perú|Ica|Psicólogo
+5775|Perú|Lima|Chef
+5776|Perú|Oxapampa|Arquitecto
+5777|Perú|Huánuco|Psicólogo
+5778|Perú|Puno|Periodista
+5779|Perú|Arequipa|Administrador
+5780|Perú|Trujillo|Docente
+5781|Perú|Cusco|Técnico
+5782|Perú|Lima|Técnico
+5783|Perú|Trujillo|Empresario
+5784|Perú|Tacna|Empresario
+5785|Perú|Lima|Estudiante
+5786|Perú|Huancayo|Ingeniera de sistemas
+5787|Perú|Lima|Docente
+5788|Perú|Lima|Profesora
+5789|Perú|Cajamarca|Periodista
+5790|Perú|Lima|Administrador
+5791|Perú|Cerro de Pasco|Periodista
+5792|Perú|Piura|Diseñador
+5793|Perú|Huancayo|Arquitecto
+5794|Perú|Huancayo|Psicólogo
+5795|Perú|Lima|Jubilado
+5796|Chile|Santiago|Docente
+5797|Perú|Lima|Profesora
+5798|Perú|Lima|Profesora
+5799|Perú|Puno|Médico
+5800|Perú|La Merced|Diseñador
+5801|Perú|Lima|Jubilado
+5802|Perú|Oxapampa|Economista
+5803|Perú|Arequipa|Médico
+5804|Perú|Trujillo|Comerciante
+5805|Perú|Lima|Profesora
+5806|Perú|Huancayo|Contador
+5807|Perú|Cerro de Pasco|Empresario
+5808|Perú|Huánuco|Economista
+5809|Perú|Chiclayo|Arquitecto
+5810|Perú|Cusco|Técnico
+5811|Perú|Lima|Empresario
+5812|Perú|Huánuco|Contador
+5813|Perú|Trujillo|Técnico
+5814|Perú|Huánuco|Profesora
+5815|Perú|Cajamarca|Técnico
+5816|Perú|Lima|Técnico
+5817|Perú|Lima|Contador
+5818|Perú|Huánuco|Diseñador
+5819|Perú|Cusco|Médico
+5820|Perú|Lima|Psicólogo
+5821|Alemania|Berlín|Estudiante
+5822|Perú|Cusco|Técnico
+5823|Perú|Lima|Estudiante
+5824|Perú|Lima|Empresario
+5825|Perú|La Merced|Enfermera
+5826|Perú|Arequipa|Profesora
+5827|Perú|Lima|Psicólogo
+5828|Perú|Lima|Comerciante
+5829|Perú|Tacna|Enfermera
+5830|Francia|París|Enfermera
+5831|Perú|La Merced|Chef
+5832|Perú|La Merced|Periodista
+5833|Perú|Piura|Empresario
+5834|Perú|Huánuco|Enfermera
+5835|Perú|Piura|Arquitecto
+5836|Perú|Huancayo|Jubilado
+5837|Perú|Tarma|Ingeniero
+5838|Perú|Arequipa|Comerciante
+5839|Perú|Lima|Contador
+5840|Perú|Cusco|Docente
+5841|Perú|Piura|Docente
+5842|Perú|Lima|Diseñador
+5843|Perú|Lima|Arquitecto
+5844|Perú|Lima|Técnico
+5845|Perú|Lima|Docente
+5846|Perú|Tacna|Estudiante
+5847|Estados Unidos|Nueva York|Diseñador
+5848|Perú|Piura|Comerciante
+5849|Perú|Huánuco|Chef
+5850|Perú|Puno|Jubilado
+5851|Perú|Lima|Empresario
+5852|Perú|La Merced|Diseñador
+5853|Perú|Trujillo|Abogado
+5854|Argentina|Buenos Aires|Profesora
+5855|Perú|Tarma|Abogado
+5856|Perú|Huánuco|Ingeniera de sistemas
+5857|Perú|Lima|Contador
+5858|Perú|Lima|Jubilado
+5859|Perú|Arequipa|Jubilado
+5860|Perú|Lima|Chef
+5861|Perú|Lima|Enfermera
+5862|Perú|Lima|Psicólogo
+5863|Perú|Lima|Médico
+5864|Perú|Piura|Técnico
+5865|Perú|Chiclayo|Profesora
+5866|Perú|Huánuco|Ingeniero
+5867|Perú|Iquitos|Estudiante
+5868|Perú|Arequipa|Técnico
+5869|Perú|Huancayo|Psicólogo
+5870|Perú|Piura|Estudiante
+5871|Perú|Lima|Estudiante
+5872|Perú|Trujillo|Jubilado
+5873|Perú|Huánuco|Abogado
+5874|Perú|La Merced|Enfermera
+5875|Perú|Lima|Enfermera
+5876|Perú|Lima|Administrador
+5877|Perú|Lima|Diseñador
+5878|Perú|Cajamarca|Arquitecto
+5879|Perú|Arequipa|Docente
+5880|Perú|Tarma|Empresario
+5881|Perú|Lima|Docente
+5882|Perú|Cerro de Pasco|Comerciante
+5883|Perú|Lima|Administrador
+5884|Perú|Arequipa|Chef
+5885|Perú|Lima|Empresario
+5886|Perú|Cusco|Arquitecto
+5887|Perú|Puno|Enfermera
+5888|Perú|Huancayo|Empresario
+5889|Perú|Huancayo|Comerciante
+5890|Perú|Lima|Enfermera
+5891|Perú|La Merced|Arquitecto
+5892|Perú|Tarma|Empresario
+5893|Perú|Huánuco|Diseñador
+5894|Perú|Lima|Jubilado
+5895|Perú|Huánuco|Médico
+5896|Perú|Cajamarca|Contador
+5897|Perú|Cajamarca|Empresario
+5898|Perú|Huánuco|Profesora
+5899|Perú|Lima|Contador
+5900|Perú|La Merced|Diseñador
+5901|Perú|Huancayo|Arquitecto
+5902|Perú|Lima|Profesora
+5903|Perú|Cusco|Ingeniero
+5904|Perú|Lima|Empresario
+5905|Perú|Tarma|Ingeniero
+5906|Perú|Huancayo|Empresario
+5907|España|Madrid|Contador
+5908|Perú|Iquitos|Abogado
+5909|Perú|Cusco|Administrador
+5910|Perú|Lima|Docente
+5911|Perú|Trujillo|Ingeniera de sistemas
+5912|Perú|Lima|Administrador
+5913|Perú|La Merced|Ingeniero
+5914|Perú|La Merced|Estudiante
+5915|Perú|Lima|Abogado
+5916|Perú|Trujillo|Empresario
+5917|Perú|Huancayo|Administrador
+5918|Perú|Lima|Diseñador
+5919|Perú|Trujillo|Técnico
+5920|Perú|Tarma|Diseñador
+5921|Perú|Lima|Periodista
+5922|Perú|Cerro de Pasco|Empresario
+5923|Perú|Lima|Economista
+5924|Perú|Huancayo|Arquitecto
+5925|Perú|Cerro de Pasco|Periodista
+5926|Perú|Lima|Estudiante
+5927|Perú|Arequipa|Arquitecto
+5928|Perú|Lima|Profesora
+5929|Perú|Huánuco|Empresario
+5930|Perú|Cerro de Pasco|Estudiante
+5931|Perú|Cerro de Pasco|Diseñador
+5932|Perú|La Merced|Ingeniero
+5933|Perú|Lima|Médico
+5934|Perú|Trujillo|Docente
+5935|Argentina|Buenos Aires|Chef
+5936|Perú|Lima|Economista
+5937|Perú|Lima|Comerciante
+5938|Perú|Cajamarca|Docente
+5939|Perú|Tacna|Chef
+5940|Perú|Trujillo|Chef
+5941|Perú|Arequipa|Estudiante
+5942|Perú|Puno|Administrador
+5943|Perú|Lima|Administrador
+5944|Perú|Lima|Arquitecto
+5945|Perú|Piura|Administrador
+5946|Perú|Lima|Abogado
+5947|Perú|Piura|Periodista
+5948|Perú|Arequipa|Docente
+5949|Perú|Lima|Economista
+5950|Perú|Lima|Abogado
+5951|Perú|Lima|Comerciante
+5952|Perú|Trujillo|Estudiante
+5953|Perú|Huánuco|Docente
+5954|Perú|Lima|Diseñador
+5955|Perú|Lima|Chef
+5956|Perú|Trujillo|Comerciante
+5957|Perú|Chiclayo|Economista
+5958|Perú|Huánuco|Periodista
+5959|Perú|Cerro de Pasco|Periodista
+5960|Perú|Lima|Docente
+5961|Perú|Tacna|Estudiante
+5962|Perú|Piura|Enfermera
+5963|Perú|Puno|Diseñador
+5964|Perú|La Merced|Ingeniera de sistemas
+5965|Perú|Huánuco|Psicólogo
+5966|Perú|Lima|Periodista
+5967|Perú|Tarma|Jubilado
+5968|Perú|Cusco|Médico
+5969|Perú|Tacna|Enfermera
+5970|Perú|Chiclayo|Economista
+5971|Perú|Lima|Técnico
+5972|Perú|Trujillo|Profesora
+5973|Perú|La Merced|Profesora
+5974|Perú|Lima|Jubilado
+5975|Perú|Chiclayo|Arquitecto
+5976|Perú|Oxapampa|Profesora
+5977|Perú|Lima|Empresario
+5978|Perú|Trujillo|Periodista
+5979|Perú|Chiclayo|Diseñador
+5980|Perú|Lima|Estudiante
+5981|Perú|Tacna|Ingeniero
+5982|Perú|La Merced|Docente
+5983|Perú|Trujillo|Psicólogo
+5984|Perú|Piura|Técnico
+5985|Perú|Cerro de Pasco|Administrador
+5986|Perú|La Merced|Arquitecto
+5987|Perú|Lima|Enfermera
+5988|Perú|Huancayo|Enfermera
+5989|Perú|Lima|Abogado
+5990|Perú|Piura|Comerciante
+5991|Perú|Huancayo|Profesora
+5992|Perú|Lima|Arquitecto
+5993|Perú|Arequipa|Ingeniero
+5994|Perú|Cerro de Pasco|Profesora
+5995|Perú|Lima|Comerciante
+5996|Perú|Trujillo|Psicólogo
+5997|Perú|Cajamarca|Estudiante
+5998|Perú|Lima|Estudiante
+5999|Perú|Lima|Empresario
+6000|Perú|Puno|Arquitecto
+6001|Perú|Huancayo|Comerciante
+6002|Perú|Huánuco|Docente
+6003|Perú|Arequipa|Chef
+6004|Argentina|Buenos Aires|Enfermera
+6005|Perú|Lima|Economista
+6006|Perú|Arequipa|Administrador
+6007|Perú|Cusco|Abogado
+6008|Perú|Arequipa|Profesora
+6009|Francia|París|Jubilado
+6010|Perú|Ica|Chef
+6011|Perú|La Merced|Médico
+6012|Perú|Huancayo|Psicólogo
+6013|Perú|Arequipa|Estudiante
+6014|Perú|Lima|Técnico
+6015|Perú|Cajamarca|Técnico
+6016|Perú|Lima|Diseñador
+6017|Perú|La Merced|Periodista
+6018|Perú|Lima|Diseñador
+6019|Perú|Lima|Contador
+6020|Perú|Lima|Administrador
+6021|Perú|Puno|Diseñador
+6022|Perú|La Merced|Técnico
+6023|Perú|Chiclayo|Arquitecto
+6024|Perú|Arequipa|Ingeniero
+6025|Perú|Lima|Médico
+6026|Perú|Tarma|Médico
+6027|Perú|Puno|Arquitecto
+6028|Perú|Trujillo|Docente
+6029|Perú|Huancayo|Empresario
+6030|Perú|Huancayo|Estudiante
+6031|Perú|Cerro de Pasco|Estudiante
+6032|Perú|Cajamarca|Abogado
+6033|Perú|Chiclayo|Profesora
+6034|Perú|Piura|Jubilado
+6035|Perú|Lima|Jubilado
+6036|Perú|Piura|Médico
+6037|Perú|Lima|Enfermera
+6038|Perú|La Merced|Arquitecto
+6039|Argentina|Buenos Aires|Administrador
+6040|Perú|Cerro de Pasco|Ingeniero
+6041|Perú|La Merced|Profesora
+6042|Perú|Chiclayo|Comerciante
+6043|Francia|París|Ingeniero
+6044|Perú|Lima|Psicólogo
+6045|Perú|Lima|Contador
+6046|Perú|Huancayo|Técnico
+6047|Perú|Cajamarca|Psicólogo
+6048|Perú|Lima|Contador
+6049|Perú|Iquitos|Enfermera
+6050|Perú|Cajamarca|Comerciante
+6051|Perú|Arequipa|Economista
+6052|Perú|Piura|Contador
+6053|Perú|La Merced|Periodista
+6054|Perú|Piura|Administrador
+6055|Perú|Trujillo|Enfermera
+6056|Perú|Lima|Administrador
+6057|Perú|Huánuco|Docente
+6058|Perú|Cerro de Pasco|Técnico
+6059|Perú|Huancayo|Médico
+6060|Perú|Lima|Periodista
+6061|Perú|Lima|Profesora
+6062|Perú|Tarma|Técnico
+6063|Perú|Lima|Arquitecto
+6064|Perú|Lima|Comerciante
+6065|Perú|La Merced|Administrador
+6066|Perú|Oxapampa|Ingeniero
+6067|Perú|Trujillo|Periodista
+6068|Perú|Lima|Administrador
+6069|Perú|Puno|Docente
+6070|Perú|Cajamarca|Comerciante
+6071|Perú|Lima|Jubilado
+6072|Perú|La Merced|Administrador
+6073|Perú|Trujillo|Contador
+6074|Perú|Ica|Empresario
+6075|Perú|La Merced|Ingeniera de sistemas
+6076|Perú|Trujillo|Contador
+6077|Perú|Huancayo|Empresario
+6078|Perú|Piura|Administrador
+6079|Perú|Tacna|Ingeniera de sistemas
+6080|Perú|Arequipa|Administrador
+6081|Perú|Lima|Ingeniero
+6082|Perú|Huánuco|Periodista
+6083|Perú|Cajamarca|Docente
+6084|Perú|Puno|Profesora
+6085|Perú|Tarma|Chef
+6086|Perú|Arequipa|Administrador
+6087|Perú|Arequipa|Empresario
+6088|Perú|Chiclayo|Médico
+6089|Perú|Ica|Diseñador
+6090|Perú|Lima|Chef
+6091|Perú|Iquitos|Contador
+6092|Perú|Trujillo|Chef
+6093|Perú|Lima|Psicólogo
+6094|Perú|Arequipa|Comerciante
+6095|Perú|Huánuco|Médico
+6096|Perú|Lima|Médico
+6097|Perú|Lima|Diseñador
+6098|Perú|Lima|Técnico
+6099|Perú|Cusco|Diseñador
+6100|Perú|Huancayo|Economista
+6101|Perú|Cerro de Pasco|Arquitecto
+6102|Perú|Huancayo|Técnico
+6103|Perú|Lima|Jubilado
+6104|Perú|Huánuco|Profesora
+6105|Perú|Iquitos|Médico
+6106|Perú|Lima|Psicólogo
+6107|España|Madrid|Técnico
+6108|Perú|Ica|Comerciante
+6109|Perú|Lima|Contador
+6110|Perú|Lima|Economista
+6111|Perú|Lima|Médico
+6112|Perú|Tacna|Arquitecto
+6113|Perú|Cusco|Enfermera
+6114|Perú|Trujillo|Contador
+6115|Perú|Lima|Arquitecto
+6116|Perú|Lima|Psicólogo
+6117|Perú|La Merced|Ingeniera de sistemas
+6118|Perú|Lima|Profesora
+6119|Perú|Arequipa|Médico
+6120|Perú|Cusco|Médico
+6121|Perú|Lima|Estudiante
+6122|Perú|Lima|Técnico
+6123|Perú|Puno|Chef
+6124|Perú|Lima|Ingeniera de sistemas
+6125|Perú|Huánuco|Ingeniero
+6126|Perú|Lima|Enfermera
+6127|Perú|Lima|Arquitecto
+6128|Perú|Arequipa|Profesora
+6129|Perú|Arequipa|Arquitecto
+6130|Perú|Trujillo|Estudiante
+6131|Perú|Cajamarca|Estudiante
+6132|Perú|Tarma|Arquitecto
+6133|Perú|Cusco|Docente
+6134|Perú|Lima|Médico
+6135|Perú|Lima|Empresario
+6136|Perú|Cajamarca|Comerciante
+6137|Perú|Trujillo|Economista
+6138|Perú|Lima|Ingeniero
+6139|Perú|Tacna|Ingeniero
+6140|Perú|Trujillo|Economista
+6141|Perú|Ica|Comerciante
+6142|Perú|Cerro de Pasco|Economista
+6143|Colombia|Bogotá|Enfermera
+6144|Chile|Santiago|Jubilado
+6145|Perú|Chiclayo|Jubilado
+6146|Perú|Lima|Profesora
+6147|Perú|Lima|Arquitecto
+6148|Perú|Lima|Técnico
+6149|Perú|Chiclayo|Administrador
+6150|Perú|Chiclayo|Psicólogo
+6151|Perú|Lima|Arquitecto
+6152|Perú|Trujillo|Profesora
+6153|Perú|Cusco|Estudiante
+6154|Perú|La Merced|Arquitecto
+6155|Perú|Lima|Profesora
+6156|Perú|Piura|Médico
+6157|Perú|Chiclayo|Diseñador
+6158|Perú|Oxapampa|Periodista
+6159|Perú|Arequipa|Jubilado
+6160|Perú|Cajamarca|Chef
+6161|Perú|Tacna|Abogado
+6162|Perú|Lima|Ingeniero
+6163|Perú|Cusco|Docente
+6164|Perú|Lima|Profesora
+6165|Francia|París|Estudiante
+6166|Alemania|Berlín|Abogado
+6167|Perú|Oxapampa|Periodista
+6168|Perú|Lima|Docente
+6169|Perú|Huancayo|Abogado
+6170|Perú|La Merced|Estudiante
+6171|Perú|Ica|Estudiante
+6172|Perú|Lima|Médico
+6173|Perú|Lima|Médico
+6174|Perú|Arequipa|Economista
+6175|Colombia|Bogotá|Docente
+6176|Perú|Huánuco|Arquitecto
+6177|Perú|La Merced|Periodista
+6178|Perú|Lima|Contador
+6179|Perú|Tarma|Arquitecto
+6180|Perú|Lima|Profesora
+6181|Perú|Piura|Psicólogo
+6182|Perú|Lima|Estudiante
+6183|Perú|Piura|Jubilado
+6184|Perú|Huancayo|Periodista
+6185|Perú|Arequipa|Comerciante
+6186|Perú|Trujillo|Administrador
+6187|Perú|Huánuco|Diseñador
+6188|Perú|Arequipa|Psicólogo
+6189|Perú|Cerro de Pasco|Abogado
+6190|Perú|Cajamarca|Chef
+6191|Perú|Cajamarca|Médico
+6192|Perú|Lima|Arquitecto
+6193|Perú|Huánuco|Contador
+6194|Perú|Huancayo|Enfermera
+6195|Perú|Cusco|Empresario
+6196|Perú|Cerro de Pasco|Comerciante
+6197|Perú|Cusco|Ingeniera de sistemas
+6198|Perú|Cerro de Pasco|Enfermera
+6199|Perú|Chiclayo|Jubilado
+6200|Perú|Lima|Médico
+6201|Perú|Chiclayo|Periodista
+6202|Perú|Cusco|Empresario
+6203|Perú|Cajamarca|Contador
+6204|Perú|Trujillo|Ingeniera de sistemas
+6205|Perú|Lima|Economista
+6206|Perú|Lima|Jubilado
+6207|Perú|Tacna|Economista
+6208|Perú|Huánuco|Empresario
+6209|Perú|Lima|Ingeniera de sistemas
+6210|Estados Unidos|Nueva York|Jubilado
+6211|Perú|La Merced|Profesora
+6212|Perú|Lima|Enfermera
+6213|Perú|Tarma|Psicólogo
+6214|Perú|Lima|Enfermera
+6215|Perú|Lima|Abogado
+6216|Perú|Cerro de Pasco|Técnico
+6217|Perú|La Merced|Técnico
+6218|Perú|Huancayo|Médico
+6219|Perú|Lima|Abogado
+6220|Perú|La Merced|Empresario
+6221|Perú|Piura|Técnico
+6222|Perú|Cusco|Técnico
+6223|Perú|Chiclayo|Profesora
+6224|Perú|Cerro de Pasco|Ingeniera de sistemas
+6225|Perú|Lima|Estudiante
+6226|Perú|Arequipa|Docente
+6227|Perú|Trujillo|Ingeniero
+6228|Perú|Tacna|Ingeniero
+6229|Perú|Cusco|Docente
+6230|Perú|Ica|Diseñador
+6231|Perú|Piura|Ingeniera de sistemas
+6232|Perú|Puno|Contador
+6233|Perú|Trujillo|Empresario
+6234|Perú|Huancayo|Arquitecto
+6235|Perú|Chiclayo|Jubilado
+6236|Perú|Lima|Economista
+6237|Perú|Lima|Periodista
+6238|Perú|Huancayo|Comerciante
+6239|Perú|Lima|Periodista
+6240|Perú|Lima|Economista
+6241|Perú|Huánuco|Administrador
+6242|Perú|Ica|Diseñador
+6243|Perú|Iquitos|Médico
+6244|Perú|Cerro de Pasco|Estudiante
+6245|Perú|Cajamarca|Abogado
+6246|Perú|Lima|Estudiante
+6247|Perú|Lima|Abogado
+6248|Perú|Cerro de Pasco|Jubilado
+6249|Colombia|Bogotá|Profesora
+6250|Perú|Ica|Diseñador
+6251|Perú|Chiclayo|Ingeniera de sistemas
+6252|Perú|Piura|Periodista
+6253|Perú|Trujillo|Médico
+6254|Perú|Lima|Médico
+6255|Perú|Huancayo|Chef
+6256|Argentina|Buenos Aires|Administrador
+6257|Perú|Puno|Enfermera
+6258|Perú|Lima|Médico
+6259|Perú|Lima|Abogado
+6260|Perú|Tacna|Estudiante
+6261|Perú|Cajamarca|Jubilado
+6262|Perú|Ica|Arquitecto
+6263|Perú|Lima|Enfermera
+6264|Estados Unidos|Nueva York|Administrador
+6265|Perú|Lima|Médico
+6266|Perú|Lima|Ingeniera de sistemas
+6267|Perú|Lima|Chef
+6268|Perú|Lima|Psicólogo
+6269|Perú|Trujillo|Profesora
+6270|Perú|Arequipa|Chef
+6271|España|Madrid|Periodista
+6272|Perú|Cerro de Pasco|Jubilado
+6273|Perú|Lima|Psicólogo
+6274|Perú|Arequipa|Psicólogo
+6275|Perú|Tacna|Contador
+6276|Perú|Lima|Técnico
+6277|Perú|Lima|Abogado
+6278|Perú|Chiclayo|Enfermera
+6279|Perú|Lima|Periodista
+6280|Perú|La Merced|Comerciante
+6281|Perú|La Merced|Profesora
+6282|Perú|Lima|Psicólogo
+6283|Chile|Santiago|Ingeniera de sistemas
+6284|Perú|Lima|Ingeniero
+6285|Perú|Lima|Contador
+6286|Perú|Lima|Técnico
+6287|Perú|Lima|Empresario
+6288|Estados Unidos|Nueva York|Ingeniera de sistemas
+6289|Perú|Piura|Docente
+6290|Perú|Lima|Periodista
+6291|Perú|Arequipa|Empresario
+6292|Perú|Lima|Empresario
+6293|Perú|Ica|Contador
+6294|Perú|Lima|Estudiante
+6295|Perú|Lima|Médico
+6296|Perú|Lima|Profesora
+6297|Perú|Puno|Jubilado
+6298|Perú|Lima|Administrador
+6299|Perú|Trujillo|Administrador
+6300|Perú|Puno|Contador
+6301|Perú|Lima|Docente
+6302|Perú|Tacna|Empresario
+6303|Perú|Huánuco|Empresario
+6304|Perú|Cusco|Abogado
+6305|Perú|Tarma|Contador
+6306|Perú|Huánuco|Médico
+6307|Perú|Lima|Administrador
+6308|Chile|Santiago|Ingeniero
+6309|Perú|Lima|Profesora
+6310|Perú|Trujillo|Técnico
+6311|Perú|Lima|Comerciante
+6312|Perú|Oxapampa|Docente
+6313|Perú|Lima|Economista
+6314|Perú|La Merced|Ingeniero
+6315|Perú|Piura|Psicólogo
+6316|Perú|Huancayo|Psicólogo
+6317|Perú|Trujillo|Docente
+6318|Perú|Cerro de Pasco|Estudiante
+6319|Perú|Tarma|Administrador
+6320|Perú|Cajamarca|Enfermera
+6321|Perú|Lima|Economista
+6322|Perú|Trujillo|Comerciante
+6323|Perú|Piura|Administrador
+6324|Perú|Puno|Profesora
+6325|Perú|Lima|Enfermera
+6326|Perú|Lima|Jubilado
+6327|Perú|La Merced|Diseñador
+6328|Perú|Chiclayo|Chef
+6329|Perú|Cerro de Pasco|Contador
+6330|Perú|Lima|Enfermera
+6331|Perú|Lima|Contador
+6332|Perú|Arequipa|Ingeniera de sistemas
+6333|Perú|Cajamarca|Chef
+6334|Perú|Oxapampa|Administrador
+6335|Perú|Ica|Chef
+6336|Perú|Huánuco|Enfermera
+6337|Perú|Lima|Arquitecto
+6338|Perú|Cusco|Abogado
+6339|Colombia|Bogotá|Economista
+6340|Perú|Trujillo|Profesora
+6341|Perú|Lima|Enfermera
+6342|Perú|Cajamarca|Periodista
+6343|Perú|Arequipa|Administrador
+6344|Perú|Arequipa|Profesora
+6345|Perú|Lima|Estudiante
+6346|Perú|Cerro de Pasco|Ingeniera de sistemas
+6347|Perú|La Merced|Diseñador
+6348|Perú|Huancayo|Técnico
+6349|Perú|Iquitos|Administrador
+6350|Perú|Huancayo|Estudiante
+6351|Perú|Lima|Abogado
+6352|Perú|Trujillo|Psicólogo
+6353|Perú|Lima|Psicólogo
+6354|Perú|Huancayo|Economista
+6355|Perú|Arequipa|Abogado
+6356|Perú|Cusco|Estudiante
+6357|Perú|Chiclayo|Empresario
+6358|Perú|Cusco|Arquitecto
+6359|Perú|Lima|Periodista
+6360|Perú|Lima|Técnico
+6361|Perú|Lima|Ingeniera de sistemas
+6362|Perú|Lima|Economista
+6363|Perú|Lima|Ingeniera de sistemas
+6364|Perú|Lima|Abogado
+6365|Perú|Lima|Comerciante
+6366|Perú|Cajamarca|Psicólogo
+6367|Perú|Huánuco|Médico
+6368|Perú|La Merced|Arquitecto
+6369|Perú|Trujillo|Médico
+6370|Perú|Piura|Economista
+6371|Perú|Tacna|Técnico
+6372|Perú|Puno|Comerciante
+6373|Perú|Piura|Jubilado
+6374|Perú|Puno|Abogado
+6375|Perú|La Merced|Jubilado
+6376|Perú|Cajamarca|Diseñador
+6377|Perú|Tacna|Enfermera
+6378|Perú|Huancayo|Ingeniero
+6379|Perú|Trujillo|Técnico
+6380|Perú|Iquitos|Empresario
+6381|Perú|La Merced|Arquitecto
+6382|Perú|Chiclayo|Ingeniero
+6383|Perú|Lima|Empresario
+6384|Perú|Tarma|Docente
+6385|Argentina|Buenos Aires|Comerciante
+6386|Perú|Lima|Ingeniera de sistemas
+6387|Perú|Arequipa|Ingeniera de sistemas
+6388|Perú|Cajamarca|Profesora
+6389|Perú|Puno|Empresario
+6390|Perú|Chiclayo|Periodista
+6391|Perú|Huancayo|Profesora
+6392|Perú|Tacna|Estudiante
+6393|Perú|Ica|Empresario
+6394|Perú|Cusco|Ingeniero
+6395|Perú|Lima|Contador
+6396|Perú|La Merced|Docente
+6397|Perú|Cusco|Contador
+6398|Perú|La Merced|Jubilado
+6399|Perú|Lima|Contador
+6400|Perú|Cerro de Pasco|Economista
+6401|Argentina|Buenos Aires|Ingeniera de sistemas
+6402|Perú|Cerro de Pasco|Economista
+6403|Perú|Trujillo|Jubilado
+6404|Perú|Chiclayo|Periodista
+6405|Perú|Lima|Ingeniero
+6406|Perú|Cusco|Enfermera
+6407|Perú|Tarma|Contador
+6408|Perú|Arequipa|Enfermera
+6409|Perú|Huánuco|Chef
+6410|Perú|Lima|Administrador
+6411|Perú|Puno|Ingeniera de sistemas
+6412|Perú|Lima|Chef
+6413|Perú|Huánuco|Psicólogo
+6414|Perú|Cusco|Arquitecto
+6415|Perú|Cusco|Jubilado
+6416|Chile|Santiago|Empresario
+6417|Francia|París|Profesora
+6418|Perú|Lima|Técnico
+6419|Perú|Puno|Psicólogo
+6420|Perú|Lima|Ingeniero
+6421|Perú|Arequipa|Chef
+6422|Perú|Oxapampa|Profesora
+6423|Chile|Santiago|Contador
+6424|Perú|Lima|Ingeniera de sistemas
+6425|Perú|La Merced|Administrador
+6426|Perú|Cusco|Comerciante
+6427|Perú|Piura|Economista
+6428|Perú|Lima|Psicólogo
+6429|Perú|Puno|Empresario
+6430|Chile|Santiago|Chef
+6431|Perú|Cusco|Arquitecto
+6432|Perú|La Merced|Economista
+6433|Perú|Lima|Contador
+6434|Perú|Lima|Empresario
+6435|Perú|Lima|Periodista
+6436|Perú|Lima|Jubilado
+6437|Perú|Lima|Ingeniero
+6438|Perú|Lima|Profesora
+6439|Perú|Trujillo|Ingeniero
+6440|Alemania|Berlín|Técnico
+6441|Perú|Cajamarca|Contador
+6442|Perú|Lima|Médico
+6443|Perú|Arequipa|Estudiante
+6444|Perú|Tarma|Estudiante
+6445|Perú|Lima|Comerciante
+6446|Perú|Huancayo|Periodista
+6447|Perú|Lima|Profesora
+6448|Perú|Huancayo|Arquitecto
+6449|Perú|Trujillo|Ingeniero
+6450|Perú|Huancayo|Psicólogo
+6451|Perú|Ica|Diseñador
+6452|Perú|Lima|Profesora
+6453|Perú|Puno|Economista
+6454|Perú|Piura|Enfermera
+6455|Chile|Santiago|Abogado
+6456|Perú|Piura|Estudiante
+6457|Perú|Arequipa|Economista
+6458|Perú|Trujillo|Economista
+6459|Perú|Lima|Empresario
+6460|Perú|Piura|Arquitecto
+6461|Perú|Ica|Diseñador
+6462|Perú|Lima|Arquitecto
+6463|Perú|Chiclayo|Arquitecto
+6464|Perú|Huánuco|Abogado
+6465|Perú|Puno|Jubilado
+6466|Perú|Lima|Chef
+6467|Perú|Trujillo|Administrador
+6468|Perú|Lima|Administrador
+6469|Chile|Santiago|Estudiante
+6470|Perú|Huancayo|Médico
+6471|Chile|Santiago|Periodista
+6472|Perú|Chiclayo|Abogado
+6473|Perú|Huánuco|Profesora
+6474|Perú|Huancayo|Comerciante
+6475|Perú|Tarma|Administrador
+6476|Perú|Lima|Docente
+6477|Perú|Piura|Técnico
+6478|Perú|Lima|Psicólogo
+6479|Perú|Lima|Ingeniero
+6480|Perú|Arequipa|Ingeniero
+6481|Perú|Ica|Arquitecto
+6482|Perú|Chiclayo|Estudiante
+6483|Perú|Cerro de Pasco|Chef
+6484|Perú|Trujillo|Contador
+6485|Perú|Tacna|Ingeniero
+6486|Perú|Cusco|Administrador
+6487|Perú|Trujillo|Estudiante
+6488|Perú|Piura|Ingeniera de sistemas
+6489|Perú|Tacna|Administrador
+6490|Perú|Huánuco|Profesora
+6491|Perú|Lima|Psicólogo
+6492|Perú|Lima|Psicólogo
+6493|Perú|Lima|Administrador
+6494|Perú|Chiclayo|Psicólogo
+6495|Perú|Tacna|Periodista
+6496|Perú|Huancayo|Jubilado
+6497|Colombia|Bogotá|Periodista
+6498|Perú|Lima|Diseñador
+6499|Perú|Tarma|Ingeniero
+6500|Perú|Tacna|Ingeniero
+6501|Perú|Lima|Contador
+6502|Perú|Huancayo|Psicólogo
+6503|Perú|La Merced|Estudiante
+6504|Perú|Piura|Ingeniero
+6505|Estados Unidos|Nueva York|Abogado
+6506|Perú|Lima|Técnico
+6507|Perú|Cerro de Pasco|Docente
+6508|Argentina|Buenos Aires|Economista
+6509|Perú|Piura|Empresario
+6510|Perú|Huancayo|Técnico
+6511|Perú|Arequipa|Comerciante
+6512|Perú|Chiclayo|Chef
+6513|Perú|Tarma|Periodista
+6514|Perú|Iquitos|Médico
+6515|Perú|Cajamarca|Contador
+6516|Perú|Cerro de Pasco|Empresario
+6517|Perú|Lima|Economista
+6518|Perú|Cerro de Pasco|Economista
+6519|Perú|Huancayo|Economista
+6520|Perú|Lima|Diseñador
+6521|Perú|Cajamarca|Psicólogo
+6522|Perú|Piura|Diseñador
+6523|Perú|Lima|Psicólogo
+6524|Perú|La Merced|Economista
+6525|Perú|Lima|Médico
+6526|Perú|Trujillo|Chef
+6527|Perú|Arequipa|Administrador
+6528|Perú|Puno|Administrador
+6529|Perú|Tarma|Enfermera
+6530|Perú|Lima|Periodista
+6531|Perú|Puno|Ingeniero
+6532|Perú|Trujillo|Psicólogo
+6533|Perú|Lima|Ingeniera de sistemas
+6534|Perú|Arequipa|Chef
+6535|Perú|Piura|Jubilado
+6536|Perú|Chiclayo|Técnico
+6537|Perú|Huánuco|Contador
+6538|Perú|Lima|Contador
+6539|Perú|Lima|Comerciante
+6540|Perú|Piura|Ingeniero
+6541|Perú|Iquitos|Diseñador
+6542|Perú|Arequipa|Empresario
+6543|Perú|Arequipa|Diseñador
+6544|Perú|Arequipa|Administrador
+6545|Perú|Cajamarca|Ingeniero
+6546|Perú|Tarma|Economista
+6547|Perú|Lima|Abogado
+6548|Perú|Trujillo|Ingeniera de sistemas
+6549|Argentina|Buenos Aires|Jubilado
+6550|Perú|Lima|Ingeniera de sistemas
+6551|Perú|Iquitos|Médico
+6552|Perú|Chiclayo|Contador
+6553|Perú|Trujillo|Profesora
+6554|Perú|Iquitos|Diseñador
+6555|Perú|Cusco|Chef
+6556|Perú|Ica|Estudiante
+6557|Perú|Lima|Jubilado
+6558|Perú|Lima|Jubilado
+6559|Perú|Iquitos|Profesora
+6560|Perú|Trujillo|Profesora
+6561|Perú|Lima|Administrador
+6562|Perú|Cerro de Pasco|Empresario
+6563|Alemania|Berlín|Docente
+6564|Perú|Lima|Contador
+6565|Perú|Chiclayo|Periodista
+6566|Perú|Chiclayo|Ingeniera de sistemas
+6567|Perú|Lima|Enfermera
+6568|Perú|Trujillo|Comerciante
+6569|Perú|Lima|Ingeniero
+6570|Perú|Chiclayo|Economista
+6571|Perú|Cusco|Administrador
+6572|Perú|Lima|Estudiante
+6573|Perú|Chiclayo|Profesora
+6574|Perú|Huánuco|Empresario
+6575|Perú|Lima|Empresario
+6576|Perú|La Merced|Profesora
+6577|Perú|Arequipa|Psicólogo
+6578|Perú|Tarma|Economista
+6579|Perú|Chiclayo|Jubilado
+6580|Perú|Ica|Contador
+6581|Perú|Huancayo|Docente
+6582|Perú|Arequipa|Economista
+6583|Perú|Oxapampa|Comerciante
+6584|Perú|Iquitos|Profesora
+6585|Perú|Iquitos|Técnico
+6586|Perú|Piura|Psicólogo
+6587|Perú|Lima|Comerciante
+6588|Perú|Arequipa|Periodista
+6589|Perú|Lima|Periodista
+6590|Perú|Piura|Abogado
+6591|Perú|Lima|Comerciante
+6592|Perú|Lima|Empresario
+6593|Perú|La Merced|Abogado
+6594|Perú|Arequipa|Arquitecto
+6595|Perú|Huancayo|Contador

@@ -1,0 +1,7 @@
+id|nombre|precio|precio_temporada_alta
+1|Habitación Matrimonial|180.00|
+2|Habitación Familiar (3 personas)|220.00|
+3|Habitación Familiar (4 personas)|260.00|
+4|Habitación 5-6 Personas|320.00|
+5|Domo Colibrí|350.00|
+6|Cabaña Bungalow (8-10 personas)|450.00|550.00
