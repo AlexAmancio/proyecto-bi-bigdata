@@ -46,6 +46,7 @@ flowchart LR
     SV -- 05_gold_kpis --> G
     G --> D[Dashboard Databricks]
     G --> GN[Genie]
+    G -- 07_gold_mongodb --> M[(MongoDB Atlas<br/>respaldo de Gold)]
     G -. validación .-> PBI[Power BI / hotel_dw]
     B & SV --> X
 ```
@@ -56,6 +57,7 @@ flowchart LR
 | Bronze | `workspace.tunki_bronze` | `estadias`, `consumos`, `habitaciones`, `clientes`, `categorias`, `usuarios` | Delta |
 | Silver | `workspace.tunki_silver` | `estadias`, `consumos`, `clientes`, `habitaciones`, `calidad` | Delta |
 | Gold | `workspace.tunki_gold` | `kpi_mensual`, `kpi_anual`, `no_llegada_segmento`, `ingreso_categoria`, `validacion_bi`, `experimentos` | Delta |
+| Respaldo | MongoDB Atlas, base `tunki_lodge` | Una colección por tabla Gold (mismo nombre) | Documentos JSON |
 
 ---
 
@@ -77,7 +79,8 @@ bigdata/
 │   ├── 03_eda.py                  # Análisis exploratorio
 │   ├── 04_silver_limpieza.py      # Capa Silver (reglas de calidad)
 │   ├── 05_gold_kpis.py            # Capa Gold (KPIs) + validación con Power BI
-│   └── 06_experimentos.py         # EXP-BD-01 a EXP-BD-06
+│   ├── 06_experimentos.py         # EXP-BD-01 a EXP-BD-06
+│   └── 07_gold_mongodb.py         # Respaldo de las tablas Gold en MongoDB Atlas
 ├── dashboard/consultas_dashboard.sql   # Consultas de cada gráfico del dashboard
 ├── databricks.yml                 # Asset Bundle: Jobs y tareas (lo despliega GitHub Actions)
 └── evidencias/                    # Notebooks ejecutados (.ipynb/.html) y capturas
@@ -110,7 +113,7 @@ flowchart LR
     D --> E[Crear esquema Bronze<br/>y Volume si no existen]
     E --> F[Subir los .txt al Volume]
     F --> G[bundle deploy:<br/>notebooks + Jobs]
-    G --> H[bundle run:<br/>00 → 01 → 02 → 03/04 → 05]
+    G --> H[bundle run:<br/>00 → 01 → 02 → 03/04 → 05 → 07]
     H --> I[Tablas Gold actualizadas<br/>dashboard al día]
 ```
 
@@ -131,6 +134,17 @@ flowchart LR
    - `DATABRICKS_TOKEN`: el token del paso 1 (nunca se escribe en el código)
 
 En Databricks, los notebooks desplegados quedan en *Workspace → Users → (tu usuario) → .bundle → tunki_bigdata → prod* y los Jobs en *Jobs & Pipelines* ("Tunki Lodge - Pipeline Medallion" y "Tunki Lodge - Experimentos Big Data", este último se ejecuta a mano).
+
+### Respaldo de Gold en MongoDB Atlas (tarea `mongodb` del pipeline)
+
+Después de Gold, el notebook `07_gold_mongodb` copia cada tabla Gold a una colección de la base `tunki_lodge` en MongoDB Atlas (cada fila = un documento JSON). Reemplaza el contenido en cada ejecución y verifica que las colecciones tengan las mismas filas que las tablas.
+
+Configuración única:
+1. En MongoDB Atlas: cluster (M0 gratuito sirve), un usuario con permiso de lectura y escritura, y en *Network Access* permitir `0.0.0.0/0` (el cómputo serverless de Databricks no tiene IP fija).
+2. Copiar la cadena de conexión (*Connect → Drivers → Python*) con la contraseña del usuario.
+3. En GitHub, crear el secreto `MONGODB_URI` con esa cadena (una sola línea). El pipeline la guarda como secreto de Databricks `tunki/mongodb_uri`; nunca queda en el código.
+
+Si `MONGODB_URI` no existe, la tarea termina sin error y avisa que se omitió el respaldo.
 
 ---
 

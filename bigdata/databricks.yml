@@ -56,6 +56,12 @@ resources:
           notebook_task:
             notebook_path: ./notebooks/05_gold_kpis.py
 
+        # Respaldo de Gold en MongoDB Atlas (si no hay secreto, termina sin error)
+        - task_key: mongodb
+          depends_on: [{ task_key: gold }]
+          notebook_task:
+            notebook_path: ./notebooks/07_gold_mongodb.py
+
     experimentos:
       name: "Tunki Lodge - Experimentos Big Data"
       max_concurrent_runs: 1

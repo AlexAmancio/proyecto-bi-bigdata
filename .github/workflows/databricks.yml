@@ -107,6 +107,20 @@ jobs:
           done
           databricks fs ls "$destino"
 
+      - name: Guardar la conexión a MongoDB como secreto de Databricks
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: |
+          if [ -z "$MONGODB_URI" ]; then
+            echo "Sin secreto MONGODB_URI: el notebook 07 omitirá el respaldo en MongoDB"
+            exit 0
+          fi
+          uri=$(printf '%s' "$MONGODB_URI" | tr -d '\r\n')
+          databricks secrets create-scope tunki 2>/dev/null && echo "Alcance de secretos creado" || echo "El alcance de secretos ya existe"
+          databricks secrets put-secret tunki mongodb_uri --string-value "$uri" \
+            && echo "Secreto tunki/mongodb_uri actualizado" \
+            || echo "AVISO: no se pudo guardar el secreto; el notebook 07 omitirá el respaldo"
+
       - name: Validar el bundle
         working-directory: bigdata
         run: databricks bundle validate -t prod
