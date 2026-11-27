@@ -113,10 +113,6 @@ El sistema Estadía registra cada reserva, pero no consolida la información en 
 
 ## 4. Arquitectura de la solución
 
-![Arquitectura integrada](docs/img/arquitectura_integrada.png)
-
-*Arquitectura integrada: fuentes, solución BI local y solución Big Data en Databricks, con validación cruzada de los indicadores.*
-
 ### Solución BI (detalle)
 
 ```mermaid
@@ -205,8 +201,7 @@ proyecto-bi-bigdata/
 ├── docs/
 │   ├── Informe_Proyecto_Final_Grupo04.docx / .pdf     # Informe técnico (8 capítulos)
 │   ├── Presentacion_BI_Grupo04.pptx                   # Presentación (5 minutos)
-│   ├── Procedimiento_Replicacion_Grupo04.docx / .pdf  # Manual paso a paso
-│   └── img/arquitectura_integrada.png                 # Diagrama de arquitectura de ambas soluciones
+│   └── Procedimiento_Replicacion_Grupo04.docx / .pdf  # Manual paso a paso
 ├── src/                              # Aplicación Estadía (sistema fuente)
 ├── scripts/crear-usuario.sh          # Genera un usuario con contraseña cifrada (BCrypt)
 ├── .github/workflows/
@@ -805,7 +800,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 |---|---|---|
 | E-01 | Dataset original | [`bd/respaldo_bd_actual.sql`](bd/respaldo_bd_actual.sql) |
 | E-02 | Dataset procesado | `hotel_dw` (tablas `fact_estadia`, dimensiones, `etl_calidad`) |
-| E-05 | Arquitectura y esquema de datos | [`docs/img/arquitectura_integrada.png`](docs/img/arquitectura_integrada.png); secciones 4 y 7 de este README; informe, figuras 1 y 2 |
+| E-05 | Arquitectura y esquema de datos | Secciones 4 y 7 de este README; informe, figuras 1 y 2 |
 | E-06 | Scripts y notebooks | [`bi/crear_datamart.sql`](bi/crear_datamart.sql), [`bi/ETL_CARGA.sql`](bi/ETL_CARGA.sql), [`bi/*.bat`](bi), [`bi/fuentes/`](bi/fuentes); [`bigdata/notebooks/`](bigdata/notebooks), [`bigdata/databricks.yml`](bigdata/databricks.yml) |
 | E-07 | Resultados de la solución BI | [`bi/powerbi/TunkiLodge_BI.pbip`](bi/powerbi/TunkiLodge_BI.pbip); informe, figuras 3 a 5 |
 | E-08 | Resultados de la solución Big Data | Tablas `tunki_silver.calidad`, `tunki_gold.*` y `tunki_gold.experimentos`; informe, sección 6.3 y figuras 6 y 7 |
