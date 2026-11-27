@@ -168,10 +168,34 @@ validacion = spark.createDataFrame(filas, "metrica STRING, power_bi DOUBLE, data
 validacion.write.mode("overwrite").saveAsTable(f"{GOLD}.validacion_bi")
 display(validacion)
 
+diferentes = [f[0] for f in filas if f[3] != "OK"]
+if diferentes:
+    # Informativo: si se agregaron datos nuevos al repositorio, es normal que difiera del datamart actual
+    print(f"AVISO: difiere de Power BI en {', '.join(diferentes)} (normal si se agregaron datos nuevos)")
+else:
+    print("Validación con Power BI: todas las métricas coinciden")
+
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## 6. Tablas Gold creadas
+# MAGIC ## 6. Controles del pipeline
+# MAGIC Si alguno falla, el notebook se detiene con error: el Job queda en rojo y también el pipeline de GitHub Actions.
+
+# COMMAND ----------
+
+filas_bronze = spark.table(f"{BRONZE}.estadias").filter("origen = 'sistema'").count()
+filas_silver = est.filter("origen = 'sistema'").count()
+
+assert spark.table(f"{GOLD}.kpi_mensual").count() > 0, "La tabla kpi_mensual quedó vacía"
+assert spark.table(f"{GOLD}.no_llegada_segmento").count() > 0, "La tabla no_llegada_segmento quedó vacía"
+assert filas_silver >= 0.9 * filas_bronze, (
+    f"La limpieza descartó demasiados datos reales: {filas_silver:,} de {filas_bronze:,} (menos del 90 %)")
+print(f"Controles OK: {filas_silver:,} de {filas_bronze:,} estadías reales conservadas")
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## 7. Tablas Gold creadas
 # MAGIC
 # MAGIC | Tabla | Uso |
 # MAGIC |---|---|

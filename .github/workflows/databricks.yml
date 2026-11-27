@@ -1,0 +1,104 @@
+name: pipeline-databricks
+
+# Se dispara:
+#  - en cada PR a main que toque bigdata/ → solo valida (no toca Databricks)
+#  - al hacer merge a main con cambios en bigdata/ → sube datos, despliega y ejecuta
+#  - a mano desde la pestaña Actions (Run workflow)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "bigdata/**"
+      - ".github/workflows/databricks.yml"
+  push:
+    branches: [main]
+    paths:
+      - "bigdata/**"
+      - ".github/workflows/databricks.yml"
+  workflow_dispatch:
+
+# Nunca dos despliegues a la vez sobre el mismo workspace
+concurrency:
+  group: databricks-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CATALOGO: workspace
+  ESQUEMA_BRONZE: tunki_bronze
+  VOLUME: archivos
+
+jobs:
+  validar:
+    name: Validar notebooks y datos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Revisar sintaxis de los notebooks
+        run: |
+          for f in bigdata/notebooks/*.py; do
+            python3 -m py_compile "$f" && echo "OK  $f"
+          done
+
+      - name: Revisar que estén los 6 archivos de datos con encabezado
+        run: |
+          for f in estadias consumos clientes categorias usuarios; do
+            archivo="bigdata/datos/sistema/$f.txt"
+            test -s "$archivo" || { echo "Falta $archivo"; exit 1; }
+            head -1 "$archivo" | grep -q "^id|" || { echo "$archivo no tiene encabezado"; exit 1; }
+            echo "OK  $archivo ($(($(wc -l < "$archivo") - 1)) filas)"
+          done
+          test -s bigdata/datos/sistema/habitaciones.txt && echo "OK  habitaciones.txt"
+
+  desplegar:
+    name: Subir datos, desplegar y ejecutar en Databricks
+    needs: validar
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+      DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Databricks CLI
+        uses: databricks/setup-cli@main
+
+      - name: Verificar conexión con el workspace
+        run: |
+          if [ -z "$DATABRICKS_HOST" ] || [ -z "$DATABRICKS_TOKEN" ]; then
+            echo "Faltan los secretos DATABRICKS_HOST y/o DATABRICKS_TOKEN en el repositorio"
+            exit 1
+          fi
+          databricks current-user me --output json | grep -o '"userName":"[^"]*"' || databricks current-user me
+
+      - name: Crear esquema Bronze y Volume (si no existen)
+        run: |
+          databricks schemas create "$ESQUEMA_BRONZE" "$CATALOGO" \
+            && echo "Esquema creado" || echo "El esquema ya existe"
+          databricks volumes create "$CATALOGO" "$ESQUEMA_BRONZE" "$VOLUME" MANAGED \
+            && echo "Volume creado" || echo "El Volume ya existe"
+
+      - name: Subir los archivos de datos al Volume
+        run: |
+          destino="dbfs:/Volumes/$CATALOGO/$ESQUEMA_BRONZE/$VOLUME/sistema"
+          databricks fs mkdir "$destino"
+          for f in bigdata/datos/sistema/*.txt; do
+            databricks fs cp --overwrite "$f" "$destino/$(basename "$f")"
+            echo "Subido $(basename "$f")"
+          done
+          databricks fs ls "$destino"
+
+      - name: Validar el bundle
+        working-directory: bigdata
+        run: databricks bundle validate -t prod
+
+      - name: Desplegar notebooks y Jobs
+        working-directory: bigdata
+        run: databricks bundle deploy -t prod
+
+      - name: Ejecutar el pipeline Medallion (00 → 05)
+        working-directory: bigdata
+        run: databricks bundle run pipeline_medallion -t prod
