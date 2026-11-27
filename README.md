@@ -11,6 +11,8 @@
 
 Este repositorio contiene una solución completa de Inteligencia de Negocios construida sobre **Estadía**, el sistema web de gestión de estadías de Tunki Lodge (Oxapampa, Pasco): la base operativa, un **datamart en esquema estrella**, un **proceso ETL automatizado con reglas de calidad de datos y control de errores**, un **dashboard en Power BI** y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
 
+Incluye además una **solución Big Data en Databricks** (Apache Spark, arquitectura Medallion Bronze → Silver → Gold, dashboard y experimentos de escalabilidad) que procesa los mismos datos de origen: ver [`bigdata/README.md`](bigdata/README.md).
+
 ---
 
 ## Índice
@@ -149,6 +151,11 @@ proyecto-bi-bigdata/
 │       ├── TunkiLodge_BI.pbip        # Abrir este archivo en Power BI Desktop
 │       ├── TunkiLodge_BI.Report/     # Páginas y visuales del reporte (formato PBIR)
 │       └── TunkiLodge_BI.SemanticModel/  # Modelo: tablas, relaciones y medidas DAX (formato TMDL)
+├── bigdata/                          # Solución Big Data en Databricks (ver bigdata/README.md)
+│   ├── datos/sistema/                # Archivos fuente para subir al Volume (sin datos personales)
+│   ├── notebooks/                    # 00 configuración … 06 experimentos (Medallion)
+│   ├── dashboard/                    # Consultas del dashboard de Databricks
+│   └── evidencias/                   # Notebooks ejecutados y capturas
 ├── docs/
 │   ├── Informe_Proyecto_Final_Grupo04.docx / .pdf     # Informe técnico (8 capítulos)
 │   ├── Presentacion_BI_Grupo04.pptx                   # Presentación (5 minutos)
