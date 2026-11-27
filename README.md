@@ -1,17 +1,31 @@
-# Solución de Inteligencia de Negocios — Tunki Lodge
+# Soluciones de Inteligencia de Negocios y Big Data — Tunki Lodge
 
 **Factores asociados a la no-llegada de huéspedes en el sistema Estadía de Tunki Lodge**
 
 ![Pruebas](https://github.com/AlexAmancio/proyecto-bi-bigdata/actions/workflows/tests.yml/badge.svg)
+![Pipeline Databricks](https://github.com/AlexAmancio/proyecto-bi-bigdata/actions/workflows/databricks.yml/badge.svg)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2025-red)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow)
 ![T-SQL](https://img.shields.io/badge/ETL-T--SQL-blue)
+![Databricks](https://img.shields.io/badge/Databricks-Free%20Edition-FF3621)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-PySpark-E25A1C)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Medallion-00ADD4)
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.4-brightgreen)
 
-Este repositorio contiene una solución completa de Inteligencia de Negocios construida sobre **Estadía**, el sistema web de gestión de estadías de Tunki Lodge (Oxapampa, Pasco): la base operativa, un **datamart en esquema estrella**, un **proceso ETL automatizado con reglas de calidad de datos y control de errores**, un **dashboard en Power BI** y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
+Este repositorio contiene **dos soluciones de datos** construidas sobre **Estadía**, el sistema web de gestión de estadías de Tunki Lodge (Oxapampa, Pasco), que responden a la misma pregunta de negocio con las mismas fuentes:
 
-Incluye además una **solución Big Data en Databricks** (Apache Spark, arquitectura Medallion Bronze → Silver → Gold, dashboard y experimentos de escalabilidad) que procesa los mismos datos de origen: ver [`bigdata/README.md`](bigdata/README.md).
+| | Solución de Inteligencia de Negocios (BI) | Solución Big Data |
+|---|---|---|
+| **Dónde corre** | Local, SQL Server 2025 | Nube, Databricks Free Edition (Apache Spark serverless) |
+| **Integración** | ETL de 8 pasos en T-SQL con 11 reglas de calidad, control de errores y bitácora | Arquitectura **Medallion** (Bronze → Silver → Gold) con DataFrames de Spark y tablas Delta |
+| **Almacén** | Datamart `hotel_dw` en esquema estrella | Esquemas `tunki_bronze`, `tunki_silver` y `tunki_gold` |
+| **Automatización** | `ejecutar_etl.bat` + Programador de tareas (23:00) | **GitHub Actions**: cada merge sube los datos, despliega y ejecuta el pipeline |
+| **Visualización** | Dashboard en Power BI (medidas DAX) | Tablas Gold, SQL Editor y dashboard de Databricks |
+| **Experimentos** | EXP-01 a EXP-04 (negocio, rendimiento, calidad, exactitud) | EXP-BD-01 a EXP-BD-06 (escalabilidad ×1 a ×100 y configuración) |
+| **Documentación** | Este README | [`bigdata/README.md`](bigdata/README.md) |
+
+Las dos soluciones dan **exactamente los mismos indicadores** (validación cruzada entre Power BI y la capa Gold). El repositorio incluye además la aplicación fuente y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
 
 ---
 
@@ -48,9 +62,11 @@ Incluye además una **solución Big Data en Databricks** (Apache Spark, arquitec
 |---|---|
 | **Empresa** | Tunki Lodge — Oxapampa, Pasco (Perú). 45 habitaciones en 6 categorías |
 | **Problema** | Las reservas caen en 2026 y la no-llegada de huéspedes (cancelación + no-show) aumenta, sin que el negocio sepa por qué |
-| **Solución** | Datamart en esquema estrella + ETL automatizado con calidad de datos + dashboard en Power BI |
+| **Solución BI** | Datamart en esquema estrella + ETL automatizado con calidad de datos + dashboard en Power BI |
+| **Solución Big Data** | Pipeline Medallion en Databricks (Spark + Delta Lake) desplegado y ejecutado automáticamente con GitHub Actions |
 | **Periodo analizado** | Enero de 2024 a octubre de 2026 (fecha de corte: 23/10/2026) |
-| **Volumen** | 9 036 estadías, 6 594 clientes, 7 096 consumos |
+| **Volumen** | 9 036 estadías, 6 594 clientes, 7 096 consumos; en Big Data se probó hasta **936 045 filas** (×100) |
+| **Validación** | Los indicadores de la capa Gold coinciden con los de Power BI en las 7 métricas de control (diferencia 0) |
 | **Hallazgo principal** | La no-llegada es **3 veces mayor** en clientes de ciudades lejanas (15.2 %) que en los de ciudades cercanas a Oxapampa (4.5 %), y **2 veces mayor** con pago en efectivo (13.5 %) que con transferencia (6.8 %). En 2026 esos segmentos ganaron participación |
 | **Recomendación** | Ofertas dirigidas (prepago, mercado cercano, fidelidad, adelanto en categorías grandes) en lugar de descuentos generales |
 
@@ -97,6 +113,12 @@ El sistema Estadía registra cada reserva, pero no consolida la información en 
 
 ## 4. Arquitectura de la solución
 
+![Arquitectura integrada](docs/img/arquitectura_integrada.png)
+
+*Arquitectura integrada: fuentes, solución BI local y solución Big Data en Databricks, con validación cruzada de los indicadores.*
+
+### Solución BI (detalle)
+
 ```mermaid
 flowchart LR
     subgraph Fuentes
@@ -130,6 +152,30 @@ flowchart LR
 | Automatización | `ejecutar_etl.bat` + tarea programada | `sqlcmd` + Programador de tareas de Windows |
 | Visualización | Dashboard interactivo | Power BI Desktop (proyecto `.pbip`, medidas DAX) |
 
+### Solución Big Data (resumen)
+
+```mermaid
+flowchart LR
+    R[Repositorio GitHub<br/>bigdata/] -- merge a main --> GA[GitHub Actions<br/>valida · sube datos ·<br/>bundle deploy · bundle run]
+    GA --> V[(Volume<br/>archivos .txt)]
+    V --> B[BRONZE<br/>datos crudos + linaje]
+    B --> S[SILVER<br/>reglas N01 + R01–R10]
+    S --> G[GOLD<br/>KPIs y factores]
+    G --> C[SQL Editor ·<br/>dashboard · Genie]
+    G -. validación .-> PBI[Power BI]
+```
+
+| Capa | Componente | Tecnología |
+|---|---|---|
+| Plataforma | Databricks Free Edition, catálogo `workspace` | Apache Spark serverless, Unity Catalog |
+| Ingesta | Volume `tunki_bronze.archivos` → tablas Bronze | `spark.read` con esquema explícito, tablas Delta |
+| Limpieza | Capa Silver con las mismas reglas del ETL de BI | DataFrames: `filter`, `na.fill`, `dropDuplicates`, joins |
+| Indicadores | Capa Gold: KPIs mensuales, anuales y por segmento | `groupBy` / `agg`, Spark SQL |
+| Orquestación | Jobs "Pipeline Medallion" y "Experimentos" | Databricks Asset Bundle (`bigdata/databricks.yml`) |
+| Despliegue | Pipeline `pipeline-databricks` | GitHub Actions + CLI de Databricks |
+
+Detalle completo, cómo ejecutarlo y resultados: [`bigdata/README.md`](bigdata/README.md).
+
 ---
 
 ## 5. Estructura del repositorio
@@ -159,10 +205,13 @@ proyecto-bi-bigdata/
 ├── docs/
 │   ├── Informe_Proyecto_Final_Grupo04.docx / .pdf     # Informe técnico (8 capítulos)
 │   ├── Presentacion_BI_Grupo04.pptx                   # Presentación (5 minutos)
-│   └── Procedimiento_Replicacion_Grupo04.docx / .pdf  # Manual paso a paso
+│   ├── Procedimiento_Replicacion_Grupo04.docx / .pdf  # Manual paso a paso
+│   └── img/arquitectura_integrada.png                 # Diagrama de arquitectura de ambas soluciones
 ├── src/                              # Aplicación Estadía (sistema fuente)
 ├── scripts/crear-usuario.sh          # Genera un usuario con contraseña cifrada (BCrypt)
-├── .github/workflows/tests.yml       # Integración continua de la aplicación
+├── .github/workflows/
+│   ├── tests.yml                     # Integración continua de la aplicación (pipeline-tests)
+│   └── databricks.yml                # Valida y despliega la solución Big Data (pipeline-databricks)
 ├── pom.xml, mvnw, mvnw.cmd           # Construcción de la aplicación (Maven)
 └── README.md
 ```
@@ -540,6 +589,19 @@ Al multiplicar el volumen por 30 (de 500 a 15 000) la duración solo se multipli
 
 Entorno de las pruebas: AMD Ryzen 7 7730U (8 núcleos), 32 GB de RAM, Windows 11, SQL Server 2025 Developer.
 
+### Experimentos de la solución Big Data (Databricks)
+
+Media de 3 repeticiones en Databricks Free Edition (cómputo serverless). Detalle en [`bigdata/README.md`](bigdata/README.md) y en la tabla `tunki_gold.experimentos`.
+
+| Experimento | Configuración | Resultado |
+|---|---|---|
+| **EXP-BD-01 (escalabilidad)** | Lote simulado ×1 a ×100 (9 356 a 936 045 filas) | ✅ Limpieza + KPIs: 4.24 s con ×1 → **3.00 s con ×100**. El tiempo no crece con el volumen (el ×1 incluye el arranque en frío) |
+| **EXP-BD-02 (formato)** | CSV frente a Delta, 468 116 filas | ✅ Delta: 0.51 s frente a 0.98 s (−48 %) y **0.84 MB frente a 37.81 MB** (2 %) |
+| **EXP-BD-03 (partición)** | Particionada por mes frente a sin partición | 0.43 s frente a 0.47 s: diferencia dentro de la variabilidad |
+| **EXP-BD-04 (calidad)** | `na.drop()` total frente a reglas de calidad | ✅ Las reglas dejan el % de no-llegada a 0.15 pp del valor real (`na.drop()`: 0.29 pp) |
+| **EXP-BD-05 (consulta)** | Spark SQL frente a API de DataFrames | 0.66 s frente a 0.61 s: equivalentes (mismo optimizador) |
+| **EXP-BD-06 (paralelismo)** | `repartition` en 1, 4, 16 y 64 particiones | 1 partición fue lo más rápido (0.56 s; 64: 0.81 s): con pocos MB, repartir cuesta más de lo que gana |
+
 ---
 
 ## 15. Cómo replicar el proyecto paso a paso
@@ -578,6 +640,16 @@ git clone https://github.com/AlexAmancio/proyecto-bi-bigdata.git
 **6. Programar el ETL (opcional)** — doble clic en [`bi/programar_etl.bat`](bi/programar_etl.bat).
 
 **7. Abrir el dashboard** — doble clic en [`bi/powerbi/TunkiLodge_BI.pbip`](bi/powerbi/TunkiLodge_BI.pbip) → **Actualizar**. Si pide credenciales: **Windows → Usar mis credenciales actuales → Conectar**. Si aparece "Compatibilidad con cifrado": **Aceptar** (conexión local). Guardar con **Ctrl + S**.
+
+### Solución Big Data
+
+**8. Configurar una sola vez** — en Databricks: *Settings → Developer → Access tokens → Generate new token*. En GitHub: *Settings → Secrets and variables → Actions* → crear `DATABRICKS_HOST` (URL del workspace) y `DATABRICKS_TOKEN` (el token).
+
+**9. Desplegar y ejecutar** — integrar en `main` cualquier cambio en `bigdata/` (por pull request) o, en la pestaña **Actions**, ejecutar **pipeline-databricks → Run workflow**. El pipeline sube los datos, crea lo que falte y ejecuta el Job *Pipeline Medallion*.
+
+**10. Experimentos (opcional)** — en Databricks: *Jobs & Pipelines → Tunki Lodge - Experimentos Big Data → Run now*; los tiempos quedan en `tunki_gold.experimentos`.
+
+Pasos detallados y alternativa manual: [`bigdata/README.md`](bigdata/README.md).
 
 ---
 
@@ -691,6 +763,11 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 | Programador de tareas + `sqlcmd` | SQL Server Agent | No requiere permisos de administrador ni servicios adicionales |
 | Power BI en formato `.pbip` | `.pbix` binario | Formato de texto versionable en Git |
 | Funciones estándar de T-SQL | `ISNULL`, `CONVERT`, `ROW_NUMBER` | Se usan `CASE`, `DATEPART` y `EXISTS` para mantener un conjunto reducido y explicable |
+| Databricks Free Edition para Big Data | Spark local (Colab), Hadoop | Spark administrado, tablas Delta, Jobs y dashboard sin instalar ni pagar un clúster |
+| Arquitectura Medallion (Bronze, Silver, Gold) | Una sola capa de tablas | Separa dato crudo, dato limpio e indicadores; permite reprocesar desde Bronze |
+| GitHub Actions + Asset Bundle | Importar notebooks y subir archivos a mano | Todo declarado como código; cada merge despliega y ejecuta |
+| Tablas Delta sin partición | Particionar Silver por año | Tablas pequeñas (Databricks recomienda particionar solo tablas grandes) y la partición no admite la ñ de `año` |
+| Persistencia en tablas de Databricks | MongoDB | Es opcional y no aporta al análisis; el dashboard y Genie leen las tablas Gold |
 
 ---
 
@@ -700,8 +777,9 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 
 - Los datos de estadías, clientes y consumos son **simulados**; los patrones provienen de reglas definidas por el equipo.
 - El sistema no registra la **fecha de la reserva** ni el **canal**, por lo que la anticipación no se puede analizar.
-- El ETL hace una **carga completa** en cada ejecución.
-- Todo corre en una sola máquina, sin infraestructura cloud.
+- El ETL y el pipeline Big Data hacen una **carga completa** en cada ejecución.
+- La solución BI corre en una sola máquina; la solución Big Data usa cómputo serverless de la edición gratuita, que no permite elegir nodos, por lo que la escalabilidad se midió aumentando el volumen.
+- El volumen ampliado de los experimentos Big Data es **simulado** a partir de las estadías reales: mide capacidad de procesamiento, no aporta patrones de negocio nuevos.
 - Octubre de 2026 es un mes incompleto (fecha de corte 23/10/2026).
 
 **Trabajos futuros**
@@ -711,6 +789,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 - **Alertas por correo** cuando un paso termine en `ERROR` o una regla supere un umbral.
 - Registrar **fecha y canal de la reserva** en la aplicación para incorporarlos como dimensiones.
 - Medir el efecto de las **ofertas dirigidas** con los mismos KPIs del dashboard.
+- **Ingesta incremental en Big Data** con Auto Loader y `MERGE` en Silver, y programación diaria del Job.
 
 ---
 
@@ -726,12 +805,14 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 |---|---|---|
 | E-01 | Dataset original | [`bd/respaldo_bd_actual.sql`](bd/respaldo_bd_actual.sql) |
 | E-02 | Dataset procesado | `hotel_dw` (tablas `fact_estadia`, dimensiones, `etl_calidad`) |
-| E-05 | Arquitectura y esquema de datos | Secciones 4 y 7 de este README; informe, figuras 1 y 2 |
-| E-06 | Scripts | [`bi/crear_datamart.sql`](bi/crear_datamart.sql), [`bi/ETL_CARGA.sql`](bi/ETL_CARGA.sql), [`bi/*.bat`](bi), [`bi/fuentes/`](bi/fuentes) |
+| E-05 | Arquitectura y esquema de datos | [`docs/img/arquitectura_integrada.png`](docs/img/arquitectura_integrada.png); secciones 4 y 7 de este README; informe, figuras 1 y 2 |
+| E-06 | Scripts y notebooks | [`bi/crear_datamart.sql`](bi/crear_datamart.sql), [`bi/ETL_CARGA.sql`](bi/ETL_CARGA.sql), [`bi/*.bat`](bi), [`bi/fuentes/`](bi/fuentes); [`bigdata/notebooks/`](bigdata/notebooks), [`bigdata/databricks.yml`](bigdata/databricks.yml) |
 | E-07 | Resultados de la solución BI | [`bi/powerbi/TunkiLodge_BI.pbip`](bi/powerbi/TunkiLodge_BI.pbip); informe, figuras 3 a 5 |
+| E-08 | Resultados de la solución Big Data | Tablas `tunki_silver.calidad`, `tunki_gold.*` y `tunki_gold.experimentos`; informe, sección 6.3 y figuras 6 y 7 |
 | E-09 | Comparación de escenarios | Sección 14 de este README; informe, secciones 6.3 y 6.5 |
 | E-10 | Logs | Tablas `etl_log` y `etl_calidad`; `bi/logs/ultima_ejecucion.log` |
 | E-12 | Retroalimentación y mejoras | Historial de pull requests del repositorio |
+| E-14 | Solución Big Data funcional | Workflow [`pipeline-databricks`](.github/workflows/databricks.yml) (pestaña Actions) y Jobs de Databricks |
 
 ---
 
