@@ -40,7 +40,8 @@ display(dbutils.fs.ls(RUTA_SISTEMA))
 
 # COMMAND ----------
 
-# MAGIC %fs head /Volumes/workspace/tunki_bronze/archivos/sistema/estadias.txt
+# Primeras líneas del archivo tal como llegó (equivale a %fs head, que en serverless no está permitido)
+print(dbutils.fs.head(f"{RUTA_SISTEMA}/estadias.txt", 500))
 
 # COMMAND ----------
 
