@@ -77,12 +77,13 @@ ORDER BY regla;
 -- ---------------------------------------------------------------------
 -- D8. Resultados de experimentos
 --     Gráfico: líneas para EXP-BD-01 (X = filas, Y = promedio_s, color = escenario);
---     barras para los demás.
+--     barras para los demás. Solo la última ejecución del Job de experimentos.
 -- ---------------------------------------------------------------------
 SELECT experimento, escenario, filas,
        ROUND(AVG(segundos), 3) AS promedio_s,
        ROUND(STDDEV(segundos), 3) AS desv_estandar_s
 FROM workspace.tunki_gold.experimentos
+WHERE fecha_ejecucion = (SELECT MAX(fecha_ejecucion) FROM workspace.tunki_gold.experimentos)
 GROUP BY experimento, escenario, filas
 ORDER BY experimento, filas, escenario;
 
