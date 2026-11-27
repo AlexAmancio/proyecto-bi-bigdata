@@ -8,7 +8,7 @@
 # MAGIC
 # MAGIC | Código | Experimento | Pregunta | Responsable |
 # MAGIC |---|---|---|---|
-# MAGIC | EXP-BD-01 | Escalabilidad por volumen | ¿Cómo crece el tiempo de proceso al multiplicar los datos ×1 a ×200? | (asignar) |
+# MAGIC | EXP-BD-01 | Escalabilidad por volumen | ¿Cómo crece el tiempo de proceso al multiplicar los datos ×1 a ×300? | (asignar) |
 # MAGIC | EXP-BD-02 | Formato CSV frente a Delta | ¿Cuánto mejora la lectura y el espacio con Delta Lake? | (asignar) |
 # MAGIC | EXP-BD-03 | Tabla particionada frente a no particionada | ¿Cuánto acelera particionar por mes una consulta filtrada? | (asignar) |
 # MAGIC | EXP-BD-04 | Estrategia de limpieza | ¿Qué pasa con la calidad si se borra todo nulo (`na.drop`) en vez de aplicar reglas? | (asignar) |
@@ -84,7 +84,7 @@ def kpis(df):
 # MAGIC ## EXP-BD-01 · Escalabilidad por volumen
 # MAGIC - **Objetivo:** medir cómo crece el tiempo de ingesta y de limpieza + KPIs cuando el volumen aumenta.
 # MAGIC - **Procedimiento:** para cada factor se genera el lote simulado, se guarda como tabla Delta (ingesta) y luego se ejecuta limpieza + agregación + escritura (proceso).
-# MAGIC - **Configuración:** factores ×1, ×10, ×25, ×50, ×100, ×150 y ×200 (≈ 9 mil a ≈ 1,87 millones de filas); tasa de errores 3 %; 3 repeticiones.
+# MAGIC - **Configuración:** factores ×1, ×10, ×25, ×50, ×100, ×150, ×200 y ×300 (≈ 9 mil a ≈ 2,8 millones de filas); tasa de errores 3 %; 3 repeticiones.
 # MAGIC - **Calentamiento:** antes de medir se ejecuta una vez el proceso completo con un lote pequeño y su tiempo **no** se registra, para que la primera medición no incluya el arranque en frío del cómputo.
 # MAGIC - **Resultado esperado:** crecimiento menor que proporcional (Spark reparte el trabajo en paralelo y tiene un costo fijo de arranque).
 
@@ -98,7 +98,7 @@ print("Calentamiento listo")
 
 # COMMAND ----------
 
-FACTORES = [1, 10, 25, 50, 100, 150, 200]
+FACTORES = [1, 10, 25, 50, 100, 150, 200, 300]
 
 for factor in FACTORES:
     tabla = f"{BRONZE}.exp_estadias_x{factor}"
@@ -115,7 +115,7 @@ display(resumen("EXP-BD-01"))
 
 # MAGIC %md
 # MAGIC **Análisis EXP-BD-01:** graficar `promedio_s` (eje Y) contra `filas` (eje X) por escenario. Comparar el crecimiento
-# MAGIC del tiempo con el crecimiento de los datos: si los datos crecen ×200 y el tiempo crece mucho menos, la solución escala.
+# MAGIC del tiempo con el crecimiento de los datos: si los datos crecen ×300 y el tiempo crece mucho menos, la solución escala.
 
 # COMMAND ----------
 
