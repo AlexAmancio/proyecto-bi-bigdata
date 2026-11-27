@@ -29,66 +29,17 @@
       ]
     },
     {
-      "name": "seg_categoria",
-      "displayName": "No-llegada por categoría",
-      "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Categoría' GROUP BY segmento"
-      ]
-    },
-    {
-      "name": "seg_tipo",
-      "displayName": "No-llegada por tipo de cliente",
-      "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tipo de cliente' GROUP BY segmento"
-      ]
-    },
-    {
-      "name": "seg_grupo",
-      "displayName": "No-llegada por tamaño de grupo",
-      "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tamaño de grupo' GROUP BY segmento"
-      ]
-    },
-    {
-      "name": "zona_anual",
-      "displayName": "No-llegada por zona y año",
-      "queryLines": [
-        "SELECT CAST(`año` AS STRING) AS `año`, segmento AS zona, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Zona de origen'"
-      ]
-    },
-    {
-      "name": "calidad",
-      "displayName": "Reglas de calidad (Silver)",
-      "queryLines": [
-        "SELECT regla, descripcion, tabla, registros_afectados, accion FROM workspace.tunki_silver.calidad WHERE fecha_ejecucion = (SELECT MAX(fecha_ejecucion) FROM workspace.tunki_silver.calidad) ORDER BY regla"
-      ]
-    },
-    {
-      "name": "validacion",
-      "displayName": "Validación con Power BI",
-      "queryLines": [
-        "SELECT metrica, power_bi, databricks, resultado FROM workspace.tunki_gold.validacion_bi"
-      ]
-    },
-    {
       "name": "escalabilidad",
       "displayName": "EXP-BD-01 escalabilidad",
       "queryLines": [
         "SELECT CASE WHEN escenario LIKE 'Ingesta%' THEN 'Ingesta' ELSE 'Limpieza + KPIs' END AS etapa, filas, ROUND(AVG(segundos), 2) AS segundos FROM workspace.tunki_gold.experimentos WHERE experimento = 'EXP-BD-01' AND fecha_ejecucion = (SELECT MAX(fecha_ejecucion) FROM workspace.tunki_gold.experimentos) GROUP BY 1, 2"
-      ]
-    },
-    {
-      "name": "experimentos",
-      "displayName": "Experimentos de configuración",
-      "queryLines": [
-        "SELECT experimento, escenario, ROUND(AVG(segundos), 3) AS promedio_s, ROUND(STDDEV(segundos), 3) AS desv_s FROM workspace.tunki_gold.experimentos WHERE experimento <> 'EXP-BD-01' AND fecha_ejecucion = (SELECT MAX(fecha_ejecucion) FROM workspace.tunki_gold.experimentos) GROUP BY 1, 2 ORDER BY 1, 2"
       ]
     }
   ],
   "pages": [
     {
       "name": "resumen",
-      "displayName": "Resumen",
+      "displayName": "Tunki Lodge",
       "layout": [
         {
           "widget": {
@@ -436,33 +387,10 @@
             "width": 3,
             "height": 6
           }
-        }
-      ]
-    },
-    {
-      "name": "factores",
-      "displayName": "Factores de no-llegada",
-      "layout": [
-        {
-          "widget": {
-            "name": "texto_9",
-            "multilineTextboxSpec": {
-              "lines": [
-                "# Factores de no-llegada",
-                "% de no-llegada (cancelación + no-show) por segmento, todos los años."
-              ]
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 0,
-            "width": 6,
-            "height": 2
-          }
         },
         {
           "widget": {
-            "name": "barras_10",
+            "name": "barras_9",
             "queries": [
               {
                 "name": "main_query",
@@ -503,20 +431,20 @@
               },
               "frame": {
                 "showTitle": true,
-                "title": "Por zona de origen"
+                "title": "% de no-llegada por zona de origen"
               }
             }
           },
           "position": {
             "x": 0,
-            "y": 2,
+            "y": 11,
             "width": 3,
-            "height": 5
+            "height": 6
           }
         },
         {
           "widget": {
-            "name": "barras_11",
+            "name": "barras_10",
             "queries": [
               {
                 "name": "main_query",
@@ -557,402 +485,20 @@
               },
               "frame": {
                 "showTitle": true,
-                "title": "Por método de pago"
+                "title": "% de no-llegada por método de pago"
               }
             }
           },
           "position": {
             "x": 3,
-            "y": 2,
+            "y": 11,
             "width": 3,
-            "height": 5
+            "height": 6
           }
         },
         {
           "widget": {
-            "name": "barras_12",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "seg_categoria",
-                  "fields": [
-                    {
-                      "name": "segmento",
-                      "expression": "`segmento`"
-                    },
-                    {
-                      "name": "no_llegada_pct",
-                      "expression": "`no_llegada_pct`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "segmento",
-                  "scale": {
-                    "type": "categorical"
-                  },
-                  "displayName": "Segmento"
-                },
-                "y": {
-                  "fieldName": "no_llegada_pct",
-                  "scale": {
-                    "type": "quantitative"
-                  },
-                  "displayName": "% No-llegada"
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Por categoría de habitación"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 7,
-            "width": 3,
-            "height": 5
-          }
-        },
-        {
-          "widget": {
-            "name": "barras_13",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "seg_tipo",
-                  "fields": [
-                    {
-                      "name": "segmento",
-                      "expression": "`segmento`"
-                    },
-                    {
-                      "name": "no_llegada_pct",
-                      "expression": "`no_llegada_pct`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "segmento",
-                  "scale": {
-                    "type": "categorical"
-                  },
-                  "displayName": "Segmento"
-                },
-                "y": {
-                  "fieldName": "no_llegada_pct",
-                  "scale": {
-                    "type": "quantitative"
-                  },
-                  "displayName": "% No-llegada"
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Por tipo de cliente"
-              }
-            }
-          },
-          "position": {
-            "x": 3,
-            "y": 7,
-            "width": 3,
-            "height": 5
-          }
-        },
-        {
-          "widget": {
-            "name": "barras_14",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "seg_grupo",
-                  "fields": [
-                    {
-                      "name": "segmento",
-                      "expression": "`segmento`"
-                    },
-                    {
-                      "name": "no_llegada_pct",
-                      "expression": "`no_llegada_pct`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "segmento",
-                  "scale": {
-                    "type": "categorical"
-                  },
-                  "displayName": "Segmento"
-                },
-                "y": {
-                  "fieldName": "no_llegada_pct",
-                  "scale": {
-                    "type": "quantitative"
-                  },
-                  "displayName": "% No-llegada"
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Por tamaño de grupo"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 12,
-            "width": 3,
-            "height": 5
-          }
-        },
-        {
-          "widget": {
-            "name": "barras_15",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "zona_anual",
-                  "fields": [
-                    {
-                      "name": "zona",
-                      "expression": "`zona`"
-                    },
-                    {
-                      "name": "no_llegada_pct",
-                      "expression": "`no_llegada_pct`"
-                    },
-                    {
-                      "name": "año",
-                      "expression": "`año`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "zona",
-                  "scale": {
-                    "type": "categorical"
-                  },
-                  "displayName": "Zona"
-                },
-                "y": {
-                  "fieldName": "no_llegada_pct",
-                  "scale": {
-                    "type": "quantitative"
-                  },
-                  "displayName": "% No-llegada"
-                },
-                "color": {
-                  "fieldName": "año",
-                  "scale": {
-                    "type": "categorical"
-                  },
-                  "displayName": "Año"
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Por zona y año"
-              }
-            }
-          },
-          "position": {
-            "x": 3,
-            "y": 12,
-            "width": 3,
-            "height": 5
-          }
-        }
-      ]
-    },
-    {
-      "name": "calidad_experimentos",
-      "displayName": "Calidad y experimentos",
-      "layout": [
-        {
-          "widget": {
-            "name": "texto_16",
-            "multilineTextboxSpec": {
-              "lines": [
-                "# Calidad de datos y experimentos",
-                "Reglas aplicadas en Silver, validación cruzada con Power BI y resultados de la última ejecución de experimentos."
-              ]
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 0,
-            "width": 6,
-            "height": 2
-          }
-        },
-        {
-          "widget": {
-            "name": "tabla_17",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "calidad",
-                  "fields": [
-                    {
-                      "name": "regla",
-                      "expression": "`regla`"
-                    },
-                    {
-                      "name": "descripcion",
-                      "expression": "`descripcion`"
-                    },
-                    {
-                      "name": "registros_afectados",
-                      "expression": "`registros_afectados`"
-                    },
-                    {
-                      "name": "accion",
-                      "expression": "`accion`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 1,
-              "widgetType": "table",
-              "encodings": {
-                "columns": [
-                  {
-                    "fieldName": "regla",
-                    "displayName": "Regla"
-                  },
-                  {
-                    "fieldName": "descripcion",
-                    "displayName": "Problema"
-                  },
-                  {
-                    "fieldName": "registros_afectados",
-                    "displayName": "Registros"
-                  },
-                  {
-                    "fieldName": "accion",
-                    "displayName": "Acción"
-                  }
-                ]
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Reglas de calidad (tunki_silver.calidad)"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 2,
-            "width": 3,
-            "height": 7
-          }
-        },
-        {
-          "widget": {
-            "name": "tabla_18",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "validacion",
-                  "fields": [
-                    {
-                      "name": "metrica",
-                      "expression": "`metrica`"
-                    },
-                    {
-                      "name": "power_bi",
-                      "expression": "`power_bi`"
-                    },
-                    {
-                      "name": "databricks",
-                      "expression": "`databricks`"
-                    },
-                    {
-                      "name": "resultado",
-                      "expression": "`resultado`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 1,
-              "widgetType": "table",
-              "encodings": {
-                "columns": [
-                  {
-                    "fieldName": "metrica",
-                    "displayName": "Métrica"
-                  },
-                  {
-                    "fieldName": "power_bi",
-                    "displayName": "Power BI"
-                  },
-                  {
-                    "fieldName": "databricks",
-                    "displayName": "Databricks"
-                  },
-                  {
-                    "fieldName": "resultado",
-                    "displayName": "Resultado"
-                  }
-                ]
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Validación: Gold frente a Power BI"
-              }
-            }
-          },
-          "position": {
-            "x": 3,
-            "y": 2,
-            "width": 3,
-            "height": 7
-          }
-        },
-        {
-          "widget": {
-            "name": "lineas_19",
+            "name": "lineas_11",
             "queries": [
               {
                 "name": "main_query",
@@ -1004,80 +550,14 @@
               },
               "frame": {
                 "showTitle": true,
-                "title": "EXP-BD-01 · Segundos según filas procesadas (×1 a ×300)"
+                "title": "Escalabilidad (EXP-BD-01): segundos según filas procesadas, ×1 a ×300"
               }
             }
           },
           "position": {
             "x": 0,
-            "y": 9,
-            "width": 3,
-            "height": 6
-          }
-        },
-        {
-          "widget": {
-            "name": "tabla_20",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "experimentos",
-                  "fields": [
-                    {
-                      "name": "experimento",
-                      "expression": "`experimento`"
-                    },
-                    {
-                      "name": "escenario",
-                      "expression": "`escenario`"
-                    },
-                    {
-                      "name": "promedio_s",
-                      "expression": "`promedio_s`"
-                    },
-                    {
-                      "name": "desv_s",
-                      "expression": "`desv_s`"
-                    }
-                  ],
-                  "disaggregated": true
-                }
-              }
-            ],
-            "spec": {
-              "version": 1,
-              "widgetType": "table",
-              "encodings": {
-                "columns": [
-                  {
-                    "fieldName": "experimento",
-                    "displayName": "Experimento"
-                  },
-                  {
-                    "fieldName": "escenario",
-                    "displayName": "Escenario"
-                  },
-                  {
-                    "fieldName": "promedio_s",
-                    "displayName": "Promedio (s)"
-                  },
-                  {
-                    "fieldName": "desv_s",
-                    "displayName": "Desv. (s)"
-                  }
-                ]
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "EXP-BD-02 a 06 · Tiempos promedio (s)"
-              }
-            }
-          },
-          "position": {
-            "x": 3,
-            "y": 9,
-            "width": 3,
+            "y": 17,
+            "width": 6,
             "height": 6
           }
         }
