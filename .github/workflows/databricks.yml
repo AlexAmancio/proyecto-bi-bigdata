@@ -41,6 +41,14 @@ jobs:
             python3 -m py_compile "$f" && echo "OK  $f"
           done
 
+      - name: Revisar que no haya celdas no soportadas por serverless (solo Python y SQL)
+        run: |
+          if grep -nE "^# MAGIC %(fs|scala|sh|r)( |$)" bigdata/notebooks/*.py; then
+            echo "Hay celdas %fs, %scala, %sh o %r: el cómputo serverless solo admite Python y SQL"
+            exit 1
+          fi
+          echo "OK  solo celdas Python / SQL / Markdown"
+
       - name: Revisar que estén los 6 archivos de datos con encabezado
         run: |
           for f in estadias consumos clientes categorias usuarios; do
