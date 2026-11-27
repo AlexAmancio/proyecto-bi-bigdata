@@ -32,7 +32,7 @@ flowchart LR
         V[(Volume<br/>tunki_bronze.archivos)]
         B[BRONZE<br/>tunki_bronze.*<br/>datos crudos + linaje]
         E[[03_eda<br/>análisis exploratorio]]
-        SV[SILVER<br/>tunki_silver.*<br/>N01 + R01–R10<br/>particionado por año]
+        SV[SILVER<br/>tunki_silver.*<br/>N01 + R01–R10]
         Q[(tunki_silver.calidad)]
         G[GOLD<br/>tunki_gold.*<br/>KPIs y factores]
         X[[06_experimentos]]
@@ -54,7 +54,7 @@ flowchart LR
 |---|---|---|---|
 | Aterrizaje | Volume `workspace.tunki_bronze.archivos` | `sistema/*.txt`, `simulado/estadias/`, `simulado/consumos/` | Texto delimitado |
 | Bronze | `workspace.tunki_bronze` | `estadias`, `consumos`, `habitaciones`, `clientes`, `categorias`, `usuarios` | Delta |
-| Silver | `workspace.tunki_silver` | `estadias` (particionada por `año`), `consumos`, `clientes`, `habitaciones`, `calidad` | Delta |
+| Silver | `workspace.tunki_silver` | `estadias`, `consumos`, `clientes`, `habitaciones`, `calidad` | Delta |
 | Gold | `workspace.tunki_gold` | `kpi_mensual`, `kpi_anual`, `no_llegada_segmento`, `ingreso_categoria`, `validacion_bi`, `experimentos` | Delta |
 
 ---
@@ -190,7 +190,7 @@ Son las mismas reglas del ETL de BI (R01–R10) más N01. Cada ejecución deja u
 |---|---|---|---|
 | EXP-BD-01 | Escalabilidad por volumen | ×1, ×10, ×25, ×50, ×100 | Segundos de ingesta y de limpieza + KPIs |
 | EXP-BD-02 | CSV frente a Delta | Lote ×50 | Segundos de lectura + agregación; MB en disco |
-| EXP-BD-03 | Particionado por año frente a sin partición | Lote ×50, consulta de 2026 | Segundos; número de archivos |
+| EXP-BD-03 | Particionado por mes frente a sin partición | Lote ×50, consulta de diciembre | Segundos; número de archivos |
 | EXP-BD-04 | `na.drop()` total frente a reglas | Bronze completo | Filas conservadas; desvío del % de no-llegada |
 | EXP-BD-05 | Spark SQL frente a API DataFrames | Lote ×50 | Segundos |
 | EXP-BD-06 | Número de particiones | Lote ×100; 1, 4, 16, 64 | Segundos |

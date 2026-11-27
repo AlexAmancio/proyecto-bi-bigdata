@@ -49,6 +49,14 @@ jobs:
           fi
           echo "OK  solo celdas Python / SQL / Markdown"
 
+      - name: Revisar que las columnas de partición no tengan tildes ni ñ
+        run: |
+          if grep -nP 'partitionBy\([^)]*[^\x00-\x7F]' bigdata/notebooks/*.py; then
+            echo "Databricks no admite columnas de partición con caracteres no ASCII (tildes, ñ)"
+            exit 1
+          fi
+          echo "OK  columnas de partición en ASCII"
+
       - name: Revisar que estén los 6 archivos de datos con encabezado
         run: |
           for f in estadias consumos clientes categorias usuarios; do

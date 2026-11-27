@@ -214,13 +214,14 @@ display(estadias.limit(10))
 
 # MAGIC %md
 # MAGIC ## 5. Guardar la capa Silver
-# MAGIC La tabla de estadías se guarda **particionada por año** (`partitionBy("año")`): las consultas que filtran por año
-# MAGIC leen solo los archivos de ese año (se evalúa en `06_experimentos`).
+# MAGIC Las tablas **no se particionan**: Databricks recomienda particionar solo tablas grandes (del orden de 1 TB);
+# MAGIC con unos miles de filas, particionar crea muchos archivos pequeños y empeora el rendimiento. Delta Lake guarda
+# MAGIC estadísticas (mínimo y máximo) de cada archivo y las usa para saltarse los que no cumplen un filtro (*data skipping*).
+# MAGIC El efecto de particionar se mide aparte en `06_experimentos` (EXP-BD-03).
 
 # COMMAND ----------
 
-(estadias.write.mode("overwrite").option("overwriteSchema", "true")
-    .partitionBy("año").saveAsTable(f"{SILVER}.estadias"))
+estadias.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.estadias")
 con.drop("archivo_origen", "fecha_carga").write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.consumos")
 clientes.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.clientes")
 habitaciones.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.habitaciones")
