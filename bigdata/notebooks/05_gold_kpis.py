@@ -52,21 +52,21 @@ def metricas(df, *grupo):
 
 # COMMAND ----------
 
-mensual = metricas(est, "origen", "anio", "mes")
+mensual = metricas(est, "origen", "año", "mes")
 
-anterior = (mensual.select("origen", "anio", "mes",
-                           F.col("reservas").alias("reservas_anio_anterior"),
-                           F.col("ingreso").alias("ingreso_anio_anterior"))
-                   .withColumn("anio", F.col("anio") + 1))   # el año anterior se "corre" un año para unirlo
+anterior = (mensual.select("origen", "año", "mes",
+                           F.col("reservas").alias("reservas_año_anterior"),
+                           F.col("ingreso").alias("ingreso_año_anterior"))
+                   .withColumn("año", F.col("año") + 1))   # el año anterior se "corre" un año para unirlo
 
-kpi_mensual = (mensual.join(anterior, ["origen", "anio", "mes"], "left")
+kpi_mensual = (mensual.join(anterior, ["origen", "año", "mes"], "left")
     .withColumn("var_interanual_reservas",
-                dividir(F.col("reservas") - F.col("reservas_anio_anterior"), F.col("reservas_anio_anterior")))
+                dividir(F.col("reservas") - F.col("reservas_año_anterior"), F.col("reservas_año_anterior")))
     .withColumn("var_interanual_ingreso",
-                dividir(F.col("ingreso") - F.col("ingreso_anio_anterior"), F.col("ingreso_anio_anterior")))
-    .withColumn("periodo", F.to_date(F.concat_ws("-", F.col("anio").cast("string"),
+                dividir(F.col("ingreso") - F.col("ingreso_año_anterior"), F.col("ingreso_año_anterior")))
+    .withColumn("periodo", F.to_date(F.concat_ws("-", F.col("año").cast("string"),
                                                  F.lpad(F.col("mes").cast("string"), 2, "0"), F.lit("01"))))
-    .orderBy("origen", "anio", "mes"))
+    .orderBy("origen", "año", "mes"))
 
 kpi_mensual.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{GOLD}.kpi_mensual")
 display(kpi_mensual.filter("origen = 'sistema'"))
@@ -85,19 +85,19 @@ print("Fecha de corte de los datos:", corte)
 comparable = est.filter((F.month("fecha") < corte.month) |
                         ((F.month("fecha") == corte.month) & (F.dayofmonth("fecha") <= corte.day)))
 
-anual = metricas(comparable, "origen", "anio")
-anual_anterior = (anual.select("origen", "anio",
-                               F.col("reservas").alias("reservas_anio_anterior"),
-                               F.col("ingreso").alias("ingreso_anio_anterior"))
-                       .withColumn("anio", F.col("anio") + 1))
+anual = metricas(comparable, "origen", "año")
+anual_anterior = (anual.select("origen", "año",
+                               F.col("reservas").alias("reservas_año_anterior"),
+                               F.col("ingreso").alias("ingreso_año_anterior"))
+                       .withColumn("año", F.col("año") + 1))
 
-kpi_anual = (anual.join(anual_anterior, ["origen", "anio"], "left")
+kpi_anual = (anual.join(anual_anterior, ["origen", "año"], "left")
     .withColumn("var_interanual_reservas",
-                dividir(F.col("reservas") - F.col("reservas_anio_anterior"), F.col("reservas_anio_anterior")))
+                dividir(F.col("reservas") - F.col("reservas_año_anterior"), F.col("reservas_año_anterior")))
     .withColumn("var_interanual_ingreso",
-                dividir(F.col("ingreso") - F.col("ingreso_anio_anterior"), F.col("ingreso_anio_anterior")))
+                dividir(F.col("ingreso") - F.col("ingreso_año_anterior"), F.col("ingreso_año_anterior")))
     .withColumn("periodo_comparado", F.lit(f"01-ene al {corte.day:02d}-{corte.month:02d}"))
-    .orderBy("origen", "anio"))
+    .orderBy("origen", "año"))
 
 kpi_anual.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{GOLD}.kpi_anual")
 display(kpi_anual.filter("origen = 'sistema'"))
@@ -122,13 +122,13 @@ dimensiones = {
 
 segmentos = None
 for nombre, columna in dimensiones.items():
-    parte = (metricas(est, "origen", "anio", columna)
+    parte = (metricas(est, "origen", "año", columna)
              .withColumnRenamed(columna, "segmento")
              .withColumn("dimension", F.lit(nombre)))
     segmentos = parte if segmentos is None else segmentos.unionByName(parte)
 
 no_llegada_segmento = segmentos.select(
-    "origen", "dimension", "segmento", "anio", "reservas", "canceladas", "no_show",
+    "origen", "dimension", "segmento", "año", "reservas", "canceladas", "no_show",
     "pct_cancelacion", "pct_no_show", "pct_no_llegada", "ingreso", "ingreso_por_estadia")
 
 no_llegada_segmento.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{GOLD}.no_llegada_segmento")
@@ -143,7 +143,7 @@ display(metricas(est.filter("origen = 'sistema'"), "zona").orderBy(F.desc("pct_n
 
 # COMMAND ----------
 
-ingreso_categoria = metricas(est, "origen", "anio", "categoria").orderBy("origen", "anio", F.desc("ingreso"))
+ingreso_categoria = metricas(est, "origen", "año", "categoria").orderBy("origen", "año", F.desc("ingreso"))
 ingreso_categoria.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{GOLD}.ingreso_categoria")
 display(ingreso_categoria.filter("origen = 'sistema'"))
 

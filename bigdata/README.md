@@ -54,7 +54,7 @@ flowchart LR
 |---|---|---|---|
 | Aterrizaje | Volume `workspace.tunki_bronze.archivos` | `sistema/*.txt`, `simulado/estadias/`, `simulado/consumos/` | Texto delimitado |
 | Bronze | `workspace.tunki_bronze` | `estadias`, `consumos`, `habitaciones`, `clientes`, `categorias`, `usuarios` | Delta |
-| Silver | `workspace.tunki_silver` | `estadias` (particionada por `anio`), `consumos`, `clientes`, `habitaciones`, `calidad` | Delta |
+| Silver | `workspace.tunki_silver` | `estadias` (particionada por `año`), `consumos`, `clientes`, `habitaciones`, `calidad` | Delta |
 | Gold | `workspace.tunki_gold` | `kpi_mensual`, `kpi_anual`, `no_llegada_segmento`, `ingreso_categoria`, `validacion_bi`, `experimentos` | Delta |
 
 ---

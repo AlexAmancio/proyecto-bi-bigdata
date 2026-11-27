@@ -122,11 +122,11 @@ print("Estadías con cliente inexistente:", huerfanas.count())
 reales = estadias.filter(F.col("origen") == "sistema")
 
 por_mes = (reales
-    .withColumn("anio", F.year("check_in"))
+    .withColumn("año", F.year("check_in"))
     .withColumn("mes", F.month("check_in"))
-    .groupBy("anio", "mes")
+    .groupBy("año", "mes")
     .agg(F.count("*").alias("reservas"))
-    .orderBy("anio", "mes"))
+    .orderBy("año", "mes"))
 display(por_mes)
 
 # COMMAND ----------
@@ -136,9 +136,9 @@ display(por_mes)
 
 # COMMAND ----------
 
-display(reales.withColumn("anio", F.year("check_in"))
-              .groupBy("anio", "estado").count()
-              .orderBy("anio", "estado"))
+display(reales.withColumn("año", F.year("check_in"))
+              .groupBy("año", "estado").count()
+              .orderBy("año", "estado"))
 
 # COMMAND ----------
 
@@ -188,14 +188,14 @@ reales.createOrReplaceTempView("v_estadias")
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT YEAR(check_in) AS anio,
+# MAGIC SELECT YEAR(check_in) AS `año`,
 # MAGIC        COUNT(*) AS reservas,
 # MAGIC        ROUND(100 * SUM(CASE WHEN estado = 'CANCELADA' THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_cancelacion,
 # MAGIC        ROUND(100 * SUM(CASE WHEN estado = 'NO_SHOW'   THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_no_show,
 # MAGIC        ROUND(SUM(monto_pagado), 0) AS ingreso
 # MAGIC FROM v_estadias
 # MAGIC GROUP BY YEAR(check_in)
-# MAGIC ORDER BY anio
+# MAGIC ORDER BY `año`
 
 # COMMAND ----------
 

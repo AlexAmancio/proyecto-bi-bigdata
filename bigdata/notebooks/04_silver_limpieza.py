@@ -189,7 +189,7 @@ estadias = (est
     .withColumnRenamed("habitacion_id", "id_habitacion")
     .withColumnRenamed("usuario_id", "id_usuario")
     .withColumn("fecha", F.to_date("fecha_checkin"))
-    .withColumn("anio", F.year("fecha"))
+    .withColumn("año", F.year("fecha"))
     .withColumn("mes", F.month("fecha"))
     .withColumn("trimestre", F.quarter("fecha"))
     .withColumn("dia_semana", nombre_dia)
@@ -214,13 +214,13 @@ display(estadias.limit(10))
 
 # MAGIC %md
 # MAGIC ## 5. Guardar la capa Silver
-# MAGIC La tabla de estadías se guarda **particionada por año** (`partitionBy("anio")`): las consultas que filtran por año
+# MAGIC La tabla de estadías se guarda **particionada por año** (`partitionBy("año")`): las consultas que filtran por año
 # MAGIC leen solo los archivos de ese año (se evalúa en `06_experimentos`).
 
 # COMMAND ----------
 
 (estadias.write.mode("overwrite").option("overwriteSchema", "true")
-    .partitionBy("anio").saveAsTable(f"{SILVER}.estadias"))
+    .partitionBy("año").saveAsTable(f"{SILVER}.estadias"))
 con.drop("archivo_origen", "fecha_carga").write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.consumos")
 clientes.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.clientes")
 habitaciones.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.habitaciones")

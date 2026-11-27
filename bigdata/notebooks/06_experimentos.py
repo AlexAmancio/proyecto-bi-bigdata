@@ -72,7 +72,7 @@ def limpiar(df):
 
 def kpis(df):
     """Agregación mensual de los KPIs (como en Gold)."""
-    return (df.groupBy(F.year("check_in").alias("anio"), F.month("check_in").alias("mes"))
+    return (df.groupBy(F.year("check_in").alias("año"), F.month("check_in").alias("mes"))
               .agg(F.count("*").alias("reservas"),
                    F.sum(F.when(F.col("estado") == "CANCELADA", 1).otherwise(0)).alias("canceladas"),
                    F.sum(F.when(F.col("estado") == "NO_SHOW", 1).otherwise(0)).alias("no_show"),
@@ -139,18 +139,18 @@ display(resumen("EXP-BD-02"))
 # MAGIC %md
 # MAGIC ## EXP-BD-03 · Tabla particionada por año frente a no particionada
 # MAGIC - **Objetivo:** medir si particionar por año acelera una consulta que filtra un solo año.
-# MAGIC - **Procedimiento:** el lote ×50 ya limpio se guarda dos veces: con `partitionBy("anio")` y sin partición. Se consulta solo 2026.
+# MAGIC - **Procedimiento:** el lote ×50 ya limpio se guarda dos veces: con `partitionBy("año")` y sin partición. Se consulta solo 2026.
 # MAGIC - **Configuración:** lote ×50, consulta = reservas y no-llegada por mes de 2026, 3 repeticiones.
 
 # COMMAND ----------
 
-limpio = limpiar(spark.table(f"{BRONZE}.exp_estadias_x50")).withColumn("anio", F.year("check_in"))
+limpio = limpiar(spark.table(f"{BRONZE}.exp_estadias_x50")).withColumn("año", F.year("check_in"))
 limpio.write.mode("overwrite").saveAsTable(f"{SILVER}.exp_sin_particion")
-limpio.write.mode("overwrite").partitionBy("anio").saveAsTable(f"{SILVER}.exp_con_particion")
+limpio.write.mode("overwrite").partitionBy("año").saveAsTable(f"{SILVER}.exp_con_particion")
 filas = spark.table(f"{SILVER}.exp_sin_particion").count()
 
 def consulta_2026(tabla):
-    return (spark.table(tabla).filter(F.col("anio") == 2026)
+    return (spark.table(tabla).filter(F.col("año") == 2026)
             .groupBy(F.month("check_in").alias("mes"))
             .agg(F.count("*").alias("reservas"),
                  F.sum(F.when(F.col("estado").isin("CANCELADA", "NO_SHOW"), 1).otherwise(0)).alias("no_llegadas"))
@@ -211,7 +211,7 @@ tabla = f"{BRONZE}.exp_estadias_x50"
 filas = spark.table(tabla).count()
 
 consulta_sql = f"""
-SELECT YEAR(check_in) AS anio, MONTH(check_in) AS mes, COUNT(*) AS reservas,
+SELECT YEAR(check_in) AS `año`, MONTH(check_in) AS mes, COUNT(*) AS reservas,
        SUM(CASE WHEN estado = 'CANCELADA' THEN 1 ELSE 0 END) AS canceladas,
        SUM(CASE WHEN estado = 'NO_SHOW' THEN 1 ELSE 0 END) AS no_show,
        SUM(monto_pagado) AS ingreso

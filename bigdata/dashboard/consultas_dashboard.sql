@@ -9,17 +9,17 @@
 --     Gráfico: 4 "Counter": reservas (con var_interanual_reservas),
 --     pct_cancelacion, pct_no_show, ingreso_por_estadia
 -- ---------------------------------------------------------------------
-SELECT anio, periodo_comparado, reservas, reservas_anio_anterior, var_interanual_reservas,
+SELECT `año`, periodo_comparado, reservas, `reservas_año_anterior`, var_interanual_reservas,
        pct_cancelacion, pct_no_show, pct_no_llegada, ingreso, ingreso_por_estadia
 FROM workspace.tunki_gold.kpi_anual
 WHERE origen = 'sistema'
-ORDER BY anio;
+ORDER BY `año`;
 
 -- ---------------------------------------------------------------------
 -- D2. Evolución mensual de reservas por año
---     Gráfico: líneas. X = mes, Y = reservas, color = anio
+--     Gráfico: líneas. X = mes, Y = reservas, color = `año`
 -- ---------------------------------------------------------------------
-SELECT anio, mes, periodo, reservas, ingreso, var_interanual_reservas
+SELECT `año`, mes, periodo, reservas, ingreso, var_interanual_reservas
 FROM workspace.tunki_gold.kpi_mensual
 WHERE origen = 'sistema'
 ORDER BY periodo;
@@ -49,21 +49,21 @@ ORDER BY dimension, pct_no_llegada DESC;
 
 -- ---------------------------------------------------------------------
 -- D5. No-llegada por zona y año (¿el problema empeora en 2026?)
---     Gráfico: barras agrupadas. X = segmento (zona), Y = pct_no_llegada, color = anio
+--     Gráfico: barras agrupadas. X = segmento (zona), Y = pct_no_llegada, color = `año`
 -- ---------------------------------------------------------------------
-SELECT anio, segmento AS zona, reservas, pct_no_llegada
+SELECT `año`, segmento AS zona, reservas, pct_no_llegada
 FROM workspace.tunki_gold.no_llegada_segmento
 WHERE origen = 'sistema' AND dimension = 'Zona de origen'
-ORDER BY anio, zona;
+ORDER BY `año`, zona;
 
 -- ---------------------------------------------------------------------
 -- D6. Ingreso por categoría de habitación
---     Gráfico: barras. X = categoria, Y = ingreso, color = anio
+--     Gráfico: barras. X = categoria, Y = ingreso, color = `año`
 -- ---------------------------------------------------------------------
-SELECT anio, categoria, reservas, ingreso, ingreso_por_estadia
+SELECT `año`, categoria, reservas, ingreso, ingreso_por_estadia
 FROM workspace.tunki_gold.ingreso_categoria
 WHERE origen = 'sistema'
-ORDER BY anio, ingreso DESC;
+ORDER BY `año`, ingreso DESC;
 
 -- ---------------------------------------------------------------------
 -- D7. Calidad de datos (última ejecución de Silver)
