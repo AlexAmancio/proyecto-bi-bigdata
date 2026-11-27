@@ -1,0 +1,4 @@
+# Los scripts SQL (ANSI) y los .bat se guardan con fin de linea de Windows (CRLF)
+# tal cual, para que funcionen igual al clonar o al descargar el ZIP desde GitHub.
+*.sql -text
+*.bat -text
