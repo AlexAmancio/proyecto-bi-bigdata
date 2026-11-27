@@ -10,7 +10,7 @@
 # MAGIC |---|---|---|---|
 # MAGIC | EXP-BD-01 | Escalabilidad por volumen | ¿Cómo crece el tiempo de proceso al multiplicar los datos ×1 a ×100? | (asignar) |
 # MAGIC | EXP-BD-02 | Formato CSV frente a Delta | ¿Cuánto mejora la lectura y el espacio con Delta Lake? | (asignar) |
-# MAGIC | EXP-BD-03 | Tabla particionada frente a no particionada | ¿Cuánto acelera particionar por año una consulta filtrada? | (asignar) |
+# MAGIC | EXP-BD-03 | Tabla particionada frente a no particionada | ¿Cuánto acelera particionar por mes una consulta filtrada? | (asignar) |
 # MAGIC | EXP-BD-04 | Estrategia de limpieza | ¿Qué pasa con la calidad si se borra todo nulo (`na.drop`) en vez de aplicar reglas? | (asignar) |
 # MAGIC | EXP-BD-05 | Spark SQL frente a API de DataFrames | ¿Hay diferencia de rendimiento entre ambas formas de consultar? | (asignar) |
 # MAGIC | EXP-BD-06 | Número de particiones | ¿Cómo afecta `repartition` (1, 4, 16, 64) al tiempo de una agregación? | (asignar) |
@@ -137,27 +137,30 @@ display(resumen("EXP-BD-02"))
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## EXP-BD-03 · Tabla particionada por año frente a no particionada
-# MAGIC - **Objetivo:** medir si particionar por año acelera una consulta que filtra un solo año.
-# MAGIC - **Procedimiento:** el lote ×50 ya limpio se guarda dos veces: con `partitionBy("año")` y sin partición. Se consulta solo 2026.
-# MAGIC - **Configuración:** lote ×50, consulta = reservas y no-llegada por mes de 2026, 3 repeticiones.
+# MAGIC ## EXP-BD-03 · Tabla particionada por mes frente a no particionada
+# MAGIC - **Objetivo:** medir si particionar acelera una consulta que filtra un solo mes.
+# MAGIC - **Procedimiento:** el lote ×50 ya limpio se guarda dos veces: con `partitionBy("mes")` y sin partición. Se consulta solo diciembre (temporada alta).
+# MAGIC - **Configuración:** lote ×50, consulta = reservas y no-llegada de diciembre por año, 3 repeticiones.
+# MAGIC - **Nota:** se particiona por `mes` y no por `año` porque Databricks no admite columnas de partición con caracteres no ASCII (ñ).
 
 # COMMAND ----------
 
-limpio = limpiar(spark.table(f"{BRONZE}.exp_estadias_x50")).withColumn("año", F.year("check_in"))
-limpio.write.mode("overwrite").saveAsTable(f"{SILVER}.exp_sin_particion")
-limpio.write.mode("overwrite").partitionBy("año").saveAsTable(f"{SILVER}.exp_con_particion")
+limpio = (limpiar(spark.table(f"{BRONZE}.exp_estadias_x50"))
+          .withColumn("año", F.year("check_in"))
+          .withColumn("mes", F.month("check_in")))
+limpio.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{SILVER}.exp_sin_particion")
+limpio.write.mode("overwrite").option("overwriteSchema", "true").partitionBy("mes").saveAsTable(f"{SILVER}.exp_con_particion")
 filas = spark.table(f"{SILVER}.exp_sin_particion").count()
 
-def consulta_2026(tabla):
-    return (spark.table(tabla).filter(F.col("año") == 2026)
-            .groupBy(F.month("check_in").alias("mes"))
+def consulta_diciembre(tabla):
+    return (spark.table(tabla).filter(F.col("mes") == 12)
+            .groupBy("año")
             .agg(F.count("*").alias("reservas"),
                  F.sum(F.when(F.col("estado").isin("CANCELADA", "NO_SHOW"), 1).otherwise(0)).alias("no_llegadas"))
             .collect())
 
-medir("EXP-BD-03", "Sin partición", lambda: consulta_2026(f"{SILVER}.exp_sin_particion"), filas)
-medir("EXP-BD-03", "Particionada por año", lambda: consulta_2026(f"{SILVER}.exp_con_particion"), filas)
+medir("EXP-BD-03", "Sin partición", lambda: consulta_diciembre(f"{SILVER}.exp_sin_particion"), filas)
+medir("EXP-BD-03", "Particionada por mes", lambda: consulta_diciembre(f"{SILVER}.exp_con_particion"), filas)
 
 for t in ["exp_sin_particion", "exp_con_particion"]:
     d = spark.sql(f"DESCRIBE DETAIL {SILVER}.{t}").first()
