@@ -78,7 +78,10 @@ bigdata/
 │   ├── 04_silver_limpieza.py      # Capa Silver (reglas de calidad)
 │   ├── 05_gold_kpis.py            # Capa Gold (KPIs) + validación con Power BI
 │   └── 06_experimentos.py         # EXP-BD-01 a EXP-BD-06
-├── dashboard/consultas_dashboard.sql   # Consultas de cada gráfico del dashboard
+├── dashboard/
+│   ├── tunki_lodge.lvdash.json    # Dashboard de Databricks (lo despliega el bundle)
+│   ├── generar_dashboard.js       # Genera el .lvdash.json (node generar_dashboard.js)
+│   └── consultas_dashboard.sql    # Consultas de referencia de cada gráfico
 ├── databricks.yml                 # Asset Bundle: Jobs y tareas (lo despliega GitHub Actions)
 └── evidencias/                    # Notebooks ejecutados (.ipynb/.html) y capturas
 ```
@@ -131,6 +134,8 @@ flowchart LR
    - `DATABRICKS_TOKEN`: el token del paso 1 (nunca se escribe en el código)
 
 En Databricks, los notebooks desplegados quedan en *Workspace → Users → (tu usuario) → .bundle → tunki_bigdata → prod* y los Jobs en *Jobs & Pipelines* ("Tunki Lodge - Pipeline Medallion" y "Tunki Lodge - Experimentos Big Data", este último se ejecuta a mano).
+
+**Dashboard:** el bundle también despliega el dashboard **"Tunki Lodge - Reservas y no-llegada"** (*Dashboards* en el menú izquierdo), con tres páginas: Resumen, Factores de no-llegada y Calidad y experimentos. Está definido en [`dashboard/tunki_lodge.lvdash.json`](dashboard/tunki_lodge.lvdash.json); para cambiarlo se edita [`dashboard/generar_dashboard.js`](dashboard/generar_dashboard.js), se ejecuta `node bigdata/dashboard/generar_dashboard.js` y se integra por pull request.
 
 ---
 

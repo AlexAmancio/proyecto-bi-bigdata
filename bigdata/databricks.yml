@@ -5,6 +5,7 @@
 #   - los notebooks (se copian a la carpeta del bundle en el workspace)
 #   - el Job "pipeline_medallion": 00 → 01 → 02 → 03 → 04 → 05
 #   - el Job "experimentos": 06 (solo se ejecuta a mano)
+#   - el dashboard "Tunki Lodge - Reservas y no-llegada" (dashboard/tunki_lodge.lvdash.json)
 #
 # Lo despliega y ejecuta el pipeline de GitHub Actions
 # (.github/workflows/deploy-bundle.yml) cada vez que se hace merge a main.
@@ -13,6 +14,12 @@
 
 bundle:
   name: tunki_bigdata
+
+variables:
+  warehouse_id:
+    description: SQL Warehouse que ejecuta las consultas del dashboard
+    lookup:
+      warehouse: "Serverless Starter Warehouse"
 
 targets:
   prod:
@@ -63,3 +70,11 @@ resources:
         - task_key: experimentos
           notebook_task:
             notebook_path: ./notebooks/06_experimentos.py
+
+  # Dashboard de Databricks (AI/BI) definido como código.
+  # El archivo se genera con: node bigdata/dashboard/generar_dashboard.js
+  dashboards:
+    tunki_lodge:
+      display_name: "Tunki Lodge - Reservas y no-llegada"
+      file_path: ./dashboard/tunki_lodge.lvdash.json
+      warehouse_id: ${var.warehouse_id}
