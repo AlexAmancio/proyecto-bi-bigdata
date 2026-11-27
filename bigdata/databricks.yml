@@ -1,0 +1,65 @@
+# =====================================================================
+# Databricks Asset Bundle — Solución Big Data Tunki Lodge
+#
+# Define como código lo que debe existir en Databricks:
+#   - los notebooks (se copian a la carpeta del bundle en el workspace)
+#   - el Job "pipeline_medallion": 00 → 01 → 02 → 03 → 04 → 05
+#   - el Job "experimentos": 06 (solo se ejecuta a mano)
+#
+# Lo despliega y ejecuta el pipeline de GitHub Actions
+# (.github/workflows/databricks.yml) cada vez que se hace merge a main.
+# Las tareas no indican clúster: usan cómputo serverless (Free Edition).
+# =====================================================================
+
+bundle:
+  name: tunki_bigdata
+
+targets:
+  prod:
+    default: true
+
+resources:
+  jobs:
+    pipeline_medallion:
+      name: "Tunki Lodge - Pipeline Medallion"
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: configuracion
+          notebook_task:
+            notebook_path: ./notebooks/00_configuracion.py
+
+        - task_key: simulacion
+          depends_on: [{ task_key: configuracion }]
+          notebook_task:
+            notebook_path: ./notebooks/01_simulacion_datos.py
+            base_parameters:
+              factor: "1"
+              tasa_errores: "0.03"
+
+        - task_key: bronze
+          depends_on: [{ task_key: simulacion }]
+          notebook_task:
+            notebook_path: ./notebooks/02_bronze_ingesta.py
+
+        - task_key: eda
+          depends_on: [{ task_key: bronze }]
+          notebook_task:
+            notebook_path: ./notebooks/03_eda.py
+
+        - task_key: silver
+          depends_on: [{ task_key: bronze }]
+          notebook_task:
+            notebook_path: ./notebooks/04_silver_limpieza.py
+
+        - task_key: gold
+          depends_on: [{ task_key: silver }]
+          notebook_task:
+            notebook_path: ./notebooks/05_gold_kpis.py
+
+    experimentos:
+      name: "Tunki Lodge - Experimentos Big Data"
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: experimentos
+          notebook_task:
+            notebook_path: ./notebooks/06_experimentos.py

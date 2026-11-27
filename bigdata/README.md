@@ -79,6 +79,7 @@ bigdata/
 │   ├── 05_gold_kpis.py            # Capa Gold (KPIs) + validación con Power BI
 │   └── 06_experimentos.py         # EXP-BD-01 a EXP-BD-06
 ├── dashboard/consultas_dashboard.sql   # Consultas de cada gráfico del dashboard
+├── databricks.yml                 # Asset Bundle: Jobs y tareas (lo despliega GitHub Actions)
 └── evidencias/                    # Notebooks ejecutados (.ipynb/.html) y capturas
 ```
 
@@ -97,7 +98,43 @@ El lote simulado existe porque el sistema entrega datos sin errores (las 11 regl
 
 ---
 
-## 5. Cómo ejecutarlo en Databricks
+## 5. Pipeline automático con GitHub Actions (recomendado)
+
+Todo el proceso está **declarado como código**: el Job y sus tareas en [`databricks.yml`](databricks.yml) (Databricks Asset Bundle) y los pasos de despliegue en [`.github/workflows/databricks.yml`](../.github/workflows/databricks.yml). Nadie crea nada a mano en Databricks.
+
+```mermaid
+flowchart LR
+    A[Cambio en bigdata/<br/>datos o notebooks] --> B[Pull request]
+    B -->|validar| C{{Sintaxis de notebooks<br/>y archivos de datos}}
+    C --> D[Merge a main]
+    D --> E[Crear esquema Bronze<br/>y Volume si no existen]
+    E --> F[Subir los .txt al Volume]
+    F --> G[bundle deploy:<br/>notebooks + Jobs]
+    G --> H[bundle run:<br/>00 → 01 → 02 → 03/04 → 05]
+    H --> I[Tablas Gold actualizadas<br/>dashboard al día]
+```
+
+| Evento | Qué hace el pipeline |
+|---|---|
+| PR a `main` que toca `bigdata/` | Solo **valida** (sintaxis de notebooks y que estén los 6 archivos de datos). No toca Databricks |
+| Merge a `main` con cambios en `bigdata/` | **Sube los datos**, **despliega** notebooks y Jobs, y **ejecuta** el pipeline Medallion |
+| Botón *Run workflow* en la pestaña **Actions** | Lo mismo que el merge, a demanda |
+
+**Agregar datos:** editar `bigdata/datos/sistema/estadias.txt` (u otro archivo) → PR → merge. El pipeline sube el archivo nuevo y recalcula Bronze, Silver y Gold.
+
+**El pipeline queda en rojo si:** falla cualquier notebook, una tabla Gold queda vacía o la limpieza descarta más del 10 % de las estadías reales. La comparación con Power BI (`validacion_bi`) es informativa: si se agregaron datos, es normal que difiera.
+
+**Configuración única (la hace el dueño del repositorio):**
+1. En Databricks: *Settings → Developer → Access tokens → Generate new token*.
+2. En GitHub: *Settings → Secrets and variables → Actions → New repository secret*:
+   - `DATABRICKS_HOST`: URL del workspace (`https://dbc-xxxx.cloud.databricks.com`)
+   - `DATABRICKS_TOKEN`: el token del paso 1 (nunca se escribe en el código)
+
+En Databricks, los notebooks desplegados quedan en *Workspace → Users → (tu usuario) → .bundle → tunki_bigdata → prod* y los Jobs en *Jobs & Pipelines* ("Tunki Lodge - Pipeline Medallion" y "Tunki Lodge - Experimentos Big Data", este último se ejecuta a mano).
+
+---
+
+## 6. Ejecución manual en Databricks (alternativa sin pipeline)
 
 **Requisitos:** cuenta de Databricks Free Edition (https://www.databricks.com/es/learn/free-edition).
 
@@ -126,7 +163,7 @@ El lote simulado existe porque el sistema entrega datos sin errores (las 11 regl
 
 ---
 
-## 6. Calidad de datos (Silver)
+## 7. Calidad de datos (Silver)
 
 | Regla | Problema | Acción | Operación Spark |
 |---|---|---|---|
@@ -147,7 +184,7 @@ Son las mismas reglas del ETL de BI (R01–R10) más N01. Cada ejecución deja u
 
 ---
 
-## 7. Experimentos
+## 8. Experimentos
 
 | Código | Experimento | Configuración | Métrica |
 |---|---|---|---|
@@ -162,7 +199,7 @@ Cada medición se repite 3 veces; se reporta promedio, desviación estándar, m�
 
 ---
 
-## 8. Operaciones de Spark utilizadas
+## 9. Operaciones de Spark utilizadas
 
 | Etapa | Operaciones |
 |---|---|
@@ -177,7 +214,7 @@ Cada medición se repite 3 veces; se reporta promedio, desviación estándar, m�
 
 ---
 
-## 9. Limitaciones
+## 10. Limitaciones
 
 - **Cómputo serverless de la edición gratuita:** no se puede elegir el número de nodos ni su tamaño, así que la escalabilidad se mide aumentando el volumen, no los nodos. Hay cuota diaria de uso.
 - **Datos simulados:** el lote ampliado replica las estadías reales; no aporta patrones de negocio nuevos, solo volumen y errores para las pruebas.
