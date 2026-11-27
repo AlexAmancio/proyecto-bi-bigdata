@@ -188,12 +188,12 @@ Son las mismas reglas del ETL de BI (R01–R10) más N01. Cada ejecución deja u
 
 | Código | Experimento | Configuración | Métrica |
 |---|---|---|---|
-| EXP-BD-01 | Escalabilidad por volumen | ×1, ×10, ×25, ×50, ×100 | Segundos de ingesta y de limpieza + KPIs |
+| EXP-BD-01 | Escalabilidad por volumen | ×1, ×10, ×25, ×50, ×100, ×150, ×200 (con calentamiento previo) | Segundos de ingesta y de limpieza + KPIs |
 | EXP-BD-02 | CSV frente a Delta | Lote ×50 | Segundos de lectura + agregación; MB en disco |
 | EXP-BD-03 | Particionado por mes frente a sin partición | Lote ×50, consulta de diciembre | Segundos; número de archivos |
 | EXP-BD-04 | `na.drop()` total frente a reglas | Bronze completo | Filas conservadas; desvío del % de no-llegada |
 | EXP-BD-05 | Spark SQL frente a API DataFrames | Lote ×50 | Segundos |
-| EXP-BD-06 | Número de particiones | Lote ×100; 1, 4, 16, 64 | Segundos |
+| EXP-BD-06 | Número de particiones | Lote ×200; 1, 4, 16, 64 | Segundos |
 
 Cada medición se repite 3 veces; se reporta promedio, desviación estándar, mínimo y máximo. Cada integrante del equipo es responsable de documentar uno.
 

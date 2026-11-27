@@ -8,7 +8,7 @@
 # MAGIC
 # MAGIC | Código | Experimento | Pregunta | Responsable |
 # MAGIC |---|---|---|---|
-# MAGIC | EXP-BD-01 | Escalabilidad por volumen | ¿Cómo crece el tiempo de proceso al multiplicar los datos ×1 a ×100? | (asignar) |
+# MAGIC | EXP-BD-01 | Escalabilidad por volumen | ¿Cómo crece el tiempo de proceso al multiplicar los datos ×1 a ×200? | (asignar) |
 # MAGIC | EXP-BD-02 | Formato CSV frente a Delta | ¿Cuánto mejora la lectura y el espacio con Delta Lake? | (asignar) |
 # MAGIC | EXP-BD-03 | Tabla particionada frente a no particionada | ¿Cuánto acelera particionar por mes una consulta filtrada? | (asignar) |
 # MAGIC | EXP-BD-04 | Estrategia de limpieza | ¿Qué pasa con la calidad si se borra todo nulo (`na.drop`) en vez de aplicar reglas? | (asignar) |
@@ -84,12 +84,21 @@ def kpis(df):
 # MAGIC ## EXP-BD-01 · Escalabilidad por volumen
 # MAGIC - **Objetivo:** medir cómo crece el tiempo de ingesta y de limpieza + KPIs cuando el volumen aumenta.
 # MAGIC - **Procedimiento:** para cada factor se genera el lote simulado, se guarda como tabla Delta (ingesta) y luego se ejecuta limpieza + agregación + escritura (proceso).
-# MAGIC - **Configuración:** factores ×1, ×10, ×25, ×50, ×100 (≈ 9 mil a ≈ 930 mil filas); tasa de errores 3 %; 3 repeticiones.
+# MAGIC - **Configuración:** factores ×1, ×10, ×25, ×50, ×100, ×150 y ×200 (≈ 9 mil a ≈ 1,87 millones de filas); tasa de errores 3 %; 3 repeticiones.
+# MAGIC - **Calentamiento:** antes de medir se ejecuta una vez el proceso completo con un lote pequeño y su tiempo **no** se registra, para que la primera medición no incluya el arranque en frío del cómputo.
 # MAGIC - **Resultado esperado:** crecimiento menor que proporcional (Spark reparte el trabajo en paralelo y tiene un costo fijo de arranque).
 
 # COMMAND ----------
 
-FACTORES = [1, 10, 25, 50, 100]
+# Calentamiento (no se mide): inicia el cómputo, carga el código y deja listas las tablas de apoyo
+calentamiento = simular_estadias(estadias_reales, 1, 0.03)
+calentamiento.write.mode("overwrite").saveAsTable(f"{BRONZE}.exp_calentamiento")
+kpis(limpiar(spark.table(f"{BRONZE}.exp_calentamiento"))).collect()
+print("Calentamiento listo")
+
+# COMMAND ----------
+
+FACTORES = [1, 10, 25, 50, 100, 150, 200]
 
 for factor in FACTORES:
     tabla = f"{BRONZE}.exp_estadias_x{factor}"
@@ -106,7 +115,7 @@ display(resumen("EXP-BD-01"))
 
 # MAGIC %md
 # MAGIC **Análisis EXP-BD-01:** graficar `promedio_s` (eje Y) contra `filas` (eje X) por escenario. Comparar el crecimiento
-# MAGIC del tiempo con el crecimiento de los datos: si los datos crecen ×100 y el tiempo crece mucho menos, la solución escala.
+# MAGIC del tiempo con el crecimiento de los datos: si los datos crecen ×200 y el tiempo crece mucho menos, la solución escala.
 
 # COMMAND ----------
 
@@ -195,10 +204,12 @@ display(comparacion)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC **Análisis EXP-BD-04:** con datos reales ambas estrategias coinciden (no hay errores). En el lote simulado,
-# MAGIC `na.drop()` pierde filas recuperables (monto o método de pago vacíos que solo debían corregirse) y **no** detecta
-# MAGIC errores que no son nulos (estado en minúsculas, noches en 0, tarifa negativa, duplicados), por eso su % de
-# MAGIC no-llegada e ingreso se alejan más de los valores reales.
+# MAGIC **Análisis EXP-BD-04:** con datos reales las tres versiones coinciden (no hay errores). En el lote simulado,
+# MAGIC `na.drop()` **no** detecta errores que no son nulos (estado en minúsculas, noches en 0, tarifa negativa,
+# MAGIC duplicados) y conserva esos registros, por lo que su % de no-llegada se aleja más del valor real que con las
+# MAGIC reglas de calidad. A cambio, con las reglas el **ingreso** del lote queda más bajo, porque los montos nulos se
+# MAGIC corrigen a 0 y las estadías inválidas se descartan: la limpieza privilegia la validez sobre la cantidad.
+# MAGIC Comparar ambas métricas contra la fila de referencia (`origen = 'sistema'`).
 
 # COMMAND ----------
 
@@ -231,12 +242,12 @@ display(resumen("EXP-BD-05"))
 # MAGIC %md
 # MAGIC ## EXP-BD-06 · Número de particiones (`repartition`)
 # MAGIC - **Objetivo:** ver cómo influye en qué cantidad de partes se divide el DataFrame (paralelismo) en el tiempo de una agregación.
-# MAGIC - **Procedimiento:** el lote ×100 se reparte en 1, 4, 16 y 64 particiones antes de calcular los KPIs.
-# MAGIC - **Resultado esperado:** 1 partición es la más lenta (sin paralelismo); demasiadas particiones agregan costo de coordinación.
+# MAGIC - **Procedimiento:** el lote ×200 (≈ 1,87 millones de filas) se reparte en 1, 4, 16 y 64 particiones antes de calcular los KPIs.
+# MAGIC - **Hipótesis:** más particiones permiten más paralelismo, pero `repartition` agrega un intercambio de datos (*shuffle*). Con volúmenes de pocos MB ese costo puede superar la ganancia: en la ejecución con ×100, una sola partición fue la más rápida. Se repite con ×200 para ver si el volumen mayor cambia el resultado.
 
 # COMMAND ----------
 
-tabla = f"{BRONZE}.exp_estadias_x100"
+tabla = f"{BRONZE}.exp_estadias_x200"
 filas = spark.table(tabla).count()
 
 for n in [1, 4, 16, 64]:
@@ -255,7 +266,10 @@ df_resultados = (spark.createDataFrame(resultados, "experimento STRING, escenari
                  .withColumn("fecha_ejecucion", F.current_timestamp()))
 df_resultados.write.mode("append").saveAsTable(f"{GOLD}.experimentos")
 
+# La tabla guarda el historial de todas las ejecuciones; el resumen muestra solo la última
+ultima = spark.table(f"{GOLD}.experimentos").agg(F.max("fecha_ejecucion")).first()[0]
 display(spark.table(f"{GOLD}.experimentos")
+        .filter(F.col("fecha_ejecucion") == ultima)
         .groupBy("experimento", "escenario", "filas")
         .agg(F.round(F.avg("segundos"), 3).alias("promedio_s"),
              F.round(F.stddev("segundos"), 3).alias("desv_estandar_s"),
@@ -272,6 +286,6 @@ display(spark.table(f"{GOLD}.experimentos")
 
 # for factor in FACTORES:
 #     spark.sql(f"DROP TABLE IF EXISTS {BRONZE}.exp_estadias_x{factor}")
-# for t in [f"{SILVER}.exp_sin_particion", f"{SILVER}.exp_con_particion", f"{GOLD}.exp_kpis"]:
+# for t in [f"{BRONZE}.exp_calentamiento", f"{SILVER}.exp_sin_particion", f"{SILVER}.exp_con_particion", f"{GOLD}.exp_kpis"]:
 #     spark.sql(f"DROP TABLE IF EXISTS {t}")
 # dbutils.fs.rm(f"{RUTA_SIMULADO}/exp_csv_x50", True)
