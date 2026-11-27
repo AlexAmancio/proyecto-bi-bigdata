@@ -3,7 +3,7 @@
 **Factores asociados a la no-llegada de huéspedes en el sistema Estadía de Tunki Lodge**
 
 ![Pruebas](https://github.com/AlexAmancio/proyecto-bi-bigdata/actions/workflows/tests.yml/badge.svg)
-![Pipeline Databricks](https://github.com/AlexAmancio/proyecto-bi-bigdata/actions/workflows/databricks.yml/badge.svg)
+![Pipeline Databricks](https://github.com/AlexAmancio/proyecto-bi-bigdata/actions/workflows/deploy-bundle.yml/badge.svg)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2025-red)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow)
 ![T-SQL](https://img.shields.io/badge/ETL-T--SQL-blue)
@@ -206,7 +206,7 @@ proyecto-bi-bigdata/
 ├── scripts/crear-usuario.sh          # Genera un usuario con contraseña cifrada (BCrypt)
 ├── .github/workflows/
 │   ├── tests.yml                     # Integración continua de la aplicación (pipeline-tests)
-│   └── databricks.yml                # Valida y despliega la solución Big Data (pipeline-databricks)
+│   └── deploy-bundle.yml             # Valida y despliega el bundle de Big Data (pipeline-databricks)
 ├── pom.xml, mvnw, mvnw.cmd           # Construcción de la aplicación (Maven)
 └── README.md
 ```
@@ -807,7 +807,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 | E-09 | Comparación de escenarios | Sección 14 de este README; informe, secciones 6.3 y 6.5 |
 | E-10 | Logs | Tablas `etl_log` y `etl_calidad`; `bi/logs/ultima_ejecucion.log` |
 | E-12 | Retroalimentación y mejoras | Historial de pull requests del repositorio |
-| E-14 | Solución Big Data funcional | Workflow [`pipeline-databricks`](.github/workflows/databricks.yml) (pestaña Actions) y Jobs de Databricks |
+| E-14 | Solución Big Data funcional | Workflow [`pipeline-databricks`](.github/workflows/deploy-bundle.yml) (pestaña Actions) y Jobs de Databricks |
 
 ---
 

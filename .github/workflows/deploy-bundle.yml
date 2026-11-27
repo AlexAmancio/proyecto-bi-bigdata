@@ -9,12 +9,12 @@ on:
     branches: [main]
     paths:
       - "bigdata/**"
-      - ".github/workflows/databricks.yml"
+      - ".github/workflows/deploy-bundle.yml"
   push:
     branches: [main]
     paths:
       - "bigdata/**"
-      - ".github/workflows/databricks.yml"
+      - ".github/workflows/deploy-bundle.yml"
   workflow_dispatch:
 
 # Nunca dos despliegues a la vez sobre el mismo workspace

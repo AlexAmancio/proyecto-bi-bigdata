@@ -7,7 +7,7 @@
 #   - el Job "experimentos": 06 (solo se ejecuta a mano)
 #
 # Lo despliega y ejecuta el pipeline de GitHub Actions
-# (.github/workflows/databricks.yml) cada vez que se hace merge a main.
+# (.github/workflows/deploy-bundle.yml) cada vez que se hace merge a main.
 # Las tareas no indican clúster: usan cómputo serverless (Free Edition).
 # =====================================================================
 
