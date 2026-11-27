@@ -15,7 +15,7 @@ Lo que agrega Big Data frente a BI:
 | Procesamiento | Un servidor, T-SQL | Distribuido en Spark (DataFrames) |
 | Almacenamiento | Tablas SQL Server | Tablas **Delta Lake** con historial de versiones |
 | Organización | Staging → estrella | **Medallion**: Bronze (crudo) → Silver (limpio) → Gold (KPIs) |
-| Escala probada | Lotes de 500 a 15 000 estadías | De 9 mil a ~930 mil estadías (×1 a ×100) |
+| Escala probada | Lotes de 500 a 15 000 estadías | De 9 mil a ~2,8 millones de estadías (×1 a ×300) |
 | Visualización | Power BI | Dashboard de Databricks + **Genie** (preguntas en lenguaje natural) |
 
 ---

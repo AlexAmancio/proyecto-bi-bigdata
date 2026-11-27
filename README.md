@@ -22,7 +22,7 @@ Este repositorio contiene **dos soluciones de datos** construidas sobre **Estad�
 | **Almacén** | Datamart `hotel_dw` en esquema estrella | Esquemas `tunki_bronze`, `tunki_silver` y `tunki_gold` |
 | **Automatización** | `ejecutar_etl.bat` + Programador de tareas (23:00) | **GitHub Actions**: cada merge sube los datos, despliega y ejecuta el pipeline |
 | **Visualización** | Dashboard en Power BI (medidas DAX) | Tablas Gold, SQL Editor y dashboard de Databricks |
-| **Experimentos** | EXP-01 a EXP-04 (negocio, rendimiento, calidad, exactitud) | EXP-BD-01 a EXP-BD-06 (escalabilidad ×1 a ×100 y configuración) |
+| **Experimentos** | EXP-01 a EXP-04 (negocio, rendimiento, calidad, exactitud) | EXP-BD-01 a EXP-BD-06 (escalabilidad ×1 a ×300 y configuración) |
 | **Documentación** | Este README | [`bigdata/README.md`](bigdata/README.md) |
 
 Las dos soluciones dan **exactamente los mismos indicadores** (validación cruzada entre Power BI y la capa Gold). El repositorio incluye además la aplicación fuente y la documentación del proyecto (informe técnico, presentación y procedimiento de replicación).
@@ -65,7 +65,7 @@ Las dos soluciones dan **exactamente los mismos indicadores** (validación cruza
 | **Solución BI** | Datamart en esquema estrella + ETL automatizado con calidad de datos + dashboard en Power BI |
 | **Solución Big Data** | Pipeline Medallion en Databricks (Spark + Delta Lake) desplegado y ejecutado automáticamente con GitHub Actions |
 | **Periodo analizado** | Enero de 2024 a octubre de 2026 (fecha de corte: 23/10/2026) |
-| **Volumen** | 9 036 estadías, 6 594 clientes, 7 096 consumos; en Big Data se probó hasta **936 045 filas** (×100) |
+| **Volumen** | 9 036 estadías, 6 594 clientes, 7 096 consumos; en Big Data se probó hasta **2 808 217 filas** (×300) |
 | **Validación** | Los indicadores de la capa Gold coinciden con los de Power BI en las 7 métricas de control (diferencia 0) |
 | **Hallazgo principal** | La no-llegada es **3 veces mayor** en clientes de ciudades lejanas (15.2 %) que en los de ciudades cercanas a Oxapampa (4.5 %), y **2 veces mayor** con pago en efectivo (13.5 %) que con transferencia (6.8 %). En 2026 esos segmentos ganaron participación |
 | **Recomendación** | Ofertas dirigidas (prepago, mercado cercano, fidelidad, adelanto en categorías grandes) en lugar de descuentos generales |
@@ -586,16 +586,16 @@ Entorno de las pruebas: AMD Ryzen 7 7730U (8 núcleos), 32 GB de RAM, Windows 11
 
 ### Experimentos de la solución Big Data (Databricks)
 
-Media de 3 repeticiones en Databricks Free Edition (cómputo serverless). Detalle en [`bigdata/README.md`](bigdata/README.md) y en la tabla `tunki_gold.experimentos`.
+Media de 3 repeticiones en Databricks Free Edition (cómputo serverless), con una corrida de calentamiento previa que no se mide. Detalle en [`bigdata/README.md`](bigdata/README.md) y en la tabla `tunki_gold.experimentos`.
 
 | Experimento | Configuración | Resultado |
 |---|---|---|
-| **EXP-BD-01 (escalabilidad)** | Lote simulado ×1 a ×100 (9 356 a 936 045 filas) | ✅ Limpieza + KPIs: 4.24 s con ×1 → **3.00 s con ×100**. El tiempo no crece con el volumen (el ×1 incluye el arranque en frío) |
-| **EXP-BD-02 (formato)** | CSV frente a Delta, 468 116 filas | ✅ Delta: 0.51 s frente a 0.98 s (−48 %) y **0.84 MB frente a 37.81 MB** (2 %) |
-| **EXP-BD-03 (partición)** | Particionada por mes frente a sin partición | 0.43 s frente a 0.47 s: diferencia dentro de la variabilidad |
+| **EXP-BD-01 (escalabilidad)** | Lote simulado ×1 a ×300 (9 356 a 2 808 217 filas) | ✅ Limpieza + KPIs: 2.37 s con ×1 → **3.41 s con ×300**. Los datos crecen 300 veces y el tiempo solo 44 % |
+| **EXP-BD-02 (formato)** | CSV frente a Delta, 468 116 filas | ✅ Delta: 0.42 s frente a 0.85 s (−51 %) y **0.84 MB frente a 37.81 MB** (2 %) |
+| **EXP-BD-03 (partición)** | Particionada por mes frente a sin partición | 0.36 s frente a 0.50 s (−28 %), con alta variabilidad sin partición (±0.17 s) |
 | **EXP-BD-04 (calidad)** | `na.drop()` total frente a reglas de calidad | ✅ Las reglas dejan el % de no-llegada a 0.15 pp del valor real (`na.drop()`: 0.29 pp) |
-| **EXP-BD-05 (consulta)** | Spark SQL frente a API de DataFrames | 0.66 s frente a 0.61 s: equivalentes (mismo optimizador) |
-| **EXP-BD-06 (paralelismo)** | `repartition` en 1, 4, 16 y 64 particiones | 1 partición fue lo más rápido (0.56 s; 64: 0.81 s): con pocos MB, repartir cuesta más de lo que gana |
+| **EXP-BD-05 (consulta)** | Spark SQL frente a API de DataFrames | 0.56 s frente a 0.43 s: generan el mismo plan; la diferencia se atribuye a la caché (SQL se mide primero) |
+| **EXP-BD-06 (paralelismo)** | `repartition` en 1, 4, 16 y 64 particiones (1 872 221 filas) | 1 partición fue lo más rápido (0.67 s; 64: 1.53 s): con pocos MB, repartir cuesta más de lo que gana |
 
 ---
 
