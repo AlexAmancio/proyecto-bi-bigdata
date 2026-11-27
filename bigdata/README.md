@@ -100,7 +100,7 @@ El lote simulado existe porque el sistema entrega datos sin errores (las 11 regl
 
 ## 5. Pipeline automático con GitHub Actions (recomendado)
 
-Todo el proceso está **declarado como código**: el Job y sus tareas en [`databricks.yml`](databricks.yml) (Databricks Asset Bundle) y los pasos de despliegue en [`.github/workflows/databricks.yml`](../.github/workflows/databricks.yml). Nadie crea nada a mano en Databricks.
+Todo el proceso está **declarado como código**: el Job y sus tareas en [`databricks.yml`](databricks.yml) (Databricks Asset Bundle) y los pasos de despliegue en [`.github/workflows/deploy-bundle.yml`](../.github/workflows/deploy-bundle.yml). Nadie crea nada a mano en Databricks.
 
 ```mermaid
 flowchart LR
