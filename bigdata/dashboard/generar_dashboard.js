@@ -125,7 +125,7 @@ function columnaTabla(c, i) {
 
 // ---------------------------------------------------------------- páginas
 const resumen = [
-  texto(['# Tunki Lodge · Reservas y no-llegada de huéspedes', 'Solución Big Data (Databricks, arquitectura Medallion). Tarjetas: año elegido en el filtro, de enero a la fecha de corte, frente al mismo periodo del año anterior. Datos reales (origen = sistema).'], P(0, 0, 5, 2)),
+  texto(['# Tunki Lodge - Reservas y no-llegada de huéspedes', 'Solución Big Data (Databricks, arquitectura Medallion). Tarjetas: año elegido en el filtro, de enero a la fecha de corte, frente al mismo periodo del año anterior. Datos reales (origen = sistema).'], P(0, 0, 5, 2)),
   filtro('Año', 'año', ['kpi_anual'], 'filter-single-select', P(5, 0, 1, 2), '2026'),
   tarjeta('kpi_anual', 'reservas', 'Reservas', P(0, 2, 2, 3)),
   tarjeta('kpi_anual', 'var_reservas_pct', 'Var. interanual (%)', P(2, 2, 1, 3)),
