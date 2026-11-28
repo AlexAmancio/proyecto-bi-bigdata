@@ -200,18 +200,40 @@ reales.createOrReplaceTempView("v_estadias")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## 5. Hallazgos del EDA (completar con los resultados obtenidos)
+# MAGIC ## 5. Hallazgos del EDA y cómo se usaron
 # MAGIC
-# MAGIC | # | Hallazgo | Acción en Silver |
+# MAGIC Resultados de la ejecución del 27/11/2026 sobre Bronze: **18 392 estadías** (9 036 reales del sistema y 9 356 del lote simulado con 3 % de errores).
+# MAGIC
+# MAGIC ### 5.1 Calidad: cada problema encontrado se convirtió en una regla de `04_silver_limpieza`
+# MAGIC
+# MAGIC Los registros afectados son los que registró la bitácora `tunki_silver.calidad`. Los errores provienen del lote simulado: **ninguna estadía real se descartó**.
+# MAGIC
+# MAGIC | # | Hallazgo del EDA | Registros | Acción en Silver |
+# MAGIC |---|---|---|---|
+# MAGIC | 1 | Estado o método de pago en minúsculas o con espacios | 538 | Normalizar con `upper(trim())` (N01) |
+# MAGIC | 2 | Filas repetidas exactas | 274 | `dropDuplicates` (R01) |
+# MAGIC | 3 | Mismo id con datos distintos | 92 | Descartar (R01B) |
+# MAGIC | 4 | Sin id o sin fecha de check-in | 49 | Descartar (R02) |
+# MAGIC | 5 | Estado no válido | 82 | Descartar (R03) |
+# MAGIC | 6 | Noches o huéspedes en cero o negativos | 82 | Descartar (R04) |
+# MAGIC | 7 | Tarifa nula o negativa | 105 | Descartar (R05) |
+# MAGIC | 8 | Monto pagado nulo | 264 | `na.fill(0)` (R06) |
+# MAGIC | 9 | Método de pago vacío | 271 | `na.fill('NO_REGISTRADO')` (R07) |
+# MAGIC | 10 | Cliente, habitación o usuario inexistente | 74 | Descartar (R08) |
+# MAGIC | 11 | Consumo sin estadía válida | 405 | Descartar (R09) |
+# MAGIC | 12 | Consumo con monto nulo o no positivo | 104 | Descartar (R10) |
+# MAGIC
+# MAGIC Resultado: Silver conserva **17 634 estadías**: el 100 % de las reales y el 91.9 % de las simuladas (758 descartadas y 535 corregidas).
+# MAGIC
+# MAGIC ### 5.2 Comportamiento del negocio (datos reales): se convirtió en los indicadores de `05_gold_kpis` y en el dashboard
+# MAGIC
+# MAGIC | Hallazgo | Resultado | Dónde se usa |
 # MAGIC |---|---|---|
-# MAGIC | 1 | Estados escritos en minúsculas o con espacios | Normalizar con `upper(trim())` |
-# MAGIC | 2 | Estados nulos | Descartar (R03) |
-# MAGIC | 3 | Filas repetidas exactas | `dropDuplicates` (R01) |
-# MAGIC | 4 | Mismo id con datos distintos | Descartar ambos (R01B) |
-# MAGIC | 5 | Noches en 0 / tarifa negativa | Descartar (R04, R05) |
-# MAGIC | 6 | Monto pagado nulo | `na.fill(0)` (R06) |
-# MAGIC | 7 | Método de pago vacío | `na.fill('NO_REGISTRADO')` (R07) |
-# MAGIC | 8 | Cliente inexistente | Descartar (R08) |
-# MAGIC | 9 | Fecha de check-in nula | Descartar (R02) |
+# MAGIC | Caída de reservas en 2026 | Enero–octubre: 2 909 reservas en 2025 frente a 2 179 en 2026 (**−25.1 %**); 2024 y 2025 siguen la temporada (picos en enero, julio y diciembre) y 2026 cae todos los meses | `kpi_mensual`, `kpi_anual`; página Resumen |
+# MAGIC | Más cancelaciones | Tasa de cancelación de 5.0 % (2025) a **10.0 %** (2026), en el mismo periodo | `kpi_anual`; página Resumen |
+# MAGIC | No-llegada por zona de origen | Lejana **15.2 %** frente a cercana a Oxapampa **4.5 %** (brecha de 10.7 pp) | `no_llegada_segmento`; página Factores |
+# MAGIC | No-llegada por método de pago | Efectivo **13.5 %** frente a transferencia **6.8 %** | `no_llegada_segmento`; página Factores |
 # MAGIC
-# MAGIC Comportamiento del negocio: anotar aquí la caída de reservas de 2026, el % de no-llegada por zona y por método de pago.
+# MAGIC Las tasas de no-llegada (cancelación + no-show) corresponden al periodo 2024–2026 y coinciden con la solución BI (informe, sección 6.3).
+# MAGIC
+# MAGIC **Conclusión del EDA:** los datos crudos necesitan las reglas de calidad antes de calcular indicadores, y el patrón del negocio ya es visible: la caída de 2026 coincide con más no-llegada en clientes de zonas lejanas y con pago en efectivo. Esto orienta la recomendación de ofertas de prepago y campañas en zonas cercanas.
