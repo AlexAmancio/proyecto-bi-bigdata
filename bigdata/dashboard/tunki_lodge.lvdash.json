@@ -1,10 +1,10 @@
 {
   "datasets": [
     {
-      "name": "kpi_2026",
-      "displayName": "KPIs 2026 (mismo periodo)",
+      "name": "kpi_anual",
+      "displayName": "KPIs por año (mismo periodo)",
       "queryLines": [
-        "SELECT reservas, ROUND(var_interanual_reservas * 100, 1) AS var_reservas_pct, ROUND(pct_cancelacion * 100, 1) AS cancelacion_pct, ROUND(pct_no_show * 100, 1) AS no_show_pct, ROUND(ingreso_por_estadia, 0) AS ingreso_por_estadia FROM workspace.tunki_gold.kpi_anual WHERE origen = 'sistema' AND `año` = 2026"
+        "SELECT CAST(`año` AS STRING) AS `año`, reservas, ROUND(var_interanual_reservas * 100, 1) AS var_reservas_pct, ROUND(pct_cancelacion * 100, 1) AS cancelacion_pct, ROUND(pct_no_show * 100, 1) AS no_show_pct, ROUND(ingreso_por_estadia, 0) AS ingreso_por_estadia FROM workspace.tunki_gold.kpi_anual WHERE origen = 'sistema'"
       ]
     },
     {
@@ -18,35 +18,35 @@
       "name": "seg_zona",
       "displayName": "No-llegada por zona de origen",
       "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Zona de origen' GROUP BY segmento"
+        "SELECT CAST(`año` AS STRING) AS `año`, segmento, reservas, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Zona de origen'"
       ]
     },
     {
       "name": "seg_pago",
       "displayName": "No-llegada por método de pago",
       "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Método de pago' GROUP BY segmento"
+        "SELECT CAST(`año` AS STRING) AS `año`, segmento, reservas, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Método de pago'"
       ]
     },
     {
       "name": "seg_categoria",
       "displayName": "No-llegada por categoría",
       "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Categoría' GROUP BY segmento"
+        "SELECT CAST(`año` AS STRING) AS `año`, segmento, reservas, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Categoría'"
       ]
     },
     {
       "name": "seg_tipo",
       "displayName": "No-llegada por tipo de cliente",
       "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tipo de cliente' GROUP BY segmento"
+        "SELECT CAST(`año` AS STRING) AS `año`, segmento, reservas, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tipo de cliente'"
       ]
     },
     {
       "name": "seg_grupo",
       "displayName": "No-llegada por tamaño de grupo",
       "queryLines": [
-        "SELECT segmento, SUM(reservas) AS reservas, ROUND(100 * SUM(canceladas + no_show) / SUM(reservas), 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tamaño de grupo' GROUP BY segmento"
+        "SELECT CAST(`año` AS STRING) AS `año`, segmento, reservas, ROUND(pct_no_llegada * 100, 1) AS no_llegada_pct FROM workspace.tunki_gold.no_llegada_segmento WHERE origen = 'sistema' AND dimension = 'Tamaño de grupo'"
       ]
     },
     {
@@ -95,26 +95,81 @@
             "name": "texto_1",
             "multilineTextboxSpec": {
               "lines": [
-                "# Tunki Lodge · Reservas y no-llegada de huéspedes",
-                "Solución Big Data (Databricks, arquitectura Medallion). Tarjetas: enero–octubre de 2026 frente al mismo periodo de 2025. Datos reales (origen = sistema)."
+                "## Tunki Lodge · Reservas y no-llegada de huéspedes\n",
+                "Solución Big Data (Databricks, arquitectura Medallion). Tarjetas: año elegido en el filtro, de enero a la fecha de corte, frente al mismo periodo del año anterior. Datos reales (origen = sistema).\n"
               ]
             }
           },
           "position": {
             "x": 0,
             "y": 0,
-            "width": 6,
+            "width": 5,
             "height": 2
           }
         },
         {
           "widget": {
-            "name": "tarjeta_2",
+            "name": "filtro_2",
+            "queries": [
+              {
+                "name": "filtro_a_o_kpi_anual",
+                "query": {
+                  "datasetName": "kpi_anual",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_kpi_anual"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Año"
+              },
+              "selection": {
+                "defaultSelection": {
+                  "values": {
+                    "dataType": "STRING",
+                    "values": [
+                      {
+                        "value": "2026"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 5,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "tarjeta_3",
             "queries": [
               {
                 "name": "main_query",
                 "query": {
-                  "datasetName": "kpi_2026",
+                  "datasetName": "kpi_anual",
                   "fields": [
                     {
                       "name": "reservas",
@@ -131,30 +186,30 @@
               "encodings": {
                 "value": {
                   "fieldName": "reservas",
-                  "displayName": "Reservas 2026"
+                  "displayName": "Reservas"
                 }
               },
               "frame": {
                 "showTitle": true,
-                "title": "Reservas 2026"
+                "title": "Reservas"
               }
             }
           },
           "position": {
             "x": 0,
             "y": 2,
-            "width": 1,
+            "width": 2,
             "height": 3
           }
         },
         {
           "widget": {
-            "name": "tarjeta_3",
+            "name": "tarjeta_4",
             "queries": [
               {
                 "name": "main_query",
                 "query": {
-                  "datasetName": "kpi_2026",
+                  "datasetName": "kpi_anual",
                   "fields": [
                     {
                       "name": "var_reservas_pct",
@@ -181,7 +236,7 @@
             }
           },
           "position": {
-            "x": 1,
+            "x": 2,
             "y": 2,
             "width": 1,
             "height": 3
@@ -189,12 +244,12 @@
         },
         {
           "widget": {
-            "name": "tarjeta_4",
+            "name": "tarjeta_5",
             "queries": [
               {
                 "name": "main_query",
                 "query": {
-                  "datasetName": "kpi_2026",
+                  "datasetName": "kpi_anual",
                   "fields": [
                     {
                       "name": "cancelacion_pct",
@@ -221,7 +276,7 @@
             }
           },
           "position": {
-            "x": 2,
+            "x": 3,
             "y": 2,
             "width": 1,
             "height": 3
@@ -229,12 +284,12 @@
         },
         {
           "widget": {
-            "name": "tarjeta_5",
+            "name": "tarjeta_6",
             "queries": [
               {
                 "name": "main_query",
                 "query": {
-                  "datasetName": "kpi_2026",
+                  "datasetName": "kpi_anual",
                   "fields": [
                     {
                       "name": "no_show_pct",
@@ -261,7 +316,7 @@
             }
           },
           "position": {
-            "x": 3,
+            "x": 4,
             "y": 2,
             "width": 1,
             "height": 3
@@ -269,12 +324,12 @@
         },
         {
           "widget": {
-            "name": "tarjeta_6",
+            "name": "tarjeta_7",
             "queries": [
               {
                 "name": "main_query",
                 "query": {
-                  "datasetName": "kpi_2026",
+                  "datasetName": "kpi_anual",
                   "fields": [
                     {
                       "name": "ingreso_por_estadia",
@@ -301,15 +356,15 @@
             }
           },
           "position": {
-            "x": 4,
+            "x": 5,
             "y": 2,
-            "width": 2,
+            "width": 1,
             "height": 3
           }
         },
         {
           "widget": {
-            "name": "lineas_7",
+            "name": "lineas_8",
             "queries": [
               {
                 "name": "main_query",
@@ -374,7 +429,7 @@
         },
         {
           "widget": {
-            "name": "lineas_8",
+            "name": "lineas_9",
             "queries": [
               {
                 "name": "main_query",
@@ -445,24 +500,157 @@
       "layout": [
         {
           "widget": {
-            "name": "texto_9",
+            "name": "texto_10",
             "multilineTextboxSpec": {
               "lines": [
-                "# Factores de no-llegada",
-                "% de no-llegada (cancelación + no-show) por segmento, todos los años."
+                "## Factores de no-llegada\n",
+                "% de no-llegada (cancelación + no-show) por segmento, una barra por año. Use el filtro para elegir los años.\n"
               ]
             }
           },
           "position": {
             "x": 0,
             "y": 0,
-            "width": 6,
+            "width": 5,
             "height": 2
           }
         },
         {
           "widget": {
-            "name": "barras_10",
+            "name": "filtro_11",
+            "queries": [
+              {
+                "name": "filtro_a_o_seg_zona",
+                "query": {
+                  "datasetName": "seg_zona",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "filtro_a_o_seg_pago",
+                "query": {
+                  "datasetName": "seg_pago",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "filtro_a_o_seg_categoria",
+                "query": {
+                  "datasetName": "seg_categoria",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "filtro_a_o_seg_tipo",
+                "query": {
+                  "datasetName": "seg_tipo",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "filtro_a_o_seg_grupo",
+                "query": {
+                  "datasetName": "seg_grupo",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "filtro_a_o_zona_anual",
+                "query": {
+                  "datasetName": "zona_anual",
+                  "fields": [
+                    {
+                      "name": "año",
+                      "expression": "`año`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_seg_zona"
+                  },
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_seg_pago"
+                  },
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_seg_categoria"
+                  },
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_seg_tipo"
+                  },
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_seg_grupo"
+                  },
+                  {
+                    "fieldName": "año",
+                    "displayName": "Año",
+                    "queryName": "filtro_a_o_zona_anual"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Año"
+              }
+            }
+          },
+          "position": {
+            "x": 5,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "barras_12",
             "queries": [
               {
                 "name": "main_query",
@@ -476,6 +664,10 @@
                     {
                       "name": "no_llegada_pct",
                       "expression": "`no_llegada_pct`"
+                    },
+                    {
+                      "name": "año",
+                      "expression": "`año`"
                     }
                   ],
                   "disaggregated": true
@@ -499,7 +691,17 @@
                     "type": "quantitative"
                   },
                   "displayName": "% No-llegada"
+                },
+                "color": {
+                  "fieldName": "año",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Año"
                 }
+              },
+              "mark": {
+                "layout": "group"
               },
               "frame": {
                 "showTitle": true,
@@ -516,7 +718,7 @@
         },
         {
           "widget": {
-            "name": "barras_11",
+            "name": "barras_13",
             "queries": [
               {
                 "name": "main_query",
@@ -530,6 +732,10 @@
                     {
                       "name": "no_llegada_pct",
                       "expression": "`no_llegada_pct`"
+                    },
+                    {
+                      "name": "año",
+                      "expression": "`año`"
                     }
                   ],
                   "disaggregated": true
@@ -553,7 +759,17 @@
                     "type": "quantitative"
                   },
                   "displayName": "% No-llegada"
+                },
+                "color": {
+                  "fieldName": "año",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Año"
                 }
+              },
+              "mark": {
+                "layout": "group"
               },
               "frame": {
                 "showTitle": true,
@@ -570,7 +786,7 @@
         },
         {
           "widget": {
-            "name": "barras_12",
+            "name": "barras_14",
             "queries": [
               {
                 "name": "main_query",
@@ -584,6 +800,10 @@
                     {
                       "name": "no_llegada_pct",
                       "expression": "`no_llegada_pct`"
+                    },
+                    {
+                      "name": "año",
+                      "expression": "`año`"
                     }
                   ],
                   "disaggregated": true
@@ -607,7 +827,17 @@
                     "type": "quantitative"
                   },
                   "displayName": "% No-llegada"
+                },
+                "color": {
+                  "fieldName": "año",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Año"
                 }
+              },
+              "mark": {
+                "layout": "group"
               },
               "frame": {
                 "showTitle": true,
@@ -624,7 +854,7 @@
         },
         {
           "widget": {
-            "name": "barras_13",
+            "name": "barras_15",
             "queries": [
               {
                 "name": "main_query",
@@ -638,6 +868,10 @@
                     {
                       "name": "no_llegada_pct",
                       "expression": "`no_llegada_pct`"
+                    },
+                    {
+                      "name": "año",
+                      "expression": "`año`"
                     }
                   ],
                   "disaggregated": true
@@ -661,7 +895,17 @@
                     "type": "quantitative"
                   },
                   "displayName": "% No-llegada"
+                },
+                "color": {
+                  "fieldName": "año",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Año"
                 }
+              },
+              "mark": {
+                "layout": "group"
               },
               "frame": {
                 "showTitle": true,
@@ -678,7 +922,7 @@
         },
         {
           "widget": {
-            "name": "barras_14",
+            "name": "barras_16",
             "queries": [
               {
                 "name": "main_query",
@@ -692,6 +936,10 @@
                     {
                       "name": "no_llegada_pct",
                       "expression": "`no_llegada_pct`"
+                    },
+                    {
+                      "name": "año",
+                      "expression": "`año`"
                     }
                   ],
                   "disaggregated": true
@@ -715,7 +963,17 @@
                     "type": "quantitative"
                   },
                   "displayName": "% No-llegada"
+                },
+                "color": {
+                  "fieldName": "año",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Año"
                 }
+              },
+              "mark": {
+                "layout": "group"
               },
               "frame": {
                 "showTitle": true,
@@ -732,7 +990,7 @@
         },
         {
           "widget": {
-            "name": "barras_15",
+            "name": "barras_17",
             "queries": [
               {
                 "name": "main_query",
@@ -782,6 +1040,9 @@
                   "displayName": "Año"
                 }
               },
+              "mark": {
+                "layout": "group"
+              },
               "frame": {
                 "showTitle": true,
                 "title": "Por zona y año"
@@ -803,11 +1064,11 @@
       "layout": [
         {
           "widget": {
-            "name": "texto_16",
+            "name": "texto_18",
             "multilineTextboxSpec": {
               "lines": [
-                "# Calidad de datos y experimentos",
-                "Reglas aplicadas en Silver, validación cruzada con Power BI y resultados de la última ejecución de experimentos."
+                "## Calidad de datos y experimentos\n",
+                "Reglas aplicadas en Silver, validación cruzada con Power BI y resultados de la última ejecución de experimentos.\n"
               ]
             }
           },
@@ -820,7 +1081,7 @@
         },
         {
           "widget": {
-            "name": "tabla_17",
+            "name": "tabla_19",
             "queries": [
               {
                 "name": "main_query",
@@ -855,22 +1116,120 @@
                 "columns": [
                   {
                     "fieldName": "regla",
-                    "displayName": "Regla"
+                    "displayName": "Regla",
+                    "title": "Regla",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100000,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "descripcion",
-                    "displayName": "Problema"
+                    "displayName": "Problema",
+                    "title": "Problema",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100001,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "registros_afectados",
-                    "displayName": "Registros"
+                    "displayName": "Registros",
+                    "title": "Registros",
+                    "type": "integer",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100002,
+                    "alignContent": "right",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "accion",
-                    "displayName": "Acción"
+                    "displayName": "Acción",
+                    "title": "Acción",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100003,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   }
                 ]
               },
+              "invisibleColumns": [],
+              "allowHTMLByDefault": false,
+              "itemsPerPage": 25,
+              "paginationSize": "default",
+              "condensed": true,
+              "withRowNumber": false,
               "frame": {
                 "showTitle": true,
                 "title": "Reglas de calidad (tunki_silver.calidad)"
@@ -886,7 +1245,7 @@
         },
         {
           "widget": {
-            "name": "tabla_18",
+            "name": "tabla_20",
             "queries": [
               {
                 "name": "main_query",
@@ -921,22 +1280,120 @@
                 "columns": [
                   {
                     "fieldName": "metrica",
-                    "displayName": "Métrica"
+                    "displayName": "Métrica",
+                    "title": "Métrica",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100000,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "power_bi",
-                    "displayName": "Power BI"
+                    "displayName": "Power BI",
+                    "title": "Power BI",
+                    "type": "float",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100001,
+                    "alignContent": "right",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "databricks",
-                    "displayName": "Databricks"
+                    "displayName": "Databricks",
+                    "title": "Databricks",
+                    "type": "float",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100002,
+                    "alignContent": "right",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "resultado",
-                    "displayName": "Resultado"
+                    "displayName": "Resultado",
+                    "title": "Resultado",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100003,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   }
                 ]
               },
+              "invisibleColumns": [],
+              "allowHTMLByDefault": false,
+              "itemsPerPage": 25,
+              "paginationSize": "default",
+              "condensed": true,
+              "withRowNumber": false,
               "frame": {
                 "showTitle": true,
                 "title": "Validación: Gold frente a Power BI"
@@ -952,7 +1409,7 @@
         },
         {
           "widget": {
-            "name": "lineas_19",
+            "name": "lineas_21",
             "queries": [
               {
                 "name": "main_query",
@@ -1017,7 +1474,7 @@
         },
         {
           "widget": {
-            "name": "tabla_20",
+            "name": "tabla_22",
             "queries": [
               {
                 "name": "main_query",
@@ -1052,22 +1509,120 @@
                 "columns": [
                   {
                     "fieldName": "experimento",
-                    "displayName": "Experimento"
+                    "displayName": "Experimento",
+                    "title": "Experimento",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100000,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "escenario",
-                    "displayName": "Escenario"
+                    "displayName": "Escenario",
+                    "title": "Escenario",
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100001,
+                    "alignContent": "left",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "promedio_s",
-                    "displayName": "Promedio (s)"
+                    "displayName": "Promedio (s)",
+                    "title": "Promedio (s)",
+                    "type": "float",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100002,
+                    "alignContent": "right",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "desv_s",
-                    "displayName": "Desv. (s)"
+                    "displayName": "Desv. (s)",
+                    "title": "Desv. (s)",
+                    "type": "float",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100003,
+                    "alignContent": "right",
+                    "allowSearch": false,
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   }
                 ]
               },
+              "invisibleColumns": [],
+              "allowHTMLByDefault": false,
+              "itemsPerPage": 25,
+              "paginationSize": "default",
+              "condensed": true,
+              "withRowNumber": false,
               "frame": {
                 "showTitle": true,
                 "title": "EXP-BD-02 a 06 · Tiempos promedio (s)"
