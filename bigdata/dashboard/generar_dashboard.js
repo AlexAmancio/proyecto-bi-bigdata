@@ -39,7 +39,7 @@ const campo = (nombre, expr) => ({ name: nombre, expression: expr || `\`${nombre
 const consulta = (dataset, fields, disaggregated = true) =>
   [{ name: 'main_query', query: { datasetName: dataset, fields, disaggregated } }];
 
-const texto = (lineas, pos) => ({ widget: { name: id('texto'), multilineTextboxSpec: { lines: lineas } }, position: pos });
+const texto = (lineas, pos) => ({ widget: { name: id('texto'), multilineTextboxSpec: { lines: lineas.map(l => l.replace(/^# /, '## ') + '\n') } }, position: pos });
 const tarjeta = (dataset, col, titulo, pos) => ({
   widget: {
     name: id('tarjeta'),
@@ -83,20 +83,36 @@ const tabla = (dataset, cols, titulo, pos) => ({
   widget: {
     name: id('tabla'),
     queries: consulta(dataset, cols.map(c => campo(c))),
-    spec: { version: 1, widgetType: 'table', encodings: { columns: cols.map(c => ({ fieldName: c, displayName: nom(c) })) }, frame: { showTitle: true, title: titulo } },
+    spec: {
+      version: 1, widgetType: 'table',
+      encodings: { columns: cols.map((c, i) => columnaTabla(c, i)) },
+      invisibleColumns: [], allowHTMLByDefault: false, itemsPerPage: 25, paginationSize: 'default', condensed: true, withRowNumber: false,
+      frame: { showTitle: true, title: titulo },
+    },
   },
   position: pos,
 });
 const P = (x, y, width, height) => ({ x, y, width, height });
+const NUMERICAS = { registros_afectados: 'integer', power_bi: 'float', databricks: 'float', promedio_s: 'float', desv_s: 'float' };
+function columnaTabla(c, i) {
+  const tipo = NUMERICAS[c] || 'string';
+  return {
+    fieldName: c, displayName: nom(c), title: nom(c), type: tipo, displayAs: tipo === 'string' ? 'string' : 'number',
+    visible: true, order: 100000 + i, alignContent: tipo === 'string' ? 'left' : 'right', allowSearch: false,
+    booleanValues: ['false', 'true'], imageUrlTemplate: '{{ @ }}', imageTitleTemplate: '{{ @ }}', imageWidth: '', imageHeight: '',
+    linkUrlTemplate: '{{ @ }}', linkTextTemplate: '{{ @ }}', linkTitleTemplate: '{{ @ }}', linkOpenInNewTab: true,
+    allowHTML: false, highlightLinks: false, useMonospaceFont: false, preserveWhitespace: false,
+  };
+}
 
 // ---------------------------------------------------------------- páginas
 const resumen = [
   texto(['# Tunki Lodge · Reservas y no-llegada de huéspedes', 'Solución Big Data (Databricks, arquitectura Medallion). Tarjetas: enero–octubre de 2026 frente al mismo periodo de 2025. Datos reales (origen = sistema).'], P(0, 0, 6, 2)),
-  tarjeta('kpi_2026', 'reservas', 'Reservas 2026', P(0, 2, 1, 3)),
-  tarjeta('kpi_2026', 'var_reservas_pct', 'Var. interanual (%)', P(1, 2, 1, 3)),
-  tarjeta('kpi_2026', 'cancelacion_pct', '% Cancelación', P(2, 2, 1, 3)),
-  tarjeta('kpi_2026', 'no_show_pct', '% No-show', P(3, 2, 1, 3)),
-  tarjeta('kpi_2026', 'ingreso_por_estadia', 'Ingreso por estadía (S/)', P(4, 2, 2, 3)),
+  tarjeta('kpi_2026', 'reservas', 'Reservas 2026', P(0, 2, 2, 3)),
+  tarjeta('kpi_2026', 'var_reservas_pct', 'Var. interanual (%)', P(2, 2, 1, 3)),
+  tarjeta('kpi_2026', 'cancelacion_pct', '% Cancelación', P(3, 2, 1, 3)),
+  tarjeta('kpi_2026', 'no_show_pct', '% No-show', P(4, 2, 1, 3)),
+  tarjeta('kpi_2026', 'ingreso_por_estadia', 'Ingreso por estadía (S/)', P(5, 2, 1, 3)),
   lineas('mensual', 'mes', 'reservas', 'año', 'Reservas por mes y año', P(0, 5, 3, 6)),
   lineas('mensual', 'mes', 'cancelacion_pct', 'año', '% de cancelación por mes y año', P(3, 5, 3, 6)),
 ];
