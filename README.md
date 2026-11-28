@@ -157,7 +157,7 @@ flowchart LR
     V --> B[BRONZE<br/>datos crudos + linaje]
     B --> S[SILVER<br/>reglas N01 + R01–R10]
     S --> G[GOLD<br/>KPIs y factores]
-    G --> C[SQL Editor ·<br/>dashboard · Genie]
+    G --> C[SQL Editor ·<br/>dashboard de Databricks]
     G -. validación .-> PBI[Power BI]
 ```
 
@@ -196,8 +196,8 @@ proyecto-bi-bigdata/
 ├── bigdata/                          # Solución Big Data en Databricks (ver bigdata/README.md)
 │   ├── datos/sistema/                # Archivos fuente para subir al Volume (sin datos personales)
 │   ├── notebooks/                    # 00 configuración … 06 experimentos (Medallion)
-│   ├── dashboard/                    # Consultas del dashboard de Databricks
-│   └── evidencias/                   # Notebooks ejecutados y capturas
+│   ├── dashboard/                    # Dashboard de Databricks como código (.lvdash.json + generador)
+│   └── evidencias/                   # Capturas del pipeline, los Jobs y el dashboard
 ├── docs/
 │   ├── Informe_Proyecto_Final_Grupo04.docx / .pdf     # Informe técnico (8 capítulos)
 │   ├── Presentacion_BI_Grupo04.pptx                   # Presentación (5 minutos)
@@ -601,7 +601,7 @@ Media de 3 repeticiones en Databricks Free Edition (cómputo serverless), con un
 
 ## 15. Cómo replicar el proyecto paso a paso
 
-> **Manual completo de instalación y ejecución:** [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf). Cubre desde la instalación de SQL Server (modo mixto, TCP/IP en el puerto 1433), SSMS, Java y Power BI hasta la ejecución de la aplicación, el ETL, su automatización y el dashboard, con el resultado esperado en cada paso, una lista de comprobación, la solución de errores frecuentes y el guion de la demostración. Se probó de principio a fin a partir de una copia del proyecto descargada como ZIP.
+> **Manual completo de instalación y ejecución:** [`docs/Procedimiento_Replicacion_Grupo04.pdf`](docs/Procedimiento_Replicacion_Grupo04.pdf). Cubre desde la instalación de SQL Server (modo mixto, TCP/IP en el puerto 1433), SSMS, Java y Power BI hasta la ejecución de la aplicación, el ETL, su automatización y el dashboard, y la solución Big Data en Databricks (secretos de GitHub, pipeline, tablas Medallion, dashboard y experimentos), con el resultado esperado en cada paso, una lista de comprobación, la solución de errores frecuentes y el guion de la demostración. Se probó de principio a fin a partir de una copia del proyecto descargada como ZIP.
 >
 > Resumen de los pasos:
 
@@ -640,7 +640,9 @@ git clone https://github.com/AlexAmancio/proyecto-bi-bigdata.git
 
 **8. Configurar una sola vez** — en Databricks: *Settings → Developer → Access tokens → Generate new token*. En GitHub: *Settings → Secrets and variables → Actions* → crear `DATABRICKS_HOST` (URL del workspace) y `DATABRICKS_TOKEN` (el token).
 
-**9. Desplegar y ejecutar** — integrar en `main` cualquier cambio en `bigdata/` (por pull request) o, en la pestaña **Actions**, ejecutar **pipeline-databricks → Run workflow**. El pipeline sube los datos, crea lo que falte y ejecuta el Job *Pipeline Medallion*.
+**9. Desplegar y ejecutar** — integrar en `main` cualquier cambio en `bigdata/` (por pull request) o, en la pestaña **Actions**, ejecutar **pipeline-databricks → Run workflow**. El pipeline sube los datos, crea lo que falte, publica el dashboard y ejecuta el Job *Pipeline Medallion*.
+
+**Ver el dashboard** — en Databricks: *Dashboards → Tunki Lodge - Reservas y no-llegada*. Tiene tres páginas (Resumen, Factores de no-llegada, Calidad y experimentos) y filtros de **Año**; se actualiza solo en cada ejecución del pipeline.
 
 **10. Experimentos (opcional)** — en Databricks: *Jobs & Pipelines → Tunki Lodge - Experimentos Big Data → Run now*; los tiempos quedan en `tunki_gold.experimentos`.
 
@@ -762,7 +764,7 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 | Arquitectura Medallion (Bronze, Silver, Gold) | Una sola capa de tablas | Separa dato crudo, dato limpio e indicadores; permite reprocesar desde Bronze |
 | GitHub Actions + Asset Bundle | Importar notebooks y subir archivos a mano | Todo declarado como código; cada merge despliega y ejecuta |
 | Tablas Delta sin partición | Particionar Silver por año | Tablas pequeñas (Databricks recomienda particionar solo tablas grandes) y la partición no admite la ñ de `año` |
-| Persistencia en tablas de Databricks | MongoDB | Es opcional y no aporta al análisis; el dashboard y Genie leen las tablas Gold |
+| Persistencia en tablas de Databricks | MongoDB | Es opcional y no aporta al análisis; el dashboard lee las tablas Gold |
 
 ---
 
@@ -801,13 +803,13 @@ Pruebas unitarias (con y sin Mockito) y de integración (MockMvc contra SQL Serv
 | E-01 | Dataset original | [`bd/respaldo_bd_actual.sql`](bd/respaldo_bd_actual.sql) |
 | E-02 | Dataset procesado | `hotel_dw` (tablas `fact_estadia`, dimensiones, `etl_calidad`) |
 | E-05 | Arquitectura y esquema de datos | Secciones 4 y 7 de este README; informe, figuras 1 y 2 |
-| E-06 | Scripts y notebooks | [`bi/crear_datamart.sql`](bi/crear_datamart.sql), [`bi/ETL_CARGA.sql`](bi/ETL_CARGA.sql), [`bi/*.bat`](bi), [`bi/fuentes/`](bi/fuentes); [`bigdata/notebooks/`](bigdata/notebooks), [`bigdata/databricks.yml`](bigdata/databricks.yml) |
+| E-06 | Scripts y notebooks | [`bi/crear_datamart.sql`](bi/crear_datamart.sql), [`bi/ETL_CARGA.sql`](bi/ETL_CARGA.sql), [`bi/*.bat`](bi), [`bi/fuentes/`](bi/fuentes); [`bigdata/notebooks/`](bigdata/notebooks), [`bigdata/databricks.yml`](bigdata/databricks.yml), [`bigdata/dashboard/`](bigdata/dashboard) |
 | E-07 | Resultados de la solución BI | [`bi/powerbi/TunkiLodge_BI.pbip`](bi/powerbi/TunkiLodge_BI.pbip); informe, figuras 3 a 5 |
-| E-08 | Resultados de la solución Big Data | Tablas `tunki_silver.calidad`, `tunki_gold.*` y `tunki_gold.experimentos`; informe, sección 6.3 y figuras 6 y 7 |
+| E-08 | Resultados de la solución Big Data | Tablas `tunki_silver.calidad`, `tunki_gold.*` y `tunki_gold.experimentos`; dashboard *Tunki Lodge - Reservas y no-llegada*; informe, sección 6.3 y figuras 6 a 9; capturas en [`bigdata/evidencias/`](bigdata/evidencias) |
 | E-09 | Comparación de escenarios | Sección 14 de este README; informe, secciones 6.3 y 6.5 |
 | E-10 | Logs | Tablas `etl_log` y `etl_calidad`; `bi/logs/ultima_ejecucion.log` |
 | E-12 | Retroalimentación y mejoras | Historial de pull requests del repositorio |
-| E-14 | Solución Big Data funcional | Workflow [`pipeline-databricks`](.github/workflows/deploy-bundle.yml) (pestaña Actions) y Jobs de Databricks |
+| E-14 | Solución Big Data funcional | Workflow [`pipeline-databricks`](.github/workflows/deploy-bundle.yml) (pestaña Actions), Jobs y dashboard de Databricks; capturas en [`bigdata/evidencias/`](bigdata/evidencias) |
 
 ---
 

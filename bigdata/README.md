@@ -16,7 +16,7 @@ Lo que agrega Big Data frente a BI:
 | Almacenamiento | Tablas SQL Server | Tablas **Delta Lake** con historial de versiones |
 | Organización | Staging → estrella | **Medallion**: Bronze (crudo) → Silver (limpio) → Gold (KPIs) |
 | Escala probada | Lotes de 500 a 15 000 estadías | De 9 mil a ~2,8 millones de estadías (×1 a ×300) |
-| Visualización | Power BI | Dashboard de Databricks + **Genie** (preguntas en lenguaje natural) |
+| Visualización | Power BI | Dashboard de Databricks definido como código, con filtros de año |
 
 ---
 
@@ -45,7 +45,6 @@ flowchart LR
     SV -.-> Q
     SV -- 05_gold_kpis --> G
     G --> D[Dashboard Databricks]
-    G --> GN[Genie]
     G -. validación .-> PBI[Power BI / hotel_dw]
     B & SV --> X
 ```
@@ -157,14 +156,8 @@ En Databricks, los notebooks desplegados quedan en *Workspace → Users → (tu 
    | 5 | `05_gold_kpis` | 1 min | Tablas Gold + `validacion_bi` (todo debe decir **OK**) |
    | 6 | `06_experimentos` | 10–20 min | Tabla `experimentos` |
 
-5. **Crear el dashboard.** *New → Dashboard*. En la pestaña **Data** agregar cada consulta de `dashboard/consultas_dashboard.sql` como dataset (D1 a D9) y en **Canvas** crear el gráfico indicado en el comentario de cada consulta. Publicar.
-6. **Genie (opcional).** *New → Genie space*, agregar las tablas de `tunki_gold` y preguntar, por ejemplo:
-   - "¿Qué zona de origen tiene mayor porcentaje de no-llegada?"
-   - "Compara las reservas de 2026 con 2025 por mes"
-   - "¿Qué método de pago tiene más cancelaciones?"
-
-   Si se usa Genie, declararlo en la sección de uso de IA del informe.
-7. **Guardar evidencias.** Exportar cada notebook ejecutado (*File → Export → IPython Notebook* o *HTML*) a `bigdata/evidencias/` y tomar capturas del dashboard.
+5. **Crear el dashboard.** Con el pipeline (sección 5) el bundle lo publica solo. Sin pipeline: *New → Dashboard*; en la pestaña **Data** agregar cada consulta de `dashboard/consultas_dashboard.sql` como dataset (D1 a D9) y en **Canvas** crear el gráfico indicado en el comentario de cada consulta. Publicar.
+6. **Guardar evidencias.** Exportar cada notebook ejecutado (*File → Export → HTML*) a `bigdata/evidencias/` y tomar capturas del dashboard. Las de la ejecución del 27/11/2026 ya están en esa carpeta.
 
 ---
 
